@@ -1,0 +1,74 @@
+/** Customer Feedback **/
+.zc_cust_feedback {
+    .customer_control {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 24px;
+        transition: all 350ms ease;
+        button {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            border: 2px solid var(--primary-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &:hover {
+                background: var(--primary-color);
+            }
+            &:hover svg path {
+                fill: var(--white-color);
+            }
+        }
+    }
+    .feedback_wrapper {
+        .zc_feedback_slider {
+            .feedback_sin {
+                display: flex;
+                align-items: center;
+                gap: 34px;
+                .feedback_thumb {
+                    flex: 0 0 156px;
+                    max-width: 156px;
+                    height: 165px;
+                    border-radius: 50%;
+                    position: relative;
+                    img {
+                        border-radius: inherit;
+                        object-fit: cover;
+                    }
+                    span {
+                        position: absolute;
+                        left: 0;
+                        bottom: 16px;
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        background: var(--primary-color);
+                        border: 3px solid var(--white-color);
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+                .feedback_con {
+                    p {
+                        font-size: 20px;
+                        line-height: 28px;
+                        margin: 0 0 16px;
+                    }
+                    span {
+                        line-height: 25.2px;
+                        a {
+                            font-size: 20px;
+                            font-weight: 500;
+                            line-height: 28px;
+                            color: var(--heading-color);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

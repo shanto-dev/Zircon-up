@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: 'Ivy Mode';
+    src: url('../fonts/lvyMode/IvyMode-Regular.woff2') format('woff2'),
+        url('../fonts/lvyMode/IvyMode-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cabinet-grotesk';
+    src: url('../fonts/cabinetGrotesk/CabinetGrotesk-Extrabold.woff2') format('woff2'),
+        url('../fonts/cabinetGrotesk/CabinetGrotesk-Extrabold.woff') format('woff'),
+        url('../fonts/cabinetGrotesk/CabinetGrotesk-Extrabold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cabinet-grotesk';
+    src: url('../fonts/cabinetGrotesk/CabinetGrotesk-Regular.woff2') format('woff2'),
+        url('../fonts/cabinetGrotesk/CabinetGrotesk-Regular.woff') format('woff'),
+        url('../fonts/cabinetGrotesk/CabinetGrotesk-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cabinet-grotesk';
+    src: url('../fonts/cabinetGrotesk/CabinetGrotesk-Medium.woff2') format('woff2'),
+        url('../fonts/cabinetGrotesk/CabinetGrotesk-Medium.woff') format('woff'),
+        url('../fonts/cabinetGrotesk/CabinetGrotesk-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cabinet-grotesk';
+    src: url('../fonts/cabinetGrotesk/CabinetGrotesk-Bold.woff2') format('woff2'),
+        url('../fonts/cabinetGrotesk/CabinetGrotesk-Bold.woff') format('woff'),
+        url('../fonts/cabinetGrotesk/CabinetGrotesk-Bold.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+
+    --color-background: #FFEBEB;
+    --color-background3: #F5F2EA;
+    --primary-color: #C23F3F;
+
+    --primary-color2: #D0552F;
+
+    // --gradient-background:
+
+    // --color-accent: 
+
+    // --color-foreground:  text color;
+
+    --heading-color: #0D0D0D;
+    --white-color: #ffffff;
+    --body-color: #6C514F;
+
+
+    --heading-color2: #D0552F;
+
+    // --color-shadow: 
+
+    --color-primary-button: #C23F3F;
+    --color-primary-button2: #D0552F;
+
+    --color-primary-button-text: #ffffff;
+
+    --color-primary-button-hover: #0D0D0D;
+
+    // --color-primary-button-hover-text: 
+
+    // --color-primary-button-outline:
+
+    // --color-primary-button-outline-hover: 
+
+    // --color-secondary-button: 
+
+    // --color-secondary-button-text:
+
+    // --color-secondary-button-hover:
+
+    // --color-secondary-button-hover-text: 
+
+    // --color-secondary-button-outline: 
+
+    // --color-secondary-button-outline-hover: 
+
+    --color-link: #B6B6B6 !important;
+
+    // --color-input:
+
+    --color-border: #E0E0E0;
+
+    // --color-input-outline: 
+
+    // --color-placeholder: 
+
+    // --color-badge-foreground: 
+
+    // --color-badge-background: 
+
+    // --color-badge-border: 
+
+    // --payment-terms-background-color: 
+
+
+    --body-font: "Jost", sans-serif;
+    --heading-font: "Ivy Mode";
+    --heading-font2: "Cabinet-grotesk";
+
+    --transition-base: 0.3s;
+
+}

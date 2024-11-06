@@ -1,0 +1,448 @@
+/** Product Section **/
+.zc_product_sction {
+    .zc_product_card {
+        position: relative;
+        background: #F2F3F0;
+        margin: 0 0 30px;
+
+        .feature_image {
+            position: relative;
+
+            a {
+                display: inline-block;
+            }
+
+            .zc_badge {
+                position: absolute;
+                left: 10px;
+                top: 10px;
+                display: inline-block;
+                background: var(--primary-color);
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 22.4px;
+                color: var(--white-color);
+                border-radius: 12px;
+                min-width: 52px;
+                text-align: center;
+                padding: 1px;
+            }
+        }
+
+        .product_con {
+            padding: 16px;
+            transition: all 350ms ease;
+
+            p {
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 25.2px;
+                margin: 0 0 9px;
+
+                a {
+                    display: inline-block;
+
+                    &:hover {
+                        color: var(--primary-color);
+                    }
+                }
+            }
+
+            .price {
+                ins {
+                    text-decoration: none;
+                    color: var(--heading-color);
+                    margin-right: 8px;
+                }
+            }
+
+            .review {
+                ul {
+                    margin-right: 2px;
+                    position: relative;
+                    top: -2px;
+                }
+            }
+        }
+
+        &:hover {
+            .product_con {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+
+        .zc_product_action {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 108px;
+            background: var(--white-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 350ms ease;
+            transform: translateY(40px);
+
+            a {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: 48px;
+                height: 48px;
+                border: 1px solid var(--primary-color);
+                background: #FFEBEB;
+                border-radius: 50%;
+                position: relative;
+
+                svg {
+                    path {
+                        transition: all 350ms ease;
+                    }
+                }
+
+                &:hover {
+                    background: var(--primary-color);
+                }
+
+                &:hover svg path {
+                    fill: var(--white-color);
+                }
+
+                &::before {
+                    content: attr(data-text);
+                    position: absolute;
+                    left: auto;
+                    right: auto;
+                    top: -42px;
+                    min-width: 80px;
+                    height: 28px;
+                    background: var(--heading-color);
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 15.6px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: var(--white-color);
+                    border-radius: 32px;
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: all 300ms ease;
+                    transform: translateY(4px);
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    left: auto;
+                    right: auto;
+                    top: -19px;
+                    width: 10px;
+                    height: 10px;
+                    background: var(--heading-color);
+                    transform: rotate(45deg);
+                    opacity: 0;
+                    visibility: hidden;
+                    transition-delay: 100ms;
+                }
+
+                &:hover::before {
+                    opacity: 1;
+                    visibility: visible;
+                    transform: translateY(0);
+                }
+
+                &:hover::after {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+
+        &:hover .zc_product_action {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+    }
+}
+
+
+// Home 3 Product Style 
+.zc3_product_item {
+    position: relative;
+
+    &__thumb {
+        position: relative;
+        border-radius: 4px;
+        background: #EEEADE;
+        overflow: hidden;
+
+        & img {
+            width: 100%;
+            height: auto;
+            border-radius: inherit;
+        }
+    }
+
+    &__content {
+        padding: 24px 0 10px;
+
+        & h2 {
+            font-family: var(--heading-font2);
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 34px;
+            text-align: left;
+            margin-bottom: 8px;
+
+            & a {
+                color: inherit;
+                font-size: inherit;
+
+                &:hover {
+                    color: var(--primary-color2);
+                }
+            }
+        }
+    }
+}
+
+.zc3_pd01Actions {
+    @include displayFlex(flex, center, center, column);
+    gap: 16px;
+    position: absolute;
+    top: -10px;
+    right: 16px;
+    transition: 0.3s ease;
+    opacity: 0;
+    visibility: visible;
+
+    & a {
+        @include displayFlex(flex, center, center, row);
+        width: 56px;
+        height: 56px;
+        border: 1px solid var(--primary-color2);
+        background: var(--white-color);
+        color: var(--primary-color2);
+        border-radius: 2px;
+        font-size: 18px;
+
+        & svg {
+            fill: var(--primary-color2);
+            width: 19px;
+            height: 19px;
+            padding: 1px;
+
+            & path {
+                fill: var(--primary-color2);
+                stroke: var(--primary-color2);
+                stroke-width: .35px;
+            }
+        }
+
+
+
+        &:hover {
+            background: var(--primary-color2);
+            color: var(--white-color);
+
+            & svg {
+                fill: var(--white-color);
+
+                & path {
+                    fill: var(--white-color);
+                    stroke: var(--white-color);
+                }
+            }
+        }
+    }
+}
+
+.zc3_pdvariable_btn {
+    position: absolute;
+    width: calc(100% - 32px);
+    left: 16px;
+    right: 16px;
+    bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition-base);
+
+    & a {
+        width: 100%;
+        display: block;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 25px;
+        color: var(--primary-color2);
+        padding: 19px 30px 20px;
+        border: 1px solid var(--primary-color2);
+        background: var(--white-color);
+        border-radius: 2px;
+        text-align: center;
+
+        &:hover {
+            background: var(--primary-color2);
+            color: var(--white-color);
+        }
+    }
+
+}
+
+.zc3_pd01PriceWrap {
+    @include displayFlex(flex, space-between, center, row);
+}
+
+.zc3_pd01Price {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--primary-color2);
+    @include displayFlex(inline-flex, space-between, center, row);
+
+    & ins {
+        margin-right: 8px;
+        text-decoration: none;
+    }
+
+    & del {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 25px;
+        color: var(--body-color);
+
+    }
+}
+
+.zc3_pdvariation {
+    @include displayFlex(flex, end, center, row);
+    gap: 4px;
+
+    & li {
+        position: relative;
+
+        & input[type="checkbox"] {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            width: 24px;
+            height: 24px;
+            border: 1px solid transparent;
+            padding: 7px;
+            border-radius: 50%;
+            position: relative;
+            cursor: pointer;
+
+            &::after {
+                width: 16px;
+                height: 16px;
+                position: absolute;
+                content: "";
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background: #AA4A4A;
+                border-radius: inherit;
+            }
+
+            &:checked {
+                border-color: #D0552F;
+            }
+        }
+    }
+
+    & .brown-color {
+        & input[type="checkbox"] {
+            &:after {
+                background: #B89389;
+            }
+
+            &:checked {
+                border-color: #B89389;
+            }
+        }
+    }
+
+    & .blure-color {
+        & input[type="checkbox"] {
+            &:after {
+                background: #82A0C2;
+            }
+
+            &:checked {
+                border-color: #82A0C2;
+            }
+        }
+    }
+
+    & .red-gray-color {}
+
+    & .green-gray-color {
+        & input[type="checkbox"] {
+            &:after {
+                background: #6C9374;
+            }
+
+            &:checked {
+                border-color: #6C9374;
+            }
+        }
+    }
+}
+
+.zc3_pd01Reviws {
+    .star-rating {
+        @include displayFlex(inline-flex, start, center, row);
+
+        & svg {
+            width: 16px;
+            height: 16px;
+            padding: 1px;
+        }
+
+        & .zc3_totalReview {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 25px;
+            color: var(--body-color);
+            margin-left: 2px;
+        }
+    }
+}
+
+.zc3_product_item {
+    &:hover {
+        .zc3_pd01Actions {
+            top: 16px;
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .zc3_pdvariable_btn {
+            opacity: 1;
+            visibility: visible;
+            bottom: 16px;
+        }
+    }
+}
+
+.zc3_product_carousel {
+    padding-bottom: 46px;
+
+    & .zc3_product_pagi {
+        height: 2px;
+        background: rgba(208, 85, 47, .3);
+        bottom: 0;
+        top: auto;
+
+        & .swiper-pagination-progressbar-fill {
+            background: var(--primary-color2);
+        }
+    }
+}

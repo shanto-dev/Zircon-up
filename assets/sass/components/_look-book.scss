@@ -1,0 +1,119 @@
+/** Look Book **/
+.zc_look_book {
+    .zc_look_single {
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100%;
+        padding: 40px;
+        background-position: center right;
+        position: relative;
+        overflow: hidden;
+
+        h3 {
+            font-size: 48px;
+            font-weight: 400;
+            line-height: 57.6px;
+            color: #000;
+            max-width: 280px;
+            width: 100%;
+            margin: 0 0 20px;
+        }
+
+        p {
+            line-height: 25.2px;
+            font-weight: 500;
+            margin: 0 0 32px;
+        }
+
+        .blob-btn {
+            padding: 13.5px 22.4px 13.5px;
+
+            &:hover {
+                color: var(--white-color) !important;
+            }
+
+            .blob-btn__inner {
+                background: var(--white-color);
+            }
+        }
+
+        .shop-btn {
+            .blob-btn__inner {
+                background: var(--heading-color);
+
+                .blob-btn__blob {
+                    background: var(--primary-color);
+                }
+            }
+        }
+
+        .discount_badge {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 19.8px;
+            position: absolute;
+            right: 54px;
+            bottom: -19px;
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            background: var(--primary-color);
+            color: var(--white-color);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+    }
+}
+
+
+// Look book Item 03 
+.zc3_lookbk_item {
+    position: relative;
+    background: linear-gradient(180deg, #F1D5C1 0%, rgba(228, 214, 203, 0.2) 100%);
+    border-radius: 4px;
+
+
+    &__content {
+        padding: 56px 35px 35px;
+        text-align: center;
+
+        & h3 {
+            font-family: var(--heading-font2);
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 42px;
+            color: var(--primary-color2);
+            margin-bottom: 8px;
+        }
+    }
+
+    .zc_primary_link_btn {}
+}
+
+.zc3_lookbk_item2 {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover;
+    border-radius: 4px;
+    min-height: 270px;
+    @include displayFlex(flex, end, start, column);
+
+    &::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, rgba(77, 13, 7, 0) 22.78%, rgba(77, 13, 7, 0.8) 100%);
+        border-radius: 4px;
+    }
+
+    &__content {
+        padding: 16px;
+    }
+}

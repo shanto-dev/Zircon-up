@@ -1,0 +1,200 @@
+
+/** Best selling Product **/
+.zc_best_selling {
+    background: #FFEBEB;
+    .best_selling_top {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        border-bottom: 1px solid #DBCACA;
+        padding-bottom: 22px;
+        margin-bottom: 58px;
+        .zc_section_heading {
+            margin-bottom: 0;
+        }
+        .selling_nav {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 76px;
+            button {
+                font-size: 32px;
+                font-weight: 400;
+                line-height: 38.4px;
+                background: transparent;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                color: var(--heading-color);
+                font-family: var(--heading-font);
+                font-weight: 400;
+                transition: 0.3s;
+                padding: 0;
+                position: relative;
+                &.active {
+                    color: var(--primary-color);
+                }
+                &::after {
+                    content: '';
+                    position: absolute;
+                    left: auto;
+                    right: 0;
+                    bottom: -23px;
+                    width: 0;
+                    height: 1px;
+                    background: transparent;
+                    transition: all 350ms ease;
+                }
+                &.active::after {
+                    background: var(--primary-color);
+                    width: 100%;
+                    left: 0;
+                    right: auto;
+                }
+                  
+            }
+        }
+    }
+    .selling_content {
+        .tabcontent {
+            display: none;
+            padding: 6px 12px;
+            border-top: none;
+            &.active {
+                display: block;
+            }
+            .selling_item_sin{
+                display: flex;
+                align-items: center;
+                gap: 32px;
+                margin: 0 0 30px;
+                .selling_thumb {
+                    position: relative;
+                    flex: 0 0 270px;
+                    max-width: 270px;
+                    height: 270px;
+                    background: var(--white-color);
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .selling_action {
+                        position: absolute;
+                        width: calc(100% - 8px);
+                        height: calc(100% - 8px);
+                        background: var(--primary-color);
+                        border-radius: 50%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        opacity: 0;
+                        visibility: hidden;
+                        transition: all 350ms ease;
+                        transform: scale(.9);
+                        .zc_primary_btn {
+                            .blob-btn {
+                                padding: 11.5px 23.4px;
+                                border-radius: 24px;
+                                color: var(--heading-color);
+                                &:hover {
+                                    color: var(--white-color);
+                                    border-radius: 24px;
+                                }
+                                .blob-btn__inner {
+                                    border-radius: 24px;
+                                    background: var(--white-color);
+                                    
+                                }
+                            }
+                        }
+
+                        .action_items {
+                            display: flex;
+                            align-items: center;
+                            gap: 8px;
+                            margin: 0 0 16px;
+                            a {
+                                display: inline-block;
+                                width: 48px;
+                                height: 48px;
+                                border: 1px solid var(--white-color);
+                                border-radius: 50%;
+                                display: inline-flex;
+                                align-items: center;
+                                justify-content: center;
+                                background: transparent;
+                                &:hover {
+                                    background: var(--white-color);
+                                }
+                                &:hover svg path {
+                                    fill: var(--primary-color);
+                                }
+
+                            }
+                        }
+                    }
+                }
+                .selling_desc {
+                    h3 {
+                        font-size: 24px;
+                        line-height: 28.8px;
+                        margin: 0 0 18px;
+                        a:hover {
+                            color: var(--primary-color);
+                        }
+                    }
+                    p {
+                        font-size: 20px;
+                        line-height: 28px;
+                        border-bottom: 1px solid #E7D5D5;
+                        margin: 0 0 16px;
+                        padding: 0 0 15px;
+                    }
+                    .selling_revPrie {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        .selling_price {
+                            font-size: 20px;
+                            font-weight: 400;
+                            line-height: 28px;
+                            color: var(--heading-color);
+                            ins {
+                                text-decoration: none;
+                                margin-right: 7px;
+                                color: var(--heading-color);
+                            }
+                            del {
+                                color: var(--body-color);
+                            }
+                        }
+                        .selling_review {
+                            display: flex;
+                            align-items: center;
+                            gap: 5px;
+                            ul {
+                                display: flex;
+                                align-items: center;
+                                gap: 2px;
+                                position: relative;
+                                top: -2px;
+                            }
+                        }
+                    }
+                }
+                &:hover {
+                    .selling_action {
+                        opacity: 1;
+                        visibility: visible;
+                        transform: scale(1);
+                    }
+                }
+            }
+        }
+      
+      
+        
+        
+    }
+}

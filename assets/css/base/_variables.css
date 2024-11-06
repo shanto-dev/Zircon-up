@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+@font-face {
+  font-family: 'Ivy Mode';
+  src: url("/assets/fonts/IvyMode-Regular.woff2") format("woff2"), url("/assets/fonts/IvyMode-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+:root {
+  --color-background: #FFEBEB;
+  --color-primary: #C23F3F;
+  --color-heading: #0D0D0D;
+  --color-white: #ffffff;
+  --body-font: "Jost", sans-serif;
+  --heading-font: "Ivy Mode";
+  --transition-base: 0.3s; }

@@ -1,0 +1,99 @@
+// Gutter Customize 
+.g-30,
+.gx-30 {
+    --bs-gutter-x: 30px;
+    @include large-screen {
+        --bs-gutter-x: 24px;
+    }
+}
+
+.g-30,
+.gx-30 {
+    --bs-gutter-x: 30px;
+    @include large-screen {
+        --bs-gutter-x: 24px;
+    }
+}
+.pl-0 {
+    padding-left: 0;
+}
+.pr-0 {
+    padding-right: 0;
+}
+.pb-24 {
+    padding-bottom: 24px;
+}
+.ps-60{
+    padding-left: 60px;
+}
+.py-80 {
+    padding: 80px 0;
+}
+.pt-96 {
+    padding-top: 96px;
+}
+.pb-96 {
+    padding-bottom: 96px;
+    @include screen-992 {
+        padding-bottom: 40px;
+    }
+}
+.py-96 {
+    padding: 96px 0;
+}
+.pt-120 {
+    padding-top: 120px;
+}
+.pb-120 {
+    padding-bottom: 120px;
+}
+.pt-130 {
+    padding-top: 130px;
+}
+.pb-130 {
+    padding-bottom: 130px;
+}
+.py-120 {
+    padding: 120px 0;
+}
+.py-130{
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
+
+.mb-24 {
+    margin-bottom: 24px;
+}
+.mt-30 {
+    margin-top: 30px;
+}
+.mb-30 {
+    margin-bottom: 30px;
+}
+.mb-34 {
+    margin-bottom: 34px;
+}
+.mb-40 {
+    margin-bottom: 40px;
+}
+.mb-64 {
+    margin-bottom: 64px;
+}
+.mb-54 {
+    margin-bottom: 54px;
+}
+.mb-56 {
+    margin-bottom: 56px;
+}
+.mt-120 {
+    margin-top: 120px;
+}
+.mb-120 {
+    margin-bottom: 120px;
+}
+.mt-130 {
+    margin-top: 130px;
+}
+.mb-130 {
+    margin-bottom: 130px;
+}

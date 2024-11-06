@@ -1,0 +1,29 @@
+h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6 {
+    font-family: var(--heading-font);
+    line-height: 1.1;
+    color: var(--heading-color);
+}
+
+
+.h1, h1 {
+    font-size: 72px;
+    @include screen-992 {
+        font-size: 42px;
+    }
+}
+.h2, h2 {
+    font-size: 40px;
+    @include screen-992 {
+        font-size: 32px;
+    }
+}
+.h3, h3 {
+    font-size: 32px;
+    @include screen-992 {
+        font-size: 28px;
+    }
+}
+
+.fw-normal {
+    font-weight: 400 !important;
+}

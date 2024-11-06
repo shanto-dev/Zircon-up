@@ -1,0 +1,155 @@
+/** Collections Section **/
+.zc_collections_sec .collection_wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px; }
+  .zc_collections_sec .collection_wraper .collection_single {
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center center;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 25.582%;
+    flex: 0 0 25.582%;
+    padding: 24px 24px 24px;
+    background: #ccc;
+    -webkit-transition: all 350ms ease;
+    -o-transition: all 350ms ease;
+    transition: all 350ms ease;
+    min-height: 330px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    position: relative;
+    z-index: 1;
+    overflow: hidden; }
+    .zc_collections_sec .collection_wraper .collection_single::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(25.52%, rgba(13, 13, 13, 0)), to(rgba(13, 13, 13, 0.6)));
+      background: -webkit-linear-gradient(top, rgba(13, 13, 13, 0) 25.52%, rgba(13, 13, 13, 0.6) 100%);
+      background: -o-linear-gradient(top, rgba(13, 13, 13, 0) 25.52%, rgba(13, 13, 13, 0.6) 100%);
+      background: linear-gradient(180deg, rgba(13, 13, 13, 0) 25.52%, rgba(13, 13, 13, 0.6) 100%);
+      z-index: -1; }
+    .zc_collections_sec .collection_wraper .collection_single.active {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 44.2%;
+      flex: 0 0 44.2%;
+      background: #ddd; }
+    .zc_collections_sec .collection_wraper .collection_single.item-tow {
+      background: #444; }
+    .zc_collections_sec .collection_wraper .collection_single:hover:nth-child(02) {
+      background: url(../images/collections/col-lg-02.jpg) !important; }
+    .zc_collections_sec .collection_wraper .collection_single:hover:nth-child(03) {
+      background: url(../images/collections/col-lg-03.jpg) !important; }
+    .zc_collections_sec .collection_wraper .collection_single .coll_content {
+      position: relative;
+      width: 100%;
+      -webkit-transition: all 350ms ease;
+      -o-transition: all 350ms ease;
+      transition: all 350ms ease;
+      -webkit-transform: translateY(36px);
+      -ms-transform: translateY(36px);
+      transform: translateY(36px);
+      z-index: 1; }
+      .zc_collections_sec .collection_wraper .collection_single .coll_content::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--white-color);
+        z-index: -1;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transform: translateY(10px);
+        -ms-transform: translateY(10px);
+        transform: translateY(10px);
+        -webkit-transition: all 350ms ease;
+        -o-transition: all 350ms ease;
+        transition: all 350ms ease; }
+      .zc_collections_sec .collection_wraper .collection_single .coll_content h3 {
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 38.4px;
+        color: var(--white-color);
+        margin: 0 0 8px;
+        display: inline-block; }
+      .zc_collections_sec .collection_wraper .collection_single .coll_content p {
+        margin: 0;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transition: all 350ms ease;
+        -o-transition: all 350ms ease;
+        transition: all 350ms ease;
+        -webkit-transform: translateY(10px);
+        -ms-transform: translateY(10px);
+        transform: translateY(10px); }
+      .zc_collections_sec .collection_wraper .collection_single .coll_content .more_btn {
+        width: 72px;
+        height: 72px;
+        border-radius: 50%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        background: var(--primary-color);
+        position: absolute;
+        right: 24px;
+        bottom: 68px;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transform: translateX(-20px);
+        -ms-transform: translateX(-20px);
+        transform: translateX(-20px);
+        -webkit-transition: all 350ms ease;
+        -o-transition: all 350ms ease;
+        transition: all 350ms ease; }
+        .zc_collections_sec .collection_wraper .collection_single .coll_content .more_btn:hover {
+          background: var(--heading-color); }
+    .zc_collections_sec .collection_wraper .collection_single:hover .coll_content {
+      padding: 16px 24px 14px;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0); }
+      .zc_collections_sec .collection_wraper .collection_single:hover .coll_content::before {
+        opacity: 1;
+        visibility: visible;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0); }
+      .zc_collections_sec .collection_wraper .collection_single:hover .coll_content h3 {
+        color: var(--heading-color); }
+        .zc_collections_sec .collection_wraper .collection_single:hover .coll_content h3:hover {
+          color: var(--primary-color); }
+      .zc_collections_sec .collection_wraper .collection_single:hover .coll_content p {
+        opacity: 1;
+        visibility: visible;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-transition-delay: 350ms;
+        -o-transition-delay: 350ms;
+        transition-delay: 350ms; }
+    .zc_collections_sec .collection_wraper .collection_single:hover .more_btn {
+      opacity: 1;
+      visibility: visible;
+      -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+      transform: translateX(0);
+      -webkit-transition-delay: 350ms;
+      -o-transition-delay: 350ms;
+      transition-delay: 350ms; }

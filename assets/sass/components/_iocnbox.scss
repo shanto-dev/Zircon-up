@@ -1,0 +1,74 @@
+// Icon Box zc3 
+
+.zc3_iconBox1 {
+    position: relative;
+    padding: 0.5px 0;
+
+    &__icon {
+        width: 64px;
+        height: 64px;
+        gap: 0px;
+        border: 1px dashed rgba(208, 85, 47, .2);
+        position: relative;
+        @include displayFlex(flex, center, center, column);
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        transition: var(--transition-base);
+
+        & svg {
+            fill: var(--primary-color2);
+
+            & path {
+                fill: var(--primary-color2);
+            }
+        }
+    }
+
+    & h3 {
+        font-family: var(--heading-font2);
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 34px;
+        margin-bottom: 4px;
+        color: var(--heading-color2);
+    }
+
+    & p {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 25px;
+        color: var(--heading-color2);
+        margin: 0;
+    }
+
+    &.text-start {
+        padding-left: 80px;
+
+        .zc3_iconBox1__icon {
+            left: 0;
+        }
+    }
+
+    &.text-end {
+        padding-right: 80px;
+
+        .zc3_iconBox1__icon {
+            right: 0;
+        }
+    }
+
+    &:hover {
+        & .zc3_iconBox1__icon {
+            background: var(--primary-color2);
+
+            & svg {
+                fill: var(--white-color);
+
+                & path {
+                    fill: var(--white-color);
+                }
+            }
+        }
+    }
+}

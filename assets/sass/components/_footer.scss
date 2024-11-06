@@ -1,0 +1,397 @@
+.zc_footer_area {
+    background: var(--heading-color);
+
+    .footer_header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 26px;
+        border-bottom: 1px solid rgba(255, 255, 255, .10);
+        padding-bottom: 86px;
+        margin-bottom: 96px;
+
+        @include large-screen {
+            padding-bottom: 66px;
+            margin-bottom: 76px;
+        }
+
+        @include screen-460 {
+            flex-direction: column;
+        }
+
+        h2 {
+            font-size: 126px;
+            font-weight: 400;
+            line-height: 138.6px;
+            color: var(--white-color);
+            text-transform: uppercase;
+
+            @include screen-1400 {
+                font-size: 106px;
+            }
+
+            @include large-screen {
+                font-size: 86px;
+                line-height: 100px;
+            }
+
+            @include screen-992 {
+                font-size: 60px;
+                line-height: 80px;
+            }
+
+            @include screen-768 {
+                font-size: 40px;
+                line-height: 50px;
+            }
+
+            @include portrait-phone {
+                font-size: 30px;
+                line-height: 40px;
+            }
+        }
+
+        button {
+            img {
+                max-width: 112px;
+                width: 100%;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    .zc_footer_widget {
+        @include screen-992 {
+            text-align: left !important;
+            margin: 0 0 40px;
+        }
+
+        .widget_title {
+            margin: 0 0 24px;
+        }
+
+        ul {
+            li {
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 25.2px;
+                color: #B6B6B6;
+                margin: 0 0 18px;
+
+                a {
+                    display: inline-block;
+                    color: inherit;
+
+                    &:hover {
+                        color: var(--white-color);
+                    }
+
+                    h3 {
+                        font-size: 24px;
+                        line-height: 28.5px;
+                        color: inherit;
+                        margin: 0;
+                    }
+                }
+
+                p {
+                    margin: 0 0 2px;
+                }
+
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+
+        .visit_btn {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 25.2px;
+            color: #B6B6B6;
+            border-bottom: 2px solid #B6B6B6;
+
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+
+    .zc_widget02 {
+        padding-left: 67px;
+
+        @include screen-992 {
+            padding-left: 0;
+        }
+    }
+
+    .zc_widget03 {
+        padding-left: 98px;
+
+        @include screen-992 {
+            padding-left: 0;
+        }
+    }
+
+    .zc_footer_copyright {
+        border-top: 1px solid rgba(255, 255, 255, .10);
+        padding: 24px 0 24px;
+
+        @include screen-992 {
+            text-align: center;
+        }
+
+        p,
+        span {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22.4px;
+            color: var(--color-link);
+        }
+
+        span {
+            margin-right: 16px;
+        }
+
+        @include screen-992 {
+            p {
+                margin-bottom: 16px !important;
+            }
+        }
+
+    }
+}
+
+
+// Footer 03
+
+.zc_footer_area03 {
+    position: relative;
+
+    & .zcMain_fWidget {
+        & [class^="col-"]:nth-child(1) {}
+
+        & [class^="col-"]:nth-child(2) {
+            width: 22.34%;
+        }
+
+        & [class^="col-"]:nth-child(3) {
+            width: 19.328%;
+        }
+    }
+}
+
+.widget {
+    position: relative;
+}
+
+.zc_about_widget {
+    & p {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 25px;
+        color: rgba(255, 255, 255, .7);
+        max-width: 305px;
+    }
+}
+
+.zc_widget_title {
+    font-family: var(--heading-font2);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 34px;
+    margin-bottom: 24px;
+    color: var(--white-color);
+}
+
+.gm_footer_social {
+    & label {
+        font-family: var(--heading-font2);
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 34px;
+        color: var(--white-color);
+        margin-bottom: 16px
+    }
+
+    & ul {
+        @include displayFlex(flex, start, center, row);
+        gap: 32px;
+
+        & li a {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 25px;
+            color: var(--white-color);
+            text-transform: uppercase;
+            position: relative;
+            transition: var(--transition-base);
+
+            &::after {
+                position: absolute;
+                content: "";
+                width: 1px;
+                height: 13px;
+                right: -13px;
+                top: 6px;
+                background: rgba(255, 255, 255, .2)
+            }
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+}
+
+.zc_widget_nav {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    @include displayFlex(flex, start, start, column);
+    gap: 20px;
+
+    & li a {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 25px;
+        color: rgba(255, 255, 255, .7);
+
+        &:hover {
+            color: var(--white-color);
+        }
+    }
+}
+
+.zc_contact_widget {
+    position: relative;
+
+    & .zc_singleAddress {
+        position: relative;
+        margin-bottom: 20px;
+
+        & a,
+        & p {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 25px;
+            color: rgba(255, 255, 255, .7);
+        }
+
+        & a:hover {
+            color: var(--heading-color);
+        }
+    }
+
+    & .zc_singleAddress.tel {
+        & a {
+            font-family: var(--heading-font2);
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 34px;
+            color: var(--white-color);
+
+            &:hover {
+                color: var(--heading-color);
+            }
+        }
+    }
+
+    & .visit_btn {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 25px;
+        color: var(--white-color);
+        display: inline-block;
+        position: relative;
+
+        &:after {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 2px;
+            left: 0;
+            bottom: 0;
+            background: var(--white-color);
+            transition: var(--transition-base);
+        }
+
+        &:hover {
+            color: var(--heading-color);
+
+            &::after {
+                background: var(--heading-color);
+            }
+        }
+    }
+}
+
+.zc_footerBtm_wrap03 {
+    position: relative;
+    border-top: 1px solid rgba(255, 255, 255, .2);
+    padding: 23px 0;
+    @include displayFlex(flex, start, center, row);
+    gap: 30px;
+
+    &>* {
+        flex: 0 0 auto;
+    }
+
+    &>[class^="zc_"]:nth-child(1) {
+        width: 38%;
+    }
+
+    &>[class^="zc_"]:nth-child(2) {
+        width: 25%;
+    }
+
+    &>[class^="zc_"]:nth-child(3) {
+        width: 32.34%;
+    }
+
+    & .zc_coppyright p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+        color: rgba(255, 255, 255, .7);
+        margin: 0;
+    }
+}
+
+.zc_widget_nav.inline_nav {
+    flex-direction: row;
+    gap: 24px;
+    justify-content: end;
+
+    & li a {
+        position: relative;
+
+        &:after {
+            position: absolute;
+            content: "";
+            width: 1px;
+            height: 13px;
+            right: -13px;
+            top: 6px;
+            background: rgba(255, 255, 255, .7)
+        }
+    }
+
+    & li:nth-last-child(1) a {
+        &:after {
+            display: none;
+        }
+    }
+}
+
+.gm_fPayments {
+    @include displayFlex(flex, start, center, row);
+    gap: 15px;
+
+    & a {
+        &:hover {
+            opacity: .85;
+        }
+    }
+}
