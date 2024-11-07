@@ -4,7 +4,7 @@
     background-repeat: no-repeat;
     background-position: center center;
     padding: 130px 12px;
-    position: relative; 
+    position: relative;
     z-index: 1;
     overflow: hidden;
 
@@ -13,8 +13,9 @@
         z-index: -1;
         opacity: 0.3;
     }
-    
+
 }
+
 .zc_hero_subtitle_wrapper {
     display: inline-block;
     padding: 1px;
@@ -23,7 +24,7 @@
 .zc_hero_subtitle {
     display: inline-block;
     padding: 5px 17px;
-    background: rgba(13, 13, 13,0.3);
+    background: rgba(13, 13, 13, 0.3);
     backdrop-filter: blur(10px);
     color: var(--white-color);
     font-size: 18px;
@@ -48,11 +49,13 @@
     margin-top: 50px;
     display: inline-block;
     position: relative;
+
     svg {
         width: 200px;
         background: rgba(13, 13, 13, 0.2);
         border-radius: 50%;
         padding: 8px;
+
         textPath {
             font-size: 13.2px;
             color: var(--white-color);
@@ -61,13 +64,14 @@
             font-weight: 400;
         }
     }
+
     &::after {
         content: '';
         position: absolute;
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
-        width:38px;
+        width: 38px;
         height: 28px;
         background: url(../images/arrow-icon.png)no-repeat;
         background-size: 38px;
@@ -77,7 +81,144 @@
 }
 
 // Hero Banner 03
-.hero_bnner03 img {
-    max-width: 100%;
-    width: 100%;
+.hero_bnner03 {
+    position: relative;
+    background: var(--color-background3);
+}
+
+.hero_bnner03_Slide_item {
+    padding: 226px 0 190px;
+    position: relative;
+}
+
+.hero_banner03_img {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+}
+
+.hero_bnner03_content {
+    h2 {
+        font-family: var(--heading-font2);
+        font-size: 92px;
+        font-weight: 700;
+        line-height: 92px;
+        color: var(--primary-color2);
+        margin-bottom: 24px;
+        opacity: 0;
+        transition: transform 1000ms ease, opacity 1000ms ease;
+        transform: translateY(100px);
+    }
+
+    p {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 28px;
+        max-width: 520px;
+        margin-bottom: 56px;
+        opacity: 0;
+        transition: transform 1000ms ease, opacity 1000ms ease;
+        transform: translatey(100px);
+    }
+
+    & .zc_primary_btn3 {
+        opacity: 0;
+        transition: transform 1000ms ease, opacity 1000ms ease;
+        transform: translateY(100px);
+
+        & .blob-btn {
+            background: var(--primary-color2);
+            color: var(--white-color);
+            padding: 19px 30px 20px;
+            border-radius: 4px;
+
+            & i {
+                width: 18px;
+                text-align: center;
+            }
+
+            & .zc_btn_text {
+                gap: 10px;
+            }
+        }
+
+        & .blob-btn__inner {
+            background: var(--primary-color2);
+        }
+    }
+}
+
+.hero_bnner03_Slide {
+    & .swiper-slide-active {
+        
+        .hero_bnner03_content p{
+            opacity: 1;
+            transform: translateY(0);
+            transition-delay: 1700ms;
+        }
+
+        .hero_bnner03_content h2{
+            opacity: 1;
+            transform: translateY(0);
+            transition-delay: 1300ms;
+        }
+
+        .zc_primary_btn3 {
+            opacity: 1;
+            transform: perspective(400px) rotateY(0deg) translateY(0px);
+            transition-delay: 2000ms;
+        }
+    }
+}
+
+.zc3_hero_pagin {
+    text-align: left;
+    @include displayFlex(flex, start, center, row);
+    gap: 12px;
+    position: absolute;
+    bottom: 0;
+    max-width: 1290px;
+    right: 50%;
+    margin: 0 auto;
+    margin-bottom: 56px;
+    transform: translateX(9%);
+    z-index: 99;
+
+    & span {
+        border: 1px solid transparent;
+        width: 24px;
+        height: 24px;
+        border-radius: 0;
+        background: transparent;
+        position: relative;
+        opacity: 1;
+        margin: 0 !important;
+        border-radius: 50%;
+
+        &::after {
+            position: absolute;
+            content: "";
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 8px;
+            height: 8px;
+            background: rgba(165, 70, 40, .3);
+            border-radius: inherit;
+        }
+    }
+
+    & span.swiper-pagination-bullet-active {
+        border-color: #A54628;
+
+        &::after {
+            background: #A54628;
+        }
+    }
 }

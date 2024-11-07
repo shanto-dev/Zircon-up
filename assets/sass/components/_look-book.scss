@@ -89,7 +89,13 @@
         }
     }
 
-    .zc_primary_link_btn {}
+    .zc_primary_link_btn {
+        border-bottom: 1px solid;
+        &:hover{
+            border-color: var(--heading-color);
+            color: var(--heading-color);
+        }
+    }
 }
 
 .zc3_lookbk_item2 {
@@ -115,5 +121,20 @@
 
     &__content {
         padding: 16px;
+    }
+
+    & .blob-btn {
+        padding: 11px 22px 12px;
+        background: var(--white-color);
+        color: var(--primary-color2);
+        border-radius: 2px;
+
+        & .blob-btn__inner {
+            background: var(--white-color);
+        }
+
+        &:hover {
+            color: var(--white-color);
+        }
     }
 }

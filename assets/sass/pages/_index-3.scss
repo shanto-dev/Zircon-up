@@ -364,3 +364,18 @@
 .zc3_infoIconBox_sec {
     background: #EEEADE;
 }
+
+.zc3_product_sec{
+    & .zc_primary_btn3 .blob-btn{
+        padding-left: 64px;
+        padding-right: 64px;
+        margin-top: 56px;
+    }
+}
+
+
+.scroll-top-btn{
+    &:hover{
+        background: var(--heading-color)
+    }
+}

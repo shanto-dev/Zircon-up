@@ -55,6 +55,22 @@ window.addEventListener('resize', zc_stretch);
 /*==================================
 * Brand Carousel
 ==================================*/
+var swiper = new Swiper('.hero_bnner03_Slide', {
+    loop: true,
+    effect: 'fade',
+    autoplay: {
+        delay: 3100,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: ".zc3_hero_pagin",
+        clickable: true,
+    },
+});
+
+/*==================================
+* Brand Carousel
+==================================*/
 var swiper = new Swiper('.zc3_brand_slider', {
     loop: true,
     slidesPerView: 1,
@@ -211,10 +227,10 @@ var zc3pdCarousel = new Swiper(".zc3_product_carousel", {
 ==================================*/
 var textSide = new Swiper(".zc3_text_slider", {
     spaceBetween: 150,
-    slidesPerView :'auto',
-    loop : false,
-    slidesPerViewFit : false,
-    roundLengths : 'false',
+    slidesPerView: 'auto',
+    loop: false,
+    slidesPerViewFit: false,
+    roundLengths: 'false',
     centeredSlides: true,
     loop: true,
     autoplay: {
@@ -255,6 +271,27 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+/*==================================
+* Scroll to top Button
+==================================*/
+window.addEventListener("scroll", function () {
+    const scrollBar = window.scrollY;
+    const scrollTopBtn = document.querySelector(".scroll-top-btn");
+
+    if (scrollBar > 150) {
+        scrollTopBtn.style.display = "block"; // Equivalent to fadeIn()
+    } else {
+        scrollTopBtn.style.display = "none"; // Equivalent to fadeOut()
+    }
+});
+
+// Scroll to top on button click
+document.querySelector(".scroll-top-btn").addEventListener("click", function () {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth" // Smooth scrolling effect
+    });
+});
 
 
 
