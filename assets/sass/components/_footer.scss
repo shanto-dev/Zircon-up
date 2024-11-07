@@ -169,13 +169,33 @@
     position: relative;
 
     & .zcMain_fWidget {
-        & [class^="col-"]:nth-child(1) {}
+        & [class^="col-"]:nth-child(1) {
+            @include screen-768 {
+                width: 55%;
+            }
+
+            @include screen-768 {
+                width: 55%;
+            }
+
+            @include portrait-phone {
+                width: 100%;
+            }
+        }
 
         & [class^="col-"]:nth-child(2) {
             width: 22.34%;
 
             @include large-screen {
                 width: 29.34%;
+            }
+
+            @include screen-768 {
+                width: 45%;
+            }
+
+            @include portrait-phone {
+                width: 100%;
             }
         }
 
@@ -189,6 +209,14 @@
             @include screen-992 {
                 width: 28.99%;
             }
+
+            @include screen-768 {
+                width: 45%;
+            }
+
+            @include portrait-phone {
+                width: 100%;
+            }
         }
 
         & [class^="col-"]:nth-child(4) {
@@ -198,6 +226,14 @@
 
             @include screen-992 {
                 width: 43%;
+            }
+
+            @include screen-768 {
+                width: 55%;
+            }
+
+            @include portrait-phone {
+                width: 100%;
             }
         }
     }
@@ -365,6 +401,10 @@
         flex-wrap: wrap;
     }
 
+    @include screen-768 {
+        gap: 20px;
+    }
+
     &>* {
         flex: 0 0 auto;
     }
@@ -375,6 +415,11 @@
         @include screen-992 {
             width: calc(60% - 15px);
         }
+
+        @include screen-768 {
+            width: 100%;
+            text-align: center;
+        }
     }
 
     &>[class^="zc_"]:nth-child(2) {
@@ -384,6 +429,11 @@
             width: calc(40% - 15px);
             text-align: right;
         }
+
+        @include screen-768 {
+            width: 100%;
+            text-align: center;
+        }
     }
 
     &>[class^="zc_"]:nth-child(3) {
@@ -391,6 +441,12 @@
 
         @include screen-992 {
             width: calc(50% - 15px);
+        }
+
+        @include screen-768 {
+            width: 100%;
+            text-align: center;
+            justify-content: center;
         }
     }
 
@@ -405,6 +461,10 @@
             font-size: 14px;
             line-height: 21px;
         }
+
+        @include screen-768 {
+            text-align: center;
+        }
     }
 }
 
@@ -415,6 +475,10 @@
 
     @include screen-992 {
         justify-content: start;
+    }
+
+    @include screen-768 {
+        justify-content: center;
     }
 
     & li a {

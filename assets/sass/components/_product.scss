@@ -323,6 +323,9 @@
 .zc3_pdvariation {
     @include displayFlex(flex, end, center, row);
     gap: 4px;
+    @include screen-768{
+        gap: 2px;
+    }
 
     & li {
         position: relative;

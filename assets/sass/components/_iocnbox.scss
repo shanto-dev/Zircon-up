@@ -37,6 +37,10 @@
             font-size: 21px;
             line-height: 31px;
         }
+        @include screen-768{
+            font-size: 18px;
+            line-height: 28px;
+        }
     }
 
     & p {

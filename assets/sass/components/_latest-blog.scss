@@ -107,6 +107,10 @@
             padding: 32px 22px 24px;
         }
 
+        @include portrait-phone {
+            padding: 25px 15px 20px;
+        }
+
         & h2 {
             font-family: var(--heading-font2);
             font-size: 32px;
@@ -117,6 +121,11 @@
             @include large-screen {
                 font-size: 28px;
                 line-height: 38px;
+            }
+
+            @include portrait-phone {
+                font-size: 24px;
+                line-height: 34px;
             }
 
             & a {

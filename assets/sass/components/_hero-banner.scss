@@ -119,6 +119,9 @@
     @include screen-992 {
         width: 55%;
     }
+    @include portrait-phone{
+        display: none;
+    }
 }
 
 .hero_bnner03_content {
@@ -136,6 +139,10 @@
         @include large-screen {
             font-size: 72px;
             line-height: 72px;
+        }
+        @include portrait-phone{
+            font-size: 54px;
+            line-height: 54px;
         }
     }
 

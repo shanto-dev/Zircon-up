@@ -128,6 +128,9 @@
     @include screen-992{
         min-height: 236px;
     }
+    @include screen-768{
+        min-height: 270px;
+    }
 
     &::after {
         position: absolute;

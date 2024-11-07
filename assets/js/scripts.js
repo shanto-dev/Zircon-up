@@ -203,8 +203,8 @@ var zc3pdCarousel = new Swiper(".zc3_product_carousel", {
             spaceBetween: 15
         },
         576: {
-            slidesPerView: 2,
-            spaceBetween: 30
+            slidesPerView: 1.6,
+            spaceBetween: 24
         },
         768: {
             slidesPerView: 2,

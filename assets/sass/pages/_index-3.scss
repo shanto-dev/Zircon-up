@@ -1,4 +1,11 @@
 // Brand Text Slide 
+.brand_text_slider.py-5 {
+    @include portrait-phone {
+        padding-top: 30px !important;
+        padding-bottom: 30px !important;
+    }
+}
+
 .brand_text_slider {
     position: relative;
     background: var(--primary-color2);
@@ -26,6 +33,15 @@
         @include screen-992 {
             font-size: 44px;
             line-height: 44px;
+        }
+
+        @include screen-768 {
+            font-size: 38px;
+            line-height: 44px;
+        }
+
+        @include portrait-phone {
+            font-size: 34px;
         }
     }
 
@@ -199,6 +215,14 @@
                 height: 584px;
             }
 
+            @include screen-768 {
+                height: 512px;
+            }
+
+            @include portrait-phone {
+                height: 460px;
+            }
+
         }
     }
 
@@ -224,6 +248,11 @@
         @include large-screen {
             width: 44.6%;
         }
+
+        @include screen-768 {
+            width: 100%;
+            margin-bottom: 40px;
+        }
     }
 
     & [class^="col-"]:nth-child(2) {
@@ -241,6 +270,11 @@
 
         @include screen-992 {
             padding-left: 24px;
+        }
+
+        @include screen-768 {
+            width: 100%;
+            padding-left: 12px;
         }
     }
 }
@@ -266,6 +300,11 @@
         line-height: 28px;
         color: var(--white-color);
         margin-bottom: 2px;
+
+        @include portrait-phone {
+            font-size: 18px;
+            line-height: 26px;
+        }
     }
 
     & p {
@@ -275,6 +314,11 @@
         line-height: 22px;
         color: rgba(255, 255, 255, .7);
         margin-bottom: 0;
+
+        @include portrait-phone {
+            font-size: 14px;
+            line-height: 20px;
+        }
 
     }
 
@@ -345,6 +389,11 @@
         border-radius: 50%;
         transition: var(--transition-base);
 
+        @include portrait-phone {
+            width: 54px;
+            height: 54px;
+        }
+
         & svg {
             fill: var(--white-color);
 
@@ -374,6 +423,11 @@
         @include displayFlex(flex, center, center, row);
         border-radius: 50%;
         transition: var(--transition-base);
+
+        @include portrait-phone {
+            width: 54px;
+            height: 54px;
+        }
 
         & svg {
             fill: var(--white-color);
@@ -427,6 +481,10 @@
 
         @include screen-992 {
             height: 557px;
+        }
+
+        @include portrait-phone {
+            height: 480px;
         }
     }
 }

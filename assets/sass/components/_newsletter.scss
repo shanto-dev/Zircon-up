@@ -93,6 +93,10 @@
         @include screen-992 {
             max-width: 55%;
         }
+
+        @include screen-768 {
+            max-width: 43%;
+        }
     }
 }
 
@@ -113,6 +117,10 @@
 
         @include screen-992 {
             max-width: 55%;
+        }
+
+        @include screen-768 {
+            max-width: 39%;
         }
     }
 }
