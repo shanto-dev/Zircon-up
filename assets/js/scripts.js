@@ -207,8 +207,8 @@ var zc3pdCarousel = new Swiper(".zc3_product_carousel", {
             spaceBetween: 30
         },
         768: {
-            slidesPerView: 3,
-            spaceBetween: 18
+            slidesPerView: 2,
+            spaceBetween: 30
         },
         992: {
             slidesPerView: 3,
@@ -290,6 +290,43 @@ document.querySelector(".scroll-top-btn").addEventListener("click", function () 
     window.scrollTo({
         top: 0,
         behavior: "smooth" // Smooth scrolling effect
+    });
+});
+
+/*==================================
+* Mobile Menu
+==================================*/
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggler = document.querySelector(".zc3_header-toggle");
+    const closeButton = document.querySelector(".zc_mobile-menu .close");
+    const mobileMenu = document.querySelector(".zc_mobile-menu");
+
+    if (menuToggler) {
+        menuToggler.addEventListener("click", function () {
+            mobileMenu.classList.add("active");
+        });
+    }
+
+    if (closeButton) {
+        closeButton.addEventListener("click", function () {
+            mobileMenu.classList.remove("active");
+        });
+    }
+
+    document.querySelectorAll(".zc_mobile-menu ul li.has-submenu i").forEach(function (icon) {
+        icon.addEventListener("click", function () {
+            const submenu = this.nextElementSibling;
+            if (submenu) {
+                submenu.style.display = submenu.style.display === "none" ? "block" : "none";
+            }
+            this.classList.toggle("icon-rotate");
+        });
+    });
+
+    document.addEventListener("mouseup", function (e) {
+        if (mobileMenu && !mobileMenu.contains(e.target) && e.target !== mobileMenu) {
+            mobileMenu.classList.remove("active");
+        }
     });
 });
 

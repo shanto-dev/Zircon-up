@@ -22,6 +22,11 @@
         &:hover {
             color: var(--white-color);
         }
+
+        @include screen-992 {
+            font-size: 44px;
+            line-height: 44px;
+        }
     }
 
     & .swiper-slide {
@@ -88,6 +93,13 @@
 }
 
 // zc3 tab Cagegory 
+.zc3_featured_cate_content.py-130 {
+    @include screen-992 {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+}
+
 .zc3_category_nav {
     position: relative;
     border-top: 1px solid rgba(13, 13, 13, .1);
@@ -106,6 +118,11 @@
             @include displayFlex(flex, start, center, row);
             gap: 11.5px;
             border-radius: 4px;
+
+            @include screen-992 {
+                font-size: 20px;
+                line-height: 30px;
+            }
 
             & span+svg {
                 position: relative;
@@ -177,6 +194,11 @@
             @include screen-1320 {
                 padding-right: 10px;
             }
+
+            @include screen-992 {
+                height: 584px;
+            }
+
         }
     }
 
@@ -215,6 +237,10 @@
         @include large-screen {
             width: 55.401%;
             padding-left: 40px;
+        }
+
+        @include screen-992 {
+            padding-left: 24px;
         }
     }
 }
@@ -299,6 +325,11 @@
             font-size: 28px;
             line-height: 38px;
         }
+
+        @include screen-992 {
+            font-size: 21px;
+            line-height: 31px;
+        }
     }
 }
 
@@ -372,7 +403,13 @@
 .zc3_aboutSection {
     position: relative;
     overflow: hidden;
+}
 
+.zc3_about_content.py-130 {
+    @include screen-992 {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
 }
 
 .zc_stretch_Img {
@@ -386,6 +423,10 @@
 
         @include large-screen {
             height: 600px;
+        }
+
+        @include screen-992 {
+            height: 557px;
         }
     }
 }

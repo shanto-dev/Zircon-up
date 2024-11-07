@@ -175,7 +175,7 @@
             width: 22.34%;
 
             @include large-screen {
-                width: 21.34%;
+                width: 29.34%;
             }
         }
 
@@ -185,11 +185,19 @@
             @include large-screen {
                 width: 18.328%;
             }
+
+            @include screen-992 {
+                width: 28.99%;
+            }
         }
 
         & [class^="col-"]:nth-child(4) {
             @include large-screen {
                 width: 27%;
+            }
+
+            @include screen-992 {
+                width: 43%;
             }
         }
     }
@@ -353,20 +361,37 @@
     @include displayFlex(flex, start, center, row);
     gap: 30px;
 
+    @include screen-992 {
+        flex-wrap: wrap;
+    }
+
     &>* {
         flex: 0 0 auto;
     }
 
     &>[class^="zc_"]:nth-child(1) {
         width: 38%;
+
+        @include screen-992 {
+            width: calc(60% - 15px);
+        }
     }
 
     &>[class^="zc_"]:nth-child(2) {
         width: 25%;
+
+        @include screen-992 {
+            width: calc(40% - 15px);
+            text-align: right;
+        }
     }
 
     &>[class^="zc_"]:nth-child(3) {
         width: 32.34%;
+
+        @include screen-992 {
+            width: calc(50% - 15px);
+        }
     }
 
     & .zc_coppyright p {
@@ -387,6 +412,10 @@
     flex-direction: row;
     gap: 24px;
     justify-content: end;
+
+    @include screen-992 {
+        justify-content: start;
+    }
 
     & li a {
         position: relative;

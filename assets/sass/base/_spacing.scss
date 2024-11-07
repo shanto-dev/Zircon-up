@@ -64,14 +64,25 @@
 
 .pt-130 {
     padding-top: 130px;
+
+    @include large-screen {
+        padding-top: 100px;
+    }
 }
 
 .pb-130 {
     padding-bottom: 130px;
+
+    @include large-screen {
+        padding-bottom: 100px;
+    }
 }
 
 .py-120 {
     padding: 120px 0;
+    @include large-screen{
+        padding: 90px 0;
+    }
 }
 
 .py-130 {
@@ -102,6 +113,10 @@
 
 .mb-40 {
     margin-bottom: 40px;
+
+    @include screen-992 {
+        margin-bottom: 28px;
+    }
 }
 
 .mb-64 {
@@ -122,7 +137,8 @@
 
 .mb-56 {
     margin-bottom: 56px;
-    @include large-screen{
+
+    @include large-screen {
         margin-bottom: 42px;
     }
 }

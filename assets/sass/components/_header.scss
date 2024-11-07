@@ -352,6 +352,18 @@
         border: 1px solid #F9DAD7;
         border-radius: 4px;
     }
+
+    @include screen-992 {
+        top: 12px;
+    }
+
+    & .zc_header_nav {
+        & .container {
+            @include screen-992 {
+                max-width: 100%;
+            }
+        }
+    }
 }
 
 .zc3_header_logo {
@@ -369,7 +381,8 @@
     &>ul {
         @include displayFlex(flex, center, center, row);
         gap: 30px;
-        @include large-screen{
+
+        @include large-screen {
             gap: 12px;
         }
     }
@@ -491,5 +504,140 @@
         position: absolute;
         right: -16px;
         top: -8px;
+    }
+}
+
+// Toggle mobile menu 
+.header-toggle.zc3_header-toggle {
+    button {
+        padding: 0;
+
+        & span {
+            background-color: var(--heading-color);
+        }
+    }
+}
+
+.zc3_menu_toggler {
+    width: 24px;
+    display: inline-block;
+
+    span {
+        width: 100%;
+        height: 2px;
+        background-color: var(--primary-color2);
+        display: block;
+        transition: var(--transition-base);
+        position: relative;
+        z-index: 1;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 0;
+            z-index: -1;
+            background-color: var(--primary-color2);
+            transition: var(--transition-base);
+        }
+
+        +span {
+            margin-top: 6px;
+        }
+
+        &:nth-child(1),
+        &:nth-child(3) {
+            &::before {
+                right: 0;
+                left: auto;
+            }
+        }
+    }
+
+    &:hover {
+        span {
+            &::before {
+                right: 0;
+                left: auto;
+                width: 100%;
+            }
+
+            &:nth-child(1),
+            &:nth-child(3) {
+                &::before {
+                    left: 0;
+                    right: auto;
+                }
+            }
+        }
+    }
+}
+
+.header-toggle.zc3_header-toggle {
+    button {
+        padding: 0;
+
+        & span {
+            background-color: var(--heading-color);
+        }
+    }
+}
+
+.zc3_menu_toggler {
+    width: 24px;
+    display: inline-block;
+
+    span {
+        width: 100%;
+        height: 2px;
+        background-color: var(--primary-color2);
+        display: block;
+        transition: var(--transition-base);
+        position: relative;
+        z-index: 1;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 0;
+            z-index: -1;
+            background-color: var(--primary-color2);
+            transition: var(--transition-base);
+        }
+
+        +span {
+            margin-top: 6px;
+        }
+
+        &:nth-child(1),
+        &:nth-child(3) {
+            &::before {
+                right: 0;
+                left: auto;
+            }
+        }
+    }
+
+    &:hover {
+        span {
+            &::before {
+                right: 0;
+                left: auto;
+                width: 100%;
+            }
+
+            &:nth-child(1),
+            &:nth-child(3) {
+                &::before {
+                    left: 0;
+                    right: auto;
+                }
+            }
+        }
     }
 }

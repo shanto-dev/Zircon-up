@@ -113,6 +113,11 @@ svg {
         font-size: 58px;
         line-height: 64px;
     }
+
+    @include screen-992 {
+        font-size: 44px;
+        line-height: 54px;
+    }
 }
 
 // Section Subtitle 

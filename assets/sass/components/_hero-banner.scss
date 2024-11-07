@@ -90,8 +90,13 @@
 .hero_bnner03_Slide_item {
     padding: 226px 0 190px;
     position: relative;
-    @include large-screen{
+
+    @include large-screen {
         padding: 180px 0 150px;
+    }
+
+    @include screen-992 {
+        padding: 160px 0 140px;
     }
 }
 
@@ -105,8 +110,14 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left center;
-    @include large-screen{
+    z-index: -1;
+
+    @include large-screen {
         background-position: top center;
+    }
+
+    @include screen-992 {
+        width: 55%;
     }
 }
 
@@ -121,7 +132,8 @@
         opacity: 0;
         transition: transform 1000ms ease, opacity 1000ms ease;
         transform: translateY(100px);
-        @include large-screen{
+
+        @include large-screen {
             font-size: 72px;
             line-height: 72px;
         }
@@ -200,6 +212,10 @@
     margin-bottom: 56px;
     transform: translateX(9%);
     z-index: 99;
+
+    @include screen-992 {
+        transform: translateX(5.2%);
+    }
 
     & span {
         border: 1px solid transparent;
