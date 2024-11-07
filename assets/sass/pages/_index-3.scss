@@ -173,6 +173,10 @@
             height: 723px;
             object-fit: cover;
             padding-right: 65px;
+
+            @include screen-1320 {
+                padding-right: 10px;
+            }
         }
     }
 
@@ -190,11 +194,28 @@
 .zc3_authorRow {
     & [class^="col-"]:nth-child(1) {
         width: 34.6%;
+
+        @include screen-1320 {
+            width: 38.6%;
+        }
+
+        @include large-screen {
+            width: 44.6%;
+        }
     }
 
     & [class^="col-"]:nth-child(2) {
         width: 65.401%;
         padding-left: 80px;
+
+        @include screen-1320 {
+            width: 61.401%;
+        }
+
+        @include large-screen {
+            width: 55.401%;
+            padding-left: 40px;
+        }
     }
 }
 
@@ -273,6 +294,11 @@
         line-height: 42px;
         color: rgba(255, 255, 255, .7);
         margin-bottom: 49px;
+
+        @include large-screen {
+            font-size: 28px;
+            line-height: 38px;
+        }
     }
 }
 
@@ -357,6 +383,10 @@
         height: 660px;
         object-fit: cover;
         image-rendering: pixelated;
+
+        @include large-screen {
+            height: 600px;
+        }
     }
 }
 
@@ -365,8 +395,8 @@
     background: #EEEADE;
 }
 
-.zc3_product_sec{
-    & .zc_primary_btn3 .blob-btn{
+.zc3_product_sec {
+    & .zc_primary_btn3 .blob-btn {
         padding-left: 64px;
         padding-right: 64px;
         margin-top: 56px;
@@ -374,8 +404,8 @@
 }
 
 
-.scroll-top-btn{
-    &:hover{
+.scroll-top-btn {
+    &:hover {
         background: var(--heading-color)
     }
 }

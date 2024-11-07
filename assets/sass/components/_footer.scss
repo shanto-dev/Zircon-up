@@ -173,10 +173,24 @@
 
         & [class^="col-"]:nth-child(2) {
             width: 22.34%;
+
+            @include large-screen {
+                width: 21.34%;
+            }
         }
 
         & [class^="col-"]:nth-child(3) {
             width: 19.328%;
+
+            @include large-screen {
+                width: 18.328%;
+            }
+        }
+
+        & [class^="col-"]:nth-child(4) {
+            @include large-screen {
+                width: 27%;
+            }
         }
     }
 }
@@ -292,6 +306,11 @@
             line-height: 34px;
             color: var(--white-color);
 
+            @include large-screen {
+                font-size: 21px;
+                line-height: 31px;
+            }
+
             &:hover {
                 color: var(--heading-color);
             }
@@ -356,6 +375,11 @@
         line-height: 22px;
         color: rgba(255, 255, 255, .7);
         margin: 0;
+
+        @include large-screen {
+            font-size: 14px;
+            line-height: 21px;
+        }
     }
 }
 
@@ -375,6 +399,11 @@
             right: -13px;
             top: 6px;
             background: rgba(255, 255, 255, .7)
+        }
+
+        @include large-screen {
+            font-size: 14px;
+            line-height: 22px;
         }
     }
 

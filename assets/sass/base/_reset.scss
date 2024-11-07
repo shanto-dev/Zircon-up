@@ -7,7 +7,19 @@ body {
     font-weight: 400;
 }
 
-@media(min-width: 1400px) {
+@media(min-width: 1200px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 1190px;
+    }
+}
+
+@media(min-width: 1320px) {
 
     .container,
     .container-lg,
@@ -79,25 +91,6 @@ svg {
     background: var(--color-background3);
 }
 
-// .gmSecondary-bg{
-//     background-color: var(--secondary-color) !important;
-// }
-// .gmShade-bg{
-//     background-color: var(--color-shade-background) !important;
-// }
-
-// Build For Svg Icon 
-// .gm_icon_white {
-//     fill: var(--color-white);
-
-//     &>svg {
-//         fill: var(--color-white);
-//         & path{
-//             fill: var(--color-white);
-//         }
-//     }
-// }
-
 // Section Title 
 .zc_section_heading {
     position: relative;
@@ -115,6 +108,11 @@ svg {
     font-weight: 700;
     line-height: 70.4px;
     color: var(--heading-color2);
+
+    @include large-screen {
+        font-size: 58px;
+        line-height: 64px;
+    }
 }
 
 // Section Subtitle 
@@ -205,6 +203,7 @@ svg {
 .zc_primary_btn3 {
     position: relative;
     line-height: 0;
+
     & .blob-btn {
         font-size: 18px;
         font-weight: 500;
@@ -226,7 +225,8 @@ svg {
         & .zc_btn_text {
             @include displayFlex(inline-flex, center, center, row);
             gap: 10px;
-            & i{
+
+            & i {
                 width: 18px;
                 text-align: center;
             }
@@ -243,7 +243,8 @@ svg {
             border-radius: 0;
             background: var(--primary-color2);
         }
-        & .blob-btn__blobs{
+
+        & .blob-btn__blobs {
             position: relative;
             display: block;
             height: 100%;

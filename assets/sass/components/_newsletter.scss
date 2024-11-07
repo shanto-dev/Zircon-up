@@ -85,17 +85,35 @@
     & img {
         max-width: 100%;
         width: auto;
+
+        @include large-screen {
+            max-width: 75%;
+        }
+
+        @include screen-992 {
+            max-width: 55%;
+        }
     }
 }
+
 .zc_newsLetter_shape2 {
     position: absolute;
     right: 0;
     bottom: 0;
     z-index: -1;
+    text-align: right;
 
     & img {
         max-width: 100%;
         width: auto;
+
+        @include large-screen {
+            max-width: 75%;
+        }
+
+        @include screen-992 {
+            max-width: 55%;
+        }
     }
 }
 

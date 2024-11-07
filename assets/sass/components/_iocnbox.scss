@@ -32,6 +32,11 @@
         line-height: 34px;
         margin-bottom: 4px;
         color: var(--heading-color2);
+
+        @include screen-1320 {
+            font-size: 21px;
+            line-height: 31px;
+        }
     }
 
     & p {
@@ -40,6 +45,11 @@
         line-height: 25px;
         color: var(--heading-color2);
         margin: 0;
+
+        @include screen-1320 {
+            font-size: 16px;
+            line-height: 23px;
+        }
     }
 
     &.text-start {

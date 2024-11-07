@@ -79,6 +79,10 @@
         padding: 56px 35px 35px;
         text-align: center;
 
+        @include large-screen {
+            padding: 56px 25px 35px;
+        }
+
         & h3 {
             font-family: var(--heading-font2);
             font-size: 32px;
@@ -89,9 +93,19 @@
         }
     }
 
+    &__thumb {
+        position: relative;
+
+        & img {
+            max-width: 100%;
+            width: auto;
+        }
+    }
+
     .zc_primary_link_btn {
         border-bottom: 1px solid;
-        &:hover{
+
+        &:hover {
             border-color: var(--heading-color);
             color: var(--heading-color);
         }
@@ -107,6 +121,10 @@
     border-radius: 4px;
     min-height: 270px;
     @include displayFlex(flex, end, start, column);
+
+    @include large-screen {
+        min-height: 217px;
+    }
 
     &::after {
         position: absolute;
@@ -136,5 +154,11 @@
         &:hover {
             color: var(--white-color);
         }
+    }
+}
+
+.zc3_lookbk_item2.mb-30 {
+    @include large-screen {
+        margin-bottom: 24px;
     }
 }

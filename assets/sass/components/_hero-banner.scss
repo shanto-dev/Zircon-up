@@ -84,11 +84,15 @@
 .hero_bnner03 {
     position: relative;
     background: var(--color-background3);
+    overflow: hidden;
 }
 
 .hero_bnner03_Slide_item {
     padding: 226px 0 190px;
     position: relative;
+    @include large-screen{
+        padding: 180px 0 150px;
+    }
 }
 
 .hero_banner03_img {
@@ -101,6 +105,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left center;
+    @include large-screen{
+        background-position: top center;
+    }
 }
 
 .hero_bnner03_content {
@@ -114,6 +121,10 @@
         opacity: 0;
         transition: transform 1000ms ease, opacity 1000ms ease;
         transform: translateY(100px);
+        @include large-screen{
+            font-size: 72px;
+            line-height: 72px;
+        }
     }
 
     p {
@@ -156,14 +167,14 @@
 
 .hero_bnner03_Slide {
     & .swiper-slide-active {
-        
-        .hero_bnner03_content p{
+
+        .hero_bnner03_content p {
             opacity: 1;
             transform: translateY(0);
             transition-delay: 1700ms;
         }
 
-        .hero_bnner03_content h2{
+        .hero_bnner03_content h2 {
             opacity: 1;
             transform: translateY(0);
             transition-delay: 1300ms;

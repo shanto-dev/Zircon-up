@@ -84,9 +84,10 @@
     &__thumb {
         position: relative;
         border-radius: inherit;
+        overflow: hidden;
 
         & a {
-            display: inline-block;
+            display: block;
             border-radius: inherit;
 
             & img {
@@ -94,6 +95,7 @@
                 width: 100%;
                 object-fit: cover;
                 border-radius: inherit;
+                transition: var(--transition-base);
             }
         }
     }
@@ -101,12 +103,21 @@
     &__content {
         padding: 32px 32px 24px;
 
+        @include large-screen {
+            padding: 32px 22px 24px;
+        }
+
         & h2 {
             font-family: var(--heading-font2);
             font-size: 32px;
             font-weight: 700;
             line-height: 42px;
             margin-bottom: 16px;
+
+            @include large-screen {
+                font-size: 28px;
+                line-height: 38px;
+            }
 
             & a {
                 display: inline-block;
@@ -157,6 +168,15 @@
         .zc_blog_item__content {
             & h2 a {
                 color: var(--primary-color2);
+            }
+        }
+
+        .zc_blog_item__thumb {
+
+            & a {
+                & img {
+                    transform: scale(1.09) rotate(3deg);
+                }
             }
         }
     }
