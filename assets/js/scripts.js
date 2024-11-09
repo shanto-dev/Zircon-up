@@ -53,6 +53,22 @@ zc_stretch();
 window.addEventListener('resize', zc_stretch);
 
 /*==================================
+* Sicky Headaer
+==================================*/
+window.addEventListener("scroll", function () {
+    const scrollBar = window.scrollY;
+    const headers = document.querySelectorAll(".header-sticky");
+
+    headers.forEach(header => {
+        if (scrollBar > 150) {
+            header.classList.add("sticky-on");
+        } else {
+            header.classList.remove("sticky-on");
+        }
+    });
+});
+
+/*==================================
 * Banner Carousel
 ==================================*/
 var zcFeedbackSlide = new Swiper(".zc_feedback_slider", {
@@ -169,6 +185,12 @@ const sliderThumbs = new Swiper('.slider_thumbs .swiper-container', {
     breakpoints: {
         0: {
             direction: 'horizontal',
+            spaceBetween: 16,
+            slidesPerView: 3,
+        },
+        460: {
+            spaceBetween: 16,
+            slidesPerView: 4,
         },
         768: {
             direction: 'vertical',

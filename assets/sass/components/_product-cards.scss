@@ -22,6 +22,10 @@
         display: flex;
         gap: 16px;
 
+        @include screen-768 {
+            flex-direction: column;
+        }
+
         .swiper-container {
             width: 100%;
             height: 100%;
@@ -33,8 +37,22 @@
             width: 150px;
             margin-right: 32px;
 
+            @include screen-768 {
+                width: 100%;
+            }
+
             .slider_image {
                 width: 140px;
+
+
+                @include screen-768 {
+                    height: 140px;
+                    & img{
+                        max-width: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
             }
 
             @include large-screen {
@@ -43,7 +61,11 @@
         }
 
         .slider_thumbs {
-            height: 608px
+            height: 608px;
+
+            @include screen-768 {
+                height: auto;
+            }
         }
 
         .slider_images {

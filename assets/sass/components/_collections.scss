@@ -7,6 +7,9 @@
         @include large-screen {
             gap: 24px;
         }
+        @include screen-768{
+            flex-direction: column;
+        }
 
         .collection_single {
             background-repeat: no-repeat !important;

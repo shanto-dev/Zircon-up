@@ -1,4 +1,31 @@
+/************** header component ****************/
+header.header-sticky {
+    transition: var(--transition-base);
+}
+
+.header-sticky.sticky-on {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 50;
+    animation: 400ms ease-in-out 0s normal none 1 running theme_fadeInDown;
+}
+
+.header-sticky.sticky-on .zc_coupon_announce,
+.header-sticky.sticky-on .gm_topbar03 {
+    display: none !important;
+}
+
+.header-sticky.sticky-on.zc_header_default {
+    border-bottom: 1px solid #DBDBDB;
+}
+
 // header section start
+.zc_header_default {
+    background: var(--white-color);
+}
+
 .zc_coupon_announce {
     background: var(--color-background);
     padding: 12px 12px;
@@ -7,6 +34,12 @@
 
     p {
         color: var(--primary-color);
+
+        @include screen-768 {
+            font-size: 16px;
+            line-height: 18px;
+            padding: 0 40px;
+        }
     }
 
     .zc_announce_close {
@@ -146,6 +179,16 @@
 
 // Search
 .header-search {
+    padding: 37px 0;
+
+    @include screen-992 {
+        padding: 25px 0;
+    }
+
+    & button {
+        padding: 0;
+    }
+
     .search-btn {
         color: var(--white-color);
         transition: var(--transition-base);
@@ -199,6 +242,10 @@
 .zc_header_user {
     position: relative;
     padding: 37px 0;
+
+    @include screen-992 {
+        padding: 25px 0;
+    }
 
     .user-menu {
         min-width: 200px;

@@ -13,6 +13,10 @@
             background-position: center left 22%;
         }
 
+        @include screen-768 {
+            padding: 30px 25px;
+        }
+
         h3 {
             font-size: 48px;
             font-weight: 400;
@@ -21,6 +25,11 @@
             max-width: 280px;
             width: 100%;
             margin: 0 0 20px;
+
+            @include screen-768 {
+                font-size: 41px;
+                line-height: 51.6px;
+            }
         }
 
         p {
@@ -67,6 +76,9 @@
             align-items: center;
             justify-content: center;
             text-align: center;
+            @include portrait-phone{
+                right: 24px;
+            }
         }
     }
 }

@@ -128,9 +128,15 @@ svg {
         font-size: 58px;
         line-height: 75px;
     }
-    @include screen-992{
+
+    @include screen-992 {
         font-size: 48px;
         line-height: 55px;
+    }
+
+    @include screen-768 {
+        font-size: 36px;
+        line-height: 42px;
     }
 }
 

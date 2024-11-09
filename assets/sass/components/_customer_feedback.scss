@@ -7,6 +7,10 @@
         gap: 24px;
         transition: all 350ms ease;
 
+        @include screen-768 {
+            margin-top: 40px;
+        }
+
         button {
             width: 64px;
             height: 64px;
@@ -15,6 +19,11 @@
             display: flex;
             align-items: center;
             justify-content: center;
+
+            @include screen-768 {
+                width: 50px;
+                height: 50px;
+            }
 
             &:hover {
                 background: var(--primary-color);
@@ -33,16 +42,27 @@
                 align-items: center;
                 gap: 34px;
 
+                @include portrait-phone {
+                    flex-direction: column;
+                }
+
                 .feedback_thumb {
-                    flex: 0 0 156px;
-                    max-width: 156px;
+                    flex: 0 0 155px;
+                    max-width: 155px;
                     height: 165px;
                     border-radius: 50%;
                     position: relative;
 
+                    @include portrait-phone {
+                        flex: 0 0 130px;
+                        max-width: 130px;
+                        height: 130px;
+                    }
+
                     img {
                         border-radius: inherit;
                         object-fit: cover;
+                        max-width: 100%;
                     }
 
                     span {
@@ -61,18 +81,32 @@
                 }
 
                 .feedback_con {
+                    @include portrait-phone {
+                        text-align: center;
+                    }
+
                     p {
                         font-size: 20px;
                         line-height: 28px;
                         margin: 0 0 16px;
-                        @include large-screen{
+
+                        @include large-screen {
                             font-size: 18px;
                             line-height: 26px;
+                        }
+
+                        @include portrait-phone {
+                            text-align: center;
                         }
                     }
 
                     span {
                         line-height: 25.2px;
+
+                        @include portrait-phone {
+                            text-align: center;
+                            margin: 0 auto;
+                        }
 
                         a {
                             font-size: 20px;
