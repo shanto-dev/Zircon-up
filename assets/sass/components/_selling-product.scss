@@ -1,7 +1,7 @@
-
 /** Best selling Product **/
 .zc_best_selling {
     background: #FFEBEB;
+
     .best_selling_top {
         display: flex;
         align-items: flex-end;
@@ -9,14 +9,17 @@
         border-bottom: 1px solid #DBCACA;
         padding-bottom: 22px;
         margin-bottom: 58px;
+
         .zc_section_heading {
             margin-bottom: 0;
         }
+
         .selling_nav {
             display: flex;
             align-items: center;
             justify-content: flex-end;
             gap: 76px;
+
             button {
                 font-size: 32px;
                 font-weight: 400;
@@ -31,9 +34,11 @@
                 transition: 0.3s;
                 padding: 0;
                 position: relative;
+
                 &.active {
                     color: var(--primary-color);
                 }
+
                 &::after {
                     content: '';
                     position: absolute;
@@ -45,29 +50,34 @@
                     background: transparent;
                     transition: all 350ms ease;
                 }
+
                 &.active::after {
                     background: var(--primary-color);
                     width: 100%;
                     left: 0;
                     right: auto;
                 }
-                  
+
             }
         }
     }
+
     .selling_content {
         .tabcontent {
             display: none;
             padding: 6px 12px;
             border-top: none;
+
             &.active {
                 display: block;
             }
-            .selling_item_sin{
+
+            .selling_item_sin {
                 display: flex;
                 align-items: center;
                 gap: 32px;
                 margin: 0 0 30px;
+
                 .selling_thumb {
                     position: relative;
                     flex: 0 0 270px;
@@ -78,6 +88,7 @@
                     display: flex;
                     align-items: center;
                     justify-content: center;
+
                     .selling_action {
                         position: absolute;
                         width: calc(100% - 8px);
@@ -92,19 +103,22 @@
                         visibility: hidden;
                         transition: all 350ms ease;
                         transform: scale(.9);
+
                         .zc_primary_btn {
                             .blob-btn {
                                 padding: 11.5px 23.4px;
                                 border-radius: 24px;
                                 color: var(--heading-color);
+
                                 &:hover {
                                     color: var(--white-color);
                                     border-radius: 24px;
                                 }
+
                                 .blob-btn__inner {
                                     border-radius: 24px;
                                     background: var(--white-color);
-                                    
+
                                 }
                             }
                         }
@@ -114,6 +128,7 @@
                             align-items: center;
                             gap: 8px;
                             margin: 0 0 16px;
+
                             a {
                                 display: inline-block;
                                 width: 48px;
@@ -124,9 +139,11 @@
                                 align-items: center;
                                 justify-content: center;
                                 background: transparent;
+
                                 &:hover {
                                     background: var(--white-color);
                                 }
+
                                 &:hover svg path {
                                     fill: var(--primary-color);
                                 }
@@ -135,15 +152,23 @@
                         }
                     }
                 }
+
                 .selling_desc {
                     h3 {
                         font-size: 24px;
                         line-height: 28.8px;
                         margin: 0 0 18px;
+
+                        @include screen-1320 {
+                            font-size: 21px;
+                            line-height: 25.8px;
+                        }
+
                         a:hover {
                             color: var(--primary-color);
                         }
                     }
+
                     p {
                         font-size: 20px;
                         line-height: 28px;
@@ -151,28 +176,34 @@
                         margin: 0 0 16px;
                         padding: 0 0 15px;
                     }
+
                     .selling_revPrie {
                         display: flex;
                         align-items: center;
                         justify-content: space-between;
+
                         .selling_price {
                             font-size: 20px;
                             font-weight: 400;
                             line-height: 28px;
                             color: var(--heading-color);
+
                             ins {
                                 text-decoration: none;
                                 margin-right: 7px;
                                 color: var(--heading-color);
                             }
+
                             del {
                                 color: var(--body-color);
                             }
                         }
+
                         .selling_review {
                             display: flex;
                             align-items: center;
                             gap: 5px;
+
                             ul {
                                 display: flex;
                                 align-items: center;
@@ -183,6 +214,7 @@
                         }
                     }
                 }
+
                 &:hover {
                     .selling_action {
                         opacity: 1;
@@ -192,9 +224,9 @@
                 }
             }
         }
-      
-      
-        
-        
+
+
+
+
     }
 }

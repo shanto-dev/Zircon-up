@@ -53,9 +53,27 @@ zc_stretch();
 window.addEventListener('resize', zc_stretch);
 
 /*==================================
-* Brand Carousel
+* Banner Carousel
 ==================================*/
-var swiper = new Swiper('.hero_bnner03_Slide', {
+var zcFeedbackSlide = new Swiper(".zc_feedback_slider", {
+    loop: true,
+    slidesPerView: 2,
+    spaceBetween: 30,
+    loop: true,
+    navigation: {
+        nextEl: ".feedback-button-next",
+        prevEl: ".feedback-button-prev",
+    },
+    autoplay: {
+        delay: 3100,
+        disableOnInteraction: false,
+    },
+});
+
+/*==================================
+* Banner Carousel
+==================================*/
+var hrBanner03Slide = new Swiper('.hero_bnner03_Slide', {
     loop: true,
     effect: 'fade',
     autoplay: {
@@ -71,7 +89,7 @@ var swiper = new Swiper('.hero_bnner03_Slide', {
 /*==================================
 * Brand Carousel
 ==================================*/
-var swiper = new Swiper('.zc3_brand_slider', {
+var zc3BrandSlide = new Swiper('.zc3_brand_slider', {
     loop: true,
     slidesPerView: 1,
     spaceBetween: 15,
@@ -102,6 +120,63 @@ var swiper = new Swiper('.zc3_brand_slider', {
         }
     }
 });
+
+/*==================================
+* Hover Toggle Class
+==================================*/
+document.querySelectorAll('.collection_single').forEach(function (element) {
+    element.addEventListener('mouseenter', function () {
+        element.classList.add('active');
+        element.parentNode.querySelectorAll('.collection_single').forEach(function (sibling) {
+            if (sibling !== element) {
+                sibling.classList.remove('active');
+            }
+        });
+    });
+
+    element.addEventListener('mouseleave', function () {
+        element.classList.remove('active');
+        document.querySelector('.active_item').classList.add('active');
+    });
+});
+
+/*==================================
+* Product Cart Slider
+==================================*/
+const sliderThumbs = new Swiper('.slider_thumbs .swiper-container', {
+    direction: 'vertical',
+    slidesPerView: 4,
+    spaceBetween: 16,
+    freeMode: true,
+    breakpoints: {
+        0: {
+            direction: 'horizontal',
+        },
+        768: {
+            direction: 'vertical',
+        }
+    }
+});
+
+const sliderImages = new Swiper('.slider_images .swiper-container', {
+    direction: 'vertical',
+    slidesPerView: 1,
+    spaceBetween: 32,
+    mousewheel: true,
+    grabCursor: true,
+    thumbs: {
+        swiper: sliderThumbs
+    },
+    breakpoints: {
+        0: {
+            direction: 'horizontal',
+        },
+        768: {
+            direction: 'vertical',
+        }
+    }
+});
+
 /*==================================
 * Author Img Carousel
 ==================================*/
@@ -157,8 +232,6 @@ var zc3_authorCnt_carousel = new Swiper('.zc3_authorCnt_carousel', {
 zc3_author_carousel.controller.control = zc3_authorCnt_carousel;
 zc3_authorCnt_carousel.controller.control = zc3_author_carousel;
 
-
-
 /*==================================
 * zc3 Cagegory Tab
 ==================================*/
@@ -185,7 +258,6 @@ window.addEventListener("load", function () {
         myTabs[i].addEventListener("click", myTabClicks);
     }
 });
-
 
 /*==================================
 * zc3 Product Carousel
@@ -221,7 +293,6 @@ var zc3pdCarousel = new Swiper(".zc3_product_carousel", {
     }
 });
 
-
 /*==================================
 * zc3 Brand Text Slider
 ==================================*/
@@ -251,7 +322,6 @@ slides.forEach(function (slide) {
     });
 });
 
-
 /*==================================
 * Header Search Open
 ==================================*/
@@ -274,24 +344,30 @@ document.addEventListener("DOMContentLoaded", function () {
 /*==================================
 * Scroll to top Button
 ==================================*/
-window.addEventListener("scroll", function () {
-    const scrollBar = window.scrollY;
+document.addEventListener("DOMContentLoaded", function () {
     const scrollTopBtn = document.querySelector(".scroll-top-btn");
 
-    if (scrollBar > 150) {
-        scrollTopBtn.style.display = "block"; // Equivalent to fadeIn()
-    } else {
-        scrollTopBtn.style.display = "none"; // Equivalent to fadeOut()
+    if (scrollTopBtn) {
+        window.addEventListener("scroll", function () {
+            const scrollBar = window.scrollY;
+
+            if (scrollBar > 150) {
+                scrollTopBtn.style.display = "block"; // Equivalent to fadeIn()
+            } else {
+                scrollTopBtn.style.display = "none"; // Equivalent to fadeOut()
+            }
+        });
+
+        // Scroll to top on button click
+        scrollTopBtn.addEventListener("click", function () {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth" // Smooth scrolling effect
+            });
+        });
     }
 });
 
-// Scroll to top on button click
-document.querySelector(".scroll-top-btn").addEventListener("click", function () {
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth" // Smooth scrolling effect
-    });
-});
 
 /*==================================
 * Mobile Menu
@@ -330,10 +406,10 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-
-
+/*==================================
+* Coupon announcement
+==================================*/
 document.addEventListener("DOMContentLoaded", function () {
-    // Coupon announcement
     const closeButton = document.querySelector(".zc_announce_close");
     if (closeButton) {
         closeButton.addEventListener("click", function () {
@@ -342,9 +418,10 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
-// Best Selling Product
-function openCity(evt, cityName) {
-    // Declare all variables
+/*==================================
+* Best Selling Product Tab
+==================================*/
+function openFeatured(evt, featurName) {
     var i, tabcontent, tablinks;
 
     tabcontent = document.getElementsByClassName("tabcontent");
@@ -357,104 +434,37 @@ function openCity(evt, cityName) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
 
-    document.getElementById(cityName).style.display = "block";
+    document.getElementById(featurName).style.display = "block";
     evt.currentTarget.className += " active";
 }
 
-
-$(document).ready(function () {
-
-    // Product Quentity
-    if ($(".quantity").length > 0) {
-        $(".ptPlus").on('click', function () {
-            var vals = parseInt($(this).prev(".carqty").val(), 10);
+/*==================================
+* Product Quentity
+==================================*/
+if (document.querySelectorAll(".quantity").length > 0) {
+    document.querySelectorAll(".ptPlus").forEach(function (button) {
+        button.addEventListener('click', function () {
+            var input = this.previousElementSibling;
+            var vals = parseInt(input.value, 10);
             vals += 1;
-            $(this).prev(".carqty").val(vals).trigger('change');
+            input.value = vals;
+            var event = new Event('change');
+            input.dispatchEvent(event);
             return false;
         });
-        $(".ptMinus").on('click', function () {
-            var vals = parseInt($(this).next(".carqty").val(), 10);
+    });
+
+    document.querySelectorAll(".ptMinus").forEach(function (button) {
+        button.addEventListener('click', function () {
+            var input = this.nextElementSibling;
+            var vals = parseInt(input.value, 10);
             if (vals > 1) {
                 vals -= 1;
-                $(this).next(".carqty").val(vals).trigger('change');
-            } else {
-                $(this).next(".carqty").val(vals).trigger('change');
             }
+            input.value = vals;
+            var event = new Event('change');
+            input.dispatchEvent(event);
             return false;
         });
-    }
-
-    //  Feedback Slider
-    var swiper = new Swiper(".zc_feedback_slider", {
-        slidesPerView: 2,
-        spaceBetween: 30,
-        loop: true,
-        navigation: {
-            nextEl: ".feedback-button-next",
-            prevEl: ".feedback-button-prev",
-        },
     });
-
-    // Product Cart Slider
-    const sliderThumbs = new Swiper('.slider_thumbs .swiper-container', {
-        direction: 'vertical',
-        slidesPerView: 4,
-        spaceBetween: 16,
-        freeMode: true,
-        breakpoints: {
-            0: {
-                direction: 'horizontal',
-            },
-            768: {
-                direction: 'vertical',
-            }
-        }
-    });
-
-    //10. Header Search Open
-    $(".header-search-open").on("click", function () {
-        $(".ur-search-form").addClass("active");
-    });
-
-    $(".ur-search-form .close").on("click", function () {
-        $(".ur-search-form").removeClass("active");
-    });
-
-    const sliderImages = new Swiper('.slider_images .swiper-container', {
-        direction: 'vertical',
-        slidesPerView: 1,
-        spaceBetween: 32,
-        mousewheel: true,
-        grabCursor: true,
-        thumbs: {
-            swiper: sliderThumbs
-        },
-        breakpoints: {
-            0: {
-                direction: 'horizontal',
-            },
-            768: {
-                direction: 'vertical',
-            }
-        }
-    });
-
-
-    // Hover Toggle Class
-    document.querySelectorAll('.collection_single').forEach(function (element) {
-        element.addEventListener('mouseenter', function () {
-            element.classList.add('active');
-            element.parentNode.querySelectorAll('.collection_single').forEach(function (sibling) {
-                if (sibling !== element) {
-                    sibling.classList.remove('active');
-                }
-            });
-        });
-
-        element.addEventListener('mouseleave', function () {
-            element.classList.remove('active');
-            document.querySelector('.active_item').classList.add('active');
-        });
-    });
-
-});
+}
