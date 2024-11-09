@@ -10,6 +10,13 @@
         padding-bottom: 22px;
         margin-bottom: 58px;
 
+        @include screen-992 {
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: start;
+            row-gap: 34px;
+        }
+
         .zc_section_heading {
             margin-bottom: 0;
         }
@@ -19,6 +26,10 @@
             align-items: center;
             justify-content: flex-end;
             gap: 76px;
+
+            @include large-screen {
+                gap: 50px;
+            }
 
             button {
                 font-size: 32px;
@@ -34,6 +45,11 @@
                 transition: 0.3s;
                 padding: 0;
                 position: relative;
+
+                @include large-screen {
+                    font-size: 26px;
+                    line-height: 32.4px;
+                }
 
                 &.active {
                     color: var(--primary-color);
@@ -88,6 +104,18 @@
                     display: flex;
                     align-items: center;
                     justify-content: center;
+
+                    @include large-screen {
+                        flex: 0 0 190px;
+                        max-width: 190px;
+                        height: 190px;
+                    }
+
+                    & img {
+                        @include large-screen {
+                            height: 75%;
+                        }
+                    }
 
                     .selling_action {
                         position: absolute;
@@ -164,6 +192,11 @@
                             line-height: 25.8px;
                         }
 
+                        @include large-screen {
+                            font-size: 19px;
+                            line-height: 23.8px;
+                        }
+
                         a:hover {
                             color: var(--primary-color);
                         }
@@ -175,6 +208,11 @@
                         border-bottom: 1px solid #E7D5D5;
                         margin: 0 0 16px;
                         padding: 0 0 15px;
+
+                        @include large-screen {
+                            font-size: 18px;
+                            line-height: 26px;
+                        }
                     }
 
                     .selling_revPrie {
@@ -187,6 +225,11 @@
                             font-weight: 400;
                             line-height: 28px;
                             color: var(--heading-color);
+
+                            @include large-screen {
+                                font-size: 17px;
+                                line-height: 25px;
+                            }
 
                             ins {
                                 text-decoration: none;

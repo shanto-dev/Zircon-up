@@ -7,6 +7,30 @@ body {
     font-weight: 400;
 }
 
+@media(min-width: 768px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 754px;
+    }
+}
+
+@media(min-width: 992px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 960px;
+    }
+}
+
 @media(min-width: 1200px) {
 
     .container,
@@ -99,6 +123,15 @@ svg {
     font-weight: 400;
     line-height: 79.2px;
     color: var(--heading-color);
+
+    @include large-screen {
+        font-size: 58px;
+        line-height: 75px;
+    }
+    @include screen-992{
+        font-size: 48px;
+        line-height: 55px;
+    }
 }
 
 // Section Title 
@@ -118,6 +151,7 @@ svg {
         font-size: 44px;
         line-height: 50px;
     }
+
     @include portrait-phone {
         font-size: 36px;
         line-height: 42px;

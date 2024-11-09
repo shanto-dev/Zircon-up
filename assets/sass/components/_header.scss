@@ -26,6 +26,14 @@
 }
 
 .zc_nav_menu {
+    & ul>li:nth-child(1) {
+        & a {
+            @include large-screen {
+                padding-left: 0;
+            }
+        }
+    }
+
     ul {
         li {
             display: inline-block;

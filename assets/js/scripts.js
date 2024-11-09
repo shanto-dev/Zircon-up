@@ -57,7 +57,7 @@ window.addEventListener('resize', zc_stretch);
 ==================================*/
 var zcFeedbackSlide = new Swiper(".zc_feedback_slider", {
     loop: true,
-    slidesPerView: 2,
+    slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
     navigation: {
@@ -68,6 +68,24 @@ var zcFeedbackSlide = new Swiper(".zc_feedback_slider", {
         delay: 3100,
         disableOnInteraction: false,
     },
+    breakpoints: {
+        480: {
+            slidesPerView: 1,
+            spaceBetween: 15
+        },
+        576: {
+            slidesPerView: 1,
+            spaceBetween: 20
+        },
+        768: {
+            slidesPerView: 1,
+            spaceBetween: 20
+        },
+        992: {
+            slidesPerView: 2,
+            spaceBetween: 24
+        },
+    }
 });
 
 /*==================================

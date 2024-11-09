@@ -6,6 +6,8 @@
             overflow: hidden;
 
             & img {
+                max-width: 100%;
+                width: 100%;
                 scale: 1;
                 transition: var(--transition-base);
             }
@@ -26,7 +28,8 @@
                     gap: 6px;
                     color: inherit;
                     margin-right: 30px;
-                    @include screen-1320{
+
+                    @include screen-1320 {
                         font-size: 15px;
                     }
 
@@ -86,6 +89,7 @@
 
         &:hover {
             & .feature_image {
+
                 img {
                     scale: 1.08;
                 }

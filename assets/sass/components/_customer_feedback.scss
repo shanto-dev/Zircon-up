@@ -6,6 +6,7 @@
         justify-content: flex-end;
         gap: 24px;
         transition: all 350ms ease;
+
         button {
             width: 64px;
             height: 64px;
@@ -14,30 +15,36 @@
             display: flex;
             align-items: center;
             justify-content: center;
+
             &:hover {
                 background: var(--primary-color);
             }
+
             &:hover svg path {
                 fill: var(--white-color);
             }
         }
     }
+
     .feedback_wrapper {
         .zc_feedback_slider {
             .feedback_sin {
                 display: flex;
                 align-items: center;
                 gap: 34px;
+
                 .feedback_thumb {
                     flex: 0 0 156px;
                     max-width: 156px;
                     height: 165px;
                     border-radius: 50%;
                     position: relative;
+
                     img {
                         border-radius: inherit;
                         object-fit: cover;
                     }
+
                     span {
                         position: absolute;
                         left: 0;
@@ -52,14 +59,21 @@
                         justify-content: center;
                     }
                 }
+
                 .feedback_con {
                     p {
                         font-size: 20px;
                         line-height: 28px;
                         margin: 0 0 16px;
+                        @include large-screen{
+                            font-size: 18px;
+                            line-height: 26px;
+                        }
                     }
+
                     span {
                         line-height: 25.2px;
+
                         a {
                             font-size: 20px;
                             font-weight: 500;

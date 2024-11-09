@@ -9,6 +9,10 @@
         position: relative;
         overflow: hidden;
 
+        @include large-screen {
+            background-position: center left 22%;
+        }
+
         h3 {
             font-size: 48px;
             font-weight: 400;
@@ -125,10 +129,12 @@
     @include large-screen {
         min-height: 217px;
     }
-    @include screen-992{
+
+    @include screen-992 {
         min-height: 236px;
     }
-    @include screen-768{
+
+    @include screen-768 {
         min-height: 270px;
     }
 
