@@ -187,6 +187,14 @@
     right: 60px;
 }
 
+.zn_widget_title {
+    font-family: var(--heading-font3);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 34px;
+    color: var(--heading-color);
+    margin-bottom: 24px;
+}
 
 .zc_footerPaymets {
     position: relative;
@@ -216,6 +224,93 @@
     }
 }
 
+.zn_widget_nav {
+    @include displayFlex(flex, start, start, column);
+    gap: 16px;
+
+    & li {
+        & a {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 25px;
+            color: var(--body-color2);
+
+            &:hover {
+                color: var(--primary-color3);
+            }
+        }
+    }
+}
+
+.zn_subscribe_content {
+    & form {
+        max-width: 300px;
+        border: 1px solid #ECE0D0;
+        border-radius: 34px;
+        padding: 3px 3px 3px 24px;
+        margin-bottom: 24px;
+
+        & .emailIntpu {
+            & svg {
+                position: relative;
+                bottom: 2px;
+            }
+
+            input {
+                height: 48px;
+                width: calc(100% - 77px);
+                border: unset;
+                outline: unset;
+                background: transparent;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 22px;
+            }
+        }
+
+        .subscribe_submite {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: var(--yello-color);
+            transition: var(--transition-base);
+
+            &:hover {
+                background: var(--primary-color3);
+            }
+        }
+
+    }
+}
+
+.zn_footer_social {
+    position: relative;
+
+    & ul {
+        @include displayFlex(flex, start, center, row);
+        gap: 28px;
+
+        & li a {
+            width: 28px;
+            height: 28px;
+            font-size: 15px;
+            @include displayFlex(flex, center, center, column);
+            color: var(--heading-color);
+
+            &:hover {
+                color: var(--primary-color3);
+
+                & svg {
+                    fill: var(--primary-color3);
+                    & path{
+                        fill: var(--primary-color3);
+                    }
+                }
+            }
+        }
+    }
+}
+
 .zn_footer_copyright_text {
     padding: 16px 0;
     border-top: 1px solid rgba(13, 13, 13, .1);
@@ -228,6 +323,7 @@
         margin: 0;
     }
 }
+
 
 
 // Footer 03
