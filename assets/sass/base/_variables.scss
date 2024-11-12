@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 
+// Ivy Mode
 @font-face {
     font-family: 'Ivy Mode';
     src: url('../fonts/lvyMode/IvyMode-Regular.woff2') format('woff2'),
@@ -9,6 +10,7 @@
     font-display: swap;
 }
 
+// Cabinet-grotesk
 @font-face {
     font-family: 'Cabinet-grotesk';
     src: url('../fonts/cabinetGrotesk/CabinetGrotesk-Extrabold.woff2') format('woff2'),
@@ -49,6 +51,9 @@
     font-display: swap;
 }
 
+// Quicksand 
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
 :root {
 
     --color-background: #FFEBEB;
@@ -56,8 +61,13 @@
     --primary-color: #C23F3F;
 
     --primary-color2: #D0552F;
+    --primary-color3: #1EC18D;
+    --primary-color4: #EE5937;
 
-    // --gradient-background:
+    // --background:
+    --color-background: #FFFFFF;
+    --green-shade-background: #E5F6F1;
+    --yello-shade-background: #FFF7EC;
 
     // --color-accent: 
 
@@ -65,19 +75,23 @@
 
     --heading-color: #0D0D0D;
     --white-color: #ffffff;
+    --black-color: #000000;
     --body-color: #6C514F;
+    --body-color2: #5B6367;
 
 
     --heading-color2: #D0552F;
 
     // --color-shadow: 
-
     --color-primary-button: #C23F3F;
     --color-primary-button2: #D0552F;
+    --color-primary-button3: #FFB950;
 
     --color-primary-button-text: #ffffff;
+    --color-primary-button-text2: #0D0D0D;
 
     --color-primary-button-hover: #0D0D0D;
+    --color-primary-button-hover2: #1EC18D;
 
     // --color-primary-button-hover-text: 
 
@@ -119,6 +133,7 @@
     --body-font: "Jost", sans-serif;
     --heading-font: "Ivy Mode";
     --heading-font2: "Cabinet-grotesk";
+    --heading-font3: "Quicksand", sans-serif;
 
     --transition-base: 0.3s;
 

@@ -95,6 +95,13 @@
     }
 }
 
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
 .mb-24 {
     margin-bottom: 24px;
 }
@@ -118,13 +125,18 @@
         margin-bottom: 28px;
     }
 }
-
+.mb-50 {
+    margin-bottom: 50px;
+}
 .mb-64 {
     margin-bottom: 64px;
 
     @include large-screen {
         margin-bottom: 50px;
     }
+}
+.mb-60 {
+    margin-bottom: 60px;
 }
 
 .mb-54 {
@@ -141,6 +153,9 @@
     @include large-screen {
         margin-bottom: 42px;
     }
+}
+.mb-70 {
+    margin-bottom: 70px;
 }
 
 .mt-120 {

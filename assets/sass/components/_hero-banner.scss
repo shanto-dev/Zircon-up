@@ -112,7 +112,133 @@
     }
 }
 
-// Hero Banner 03
+
+/***** ZN Hero Banner ******/
+.zn_hero_slider {
+    position: relative;
+    clip-path: url(#hreoBnar_clip);
+}
+
+.zn_hero_single {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 10;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: linear-gradient(90deg, rgba(13, 13, 13, 0.8) 22.97%, rgba(13, 13, 13, 0) 73.62%);
+        z-index: -1;
+    }
+}
+
+.zn_hero_content {
+    padding: 158px 0;
+
+    @include screen-768 {
+        padding: 100px 0;
+    }
+
+    @include portrait-phone {
+        padding: 40px 0;
+    }
+
+    h5 {
+        font-weight: 600;
+        line-height: 34px;
+        font-family: var(--heading-font3);
+        color: #FFB950;
+        margin-bottom: 0;
+        opacity: 0;
+        transition: transform 800ms ease, opacity 900ms ease;
+        transform: translateY(70px);
+    }
+
+    h1 {
+        max-width: 620px;
+        font-size: 80px;
+        font-weight: 700;
+        line-height: 96px;
+        font-family: var(--heading-font3);
+        margin-bottom: 32px;
+        opacity: 0;
+        transition: transform 1000ms ease, opacity 1000ms ease;
+        transform: translateY(100px);
+
+        @include screen-768 {
+            font-size: 65px;
+            line-height: 70px;
+        }
+
+        @include portrait-phone {
+            font-size: 44px;
+            line-height: 50px;
+        }
+    }
+
+    p {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 28px;
+        max-width: 590px;
+        margin-bottom: 56px;
+        opacity: 0;
+        transition: transform 1000ms ease, opacity 1000ms ease;
+        transform: translatey(100px);
+
+        @include screen-768 {
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+    }
+
+    & .zn_primary-btn {
+        opacity: 0;
+        transition: transform 1000ms ease, opacity 1000ms ease;
+        transform: translateY(100px);
+        &::after,
+        &::before{
+            border-radius: 32px;
+        }
+    }
+}
+
+.zn_hero_slider {
+    & .swiper-slide-active {
+
+        .zn_hero_content h5 {
+            opacity: 1;
+            transform: translateY(0);
+            transition-delay: 1000ms;
+        }
+
+        .zn_hero_content h1 {
+            opacity: 1;
+            transform: translateY(0);
+            transition-delay: 1300ms;
+        }
+
+        .zn_hero_content p {
+            opacity: 1;
+            transform: translateY(0);
+            transition-delay: 1700ms;
+        }
+
+        .zn_primary-btn {
+            opacity: 1;
+            transform: perspective(400px) rotateY(0deg) translateY(0px);
+            transition-delay: 2000ms;
+        }
+    }
+}
+
+/****** Hero Banner 03 ******/
 .hero_bnner03 {
     position: relative;
     background: var(--color-background3);

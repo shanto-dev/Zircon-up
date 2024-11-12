@@ -105,6 +105,40 @@ var zcFeedbackSlide = new Swiper(".zc_feedback_slider", {
 });
 
 /*==================================
+* Zn Brand Carousel
+==================================*/
+var znBrandCarousel = new Swiper('.zn_brand_swipper ', {
+    loop: true,
+    slidesPerView: 2,
+    spaceBetween: 15,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    breakpoints: {
+        480: {
+            slidesPerView: 2,
+            spaceBetween: 15
+        },
+        576: {
+            slidesPerView: 2,
+            spaceBetween: 20
+        },
+        768: {
+            slidesPerView: 3,
+            spaceBetween: 20
+        },
+        992: {
+            slidesPerView: 4,
+            spaceBetween: 20
+        },
+        1300: {
+            slidesPerView: 5,
+            spaceBetween: 30
+        }
+    }
+});
+/*==================================
 * Banner Carousel
 ==================================*/
 var hrBanner03Slide = new Swiper('.hero_bnner03_Slide', {
@@ -508,3 +542,52 @@ if (document.querySelectorAll(".quantity").length > 0) {
         });
     });
 }
+
+/*==================================
+* Hero Swipper
+==================================*/
+var swiper = new Swiper('.zn_hero_slider', {
+    loop: true,
+    autoplay: {
+        delay: 3400,
+        disableOnInteraction: false,
+    },
+    effect: 'fade',
+    slidesPerView: 1,
+    spaceBetween: 30,
+});
+
+/*==================================
+* Testimonial Carousel
+==================================*/
+var testimSwiper = new Swiper('.zn_testimonial-swipper', {
+    loop: true,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    slidesPerView: 1,
+    spaceBetween: 30,
+    breakpoints: {
+        480: {
+            spaceBetween: 15,
+            slidesPerView: 1
+        },
+        576: {
+            spaceBetween: 15,
+            slidesPerView: 2
+        },
+        768: {
+            spaceBetween: 20,
+            slidesPerView: 2
+        },
+        992: {
+            spaceBetween: 20,
+            slidesPerView: 2
+        },
+        1300: {
+            spaceBetween: 30,
+            slidesPerView: 3
+        }
+    }
+});
