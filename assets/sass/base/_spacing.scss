@@ -16,6 +16,22 @@
         --bs-gutter-y: 24px;
     }
 }
+.g-46,
+.gx-46 {
+    --bs-gutter-x: 46px;
+
+    @include large-screen {
+        --bs-gutter-x: 24px;
+    }
+}
+.g-46,
+.gy-46 {
+    --bs-gutter-y: 46px;
+
+    @include large-screen {
+        --bs-gutter-y: 24px;
+    }
+}
 
 
 .pl-0 {

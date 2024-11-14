@@ -313,6 +313,9 @@
 .zn_featuredPd_navWrap {
     @include displayFlex(flex, end, center, row);
     gap: 24px;
+    @include screen-768{
+        justify-content: start;
+    }
 
     & .zn_featuredPd_prev {
         width: 64px;

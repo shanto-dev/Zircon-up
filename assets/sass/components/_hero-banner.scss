@@ -141,12 +141,16 @@
 .zn_hero_content {
     padding: 158px 0;
 
+    @include large-screen {
+        padding: 110px 0;
+    }
+
     @include screen-768 {
         padding: 100px 0;
     }
 
     @include portrait-phone {
-        padding: 40px 0;
+        padding: 80px 0;
     }
 
     h5 {
@@ -170,6 +174,11 @@
         opacity: 0;
         transition: transform 1000ms ease, opacity 1000ms ease;
         transform: translateY(100px);
+
+        @include screen-992 {
+            font-size: 70px;
+            line-height: 86px;
+        }
 
         @include screen-768 {
             font-size: 65px;
@@ -202,8 +211,9 @@
         opacity: 0;
         transition: transform 1000ms ease, opacity 1000ms ease;
         transform: translateY(100px);
+
         &::after,
-        &::before{
+        &::before {
             border-radius: 32px;
         }
     }

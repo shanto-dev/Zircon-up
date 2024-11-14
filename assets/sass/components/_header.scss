@@ -486,17 +486,31 @@ header.header-sticky {
 }
 
 
-.zn_header_top .zn_header_top .zn_header_top
-
 /******ZN Header Bottom*******/
+.zn_header_section.sticky-on {
+    & .zn_header_top {
+        display: none;
+    }
+}
+
 .zn_header_main {
     background: var(--color-background);
+
+    @include screen-992 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    @include screen-768 {
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
 }
 
 .zn_header_search {
     max-width: 146px;
 
-    @include portrait-phone {
+    @include screen-992 {
         display: none;
     }
 
@@ -599,6 +613,10 @@ header.header-sticky {
 .zn_header_right {
     gap: 40px;
 
+    @include large-screen {
+        gap: 26px;
+    }
+
     @include screen-992 {
         gap: 10px;
     }
@@ -607,7 +625,8 @@ header.header-sticky {
 
 .zn_user_links {
     padding: 20px 0;
-    & svg{
+
+    & svg {
         width: 24px;
         height: 24px;
         padding: 0px 4.2px;
@@ -653,19 +672,23 @@ header.header-sticky {
     }
 }
 
-.zn_menu_toggler {
-    top: 3px;
-    position: relative;
-
-    span {
-        background: #0D0D0D;
-        width: 30px;
-        height: 2px;
-        display: block;
-        transition: 0.3s;
+.header-toggle {
+    & .zn_menu_toggler {
+        margin-left: 10px;
+        top: 3px;
         position: relative;
-        z-index: 1;
-        margin-bottom: 5px;
+        padding: 0;
+
+        & span {
+            background: #0D0D0D;
+            width: 25px;
+            height: 2.2px;
+            display: block;
+            transition: 0.3s;
+            position: relative;
+            z-index: 1;
+            margin-bottom: 5px;
+        }
     }
 }
 

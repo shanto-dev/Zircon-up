@@ -447,7 +447,7 @@ document.addEventListener("DOMContentLoaded", function () {
 * Mobile Menu
 ==================================*/
 document.addEventListener("DOMContentLoaded", function () {
-    const menuToggler = document.querySelector(".zc3_header-toggle");
+    const menuToggler = document.querySelector(".zc3_header-toggle, .zn_header-toggle");
     const closeButton = document.querySelector(".zc_mobile-menu .close");
     const mobileMenu = document.querySelector(".zc_mobile-menu");
 
@@ -573,17 +573,22 @@ var znFeaturedPd = new Swiper('.zn_featured_pd_carousel', {
         prevEl: '.zn_featuredPd_prev',
     },
     breakpoints: {
+        
+        400: {
+            spaceBetween: 15,
+            slidesPerView: 1.3
+        },
         480: {
             spaceBetween: 15,
-            slidesPerView: 1
+            slidesPerView: 1.3
         },
         576: {
             spaceBetween: 15,
-            slidesPerView: 2
+            slidesPerView: 1.7
         },
         768: {
             spaceBetween: 20,
-            slidesPerView: 2
+            slidesPerView: 1.4
         },
         992: {
             spaceBetween: 20,
@@ -614,7 +619,7 @@ var testimSwiper = new Swiper('.zn_testimonial-swipper', {
         },
         576: {
             spaceBetween: 15,
-            slidesPerView: 2
+            slidesPerView: 1
         },
         768: {
             spaceBetween: 20,

@@ -170,6 +170,10 @@
     overflow: hidden;
 }
 
+.zn_footer_top {
+    position: relative;
+}
+
 .zn_footer_shape_01 {
     position: absolute;
     top: 188px;
@@ -178,14 +182,25 @@
 
 .zn_footer_shape_02 {
     position: absolute;
-    bottom: 52px;
-    left: 222px;
+    bottom: -2px;
+    left: 67px;
+
+    @include large-screen {
+        bottom: -10px;
+        left: -10px;
+        width: 80px;
+    }
 }
 
 .zn_footer_shape_03 {
     position: absolute;
     bottom: 118px;
     right: 60px;
+
+    @include large-screen {
+        bottom: 70px;
+        right: 12px;
+    }
 }
 
 .zn_widget_title {
@@ -201,6 +216,12 @@
     position: relative;
     @include displayFlex(flex, start, center, row);
     gap: 16px;
+
+    @include large-screen {
+        flex-direction: column;
+        align-items: start;
+        gap: 2px;
+    }
 
     & label {
         font-size: 16px;
@@ -303,7 +324,8 @@
 
                 & svg {
                     fill: var(--primary-color3);
-                    & path{
+
+                    & path {
                         fill: var(--primary-color3);
                     }
                 }
@@ -313,7 +335,7 @@
 }
 
 .zn_footer_copyright_text {
-    padding: 16px 0;
+    padding: 16px 12px;
     border-top: 1px solid rgba(13, 13, 13, .1);
 
     & p {

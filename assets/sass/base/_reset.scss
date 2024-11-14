@@ -114,9 +114,11 @@ svg {
 .zcPrimary-bg3 {
     background: var(--color-background3);
 }
+
 .znYelloShade-Bg {
     background: var(--yello-shade-background);
 }
+
 // ClipPath 
 svg.clippy {
     position: absolute;
@@ -162,8 +164,8 @@ svg.clippy {
     color: var(--heading-color);
 
     @include large-screen {
-        font-size: 58px;
-        line-height: 64px;
+        font-size: 46px;
+        line-height: 52px;
     }
 
     @include screen-992 {
@@ -174,6 +176,11 @@ svg.clippy {
     @include portrait-phone {
         font-size: 36px;
         line-height: 42px;
+    }
+
+    @include screen-400 {
+        font-size: 32px;
+        line-height: 40px;
     }
 }
 
@@ -461,6 +468,7 @@ svg.clippy {
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%) scale(0);
+            transform-origin: center;
             border-radius: 50%;
         }
 
@@ -485,6 +493,7 @@ svg.clippy {
         }
     }
 }
+
 
 
 /**************** scroll top button ***************/
