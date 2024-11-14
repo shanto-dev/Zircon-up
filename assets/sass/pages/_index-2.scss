@@ -1,3 +1,62 @@
+/***** Featured Pd Nav ******/
+.featured_pd_nav {
+    position: relative;
+    @include displayFlex(flex, start, start, column);
+    gap: 16px;
+
+    & button {
+        padding: 23px 30px 24px 92px;
+        border-radius: 12px;
+        background: var(--green-shade-background);
+        font-family: var(--body-font);
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 25px;
+        width: 100%;
+        @include displayFlex(flex, start, start, column);
+        overflow: hidden;
+        position: relative;
+        transition: var(--transition-base);
+        border: unset;
+        outline: unset;
+
+        & span {
+            position: absolute;
+            width: 72px;
+            height: 100%;
+            top: 0;
+            left: 0;
+            @include displayFlex(flex, center, center, column);
+            background: var(--primary-color3);
+            transition: var(--transition-base);
+        }
+    }
+
+    & button.active,
+    & button:hover {
+        background: var(--yello-color);
+        padding-left: 30px;
+        align-items: center;
+
+        & span {
+            left: -100%;
+            right: auto;
+        }
+    }
+}
+
+.zn_FeaturedPd_content {
+    position: relative;
+
+    & .tabcontent {
+        display: none;
+
+        &.active {
+            display: block;
+        }
+    }
+}
+
 /***** Category Section Start ******/
 .zn_category_section {
     padding: 130px 0;

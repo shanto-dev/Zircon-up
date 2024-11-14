@@ -391,6 +391,285 @@ header.header-sticky {
 }
 
 // ===========================================
+// Header 02
+// ===========================================
+/******Zn Header Top**********/
+.zn_header_top {
+    background-color: var(--yello-color);
+    padding: 6px 0;
+    overflow: hidden;
+
+    @include screen-992 {
+        display: none;
+    }
+
+    &__location {
+        position: relative;
+        top: 1px;
+        gap: 6px;
+        @include displayFlex(inline-flex, start, center, row);
+
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22px;
+            color: var(--heading-color);
+            margin: 0;
+            position: relative;
+            margin-bottom: -1px;
+        }
+    }
+
+    &__free {
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22px;
+            color: var(--heading-color);
+            margin: 0;
+
+            @include large-screen {
+                font-size: 14px;
+                line-height: 15px;
+            }
+        }
+    }
+
+    &__select {
+        gap: 40px;
+        align-items: center;
+        line-height: 1;
+    }
+
+    &__eng {
+        gap: 8px;
+
+        & img {
+            width: 22px;
+            height: auto;
+            position: relative;
+            top: 1.5px;
+        }
+
+        select {
+            outline: 0;
+            font-weight: 400;
+            border: none;
+            background-color: transparent;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22px;
+            text-align: center;
+
+            option {
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__usd {
+        select {
+            outline: 0;
+            font-weight: 400;
+            border: none;
+            background-color: transparent;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22px;
+            text-align: center;
+
+            option {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+
+.zn_header_top .zn_header_top .zn_header_top
+
+/******ZN Header Bottom*******/
+.zn_header_main {
+    background: var(--color-background);
+}
+
+.zn_header_search {
+    max-width: 146px;
+
+    @include portrait-phone {
+        display: none;
+    }
+
+    form {
+        border-bottom: 1px solid #E0E0E0;
+        padding-bottom: 3px;
+        width: 100%;
+        position: relative;
+
+        & button {
+            padding: 0;
+            position: absolute;
+            top: 1px;
+            left: 0;
+            line-height: 1;
+        }
+
+        input {
+            border: none;
+            color: var(--heading-color);
+            font-size: 16px;
+            line-height: 22px;
+            font-weight: 400;
+            font-family: var(--body-font);
+            width: 100%;
+            padding-left: 26px;
+            border: 0;
+            outline: 0;
+            box-shadow: 0;
+        }
+
+        ::placeholder {
+            color: var(--heading-color);
+            font-size: 16px;
+            line-height: 22.4px;
+            font-weight: 400;
+            font-family: var(--body-font);
+            opacity: 1;
+        }
+    }
+}
+
+
+
+.zn_header_nav {
+    position: relative;
+    @include displayFlex(flex, center, center, column);
+
+    &>ul {
+        display: flex;
+        gap: 48px;
+
+        @include screen-1320 {
+            gap: 25px;
+        }
+
+        &>li {
+
+            a {
+                font-size: 18px;
+                font-weight: 400;
+                display: inline-block;
+                color: var(--heading-color);
+                padding: 28px 0;
+                transition: 0.3s;
+                line-height: 25px;
+            }
+
+            &:nth-child(4) {
+                padding-left: 150px;
+
+                @include large-screen {
+                    padding-left: 100px;
+                }
+            }
+
+            &:nth-child(3) {
+                padding-right: 150px;
+
+                @include large-screen {
+                    padding-right: 100px;
+                }
+            }
+
+            &:hover {
+                &>a {
+                    color: var(--primary-color3);
+                }
+            }
+        }
+    }
+}
+
+.zn_header_logo {
+    position: absolute;
+    top: 25px;
+    left: 41%;
+}
+
+.zn_header_right {
+    gap: 40px;
+
+    @include screen-992 {
+        gap: 10px;
+    }
+
+}
+
+.zn_user_links {
+    padding: 20px 0;
+    & svg{
+        width: 24px;
+        height: 24px;
+        padding: 0px 4.2px;
+    }
+}
+
+.zn_header_card_shop {
+    color: var(--primary-color2);
+    padding: 7px 20px 7px 10px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0.2px;
+    position: relative;
+
+    @include screen-768 {
+        padding: 7px 20px 7px 8px;
+    }
+
+    @include screen-400 {
+        padding: 7px 18px 7px 8px;
+    }
+
+    span {
+        font-size: 12px;
+        background: #1EC18D;
+        width: 20px;
+        height: 20px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        border-radius: 50%;
+        color: var(--color-background);
+        text-align: center;
+        line-height: 16px;
+        right: 0px;
+        top: 2px;
+
+        @include screen-400 {
+            right: 2px;
+        }
+    }
+}
+
+.zn_menu_toggler {
+    top: 3px;
+    position: relative;
+
+    span {
+        background: #0D0D0D;
+        width: 30px;
+        height: 2px;
+        display: block;
+        transition: 0.3s;
+        position: relative;
+        z-index: 1;
+        margin-bottom: 5px;
+    }
+}
+
+// ===========================================
 // Header 03
 // ===========================================
 .zc03_header_section {

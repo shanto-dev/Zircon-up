@@ -76,7 +76,7 @@
                     top: -2px;
                 }
 
-                & ul + span {
+                & ul+span {
                     @include screen-768 {
                         font-size: 16px;
                     }
@@ -190,6 +190,186 @@
         }
     }
 }
+
+// Home 2 
+.zn_featured_pd_item {
+    position: relative;
+    background: var(--color-background3);
+    border-radius: 16px;
+    overflow: hidden;
+
+    &__thumb {
+        width: 100%;
+        height: 290px;
+        @include displayFlex(flex, center, center, column);
+
+        & img {
+            max-width: 221px;
+            max-height: 233px;
+        }
+    }
+
+    &__cnt {
+        padding: 16px 24px 24px;
+
+        & .zn_futrdPd_meta {
+            position: relative;
+
+            & a {
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 22px;
+                letter-spacing: 0.06em;
+                text-align: left;
+                text-transform: uppercase;
+                color: var(--body-color2);
+
+                &:hover {
+                    color: var(--primary-color3);
+                }
+            }
+        }
+
+        h2 {
+            font-family: var(--body-font);
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 25px;
+            text-align: left;
+            color: var(--body-color2);
+            margin-bottom: 8px;
+
+            & a {
+                font-size: inherit;
+                font-family: inherit;
+
+                &:hover {
+                    color: var(--primary-color3);
+                }
+            }
+
+        }
+
+    }
+}
+
+.zn_metaReview_wrap {
+    position: relative;
+    @include displayFlex(flex, space-between, center, row);
+    gap: 30px;
+    margin-bottom: 8px;
+}
+
+.zn_futrdPdReviws {
+    position: relative;
+
+    & .star-rating {
+        @include displayFlex(flex, start, center, row);
+        gap: 3px;
+
+        & i {
+            font-size: 13.5px;
+            color: #E0E0E0
+        }
+
+        & .zc3_totalReview {
+            font-family: var(--body-font);
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 25px;
+            color: var(--body-color2)
+        }
+    }
+
+}
+
+.zn_futrdPdPriceWrap {
+    @include displayFlex(flex, space-between, center, row);
+}
+
+.zn_futrdpd_price {
+    font-family: var(--body-font);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--heading-color);
+    @include displayFlex(inline-flex, space-between, center, row);
+
+    & ins {
+        margin-right: 8px;
+        text-decoration: none;
+    }
+
+    & del {
+        font-family: var(--body-font);
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 28px;
+        color: var(--heading-color);
+    }
+}
+
+
+.zn_featuredPd_navWrap {
+    @include displayFlex(flex, end, center, row);
+    gap: 24px;
+
+    & .zn_featuredPd_prev {
+        width: 64px;
+        height: 64px;
+        border: 2px solid var(--heading-color);
+        @include displayFlex(flex, center, center, row);
+        border-radius: 50%;
+        transition: var(--transition-base);
+
+        @include portrait-phone {
+            width: 54px;
+            height: 54px;
+        }
+
+        & svg {
+            fill: var(--heading-color);
+
+            & path {
+                fill: var(--heading-color);
+            }
+        }
+
+        &:hover {
+            background: var(--yello-color);
+            border-color: var(--yello-color);
+        }
+    }
+
+    & .zn_featuredPd_next {
+        width: 64px;
+        height: 64px;
+        border: 2px solid var(--heading-color);
+        @include displayFlex(flex, center, center, row);
+        border-radius: 50%;
+        transition: var(--transition-base);
+
+        @include portrait-phone {
+            width: 54px;
+            height: 54px;
+        }
+
+        & svg {
+            fill: var(--heading-color);
+
+            & path {
+                fill: var(--heading-color);
+            }
+        }
+
+        &:hover {
+            background: var(--yello-color);
+            border-color: var(--yello-color);
+        }
+
+    }
+}
+
 
 
 // Home 3 Product Style 

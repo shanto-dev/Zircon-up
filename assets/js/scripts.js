@@ -558,6 +558,45 @@ var swiper = new Swiper('.zn_hero_slider', {
 });
 
 /*==================================
+* ZN Testimonial Carousel
+==================================*/
+var znFeaturedPd = new Swiper('.zn_featured_pd_carousel', {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 30,
+    autoplay: {
+        delay: 2400,
+        disableOnInteraction: false,
+    },
+    navigation: {
+        nextEl: '.zn_featuredPd_next',
+        prevEl: '.zn_featuredPd_prev',
+    },
+    breakpoints: {
+        480: {
+            spaceBetween: 15,
+            slidesPerView: 1
+        },
+        576: {
+            spaceBetween: 15,
+            slidesPerView: 2
+        },
+        768: {
+            spaceBetween: 20,
+            slidesPerView: 2
+        },
+        992: {
+            spaceBetween: 20,
+            slidesPerView: 2
+        },
+        1300: {
+            spaceBetween: 30,
+            slidesPerView: 3
+        }
+    }
+});
+
+/*==================================
 * Testimonial Carousel
 ==================================*/
 var testimSwiper = new Swiper('.zn_testimonial-swipper', {
