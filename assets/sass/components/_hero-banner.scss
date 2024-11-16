@@ -45,7 +45,7 @@
     color: var(--white-color);
     max-width: 670px;
     margin: 0 auto;
-    text-transform: capitalize;
+    // text-transform: capitalize !important;
     line-height: 105.6px;
 
     @include large-screen {

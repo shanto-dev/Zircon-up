@@ -15,6 +15,9 @@
 
     <!--essential scripts file-->
     <script src="assets/js/swiper-bundle.min.js" defer="defer"></script>
+    <script src="assets/js/gsap.js" defer="defer"></script>
+    <script src="assets/js/gsap-scroll-trigger.js" defer="defer"></script>
+    <script src="assets/js/gsap-split-text.js" defer="defer"></script>
     <script src="assets/js/scripts.js" defer="defer"></script>
 </head>
 
@@ -35,9 +38,182 @@
                         <div class="col-xl-6 col-lg-7 d-none d-lg-flex justify-content-center">
                             <nav class="zc3_nav_menu">
                                 <ul class="d-flex justify-content-center">
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">Shop</a></li>
-                                    <li><a href="#">Product</a></li>
+                                    <li class="has-submenu"><a href="#">Home</a>
+                                        <ul class="submenu-wrapper">
+                                            <li><a href="index.html">Home Page 1</a></li>
+                                            <li><a href="index-2.html">Home Page 2</a></li>
+                                            <li><a href="index-3.html">Home Page 3</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-submenu has-megamenu">
+                                        <a href="#">Shop</a>
+                                        <!-- Mega Menu  -->
+                                        <div class="header-magamenu">
+                                            <div class="header-submenu-wrapper">
+                                                <div class="container">
+                                                    <div class="header-megamenu-wrapper">
+                                                        <div class="col">
+                                                            <!-- Header Mega Menu List -->
+                                                            <div class="header-megamenu-list">
+                                                                <a href="shop.html" class="header-megamenu-title">Best Seller</a>
+                                                                <ul role="list">
+                                                                    <li>
+                                                                        <a href="shop.html" class="link-animation">T-shirt dress</a>
+                                                                        <span class="badge">Sale</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="shop.html" class="link-animation">T-shirt dress</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="shop.html" class="link-animation">Denim jacket</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <!-- Header Mega Menu List -->
+                                                            <div class="header-megamenu-list">
+                                                                <a href="shop.html" class="header-megamenu-title">Fashion</a>
+                                                                <ul role="list">
+                                                                    <li>
+                                                                        <a href="shop.html" class="link-animation">Pencil skirt</a>
+                                                                        <span class="badge sale">Sale</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="shop.html" class="link-animation">Maxi dress</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="shop.html" class="link-animation">Crop top</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="shop.html" class="link-animation">Skinny jeans</a>
+                                                                        <span class="badge new">Sale</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="shop.html" class="link-animation">Women Shirt</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col">
+                                                            <!-- Header Mega Menu List -->
+                                                            <div class="header-megamenu-list">
+                                                                <a href="shop.html" class="header-megamenu-title">Hot Deals</a>
+                                                                <ul role="list">
+                                                                    <li>
+                                                                        <a href="shop.html" class="link-animation">Button-down shirt</a>
+                                                                        <span class="badge">Sale</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="shop.html" class="link-animation">High-waist pants</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="shop.html" class="link-animation">Tunic top</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="shop.html" class="link-animation">Peplum blouse</a>
+                                                                        <span class="badge">Sale</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="shop.html" class="link-animation">Women Shirt</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <!-- Header Mega Menu List -->
+                                                            <div class="header-megamenu-list">
+                                                                <a href="#" class="header-megamenu-title">Fashion</a>
+                                                                <ul class="" role="list">
+                                                                    <li>
+                                                                        <a href="shop.html" class="link-animation">Pencil skirt</a>
+                                                                        <span class="badge sale badge">Sale</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="shop.html" class="link-animation">Maxi dress</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="shop.html" class="link-animation">Crop top</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="shop.html" class="link-animation">Skinny jeans</a>
+                                                                        <span class="badge new">Sale</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="shop.html" class="link-animation">Women Shirt</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col">
+                                                            <!-- Header Mega Menu List -->
+                                                            <div class="header-megamenu-list">
+                                                                <a href="#" class="header-megamenu-title">Hot Deals</a>
+                                                                <ul role="list">
+                                                                    <li>
+                                                                        <a href="#" class="link-animation">Long sleeve shirt</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#" class="link-animation">Shorts Gym Snad</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#" class="link-animation">Black Zipper</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#" class="link-animation">Peplum blouse</a>
+                                                                        <span class="badge sale">Sale</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#" class="link-animation">Women Shirt</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <!-- Header Mega Menu List -->
+                                                            <div class="header-megamenu-list">
+                                                                <a href="#" class="header-megamenu-title">Fashion</a>
+                                                                <ul role="list">
+                                                                    <li>
+                                                                        <a href="#" class="link-animation">Pencil skirt</a>
+                                                                        <span class="badge sale">Sale</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#" class="link-animation">Maxi dress</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#" class="link-animation">Crop top</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#" class="link-animation">Skinny jeans</a>
+                                                                        <span class="badge new">Sale</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#" class="link-animation">Women Shirt</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col">
+                                                            <div class="header-megamenu-banner">
+                                                                <h5 class="banner-title">Off work on payday.</h5>
+                                                                <img loading="lazy" src="assets/images/look-book/lookbook3.2img.png" alt="Zircon" class="megamenu-banner-image" />
+                                                                <p class="p-lg banner-text ">
+                                                                    New Arrival Sale 20% Discount <br>
+                                                                    <a class="single-button link-animation" href="/shop.html">
+                                                                        Shop Now
+                                                                    </a>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="has-submenu"><a href="#">Product</a>
+                                        <ul class="submenu-wrapper">
+                                            <li><a href="#">Shop Grid</a></li>
+                                            <li><a href="#">Shop List</a></li>
+                                            <li><a href="#">Product Details</a></li>
+                                            <li><a href="#">Product Details V2</a></li>
+                                            <li><a href="#">Product Details V3</a></li>
+                                        </ul>
+                                    </li>
                                     <li><a href="#">Pages</a></li>
                                     <li><a href="#">Blog</a></li>
                                 </ul>
@@ -238,7 +414,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center mb-56">
-                        <h2 class="zc_section_heading3 mb-0">Best Selling Products</h2>
+                        <h2 class="zc_section_heading3 mb-0 split-text right">Best Selling Products</h2>
                     </div>
                 </div>
                 <div class="row">
@@ -248,7 +424,10 @@
                                 <div class="swiper-slide">
                                     <div class="zc3_product_item">
                                         <div class="zc3_product_item__thumb">
-                                            <img src="assets/images/product/zc3-pd1-img1.jpg" alt="Zircon">
+                                            <div class="zc3_product_item__thumbWrap">
+                                                <img src="assets/images/product/zc3-pd1-img1.jpg" alt="Zircon">
+                                                <img src="assets/images/product/zc3-pd1-img1.2.jpg" alt="Zircon">
+                                            </div>
                                             <div class="zc3_pd01Actions">
                                                 <a href="javascript:void(0);" class="pd01QuickView">
                                                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -299,7 +478,10 @@
                                 <div class="swiper-slide">
                                     <div class="zc3_product_item">
                                         <div class="zc3_product_item__thumb">
-                                            <img src="assets/images/product/zc3-pd1-img2.jpg" alt="Zircon">
+                                            <div class="zc3_product_item__thumbWrap">
+                                                <img src="assets/images/product/zc3-pd1-img2.jpg" alt="Zircon">
+                                                <img src="assets/images/product/zc3-pd1-img2.2.jpg" alt="Zircon">
+                                            </div>
                                             <div class="zc3_pd01Actions">
                                                 <a href="javascript:void(0);" class="pd01QuickView">
                                                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -359,7 +541,10 @@
                                 <div class="swiper-slide">
                                     <div class="zc3_product_item">
                                         <div class="zc3_product_item__thumb">
-                                            <img src="assets/images/product/zc3-pd1-img3.jpg" alt="Zircon">
+                                            <div class="zc3_product_item__thumbWrap">
+                                                <img src="assets/images/product/zc3-pd1-img3.jpg" alt="Zircon">
+                                                <img src="assets/images/product/zc3-pd1-img3.2.jpg" alt="Zircon">
+                                            </div>
                                             <div class="zc3_pd01Actions">
                                                 <a href="javascript:void(0);" class="pd01QuickView">
                                                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -410,7 +595,10 @@
                                 <div class="swiper-slide">
                                     <div class="zc3_product_item">
                                         <div class="zc3_product_item__thumb">
-                                            <img src="assets/images/product/zc3-pd1-img1.jpg" alt="Zircon">
+                                            <div class="zc3_product_item__thumbWrap">
+                                                <img src="assets/images/product/zc3-pd1-img1.jpg" alt="Zircon">
+                                                <img src="assets/images/product/zc3-pd1-img1.2.jpg" alt="Zircon">
+                                            </div>
                                             <div class="zc3_pd01Actions">
                                                 <a href="javascript:void(0);" class="pd01QuickView">
                                                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -461,7 +649,10 @@
                                 <div class="swiper-slide">
                                     <div class="zc3_product_item">
                                         <div class="zc3_product_item__thumb">
-                                            <img src="assets/images/product/zc3-pd1-img2.jpg" alt="Zircon">
+                                            <div class="zc3_product_item__thumbWrap">
+                                                <img src="assets/images/product/zc3-pd1-img2.jpg" alt="Zircon">
+                                                <img src="assets/images/product/zc3-pd1-img2.2.jpg" alt="Zircon">
+                                            </div>
                                             <div class="zc3_pd01Actions">
                                                 <a href="javascript:void(0);" class="pd01QuickView">
                                                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -618,7 +809,7 @@
                     <div class="col-lg-6 col-md-6">
                         <div class="zc3_featured_cate_content py-130">
                             <h2 class="zc_section_subheading3">Shop By Categories</h2>
-                            <h2 class="zc_section_heading3 mb-40">Featured Category</h2>
+                            <h2 class="zc_section_heading3 mb-40 split-text right">Featured Category</h2>
                             <ul class="zc3_category_nav">
                                 <li>
                                     <a href="#zc3_cate-1">
@@ -788,7 +979,7 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="zc3_about_content py-130">
-                            <h2 class="zc_section_heading3 mb-40">Not Just Fashion, But The Design</h2>
+                            <h2 class="zc_section_heading3 mb-40 split-text right">Not Just Fashion, But The Design</h2>
                             <p class="mb-56">Fashion-friendly clothes for fashion enthusiasts. Clothes are your beauty ticket. Our fabric will build your trust in us. We got the best that you can wear a dress. Drip in class. Be what you want to be and wear what you like. Classy clothes for Classy people the spirit of Fashion.</p>
                             <div class="zc_primary_btn3 text-start">
                                 <a href="javascript:void(0);" class="blob-btn">
@@ -806,7 +997,7 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="zc_stretch-element-inside-column zc_stretch_Img overflow-hidden">
+                        <div class="zc_stretch-element-inside-column zc_stretch_Img reveal right overflow-hidden">
                             <img src="assets/images/about/about-img3.png" alt="about-image">
                         </div>
                     </div>
@@ -906,7 +1097,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 mb-56">
-                        <h2 class="zc_section_heading3 text-center">Featured Collections</h2>
+                        <h2 class="zc_section_heading3 text-center split-text right">Featured Collections</h2>
                     </div>
                 </div>
                 <div class="row gx-30 gy-30">
@@ -995,7 +1186,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2">
-                        <h2 class="zc_section_heading3 text-center text-white mb-5">Stay In The Know</h2>
+                        <h2 class="zc_section_heading3 text-center text-white mb-5 split-text right">Stay In The Know</h2>
                         <div class="zc_newslatter03Form">
                             <form action="" method="POST">
                                 <div class="form-group d-flex align-items-end">
@@ -1036,7 +1227,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 mb-56">
-                        <h2 class="zc_section_heading3 text-center">Latest From Our Blogs</h2>
+                        <h2 class="zc_section_heading3 text-center split-text right">Latest From Our Blogs</h2>
                     </div>
                 </div>
                 <div class="row gx-30 gy-30">
