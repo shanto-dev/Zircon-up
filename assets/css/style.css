@@ -4410,6 +4410,12 @@ header.header-sticky {
 .zc_blog_card:hover .feature_image img {
   scale: 1.08; }
 
+.zn_latest_blog .zn_section_subheading {
+  background: #FFEFEC;
+  color: var(--primary-color4); }
+  .zn_latest_blog .zn_section_subheading:before {
+    background: var(--primary-color4); }
+
 .znlatestBlogRow .zc_blog_card .feature_image.big_thumb {
   border-radius: 24px; }
   .znlatestBlogRow .zc_blog_card .feature_image.big_thumb img {

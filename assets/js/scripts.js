@@ -635,3 +635,113 @@ var testimSwiper = new Swiper('.zn_testimonial-swipper', {
         }
     }
 });
+
+
+/*==================================
+* Split text animation
+==================================*/
+document.addEventListener('DOMContentLoaded', function () {
+    const splitTextElements = document.querySelectorAll('.split-text');
+
+    if (splitTextElements.length === 0) return;
+
+    gsap.registerPlugin(SplitText);
+
+    splitTextElements.forEach((el) => {
+        // Initialize SplitText on each element
+        el.split = new SplitText(el, {
+            type: "lines,words,chars",
+            linesClass: "tp-split-line"
+        });
+
+        // Set perspective for 3D effect
+        gsap.set(el, {
+            perspective: 400
+        });
+
+        // Apply initial transform based on class
+        if (el.classList.contains('right')) {
+            gsap.set(el.split.chars, {
+                opacity: 0,
+                x: "50",
+                ease: "back.out"
+            });
+        } else if (el.classList.contains('left')) {
+            gsap.set(el.split.chars, {
+                opacity: 0,
+                x: "-50",
+                ease: "circ.out"
+            });
+        } else if (el.classList.contains('up')) {
+            gsap.set(el.split.chars, {
+                opacity: 0,
+                y: "80",
+                ease: "circ.out"
+            });
+        } else if (el.classList.contains('down')) {
+            gsap.set(el.split.chars, {
+                opacity: 0,
+                y: "-80",
+                ease: "circ.out"
+            });
+        }
+
+        // Define the animation with ScrollTrigger
+        el.anim = gsap.to(el.split.chars, {
+            scrollTrigger: {
+                trigger: el,
+                start: "top 90%"
+            },
+            x: "0",
+            y: "0",
+            rotateX: "0",
+            scale: 1,
+            opacity: 1,
+            duration: 0.4,
+            stagger: 0.02
+        });
+    });
+});
+
+// Image reveal js
+document.addEventListener('DOMContentLoaded', function () {
+    const revealContainers = document.querySelectorAll('.reveal');
+
+    revealContainers.forEach((container) => {
+        const image = container.querySelector('img');
+
+        const tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: container,
+                toggleActions: 'play none none none'
+            }
+        });
+
+        tl.set(container, {
+            autoAlpha: 1
+        });
+
+        if (container.classList.contains('zoom-out')) {
+            tl.from(image, {
+                scale: 1.4,
+                duration: 1.5,
+                ease: 'power2.out'
+            });
+        } else if (container.classList.contains('left') || container.classList.contains('right')) {
+            const xPercent = container.classList.contains('left') ? -100 : 100;
+
+            tl.from(container, {
+                xPercent: xPercent,
+                duration: 1.5,
+                ease: 'power2.out'
+            });
+            tl.from(image, {
+                xPercent: -xPercent,
+                scale: 1,
+                duration: 1.5,
+                delay: -1.5,
+                ease: 'power2.out'
+            });
+        }
+    });
+});

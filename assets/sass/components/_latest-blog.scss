@@ -103,6 +103,18 @@
 }
 
 // Blog Item 02 
+.zn_latest_blog {
+    .zn_section_subheading {
+        background: #FFEFEC;
+        color: var(--primary-color4);
+
+        &:before {
+            background: var(--primary-color4);
+        }
+
+    }
+}
+
 .znlatestBlogRow {
     & .zc_blog_card {
         & .feature_image.big_thumb {
@@ -117,7 +129,8 @@
             & .card_meta {
                 @include displayFlex(inline-flex, start, center, row);
                 gap: 40px;
-                @include screen-768{
+
+                @include screen-768 {
                     flex-wrap: wrap;
                     gap: 15px;
                 }
@@ -196,7 +209,8 @@
                     font-size: 22px;
                     line-height: 32px;
                 }
-                @include large-screen{
+
+                @include large-screen {
                     font-size: 22px;
                     line-height: 32px;
                 }
