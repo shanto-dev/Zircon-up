@@ -8,7 +8,7 @@ header.header-sticky {
     left: 0;
     top: 0;
     width: 100%;
-    z-index: 50;
+    z-index: 999;
     animation: 400ms ease-in-out 0s normal none 1 running theme_fadeInDown;
 }
 
@@ -58,6 +58,10 @@ header.header-sticky {
     }
 }
 
+.zc_header_nav {
+    position: relative;
+}
+
 .zc_nav_menu {
     & ul>li:nth-child(1) {
         & a {
@@ -82,15 +86,19 @@ header.header-sticky {
             &.has-submenu {
                 position: relative;
 
-                &::after {
-                    content: '\f107';
-                    position: absolute;
-                    font-family: 'FontAwesome';
-                    right: 4px;
-                    top: 40px;
-                    font-size: 13px;
-                    color: var(--heading-color);
-                    transition: var(--transition-base);
+                &>a {
+                    position: relative;
+
+                    &::after {
+                        content: '\f107';
+                        position: absolute;
+                        font-family: 'FontAwesome';
+                        right: 4px;
+                        top: 40px;
+                        font-size: 13px;
+                        color: var(--heading-color);
+                        transition: var(--transition-base);
+                    }
                 }
 
                 &>.submenu-wrapper {
@@ -150,22 +158,28 @@ header.header-sticky {
                         opacity: 1;
                         visibility: visible;
                     }
-
-                    &>.zc_megamenu {
-                        opacity: 1;
-                        visibility: visible;
-                        top: 100%;
-                    }
                 }
             }
 
             &:hover {
                 &>a {
                     color: var(--primary-color);
-                }
 
-                &::after {
-                    color: var(--primary-color);
+                    &::after {
+                        color: var(--primary-color);
+                    }
+                }
+            }
+
+            &.has-megamenu {
+                position: static;
+
+                &:hover {
+                    & .zc_megamenu {
+                        top: 100%;
+                        opacity: 1;
+                        visibility: visible;
+                    }
                 }
             }
         }
@@ -316,18 +330,20 @@ header .has-megamenu {
     position: static;
 }
 
-.header-magamenu {
+.zc_megamenu {
     background: var(--white-color);
     min-width: inherit;
     width: 100%;
+    min-width: 100%;
     top: calc(100% + 10px);
     left: 0;
-    z-index: 10;
+    z-index: 999;
     padding: 6px 0;
     opacity: 0;
     visibility: hidden;
     transition: var(--transition-base);
     position: absolute;
+    border-top: 1px solid #DBDBDB;
 
     & .header-submenu-wrapper {
         margin-top: 0;
@@ -338,8 +354,12 @@ header .has-megamenu {
         }
     }
 
+    & .header-megamenu-wrapper {
+        padding: 4rem 0;
+    }
+
     & .header-megamenu-title {
-        font-family: var(--heading-font2);
+        font-family: var(--heading-font);
         font-weight: 600;
         font-size: 20px;
         line-height: 100%;
@@ -380,138 +400,72 @@ header .has-megamenu {
                 &:last-child {
                     margin-bottom: 0;
                 }
+
+                & .badge {
+                    font-size: 1.2rem;
+                    line-height: 1;
+                    padding: .2rem .4rem;
+                    border-radius: .2rem;
+                    border: 0;
+                }
+
+                &:hover {
+                    & a {
+                        --color-foreground: var(--heading-color);
+                        background: transparent;
+                    }
+                }
+            }
+        }
+    }
+
+    & .header-megamenu-banner {
+        & .banner-title {
+            margin-bottom: 1.6rem;
+            font-size: 24px;
+            font-family: var(--heading-font);
+            font-weight: 700;
+
+            @include large-screen {
+                font-size: 22px;
+            }
+        }
+
+        & .megamenu-banner-image {
+            border-radius: 12px;
+            max-width: 100%;
+        }
+
+        & .banner-text {
+            margin-top: 26px;
+            font-size: 18px;
+            font-weight: 500;
+            font-family: var(--body-font);
+            line-height: 24px;
+
+            & .single-button {
+                padding: 0;
+                font-weight: 600;
+                margin-top: 8px;
             }
         }
     }
 }
 
-.header-megamenu-wrapper {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2.4rem;
-    padding: 4rem 0;
-}
-
-header .header-megamenu-list ul li:hover a {
-    --color-foreground: var(--heading-color);
-    background: transparent;
-}
-
-.header-megamenu-list ul li .badge {
-    font-size: 1.2rem;
-    line-height: 1;
-    padding: .2rem .4rem;
-    border-radius: .2rem;
-    border: 0;
-}
-
-.header-megamenu-banner .banner-title {
-    margin-bottom: 1.6rem;
-    font-size: 24px;
-    font-family: var(--heading-font);
-}
-
-.header-megamenu-banner .megamenu-banner-image {
-    border-radius: 2.4rem;
-}
-
-.header-megamenu-banner .banner-text {
-    margin-top: 2.4rem;
-    font-size: 18px;
-    font-weight: 500;
-    font-family: var(--body-font);
-    line-height: 25px;
-
-    & .single-button {
-        padding: 0;
-        font-weight: 600;
-    }
-}
-
-/* MEGA MENU COLLECTION WRAPPER */
-.megamenu-collection-image-wrapper {
-    overflow: hidden;
-    position: relative;
-    border-radius: 2rem;
-    margin-bottom: 2rem;
-}
-
-.megamenu-collection-image-wrapper img {
-    transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-}
-
-.megamenu-collection-image-wrapper img:last-child {
-    position: absolute;
-    inset: 0;
-    opacity: 0;
-    visibility: hidden;
-}
-
-.megamenu-collection:hover img:first-child {
-    opacity: 0;
-    visibility: hidden;
-}
-
-.megamenu-collection:hover img:last-child {
-    opacity: 1;
-    visibility: visible;
-}
-
-.megamenu-collection h4 {
-    font-weight: 500;
-    margin-bottom: 0.8rem;
-}
-
-.megamenu-collection p {
-    --color-foreground: #464c5a;
-    color: var(--color-foreground);
-    font-family: var(--font-heading);
-}
-
-/* MEGA PRODUCTS  */
-.megamenu-collection-product-list li {
-    display: grid;
-    grid-template-columns: 8rem auto;
-    column-gap: 1.2rem;
-    margin-bottom: 2rem;
-    align-items: center;
-    --product-image-radius: 12px;
-}
-
-@media screen and (min-width: 1400px) {
-    .megamenu-collection-product-list li {
-        grid-template-columns: 11.6rem auto;
-    }
-}
-
-.megamenu-collection-product-list li:last-child {
-    margin-bottom: 0;
-}
-
-.megamenu-collection-product-list h6 {
-    margin: 1rem 0;
-}
-
-.megamenu-collection-product-list h6 a {
-    font-weight: 500;
-    font-size: 1.6rem;
-    line-height: 150%;
-    margin: 0.8rem 0;
-    display: block;
-    width: fit-content;
-}
-
-.megamenu-collection-product-list .product-price {
-    font-size: 1.4rem;
-}
-
 // ===========================================
 // Header 02
 // ===========================================
+.zn_header_section {
+    position: relative;
+
+    @include large-screen {
+        & .container {
+            max-width: 100%;
+        }
+    }
+}
+
+
 /******Zn Header Top**********/
 .zn_header_top {
     background-color: var(--yello-color);
@@ -607,6 +561,8 @@ header .header-megamenu-list ul li:hover a {
 
 /******ZN Header Bottom*******/
 .zn_header_section.sticky-on {
+    border-bottom: 1px solid #DBDBDB;
+
     & .zn_header_top {
         display: none;
     }
@@ -614,6 +570,7 @@ header .header-megamenu-list ul li:hover a {
 
 .zn_header_main {
     background: var(--color-background);
+    position: relative;
 
     @include screen-992 {
         padding-top: 10px;
@@ -675,16 +632,11 @@ header .header-megamenu-list ul li:hover a {
 
 
 .zn_header_nav {
-    position: relative;
     @include displayFlex(flex, center, center, column);
 
     &>ul {
         display: flex;
-        gap: 48px;
-
-        @include screen-1320 {
-            gap: 25px;
-        }
+        gap: 8px;
 
         &>li {
 
@@ -701,6 +653,10 @@ header .header-megamenu-list ul li:hover a {
             &:nth-child(4) {
                 padding-left: 150px;
 
+                @include screen-1320 {
+                    padding-left: 120px;
+                }
+
                 @include large-screen {
                     padding-left: 100px;
                 }
@@ -708,6 +664,10 @@ header .header-megamenu-list ul li:hover a {
 
             &:nth-child(3) {
                 padding-right: 150px;
+
+                @include screen-1320 {
+                    padding-right: 120px;
+                }
 
                 @include large-screen {
                     padding-right: 100px;
@@ -721,12 +681,147 @@ header .header-megamenu-list ul li:hover a {
             }
         }
     }
+
+    & ul {
+        & li {
+            display: inline-block;
+
+            a {
+                padding: 26.5px 20px;
+                font-size: 18px;
+                font-weight: 400;
+                color: var(--heading-color);
+                display: inline-block;
+                position: relative;
+
+                @include large-screen {
+                    padding: 26.5px 14px;
+                }
+            }
+
+            &.has-submenu {
+                position: relative;
+
+                &>a {
+                    &::after {
+                        content: '\f107';
+                        position: absolute;
+                        font-family: 'FontAwesome';
+                        right: 4px;
+                        top: 29px;
+                        font-size: 13px;
+                        color: var(--heading-color);
+                        transition: var(--transition-base);
+
+                        @include large-screen {
+                            right: 0;
+                        }
+                    }
+                }
+
+                &:hover {
+                    &>a {
+                        &::after {
+                            color: var(--primary-olor3);
+                        }
+                    }
+                }
+
+
+                &>.submenu-wrapper {
+                    position: absolute;
+                    top: calc(100% + 10px);
+                    left: 0;
+                    min-width: 220px;
+                    background: var(--white-color);
+                    z-index: 10;
+                    padding: 6px 0;
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: var(--transition-base);
+
+                    li {
+                        display: block;
+
+                        a {
+                            color: var(--heading-color);
+                            padding: 10px 24px;
+                            font-size: 16px;
+                        }
+
+                        &:hover {
+                            &>a {
+                                padding-left: 30px;
+                                color: var(--primary-color);
+                            }
+                        }
+
+                        &.has-submenu {
+                            & a {
+                                &::after {
+                                    content: '\f105';
+                                    top: 10px;
+                                    color: var(--primary-color);
+                                }
+                            }
+
+                            &>.submenu-wrapper {
+                                content: '\f105';
+                                position: absolute;
+                                left: 100%;
+                                top: 10px;
+                            }
+
+                            &:hover {
+                                &>.submenu-wrapper {
+                                    top: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &:hover {
+                    &>.submenu-wrapper {
+                        top: 100%;
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+            }
+
+            &.has-megamenu {
+                position: static;
+
+                &:hover {
+                    & .zc_megamenu {
+                        top: 100%;
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+
+                & .header-megamenu-title,
+                & .banner-title {
+                    font-family: var(--heading-font3);
+                }
+            }
+        }
+    }
+
+    & ul {
+        & li.has-megamenu {
+            & .zc_megamenu {
+                min-width: 100%;
+            }
+        }
+    }
 }
 
 .zn_header_logo {
     position: absolute;
     top: 25px;
-    left: 41%;
+    left: calc(50% - 64px);
 }
 
 .zn_header_right {
@@ -963,12 +1058,6 @@ header .header-megamenu-list ul li:hover a {
                         opacity: 1;
                         visibility: visible;
                     }
-
-                    &>.zc_megamenu {
-                        opacity: 1;
-                        visibility: visible;
-                        top: 100%;
-                    }
                 }
             }
 
@@ -976,18 +1065,17 @@ header .header-megamenu-list ul li:hover a {
                 position: static;
 
                 &:hover {
-                    & .header-magamenu {
+                    & .zc_megamenu {
                         top: 100%;
                         opacity: 1;
                         visibility: visible;
                     }
                 }
 
+
+                & .header-megamenu-title,
                 & .banner-title {
-                    margin-bottom: 1.6rem;
-                    font-size: 24px;
-                    font-family: var(--heading-font3);
-                    font-weight: 700;
+                    font-family: var(--heading-font2);
                 }
             }
         }
@@ -995,7 +1083,7 @@ header .header-megamenu-list ul li:hover a {
 
     & ul {
         & li.has-megamenu {
-            & .header-magamenu {
+            & .zc_megamenu {
                 min-width: 100%;
             }
         }
