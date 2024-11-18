@@ -368,35 +368,6 @@ var zc3pdCarousel = new Swiper(".zc3_product_carousel", {
 });
 
 /*==================================
-* zc3 Brand Text Slider
-==================================*/
-var textSide = new Swiper(".zc3_text_slider", {
-    spaceBetween: 150,
-    slidesPerView: 'auto',
-    loop: false,
-    slidesPerViewFit: false,
-    roundLengths: 'false',
-    centeredSlides: true,
-    loop: true,
-    autoplay: {
-        delay: 1,
-        disableOnInteraction: false,
-    },
-    speed: 3500,
-});
-
-// Stop and start autoplay on hover
-var slides = document.querySelectorAll(".zc3_text_slider .swiper-slide");
-slides.forEach(function (slide) {
-    slide.addEventListener("mouseenter", function () {
-        textSide.autoplay.stop(); // Stop autoplay on hover
-    });
-    slide.addEventListener("mouseleave", function () {
-        textSide.autoplay.start(); // Restart autoplay on mouse leave
-    });
-});
-
-/*==================================
 * Header Search Open
 ==================================*/
 document.addEventListener("DOMContentLoaded", function () {

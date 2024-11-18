@@ -6,19 +6,40 @@
     }
 }
 
+.zc3_text_slider {
+    position: relative;
+    @include displayFlex(inline-flex, start, center, row);
+    gap: 56px;
+
+    & .slider-item {
+        @include displayFlex(inline-flex, start, center, row);
+        gap: 56px;
+        white-space: nowrap;
+        animation: scroll2 18s linear infinite;
+
+    }
+
+    &:hover {
+        & .slider-item {
+            animation-play-state: paused;
+        }
+    }
+}
+
 .brand_text_slider {
     position: relative;
     background: var(--primary-color2);
 
     & .brandslideText {
         font-family: var(--heading-font2);
+        @include displayFlex(flex, start, center, row);
+        gap: 56px;
         font-size: 56px;
         font-weight: 700;
         line-height: 56px;
         color: var(--white-color);
         letter-spacing: 0.05em;
         text-transform: uppercase;
-        display: inline-block;
         width: auto;
         margin: 0;
         color: transparent;
@@ -45,16 +66,11 @@
         }
     }
 
-    & .swiper-slide {
-        width: auto !important;
+    & svg {
         position: relative;
-
-        & svg {
-            position: absolute;
-            right: -98px;
-            top: 5px;
-        }
+        bottom: 2px;
     }
+
 }
 
 // Brand Slider 
