@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zircon - Cosmetics & Beauty</title>
+
+    <!--essential css files-->
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/all.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+    <!--essential scripts file-->
+    <script src="assets/js/bootstrap.min.js" defer="defer"></script>
+    <script src="assets/js/swiper-bundle.min.js" defer="defer"></script>
+    <script src="assets/js/gsap.js" defer="defer"></script>
+    <script src="assets/js/gsap-scroll-trigger.js" defer="defer"></script>
+    <script src="assets/js/gsap-split-text.js" defer="defer"></script>
+    <script src="assets/js/scripts.js" defer="defer"></script>
+</head>
+
+<body>
+
+
+    <!--START:Header Section -->
+    <header class="zc_header_default header-sticky">
+        <div class="zc_coupon_announce position-relative">
+            <p class="mb-0 text-center text-uppercase">20% off everything - Use code:Summer - Ends 13 September 2023</p>
+            <button href="#" class="zc_announce_close">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 5L5 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M5 5L15 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+        <div class="zc_header_nav">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-5 col-sm-6 d-lg-none">
+                        <div class="zc_header_logo text-start">
+                            <a href="index.html"><img src="assets/images/logo.png" alt="logo" class="img-fluid"></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 col-lg-5 d-none d-lg-flex">
+                        <nav class="zc_nav_menu">
+                            <ul>
+                                <li class="has-submenu"><a href="#">Home</a>
+                                    <ul class="submenu-wrapper">
+                                        <li><a href="index.html">Home Page 1</a></li>
+                                        <li><a href="index-2.html">Home Page 2</a></li>
+                                        <li><a href="index-3.html">Home Page 3</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-submenu has-megamenu"><a href="#">Shop</a>
+                                    <!-- Mega Menu  -->
+                                    <div class="zc_megamenu">
+                                        <div class="header-submenu-wrapper">
+                                            <div class="container">
+                                                <div class="header-megamenu-wrapper row">
+                                                    <div class="col-3">
+                                                        <!-- Header Mega Menu List -->
+                                                        <div class="header-megamenu-list">
+                                                            <a href="shop.html" class="header-megamenu-title">Best Seller</a>
+                                                            <ul role="list">
+                                                                <li>
+                                                                    <a href="shop.html" class="link-animation">T-shirt dress</a>
+                                                                    <span class="badge">Sale</span>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="shop.html" class="link-animation">T-shirt dress</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="shop.html" class="link-animation">Denim jacket</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <!-- Header Mega Menu List -->
+                                                        <div class="header-megamenu-list">
+                                                            <a href="shop.html" class="header-megamenu-title">Fashion</a>
+                                                            <ul role="list">
+                                                                <li>
+                                                                    <a href="shop.html" class="link-animation">Pencil skirt</a>
+                                                                    <span class="badge sale">Sale</span>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="shop.html" class="link-animation">Maxi dress</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="shop.html" class="link-animation">Crop top</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="shop.html" class="link-animation">Skinny jeans</a>
+                                                                    <span class="badge new">Sale</span>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="shop.html" class="link-animation">Women Shirt</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <!-- Header Mega Menu List -->
+                                                        <div class="header-megamenu-list">
+                                                            <a href="shop.html" class="header-megamenu-title">Hot Deals</a>
+                                                            <ul role="list">
+                                                                <li>
+                                                                    <a href="shop.html" class="link-animation">Button-down shirt</a>
+                                                                    <span class="badge">Sale</span>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="shop.html" class="link-animation">High-waist pants</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="shop.html" class="link-animation">Tunic top</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="shop.html" class="link-animation">Peplum blouse</a>
+                                                                    <span class="badge">Sale</span>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="shop.html" class="link-animation">Women Shirt</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <!-- Header Mega Menu List -->
+                                                        <div class="header-megamenu-list">
+                                                            <a href="#" class="header-megamenu-title">Fashion</a>
+                                                            <ul class="" role="list">
+                                                                <li>
+                                                                    <a href="shop.html" class="link-animation">Pencil skirt</a>
+                                                                    <span class="badge sale badge">Sale</span>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="shop.html" class="link-animation">Maxi dress</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="shop.html" class="link-animation">Crop top</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="shop.html" class="link-animation">Skinny jeans</a>
+                                                                    <span class="badge new">Sale</span>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="shop.html" class="link-animation">Women Shirt</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <!-- Header Mega Menu List -->
+                                                        <div class="header-megamenu-list">
+                                                            <a href="#" class="header-megamenu-title">Hot Deals</a>
+                                                            <ul role="list">
+                                                                <li>
+                                                                    <a href="#" class="link-animation">Long sleeve shirt</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" class="link-animation">Shorts Gym Snad</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" class="link-animation">Black Zipper</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" class="link-animation">Peplum blouse</a>
+                                                                    <span class="badge sale">Sale</span>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" class="link-animation">Women Shirt</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <!-- Header Mega Menu List -->
+                                                        <div class="header-megamenu-list">
+                                                            <a href="#" class="header-megamenu-title">Fashion</a>
+                                                            <ul role="list">
+                                                                <li>
+                                                                    <a href="#" class="link-animation">Pencil skirt</a>
+                                                                    <span class="badge sale">Sale</span>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" class="link-animation">Maxi dress</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" class="link-animation">Crop top</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" class="link-animation">Skinny jeans</a>
+                                                                    <span class="badge new">Sale</span>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" class="link-animation">Women Shirt</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="header-megamenu-banner">
+                                                            <h5 class="banner-title">Off work on payday.</h5>
+                                                            <img loading="lazy" src="assets/images/look-book/lookbook3.2img.png" alt="Zircon" class="megamenu-banner-image" />
+                                                            <p class="p-lg banner-text ">
+                                                                New Arrival Sale 20% Discount <br>
+                                                                <a class="single-button link-animation" href="/shop.html">
+                                                                    Shop Now
+                                                                </a>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="has-submenu"><a href="#">Pages</a>
+                                    <ul class="submenu-wrapper">
+                                        <li><a href="about.html">About Us</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                        <li class="has-submenu"><a href="javascript:void(0)">Product</a>
+                                            <ul class="submenu-wrapper">
+                                                <li><a href="shop.html">Shop Grid</a></li>
+                                                <li><a href="shop-list.html">Shop List</a></li>
+                                                <li><a href="product-details.html">Product Details</a></li>
+                                                <li><a href="product-details-2.html">Product Details V2</a></li>
+                                                <li><a href="product-details-3.html">Product Details V3</a></li>
+                                                <li><a href="checkout.html">Checkout</a></li>
+                                                <li><a href="cart.html">Cart</a></li>
+                                                <li><a href="wishlist.html">Wishlist</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="faq.html">Faq</a></li>
+                                        <li><a href="order-tracking.html">Order Tracking</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-submenu"><a href="#">Blog</a>
+                                    <ul class="submenu-wrapper">
+                                        <li><a href="blog.html">Blog List</a></li>
+                                        <li><a href="blog-single.html">Blog Details</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 d-none d-lg-block">
+                        <div class="zc_header_logo text-center">
+                            <a href="index.html"><img src="assets/images/logo.png" alt="logo" class="img-fluid"></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 col-lg-4 col-7 col-sm-6">
+                        <div class="zc_header_right d-flex align-items-center justify-content-end">
+                            <div class="header-search">
+                                <button type="button" class="zc_header_search zc_headerSrc-open">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M22.0001 22.7502C21.9016 22.7505 21.804 22.7312 21.7131 22.6934C21.6221 22.6556 21.5395 22.6002 21.4701 22.5302L18.2501 19.3102C18.1176 19.1681 18.0455 18.98 18.0489 18.7857C18.0524 18.5914 18.1311 18.406 18.2685 18.2686C18.4059 18.1312 18.5913 18.0525 18.7856 18.0491C18.9799 18.0456 19.1679 18.1178 19.3101 18.2502L22.5301 21.4702C22.6349 21.5751 22.7062 21.7087 22.7351 21.8541C22.764 21.9995 22.7491 22.1502 22.6924 22.2872C22.6357 22.4241 22.5397 22.5412 22.4165 22.6236C22.2932 22.7061 22.1484 22.7501 22.0001 22.7502Z" fill="#0D0D0D" />
+                                        <path d="M11 20.7502C9.07164 20.7502 7.18657 20.1784 5.58319 19.1071C3.97982 18.0357 2.73013 16.513 1.99218 14.7314C1.25422 12.9498 1.06114 10.9894 1.43735 9.09812C1.81355 7.2068 2.74215 5.46952 4.10571 4.10596C5.46928 2.7424 7.20656 1.8138 9.09787 1.43759C10.9892 1.06139 12.9496 1.25447 14.7312 1.99242C16.5127 2.73038 18.0355 3.98006 19.1068 5.58344C20.1782 7.18682 20.75 9.07188 20.75 11.0002C20.7471 13.5852 19.7189 16.0635 17.8911 17.8913C16.0632 19.7192 13.585 20.7473 11 20.7502ZM11 2.75025C9.36831 2.75025 7.77326 3.2341 6.41655 4.14062C5.05984 5.04715 4.00242 6.33562 3.378 7.84311C2.75358 9.3506 2.5902 11.0094 2.90853 12.6097C3.22685 14.2101 4.01259 15.6801 5.16637 16.8339C6.32016 17.9877 7.79017 18.7734 9.39051 19.0917C10.9909 19.4101 12.6497 19.2467 14.1571 18.6223C15.6646 17.9978 16.9531 16.9404 17.8596 15.5837C18.7661 14.227 19.25 12.6319 19.25 11.0002C19.2476 8.81294 18.3777 6.71591 16.831 5.16925C15.2843 3.62259 13.1873 2.75263 11 2.75025Z" fill="#0D0D0D" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="zc_header_user d-none d-sm-block">
+                                <a href="#">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <mask id="mask0_140_1208" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="4" y="14" width="16" height="8">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4 14.4961H19.8399V21.8701H4V14.4961Z" fill="white" />
+                                        </mask>
+                                        <g mask="url(#mask0_140_1208)">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.921 15.9961C7.66 15.9961 5.5 16.7281 5.5 18.1731C5.5 19.6311 7.66 20.3701 11.921 20.3701C16.181 20.3701 18.34 19.6381 18.34 18.1931C18.34 16.7351 16.181 15.9961 11.921 15.9961ZM11.921 21.8701C9.962 21.8701 4 21.8701 4 18.1731C4 14.8771 8.521 14.4961 11.921 14.4961C13.88 14.4961 19.84 14.4961 19.84 18.1931C19.84 21.4891 15.32 21.8701 11.921 21.8701Z" fill="#0D0D0D" />
+                                        </g>
+                                        <mask id="mask1_140_1208" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="6" y="2" width="12" height="11">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.61035 2.00012H17.2304V12.6187H6.61035V2.00012Z" fill="white" />
+                                        </mask>
+                                        <g mask="url(#mask1_140_1208)">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9214 3.42776C9.78038 3.42776 8.03838 5.16876 8.03838 7.30976C8.03138 9.44376 9.76038 11.1838 11.8924 11.1918L11.9214 11.9058V11.1918C14.0614 11.1918 15.8024 9.44976 15.8024 7.30976C15.8024 5.16876 14.0614 3.42776 11.9214 3.42776ZM11.9214 12.6188H11.8894C8.96738 12.6098 6.60038 10.2268 6.61038 7.30676C6.61038 4.38176 8.99238 1.99976 11.9214 1.99976C14.8494 1.99976 17.2304 4.38176 17.2304 7.30976C17.2304 10.2378 14.8494 12.6188 11.9214 12.6188Z" fill="#0D0D0D" />
+                                        </g>
+                                    </svg>
+                                </a>
+                                <ul class="position-absolute user-menu">
+                                    <li><a href="login.html">Login</a></li>
+                                    <li><a href="signup.html">Sign Up</a></li>
+                                    <li><a href="login.html">My Account</a></li>
+                                </ul>
+                            </div>
+                            <div class="zc_header_cart d-none d-sm-block">
+                                <button type="button">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M17.5995 22.7383H6.39947C5.86779 22.7383 5.34219 22.6252 4.85756 22.4066C4.37293 22.1879 3.94036 21.8687 3.58854 21.47C3.23673 21.0714 2.97372 20.6025 2.81699 20.0945C2.66026 19.5864 2.61338 19.0508 2.67947 18.5233L3.92947 8.52328C4.04381 7.61692 4.48465 6.78333 5.16942 6.17863C5.85419 5.57393 6.73592 5.23961 7.64947 5.23828H16.3495C17.2629 5.23977 18.1445 5.57399 18.8294 6.17842C19.5143 6.78286 19.9555 7.6161 20.0705 8.52228L21.3205 18.5223C21.3866 19.05 21.3396 19.5857 21.1829 20.0938C21.0261 20.602 20.763 21.071 20.4111 21.4697C20.0592 21.8685 19.6265 22.1878 19.1417 22.4065C18.657 22.6252 18.1313 22.7383 17.5995 22.7383ZM7.64547 6.73828C7.0974 6.73929 6.56848 6.93996 6.15766 7.30274C5.74684 7.66552 5.48228 8.16555 5.41347 8.70928L4.16347 18.7093C4.12354 19.0262 4.1516 19.348 4.24579 19.6532C4.33998 19.9584 4.49812 20.24 4.70969 20.4793C4.92127 20.7186 5.1814 20.9101 5.47277 21.0409C5.76414 21.1718 6.08005 21.2391 6.39947 21.2383H17.5995C17.9186 21.2385 18.2341 21.1708 18.525 21.0397C18.8159 20.9086 19.0756 20.7171 19.2868 20.4778C19.4981 20.2386 19.6559 19.9572 19.75 19.6523C19.8441 19.3474 19.8722 19.0259 19.8325 18.7093L18.5825 8.70928C18.513 8.16564 18.2481 7.66584 17.8372 7.30316C17.4263 6.94047 16.8975 6.73969 16.3495 6.73828H7.64547Z" fill="#0D0D0D" />
+                                        <path d="M15.499 9.75024C15.3001 9.75024 15.1093 9.67123 14.9687 9.53057C14.828 9.38992 14.749 9.19916 14.749 9.00024V5.50024C14.749 4.7709 14.4593 4.07143 13.9436 3.5557C13.4278 3.03998 12.7284 2.75024 11.999 2.75024C11.2697 2.75024 10.5702 3.03998 10.0545 3.5557C9.53875 4.07143 9.24902 4.7709 9.24902 5.50024V9.00024C9.24902 9.19916 9.17001 9.38992 9.02935 9.53057C8.8887 9.67123 8.69794 9.75024 8.49902 9.75024C8.30011 9.75024 8.10935 9.67123 7.96869 9.53057C7.82804 9.38992 7.74902 9.19916 7.74902 9.00024V5.50024C7.74902 4.37307 8.19679 3.29207 8.99382 2.49504C9.79085 1.69801 10.8719 1.25024 11.999 1.25024C13.1262 1.25024 14.2072 1.69801 15.0042 2.49504C15.8013 3.29207 16.249 4.37307 16.249 5.50024V9.00024C16.249 9.19916 16.17 9.38992 16.0294 9.53057C15.8887 9.67123 15.6979 9.75024 15.499 9.75024Z" fill="#0D0D0D" />
+                                        <path d="M14 18.75H10C9.80109 18.75 9.61032 18.671 9.46967 18.5303C9.32902 18.3897 9.25 18.1989 9.25 18C9.25 17.8011 9.32902 17.6103 9.46967 17.4697C9.61032 17.329 9.80109 17.25 10 17.25H14C14.1989 17.25 14.3897 17.329 14.5303 17.4697C14.671 17.6103 14.75 17.8011 14.75 18C14.75 18.1989 14.671 18.3897 14.5303 18.5303C14.3897 18.671 14.1989 18.75 14 18.75Z" fill="#0D0D0D" />
+                                    </svg>
+                                </button>
+                                <span class="zc_cart_count">0</span>
+                            </div>
+                            <div class="header-toggle zc3_header-toggle d-lg-none">
+                                <button type="button" class="zc3_menu_toggler d-lg-none">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- END:Header Section -->
+
+
+    <main id="MainContent">
+
+        <!--breadcrumb section start-->
+        <div class="breadcrumb-section pt-40 pb-40" data-background="assets/images/shape/breadcrumb-bg.jpg">
+            <div class="container">
+                <p class="breadcrumb-text fw-light mb-0"><a href="index.html">Home</a> / <span class="primary-text-color">Contact</span></p>
+            </div>
+        </div>
+        <!--breadcrumb section end-->
+
+        <!--contact section start-->
+        <section class="contact-section bg-white ptb-120">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-7">
+                        <div class="text-center">
+                            <span class="text-uppercase secondary-text-color fw-light fs-sm">Contact Us</span>
+                            <h2 class="mb-4 mt-2">Keep In Touch with Us</h2>
+                            <p class="text-color fw-light">Our Customer Care team are available for support Monday - Friday from 9am to 5pm GMT. Alternatively, look to our FAQs page for answers to common queries.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="light-bg contact-form-box mt-60">
+                    <form action="#" class="ct-form">
+                        <div class="row g-4">
+                            <div class="col-sm-6">
+                                <div class="input-field">
+                                    <input type="text" placeholder="Your Name*" class="theme-input bg-white">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="input-field">
+                                    <input type="email" placeholder="Email Address*" class="theme-input bg-white">
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="input-field">
+                                    <textarea class="theme-input bg-white" placeholder="Type Message here" rows="7"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="template-btn primary-btn w-100 text-uppercase fw-normal mt-32"><span>Send Message</span></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!--contact section end-->
+
+        <!--location map start-->
+        <div class="location-map overflow-hidden">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d189.03351809071515!2d-74.00386275444733!3d40.706211994888974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25bbc62134845%3A0x70cef33126ac551d!2sThe%20Canvas!5e0!3m2!1sen!2sbd!4v1684131449550!5m2!1sen!2sbd" style="border:0;" loading="lazy"></iframe>
+        </div>
+        <!--location map end-->
+
+        <!--location box start-->
+        <section class="location-box-area bg-white ptb-120 overflow-hidden">
+            <div class="container">
+                <div class="row align-items-center justify-content-center g-4">
+                    <div class="col-xl-4 col-lg-6">
+                        <div class="location-box light-bg text-center position-relative z-1">
+                            <h3 class="mb-40">Berlin</h3>
+                            <p class="text-color mb-0 fw-light">Distrak Street 2SK Line, Germany galore@inside-support.com (+125) 2156-2145</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6">
+                        <div class="location-box light-bg text-center position-relative z-1">
+                            <h3 class="mb-40">Dhaka</h3>
+                            <p class="text-color mb-0 fw-light">Distrak Street 2SK Line, Germany galore@inside-support.com (+125) 2156-2145</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6">
+                        <div class="location-box light-bg text-center position-relative z-1">
+                            <h3 class="mb-40">Ottawa</h3>
+                            <p class="text-color mb-0 fw-light">Distrak Street 2SK Line, Germany galore@inside-support.com (+125) 2156-2145</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--location box end-->
+
+        <!--newsletter section start-->
+        <section class="newsletter-section light-bg ptb-120 position-relative z-1">
+            <img src="assets/images/shape/neaklace.png" alt="neaklace" class="position-absolute end-0 top-0 z--1 d-none d-xxl-block">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-6">
+                        <div class="newsletter-box text-center">
+                            <span class="fs-sm fw-light secondary-text-color">GET OUR NEWSLETTER</span>
+                            <h2 class="fw-normal mt-4 mb-50">Get News & Update to Your Inbox</h2>
+                            <form class="newsletter-form d-flex align-items-center">
+                                <input type="email" placeholder=" Email address...">
+                                <div class="zc_primary_btn">
+                                    <button type="submit" class="blob-btn white-color">Subscribe
+                                        <span class="blob-btn__inner">
+                                            <span class="blob-btn__blobs">
+                                                <span class="blob-btn__blob"></span>
+                                                <span class="blob-btn__blob"></span>
+                                                <span class="blob-btn__blob"></span>
+                                                <span class="blob-btn__blob"></span>
+                                            </span>
+                                        </span></button>
+                                </div>
+                            </form>
+                            <p class="mb-0 mt-32 fw-light">Will be used accordance with our <a href="#" class="text-decoration-underline primary-text-color hover-secondary">Privacy Policy</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--newsletter section end-->
+    </main>
+
+    <!-- START:Footer Area -->
+    <footer class="zc_footer_area pt-96">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer_header">
+                        <div>
+                            <h2 class="split-text right">Let’s Get In Touch</h2>
+                        </div>
+                        <button><img src="assets/images/footer-arrow-button.png" alt="Zircon"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="row pb-96">
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-3 mb-md-0">
+                    <aside class="zc_footer_widget">
+                        <h4 class="widget_title text-white">Get Support</h4>
+                        <ul>
+                            <li><a href="tel:92728991820029">
+                                    <h3>(+92) 7289 - 9182 - 0029</h3>
+                                </a></li>
+                            <li><a href="mailto:supportyourmail@gmail.com">supportyourmail@gmail.com</a></li>
+                            <li>
+                                <p>Find a location nearest your area.</p>
+                            </li>
+                        </ul>
+                        <a class="visit_btn" href="javascript:void(0);">Visit Our Store</a>
+                    </aside>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 mb-3 mb-lg-0">
+                    <aside class="zc_footer_widget zc_widget02">
+                        <h4 class="widget_title text-white">Information</h4>
+                        <ul>
+                            <li><a href="javascript:void(0);">About Us</a></li>
+                            <li><a href="javascript:void(0);">Delivery Information</a></li>
+                            <li><a href="javascript:void(0);">Terms & Conditions</a></li>
+                            <li><a href="javascript:void(0);">Privacy Policy</a></li>
+                            <li><a href="javascript:void(0);">Sales Information</a></li>
+                        </ul>
+                    </aside>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 mb-3 mb-md-0">
+                    <aside class="zc_footer_widget zc_widget03">
+                        <h4 class="widget_title text-white">Account</h4>
+                        <ul>
+                            <li><a href="javascript:void(0);">My Account</a></li>
+                            <li><a href="javascript:void(0);">My Orders</a></li>
+                            <li><a href="javascript:void(0);">My Wishlist</a></li>
+                            <li><a href="javascript:void(0);">Return Policy</a></li>
+                            <li><a href="javascript:void(0);">Order Tracking</a></li>
+                        </ul>
+                    </aside>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-6">
+                    <aside class="zc_footer_widget text-end">
+                        <h4 class="widget_title text-white">Follow Us</h4>
+                        <ul>
+                            <li><a href="javascript:void(0);">Facebook</a></li>
+                            <li><a href="javascript:void(0);">Instagram</a></li>
+                            <li><a href="javascript:void(0);">Twitter</a></li>
+                            <li><a href="javascript:void(0);">LinkedIn</a></li>
+                            <li><a href="javascript:void(0);">Pinterest</a></li>
+                        </ul>
+                    </aside>
+                </div>
+            </div>
+            <div class="zc_footer_copyright">
+                <div class="row align-items-center">
+                    <div class="col-xl-6 col-lg-7 col-md-12">
+                        <p class="mb-0">Copyright © 2023 Designpixls. All Rights Reserved. Design By Designpixls</p>
+                    </div>
+                    <div class="col-xl-6 col-lg-5 col-md-12">
+                        <div class="d-flex align-items-center justify-content-lg-end justify-content-center">
+                            <span>We Accept:</span>
+                            <figure class="m-0"><img src="assets/images/payment-method.png" alt="Zircon"></figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- END:Footer Area -->
+
+    <!-- Scroll to Top button Start -->
+    <button type="button" class="scroll-top-btn"><i class="fas fa-arrow-up"></i></button>
+    <!-- Scroll to Top button End -->
+
+    <!-- Header Mobile Menu Start -->
+    <div class="zc_mobile-menu">
+        <a href="javascript:void(0)" class="close"><i class="fas fa-xmark"></i></a>
+        <a href="#" class="logo"><img src="assets/images/logo-3.png" alt="logo" class="img-fluid"></a>
+        <ul class="mobile-nav-menu">
+            <li class="has-submenu">
+                <a href="javascript:void(0)">Home</a>
+                <i class="fas fa-angle-down"></i>
+                <ul class="submenu-wrapper" style="display: none;">
+                    <li><a href="index.html">Home Page 1</a></li>
+                    <li><a href="index-2.html">Home Page 2</a></li>
+                    <li><a href="index-3.html">Home Page 3</a></li>
+                </ul>
+            </li>
+            <li><a href="about.html">About</a></li>
+            <li class="has-submenu"><a href="javascript:void(0)">Pages</a>
+                <i class="fas fa-angle-down"></i>
+                <ul class="submenu-wrapper" style="display: none;">
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="checkout.html">Checkout</a></li>
+                    <li><a href="faq.html">Faq</a></li>
+                    <li><a href="wishlist.html">Wishlist</a></li>
+                    <li><a href="order-tracking.html">Order Tracking</a></li>
+                </ul>
+
+            </li>
+            <li class="has-submenu"><a href="javascript:void(0)">Blog</a>
+                <i class="fas fa-angle-down"></i>
+                <ul class="submenu-wrapper" style="display: none;">
+                    <li><a href="blog.html">Blog List</a></li>
+                    <li><a href="blog-single.html">Blog Details</a></li>
+                </ul>
+            </li>
+            <li class="has-submenu"><a href="javascript:void(0)">Shop</a>
+                <i class="fas fa-angle-down"></i>
+                <ul class="submenu-wrapper" style="display: none;">
+                    <li><a href="shop.html">Shop Grid</a></li>
+                    <li><a href="shop-list.html">Shop List</a></li>
+                    <li><a href="product-details.html">Product Details</a></li>
+                    <li><a href="product-details-2.html">Product Details V2</a></li>
+                    <li><a href="product-details-3.html">Product Details V3</a></li>
+                </ul>
+            </li>
+            <li><a href="wishlist.html">Wishlist</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <form class="mobile-search d-flex align-items-center mt-5" action="#">
+            <input type="text" placeholder="Search..." class="theme-input">
+            <button type="submit" class="template-btn primary-btn"><span>Go</span></button>
+        </form>
+    </div>
+    <!-- Header Mobile Menu End -->
+
+    <!-- Header Search Form Start -->
+    <div class="zc_search_form">
+        <a href="#" class="close"><i class="fas fa-xmark"></i></a>
+        <form action="#" class="d-flex align-items-center">
+            <input type="text" placeholder="Search...." class="theme-input">
+            <button type="submit" class="submit-btn">Go</button>
+        </form>
+    </div>
+    <!-- Header Search Form End -->
+
+</body>
+
+</html>

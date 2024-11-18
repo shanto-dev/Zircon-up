@@ -16,6 +16,7 @@
         --bs-gutter-y: 24px;
     }
 }
+
 .g-46,
 .gx-46 {
     --bs-gutter-x: 46px;
@@ -24,6 +25,7 @@
         --bs-gutter-x: 24px;
     }
 }
+
 .g-46,
 .gy-46 {
     --bs-gutter-y: 46px;
@@ -44,6 +46,14 @@
 
 .pb-24 {
     padding-bottom: 24px;
+}
+
+.pt-40 {
+    padding-top: 40px;
+}
+
+.pb-40 {
+    padding-bottom: 40px;
 }
 
 .ps-60 {
@@ -78,6 +88,30 @@
     padding-bottom: 120px;
 }
 
+.ptb-120 {
+    padding: 120px 0;
+
+    @include screen-768 {
+        padding: 70px 0;
+    }
+}
+
+.pt-120 {
+    padding-top: 120px;
+
+    @include screen-768 {
+        padding-top: 70px;
+    }
+}
+
+.pb-120 {
+    padding-bottom: 120px;
+
+    @include screen-768 {
+        padding-bottom: 70px;
+    }
+}
+
 .pt-130 {
     padding-top: 130px;
 
@@ -96,7 +130,8 @@
 
 .py-120 {
     padding: 120px 0;
-    @include large-screen{
+
+    @include large-screen {
         padding: 90px 0;
     }
 }
@@ -118,6 +153,7 @@
 .mt-10 {
     margin-top: 10px;
 }
+
 .mb-24 {
     margin-bottom: 24px;
 }
@@ -128,6 +164,18 @@
 
 .mb-30 {
     margin-bottom: 30px;
+}
+
+.mt-32 {
+    margin-top: 32px;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+.mb-40 {
+    margin-bottom: 40px;
 }
 
 .mb-34 {
@@ -141,9 +189,11 @@
         margin-bottom: 28px;
     }
 }
+
 .mb-50 {
     margin-bottom: 50px;
 }
+
 .mb-64 {
     margin-bottom: 64px;
 
@@ -151,9 +201,19 @@
         margin-bottom: 50px;
     }
 }
+
+.mt-60 {
+    margin-top: 60px;
+}
+
 .mb-60 {
     margin-bottom: 60px;
 }
+
+.mt-80 {
+    margin-top: 80px;
+}
+
 
 .mb-54 {
     margin-bottom: 54px;
@@ -170,6 +230,7 @@
         margin-bottom: 42px;
     }
 }
+
 .mb-70 {
     margin-bottom: 70px;
 }

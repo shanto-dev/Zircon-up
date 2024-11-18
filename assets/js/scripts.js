@@ -544,7 +544,7 @@ var znFeaturedPd = new Swiper('.zn_featured_pd_carousel', {
         prevEl: '.zn_featuredPd_prev',
     },
     breakpoints: {
-        
+
         400: {
             spaceBetween: 15,
             slidesPerView: 1.3
@@ -605,6 +605,44 @@ var testimSwiper = new Swiper('.zn_testimonial-swipper', {
             slidesPerView: 3
         }
     }
+});
+
+
+/*==================================
+* Data Background Set
+==================================*/
+document.querySelectorAll('[data-background]').forEach(function (element) {
+    const backgroundUrl = element.getAttribute('data-background');
+    element.style.backgroundImage = `url(${backgroundUrl})`;
+});
+
+
+/*==================================
+* checkout toggle
+==================================*/
+document.querySelectorAll(".checkout-toggle-form").forEach(function (form) {
+    const toggleBtn = form.querySelector(".form-toggle-btn");
+    const toggleForm = form.querySelector(".toggle-form");
+
+    if (toggleBtn && toggleForm) {
+        toggleBtn.addEventListener("click", function (event) {
+            event.preventDefault();
+            toggleForm.classList.toggle("active");
+        });
+    }
+});
+
+
+/*==================================
+* Feedback Slider
+==================================*/
+var znInnerFeedback = new Swiper(".zn_innerFeedback-slider", {
+    loop: true,
+    slidesPerView: 1,
+    navigation: {
+      nextEl: ".feedback-button-next",
+      prevEl: ".feedback-button-prev",
+    },
 });
 
 

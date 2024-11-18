@@ -119,6 +119,23 @@ svg {
     background: var(--yello-shade-background);
 }
 
+// Color Clsss 
+.zcWprimaryColor {
+    color: var(--parimary-color);
+}
+
+.zcWsecondaryColor {
+    color: var(--secondary-color);
+}
+
+.light-bg {
+    background: var(--color-border);
+}
+
+.heading_text_color {
+    color: var(--heading-color);
+}
+
 // ClipPath 
 svg.clippy {
     position: absolute;
@@ -508,17 +525,19 @@ svg.clippy {
     }
 }
 
-
-/**************** scroll top button ***************/
-.scroll-top-btn {
-    width: 40px;
-    height: 40px;
-    background-color: var(--heading-color2);
+// Badge 
+.badge {
+    padding: 4px 8px;
+    background: var(--primary-color);
+    border: 1px solid var(--primary-color);
     color: var(--white-color);
-    border-radius: 3px;
-    position: fixed;
-    bottom: 40px;
-    right: 40px;
-    z-index: 100;
-    font-size: 15px;
+    border-radius: 8px;
+}
+
+
+// breadcrumb-section
+.breadcrumb-section {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center right;
 }

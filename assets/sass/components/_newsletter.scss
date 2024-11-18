@@ -1,4 +1,4 @@
-/** Newsletter **/
+/*=========== Newsletter =============*/
 .zc_newsletter {
     .newsletter_bg {
         position: relative;
@@ -80,7 +80,7 @@
     }
 }
 
-// Newsletter 03
+/*=========== Newsletter 03=============*/
 .zc_newsLetter_sec03 {
     background: var(--primary-color2);
     position: relative;
@@ -249,6 +249,31 @@
                     fill: var(--heading-color);
                 }
             }
+        }
+    }
+}
+
+
+/*=========== Default newsletter =============*/
+.newsletter-form {
+    padding: 7px;
+    border: 1px solid var(--border-gray-dark);
+
+    & input {
+        width: 100%;
+        background-color: transparent;
+        border: 0;
+        padding-left: 22px;
+        font-weight: 300;
+    }
+    & .blob-btn{
+        border-radius: 0;
+        &::after,
+        &::before{
+            border-radius: 0;
+        }
+        & .blob-btn__inner{
+            border-radius: 0;
         }
     }
 }

@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zircon - Cosmetics & Beauty</title>
+
+    <!--essential css files-->
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/all.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+    <!--essential scripts file-->
+    <script src="assets/js/bootstrap.min.js" defer="defer"></script>
+    <script src="assets/js/swiper-bundle.min.js" defer="defer"></script>
+    <script src="assets/js/gsap.js" defer="defer"></script>
+    <script src="assets/js/gsap-scroll-trigger.js" defer="defer"></script>
+    <script src="assets/js/gsap-split-text.js" defer="defer"></script>
+    <script src="assets/js/scripts.js" defer="defer"></script>
+</head>
+
+<body>
+
+
+    <!--START:Header Section -->
+    <header class="zc_header_default header-sticky">
+        <div class="zc_coupon_announce position-relative">
+            <p class="mb-0 text-center text-uppercase">20% off everything - Use code:Summer - Ends 13 September 2023</p>
+            <button href="#" class="zc_announce_close">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 5L5 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M5 5L15 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+        <div class="zc_header_nav">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-5 col-sm-6 d-lg-none">
+                        <div class="zc_header_logo text-start">
+                            <a href="index.html"><img src="assets/images/logo.png" alt="logo" class="img-fluid"></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 col-lg-5 d-none d-lg-flex">
+                        <nav class="zc_nav_menu">
+                            <ul>
+                                <li class="has-submenu"><a href="#">Home</a>
+                                    <ul class="submenu-wrapper">
+                                        <li><a href="index.html">Home Page 1</a></li>
+                                        <li><a href="index-2.html">Home Page 2</a></li>
+                                        <li><a href="index-3.html">Home Page 3</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-submenu has-megamenu"><a href="#">Shop</a>
+                                    <!-- Mega Menu  -->
+                                    <div class="zc_megamenu">
+                                        <div class="header-submenu-wrapper">
+                                            <div class="container">
+                                                <div class="header-megamenu-wrapper row">
+                                                    <div class="col-3">
+                                                        <!-- Header Mega Menu List -->
+                                                        <div class="header-megamenu-list">
+                                                            <a href="shop.html" class="header-megamenu-title">Best Seller</a>
+                                                            <ul role="list">
+                                                                <li>
+                                                                    <a href="shop.html" class="link-animation">T-shirt dress</a>
+                                                                    <span class="badge">Sale</span>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="shop.html" class="link-animation">T-shirt dress</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="shop.html" class="link-animation">Denim jacket</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <!-- Header Mega Menu List -->
+                                                        <div class="header-megamenu-list">
+                                                            <a href="shop.html" class="header-megamenu-title">Fashion</a>
+                                                            <ul role="list">
+                                                                <li>
+                                                                    <a href="shop.html" class="link-animation">Pencil skirt</a>
+                                                                    <span class="badge sale">Sale</span>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="shop.html" class="link-animation">Maxi dress</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="shop.html" class="link-animation">Crop top</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="shop.html" class="link-animation">Skinny jeans</a>
+                                                                    <span class="badge new">Sale</span>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="shop.html" class="link-animation">Women Shirt</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <!-- Header Mega Menu List -->
+                                                        <div class="header-megamenu-list">
+                                                            <a href="shop.html" class="header-megamenu-title">Hot Deals</a>
+                                                            <ul role="list">
+                                                                <li>
+                                                                    <a href="shop.html" class="link-animation">Button-down shirt</a>
+                                                                    <span class="badge">Sale</span>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="shop.html" class="link-animation">High-waist pants</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="shop.html" class="link-animation">Tunic top</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="shop.html" class="link-animation">Peplum blouse</a>
+                                                                    <span class="badge">Sale</span>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="shop.html" class="link-animation">Women Shirt</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <!-- Header Mega Menu List -->
+                                                        <div class="header-megamenu-list">
+                                                            <a href="#" class="header-megamenu-title">Fashion</a>
+                                                            <ul class="" role="list">
+                                                                <li>
+                                                                    <a href="shop.html" class="link-animation">Pencil skirt</a>
+                                                                    <span class="badge sale badge">Sale</span>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="shop.html" class="link-animation">Maxi dress</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="shop.html" class="link-animation">Crop top</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="shop.html" class="link-animation">Skinny jeans</a>
+                                                                    <span class="badge new">Sale</span>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="shop.html" class="link-animation">Women Shirt</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <!-- Header Mega Menu List -->
+                                                        <div class="header-megamenu-list">
+                                                            <a href="#" class="header-megamenu-title">Hot Deals</a>
+                                                            <ul role="list">
+                                                                <li>
+                                                                    <a href="#" class="link-animation">Long sleeve shirt</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" class="link-animation">Shorts Gym Snad</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" class="link-animation">Black Zipper</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" class="link-animation">Peplum blouse</a>
+                                                                    <span class="badge sale">Sale</span>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" class="link-animation">Women Shirt</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <!-- Header Mega Menu List -->
+                                                        <div class="header-megamenu-list">
+                                                            <a href="#" class="header-megamenu-title">Fashion</a>
+                                                            <ul role="list">
+                                                                <li>
+                                                                    <a href="#" class="link-animation">Pencil skirt</a>
+                                                                    <span class="badge sale">Sale</span>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" class="link-animation">Maxi dress</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" class="link-animation">Crop top</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" class="link-animation">Skinny jeans</a>
+                                                                    <span class="badge new">Sale</span>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" class="link-animation">Women Shirt</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="header-megamenu-banner">
+                                                            <h5 class="banner-title">Off work on payday.</h5>
+                                                            <img loading="lazy" src="assets/images/look-book/lookbook3.2img.png" alt="Zircon" class="megamenu-banner-image" />
+                                                            <p class="p-lg banner-text ">
+                                                                New Arrival Sale 20% Discount <br>
+                                                                <a class="single-button link-animation" href="/shop.html">
+                                                                    Shop Now
+                                                                </a>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="has-submenu"><a href="#">Pages</a>
+                                    <ul class="submenu-wrapper">
+                                        <li><a href="about.html">About Us</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                        <li class="has-submenu"><a href="javascript:void(0)">Product</a>
+                                            <ul class="submenu-wrapper">
+                                                <li><a href="shop.html">Shop Grid</a></li>
+                                                <li><a href="shop-list.html">Shop List</a></li>
+                                                <li><a href="product-details.html">Product Details</a></li>
+                                                <li><a href="product-details-2.html">Product Details V2</a></li>
+                                                <li><a href="product-details-3.html">Product Details V3</a></li>
+                                                <li><a href="checkout.html">Checkout</a></li>
+                                                <li><a href="cart.html">Cart</a></li>
+                                                <li><a href="wishlist.html">Wishlist</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="faq.html">Faq</a></li>
+                                        <li><a href="order-tracking.html">Order Tracking</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-submenu"><a href="#">Blog</a>
+                                    <ul class="submenu-wrapper">
+                                        <li><a href="blog.html">Blog List</a></li>
+                                        <li><a href="blog-single.html">Blog Details</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 d-none d-lg-block">
+                        <div class="zc_header_logo text-center">
+                            <a href="index.html"><img src="assets/images/logo.png" alt="logo" class="img-fluid"></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 col-lg-4 col-7 col-sm-6">
+                        <div class="zc_header_right d-flex align-items-center justify-content-end">
+                            <div class="header-search">
+                                <button type="button" class="zc_header_search zc_headerSrc-open">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M22.0001 22.7502C21.9016 22.7505 21.804 22.7312 21.7131 22.6934C21.6221 22.6556 21.5395 22.6002 21.4701 22.5302L18.2501 19.3102C18.1176 19.1681 18.0455 18.98 18.0489 18.7857C18.0524 18.5914 18.1311 18.406 18.2685 18.2686C18.4059 18.1312 18.5913 18.0525 18.7856 18.0491C18.9799 18.0456 19.1679 18.1178 19.3101 18.2502L22.5301 21.4702C22.6349 21.5751 22.7062 21.7087 22.7351 21.8541C22.764 21.9995 22.7491 22.1502 22.6924 22.2872C22.6357 22.4241 22.5397 22.5412 22.4165 22.6236C22.2932 22.7061 22.1484 22.7501 22.0001 22.7502Z" fill="#0D0D0D" />
+                                        <path d="M11 20.7502C9.07164 20.7502 7.18657 20.1784 5.58319 19.1071C3.97982 18.0357 2.73013 16.513 1.99218 14.7314C1.25422 12.9498 1.06114 10.9894 1.43735 9.09812C1.81355 7.2068 2.74215 5.46952 4.10571 4.10596C5.46928 2.7424 7.20656 1.8138 9.09787 1.43759C10.9892 1.06139 12.9496 1.25447 14.7312 1.99242C16.5127 2.73038 18.0355 3.98006 19.1068 5.58344C20.1782 7.18682 20.75 9.07188 20.75 11.0002C20.7471 13.5852 19.7189 16.0635 17.8911 17.8913C16.0632 19.7192 13.585 20.7473 11 20.7502ZM11 2.75025C9.36831 2.75025 7.77326 3.2341 6.41655 4.14062C5.05984 5.04715 4.00242 6.33562 3.378 7.84311C2.75358 9.3506 2.5902 11.0094 2.90853 12.6097C3.22685 14.2101 4.01259 15.6801 5.16637 16.8339C6.32016 17.9877 7.79017 18.7734 9.39051 19.0917C10.9909 19.4101 12.6497 19.2467 14.1571 18.6223C15.6646 17.9978 16.9531 16.9404 17.8596 15.5837C18.7661 14.227 19.25 12.6319 19.25 11.0002C19.2476 8.81294 18.3777 6.71591 16.831 5.16925C15.2843 3.62259 13.1873 2.75263 11 2.75025Z" fill="#0D0D0D" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="zc_header_user d-none d-sm-block">
+                                <a href="#">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <mask id="mask0_140_1208" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="4" y="14" width="16" height="8">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4 14.4961H19.8399V21.8701H4V14.4961Z" fill="white" />
+                                        </mask>
+                                        <g mask="url(#mask0_140_1208)">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.921 15.9961C7.66 15.9961 5.5 16.7281 5.5 18.1731C5.5 19.6311 7.66 20.3701 11.921 20.3701C16.181 20.3701 18.34 19.6381 18.34 18.1931C18.34 16.7351 16.181 15.9961 11.921 15.9961ZM11.921 21.8701C9.962 21.8701 4 21.8701 4 18.1731C4 14.8771 8.521 14.4961 11.921 14.4961C13.88 14.4961 19.84 14.4961 19.84 18.1931C19.84 21.4891 15.32 21.8701 11.921 21.8701Z" fill="#0D0D0D" />
+                                        </g>
+                                        <mask id="mask1_140_1208" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="6" y="2" width="12" height="11">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.61035 2.00012H17.2304V12.6187H6.61035V2.00012Z" fill="white" />
+                                        </mask>
+                                        <g mask="url(#mask1_140_1208)">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9214 3.42776C9.78038 3.42776 8.03838 5.16876 8.03838 7.30976C8.03138 9.44376 9.76038 11.1838 11.8924 11.1918L11.9214 11.9058V11.1918C14.0614 11.1918 15.8024 9.44976 15.8024 7.30976C15.8024 5.16876 14.0614 3.42776 11.9214 3.42776ZM11.9214 12.6188H11.8894C8.96738 12.6098 6.60038 10.2268 6.61038 7.30676C6.61038 4.38176 8.99238 1.99976 11.9214 1.99976C14.8494 1.99976 17.2304 4.38176 17.2304 7.30976C17.2304 10.2378 14.8494 12.6188 11.9214 12.6188Z" fill="#0D0D0D" />
+                                        </g>
+                                    </svg>
+                                </a>
+                                <ul class="position-absolute user-menu">
+                                    <li><a href="login.html">Login</a></li>
+                                    <li><a href="signup.html">Sign Up</a></li>
+                                    <li><a href="login.html">My Account</a></li>
+                                </ul>
+                            </div>
+                            <div class="zc_header_cart d-none d-sm-block">
+                                <button type="button">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M17.5995 22.7383H6.39947C5.86779 22.7383 5.34219 22.6252 4.85756 22.4066C4.37293 22.1879 3.94036 21.8687 3.58854 21.47C3.23673 21.0714 2.97372 20.6025 2.81699 20.0945C2.66026 19.5864 2.61338 19.0508 2.67947 18.5233L3.92947 8.52328C4.04381 7.61692 4.48465 6.78333 5.16942 6.17863C5.85419 5.57393 6.73592 5.23961 7.64947 5.23828H16.3495C17.2629 5.23977 18.1445 5.57399 18.8294 6.17842C19.5143 6.78286 19.9555 7.6161 20.0705 8.52228L21.3205 18.5223C21.3866 19.05 21.3396 19.5857 21.1829 20.0938C21.0261 20.602 20.763 21.071 20.4111 21.4697C20.0592 21.8685 19.6265 22.1878 19.1417 22.4065C18.657 22.6252 18.1313 22.7383 17.5995 22.7383ZM7.64547 6.73828C7.0974 6.73929 6.56848 6.93996 6.15766 7.30274C5.74684 7.66552 5.48228 8.16555 5.41347 8.70928L4.16347 18.7093C4.12354 19.0262 4.1516 19.348 4.24579 19.6532C4.33998 19.9584 4.49812 20.24 4.70969 20.4793C4.92127 20.7186 5.1814 20.9101 5.47277 21.0409C5.76414 21.1718 6.08005 21.2391 6.39947 21.2383H17.5995C17.9186 21.2385 18.2341 21.1708 18.525 21.0397C18.8159 20.9086 19.0756 20.7171 19.2868 20.4778C19.4981 20.2386 19.6559 19.9572 19.75 19.6523C19.8441 19.3474 19.8722 19.0259 19.8325 18.7093L18.5825 8.70928C18.513 8.16564 18.2481 7.66584 17.8372 7.30316C17.4263 6.94047 16.8975 6.73969 16.3495 6.73828H7.64547Z" fill="#0D0D0D" />
+                                        <path d="M15.499 9.75024C15.3001 9.75024 15.1093 9.67123 14.9687 9.53057C14.828 9.38992 14.749 9.19916 14.749 9.00024V5.50024C14.749 4.7709 14.4593 4.07143 13.9436 3.5557C13.4278 3.03998 12.7284 2.75024 11.999 2.75024C11.2697 2.75024 10.5702 3.03998 10.0545 3.5557C9.53875 4.07143 9.24902 4.7709 9.24902 5.50024V9.00024C9.24902 9.19916 9.17001 9.38992 9.02935 9.53057C8.8887 9.67123 8.69794 9.75024 8.49902 9.75024C8.30011 9.75024 8.10935 9.67123 7.96869 9.53057C7.82804 9.38992 7.74902 9.19916 7.74902 9.00024V5.50024C7.74902 4.37307 8.19679 3.29207 8.99382 2.49504C9.79085 1.69801 10.8719 1.25024 11.999 1.25024C13.1262 1.25024 14.2072 1.69801 15.0042 2.49504C15.8013 3.29207 16.249 4.37307 16.249 5.50024V9.00024C16.249 9.19916 16.17 9.38992 16.0294 9.53057C15.8887 9.67123 15.6979 9.75024 15.499 9.75024Z" fill="#0D0D0D" />
+                                        <path d="M14 18.75H10C9.80109 18.75 9.61032 18.671 9.46967 18.5303C9.32902 18.3897 9.25 18.1989 9.25 18C9.25 17.8011 9.32902 17.6103 9.46967 17.4697C9.61032 17.329 9.80109 17.25 10 17.25H14C14.1989 17.25 14.3897 17.329 14.5303 17.4697C14.671 17.6103 14.75 17.8011 14.75 18C14.75 18.1989 14.671 18.3897 14.5303 18.5303C14.3897 18.671 14.1989 18.75 14 18.75Z" fill="#0D0D0D" />
+                                    </svg>
+                                </button>
+                                <span class="zc_cart_count">0</span>
+                            </div>
+                            <div class="header-toggle zc3_header-toggle d-lg-none">
+                                <button type="button" class="zc3_menu_toggler d-lg-none">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- END:Header Section -->
+
+
+    <main id="MainContent">
+        <!--breadcrumb section start-->
+        <div class="breadcrumb-section pt-40 pb-40" data-background="assets/images/shape/breadcrumb-bg.jpg">
+            <div class="container">
+                <p class="breadcrumb-text fw-light mb-0"><a href="index.html">Home</a>/<span class="primary-text-color">About Company</span></p>
+            </div>
+        </div>
+        <!--breadcrumb section end-->
+
+        <!--history section start-->
+        <section class="company-history bg-white ptb-120 overflow-hidden">
+            <div class="container">
+                <div class="row g-5 g-lg-4 align-items-center">
+                    <div class="col-xl-5 col-lg-6">
+                        <div class="image-wrapper">
+                            <img src="assets/images/about/1.jpg" alt="not found" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="ps-xl-5 col-xl-5 col-lg-6">
+                        <div class="history-content">
+                            <span class="secondary-text-color text-uppercase fs-sm d-block mb-4">Company History</span>
+                            <h2 class="display-3 fw-normal mb-5">About Uroan</h2>
+                            <p class="mb-4 heading_text_color">Mauris blandit aliquet elit eget tincidunt nibh pulvinar uisque velit nisi pretium ut lacinia in elementum id enim velit nisi pretium elementum id enim. </p>
+                            <p class="mb-5 fw-light">Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Donec rutrum congue leo eget malesuada. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Quisque velit nisi, pretium ut lacinia in, elementum id enim.</p>
+                            <div class="zc_primary_btn">
+                                <a href="contact.html" class="text-uppercase blob-btn">
+                                    Contact Us
+                                    <span class="blob-btn__inner">
+                                        <span class="blob-btn__blobs">
+                                            <span class="blob-btn__blob"></span>
+                                            <span class="blob-btn__blob"></span>
+                                            <span class="blob-btn__blob"></span>
+                                            <span class="blob-btn__blob"></span>
+                                        </span>
+                                    </span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--history section end-->
+
+        <!--video section start-->
+        <div class="video-box position-relative z-1 overflow-hidden" data-background="assets/images/about/video-bg.jpg">
+            <a href="https://www.youtube.com/watch?v=6WZOxnYi4Cs" data-fancybox class="template-video-btn"><i class="fas fa-play"></i></a>
+        </div>
+        <!--video sectin end-->
+
+        <!-- mission area start-->
+        <section class="ptb-120 bg-white overflow-hidden">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-xl-4 col-lg-6">
+                        <div class="theme-card">
+                            <div class="overflow-hidden">
+                                <img src="assets/images/about/01.jpg" alt="not found" class="img-fluid">
+                            </div>
+                            <div class="mt-40">
+                                <h3 class="mb-30">Our Mission</h3>
+                                <p class="fw-light">Curasre potenti metus natoquefui sociis tempor facilisis tempus ridiaclus porta porttitor feugiat consequat aliquet maecenas turpis.</p>
+                                <p class="fw-light">Dui integer est lobortis fusce odio curabitur accumsan auctor scelerisque</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 d-none d-xl-block">
+                        <div class="feature-image about-mission-box">
+                            <img src="assets/images/about/2.jpg" alt="not found" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6">
+                        <div>
+                            <h3 class="mb-32">Our Goals</h3>
+                            <p class="fw-light mb-40">Metus natoquefui sociis tempor facili tempus ridiclus porta porttitor feugiat consequat.</p>
+                            <div class="accordion zc2-accordion" id="zc2_accordion">
+                                <div class="accordion-item">
+                                    <div class="accordion-header">
+                                        <a href="#acc_1" data-bs-toggle="collapse" class="collapsed">Providing Pure Grade Jewelry</a>
+                                    </div>
+                                    <div class="accordion-collapse collapse show" id="acc_1" data-bs-parent="#zc2_accordion">
+                                        <div class="accordion-body px-0 pb-0">
+                                            <p class="mb-0 fw-light mb-0">Lectus litra mollis eros sollicitudin massa dapibus ultrices per suscipit montes accumsan curabitur sed aliquam volutpat porta naquis</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="accordion-header">
+                                        <a href="#acc_2" data-bs-toggle="collapse">Easy Customer Service Policy</a>
+                                    </div>
+                                    <div class="accordion-collapse collapse" id="acc_2" data-bs-parent="#zc2_accordion">
+                                        <div class="accordion-body px-0 pb-0">
+                                            <p class="mb-0 fw-light mb-0">Lectus litra mollis eros sollicitudin massa dapibus ultrices per suscipit montes accumsan curabitur sed aliquam volutpat porta naquis</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="accordion-header">
+                                        <a href="#acc_3" data-bs-toggle="collapse">Easy Customer Service Policy</a>
+                                    </div>
+                                    <div class="accordion-collapse collapse" id="acc_3" data-bs-parent="#zc2_accordion">
+                                        <div class="accordion-body px-0 pb-0">
+                                            <p class="mb-0 fw-light mb-0">Lectus litra mollis eros sollicitudin massa dapibus ultrices per suscipit montes accumsan curabitur sed aliquam volutpat porta naquis</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- mission area end-->
+
+        <!--ab feature section start-->
+        <section class="ab-feature-section ptb-120 overflow-hidden">
+            <div class="container">
+                <div class="row align-items-center justify-content-center g-5">
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="ab-feature-box text-center">
+                            <span class="icon-wrapper">
+                                <svg width="62" height="63" viewBox="0 0 62 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M61.9351 15.9506C61.8703 15.8222 61.8703 15.758 61.7406 15.6296C61.6757 15.5013 61.546 15.4371 61.3515 15.3729L46.5 7.73459L31.454 0.0962812C31.1946 -0.0320937 30.8703 -0.0320937 30.6109 0.0962812L15.5 7.73459L0.583682 15.3729C0.389121 15.4371 0.194561 15.6296 0.129707 15.8222C0.0648536 15.9506 0.0648536 16.0148 0 16.1431V46.7606C0 47.0815 0.194561 47.4024 0.518829 47.595L30.546 62.8074C30.546 62.8074 30.6109 62.8074 30.6109 62.8716C30.6109 62.8716 30.6757 62.8716 30.6757 62.9358C30.8054 63 30.8703 63 31 63C31.1297 63 31.1946 63 31.3243 62.9358C31.3243 62.9358 31.3891 62.9358 31.3891 62.8716C31.3891 62.8716 31.454 62.8716 31.454 62.8074L61.4812 47.595C61.8054 47.4024 62 47.0815 62 46.7606V16.2073C62 16.079 62 16.0148 61.9351 15.9506ZM31 1.95772L45.592 9.40346L59.0167 16.2073L49.8075 20.893L21.7908 6.6434L31 1.95772ZM43.1925 26.2848L46.4351 24.6159L48.5753 23.5247V27.5043L46.8243 26.7341C46.4351 26.5415 45.9812 26.6699 45.7218 26.9908L43.2573 30.0076V26.2848H43.1925ZM16.4079 9.40346L19.7155 7.73459L47.7322 21.92L42.2845 24.7443L14.2678 10.4947L16.4079 9.40346ZM30.092 60.5609L1.88075 46.1829V17.7478L15.5649 24.6801L30.092 32.0616V60.5609ZM31 30.457L16.4079 23.0112L2.98326 16.2073L12.1925 11.5217L40.2092 25.7713L31 30.457ZM60.1192 46.2471L31.9079 60.4967V32.0616L41.3766 27.2476V32.6393C41.3766 33.1528 41.7657 33.538 42.2845 33.538C42.6088 33.538 42.8682 33.4096 43.0628 33.1528L46.6946 28.7239L49.159 29.7509C49.613 29.9435 50.1967 29.7509 50.3912 29.2374C50.4561 29.1732 50.4561 29.0448 50.4561 28.9165V22.6261L60.1192 17.7478V46.2471Z" fill="white" />
+                                </svg>
+                            </span>
+                            <h6 class="text-white mt-4 mb-3">Super Easy Shipping</h6>
+                            <p class="mb-30 fw-light">Proin hac augue integer tempor porta fringilla sapien</p>
+                            <a href="#" class="explore-btn">Learn More <span class="ms-2"><i class="fas fa-arrow-right"></i></span></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="ab-feature-box text-center">
+                            <span class="icon-wrapper">
+                                <svg width="67" height="63" viewBox="0 0 67 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.7024 25.4211C15.2617 25.4211 13.2768 27.4039 13.2768 29.8421C13.2768 32.2803 15.2617 34.2632 17.7024 34.2632C20.1431 34.2632 22.1279 32.2803 22.1279 29.8421C22.1279 27.4039 20.1431 25.4211 17.7024 25.4211ZM17.7024 32.0526C16.482 32.0526 15.4896 31.0612 15.4896 29.8421C15.4896 28.623 16.482 27.6316 17.7024 27.6316C18.9227 27.6316 19.9152 28.623 19.9152 29.8421C19.9152 31.0612 18.9227 32.0526 17.7024 32.0526Z" fill="white" />
+                                    <path d="M33.1919 25.4211C30.7512 25.4211 28.7663 27.4039 28.7663 29.8421C28.7663 32.2803 30.7512 34.2632 33.1919 34.2632C35.6326 34.2632 37.6174 32.2803 37.6174 29.8421C37.6174 27.4039 35.6326 25.4211 33.1919 25.4211ZM33.1919 32.0526C31.9715 32.0526 30.9791 31.0612 30.9791 29.8421C30.9791 28.623 31.9715 27.6316 33.1919 27.6316C34.4122 27.6316 35.4046 28.623 35.4046 29.8421C35.4046 31.0612 34.4122 32.0526 33.1919 32.0526Z" fill="white" />
+                                    <path d="M48.6814 25.4211C46.2407 25.4211 44.2558 27.4039 44.2558 29.8421C44.2558 32.2803 46.2407 34.2632 48.6814 34.2632C51.1221 34.2632 53.1069 32.2803 53.1069 29.8421C53.1069 27.4039 51.1221 25.4211 48.6814 25.4211ZM48.6814 32.0526C47.461 32.0526 46.4686 31.0612 46.4686 29.8421C46.4686 28.623 47.461 27.6316 48.6814 27.6316C49.9017 27.6316 50.8941 28.623 50.8941 29.8421C50.8941 31.0612 49.9017 32.0526 48.6814 32.0526Z" fill="white" />
+                                    <path d="M33.1919 0C14.8899 0 8.92111e-05 13.3869 8.92111e-05 29.8421C8.92111e-05 35.5939 1.82121 41.1655 5.27537 45.9834C4.62149 53.2085 2.86896 58.5723 0.324262 61.1133C-0.0120811 61.4493 -0.0961669 61.9633 0.11626 62.3877C0.304347 62.7668 0.691584 63 1.10648 63C1.15738 63 1.20827 62.9967 1.26027 62.9889C1.70836 62.9259 12.1173 61.4294 19.6463 57.0879C23.9214 58.8111 28.4753 59.6842 33.1919 59.6842C51.4938 59.6842 66.3836 46.2973 66.3836 29.8421C66.3836 13.3869 51.4938 0 33.1919 0ZM33.1919 57.4737C29.3339 57.4737 25.5954 56.8448 22.045 55.6157C26.5535 52.8017 26.5635 52.6028 26.5601 51.9507C26.5579 51.5649 26.3488 51.1969 26.0169 50.999C25.5135 50.6973 24.8652 50.841 24.5366 51.3196C23.9302 51.8004 21.3236 53.4693 18.9891 54.9095C14.048 57.8904 7.39743 59.5538 3.70872 60.3043C6.14499 56.2479 7.12858 50.3735 7.51471 45.759C7.53683 45.4926 7.4616 45.2274 7.30339 45.0107C3.97314 40.5002 2.21287 35.2535 2.21287 29.8421C2.21287 14.6061 16.1103 2.21053 33.1919 2.21053C50.2735 2.21053 64.1708 14.6061 64.1708 29.8421C64.1708 45.0782 50.2735 57.4737 33.1919 57.4737Z" fill="white" />
+                                </svg>
+                            </span>
+                            <h6 class="text-white mt-4 mb-3">Easy Return Policy</h6>
+                            <p class="mb-30 fw-light">Proin hac augue integer tempor porta fringilla sapien</p>
+                            <a href="#" class="explore-btn">Learn More <span class="ms-2"><i class="fas fa-arrow-right"></i></span></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="ab-feature-box text-center">
+                            <span class="icon-wrapper">
+                                <svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M57.75 6.3H52.5V4.2C52.5 3.08609 52.0575 2.0178 51.2698 1.23015C50.4822 0.442499 49.4139 0 48.3 0C47.1861 0 46.1178 0.442499 45.3301 1.23015C44.5425 2.0178 44.1 3.08609 44.1 4.2V6.3H35.7V4.2C35.7 3.08609 35.2575 2.0178 34.4698 1.23015C33.6822 0.442499 32.6139 0 31.5 0C30.3861 0 29.3178 0.442499 28.5301 1.23015C27.7425 2.0178 27.3 3.08609 27.3 4.2V6.3H18.9V4.2C18.9 3.08609 18.4575 2.0178 17.6698 1.23015C16.8822 0.442499 15.8139 0 14.7 0C13.5861 0 12.5178 0.442499 11.7301 1.23015C10.9425 2.0178 10.5 3.08609 10.5 4.2V6.3H5.25C3.85761 6.3 2.52226 6.85312 1.53769 7.83769C0.553123 8.82225 0 10.1576 0 11.55V53.55C0 54.9424 0.553123 56.2777 1.53769 57.2623C2.52226 58.2469 3.85761 58.8 5.25 58.8H34.65C34.9285 58.8 35.1955 58.6894 35.3925 58.4925C35.5894 58.2955 35.7 58.0285 35.7 57.75C35.7 57.4715 35.5894 57.2044 35.3925 57.0075C35.1955 56.8106 34.9285 56.7 34.65 56.7H5.25C4.41533 56.6975 3.61557 56.3648 3.02537 55.7746C2.43517 55.1844 2.10249 54.3847 2.1 53.55V21H60.9V38.85C60.9 39.1285 61.0106 39.3955 61.2075 39.5925C61.4044 39.7894 61.6715 39.9 61.95 39.9C62.2285 39.9 62.4955 39.7894 62.6925 39.5925C62.8894 39.3955 63 39.1285 63 38.85V11.55C63 10.1576 62.4469 8.82225 61.4623 7.83769C60.4777 6.85312 59.1424 6.3 57.75 6.3ZM46.2 4.2C46.2 3.64304 46.4212 3.1089 46.8151 2.71508C47.2089 2.32125 47.743 2.1 48.3 2.1C48.8569 2.1 49.3911 2.32125 49.7849 2.71508C50.1787 3.1089 50.4 3.64304 50.4 4.2V10.5C50.4 11.057 50.1787 11.5911 49.7849 11.9849C49.3911 12.3787 48.8569 12.6 48.3 12.6C47.743 12.6 47.2089 12.3787 46.8151 11.9849C46.4212 11.5911 46.2 11.057 46.2 10.5V4.2ZM29.4 4.2C29.4 3.64304 29.6212 3.1089 30.0151 2.71508C30.4089 2.32125 30.943 2.1 31.5 2.1C32.0569 2.1 32.5911 2.32125 32.9849 2.71508C33.3787 3.1089 33.6 3.64304 33.6 4.2V10.5C33.6 11.057 33.3787 11.5911 32.9849 11.9849C32.5911 12.3787 32.0569 12.6 31.5 12.6C30.943 12.6 30.4089 12.3787 30.0151 11.9849C29.6212 11.5911 29.4 11.057 29.4 10.5V4.2ZM12.6 4.2C12.6 3.64304 12.8212 3.1089 13.2151 2.71508C13.6089 2.32125 14.143 2.1 14.7 2.1C15.257 2.1 15.7911 2.32125 16.1849 2.71508C16.5787 3.1089 16.8 3.64304 16.8 4.2V10.5C16.8 11.057 16.5787 11.5911 16.1849 11.9849C15.7911 12.3787 15.257 12.6 14.7 12.6C14.143 12.6 13.6089 12.3787 13.2151 11.9849C12.8212 11.5911 12.6 11.057 12.6 10.5V4.2ZM60.9 18.9H2.1V11.55C2.10249 10.7153 2.43517 9.91557 3.02537 9.32537C3.61557 8.73517 4.41533 8.40249 5.25 8.4H10.5V10.5C10.5 11.6139 10.9425 12.6822 11.7301 13.4698C12.5178 14.2575 13.5861 14.7 14.7 14.7C15.8139 14.7 16.8822 14.2575 17.6698 13.4698C18.4575 12.6822 18.9 11.6139 18.9 10.5V8.4H27.3V10.5C27.3 11.6139 27.7425 12.6822 28.5301 13.4698C29.3178 14.2575 30.3861 14.7 31.5 14.7C32.6139 14.7 33.6822 14.2575 34.4698 13.4698C35.2575 12.6822 35.7 11.6139 35.7 10.5V8.4H44.1V10.5C44.1 11.6139 44.5425 12.6822 45.3301 13.4698C46.1178 14.2575 47.1861 14.7 48.3 14.7C49.4139 14.7 50.4822 14.2575 51.2698 13.4698C52.0575 12.6822 52.5 11.6139 52.5 10.5V8.4H57.75C58.5847 8.40249 59.3844 8.73517 59.9746 9.32537C60.5648 9.91557 60.8975 10.7153 60.9 11.55V18.9Z" fill="white" />
+                                    <path d="M29.4 28.35C29.4 27.793 29.1787 27.2589 28.7849 26.8651C28.3911 26.4712 27.857 26.25 27.3 26.25H23.1C22.543 26.25 22.0089 26.4712 21.6151 26.8651C21.2212 27.2589 21 27.793 21 28.35V31.5C21 32.0569 21.2212 32.5911 21.6151 32.9849C22.0089 33.3787 22.543 33.6 23.1 33.6H27.3C27.857 33.6 28.3911 33.3787 28.7849 32.9849C29.1787 32.5911 29.4 32.0569 29.4 31.5V28.35ZM23.1 31.5V28.35H27.3V31.5H23.1Z" fill="white" />
+                                    <path d="M16.8 28.35C16.8 27.793 16.5787 27.2589 16.1849 26.8651C15.7911 26.4712 15.257 26.25 14.7 26.25H10.5C9.94304 26.25 9.4089 26.4712 9.01507 26.8651C8.62125 27.2589 8.4 27.793 8.4 28.35V31.5C8.4 32.0569 8.62125 32.5911 9.01507 32.9849C9.4089 33.3787 9.94304 33.6 10.5 33.6H14.7C15.257 33.6 15.7911 33.3787 16.1849 32.9849C16.5787 32.5911 16.8 32.0569 16.8 31.5V28.35ZM10.5 31.5V28.35H14.7V31.5H10.5Z" fill="white" />
+                                    <path d="M52.5 33.6C53.0569 33.6 53.5911 33.3787 53.9849 32.9849C54.3787 32.5911 54.6 32.0569 54.6 31.5V28.35C54.6 27.793 54.3787 27.2589 53.9849 26.8651C53.5911 26.4712 53.0569 26.25 52.5 26.25H48.3C47.743 26.25 47.2089 26.4712 46.8151 26.8651C46.4212 27.2589 46.2 27.793 46.2 28.35V31.5C46.2 32.0569 46.4212 32.5911 46.8151 32.9849C47.2089 33.3787 47.743 33.6 48.3 33.6H52.5ZM48.3 28.35H52.5V31.5H48.3V28.35Z" fill="white" />
+                                    <path d="M29.4 37.8C29.4 37.243 29.1787 36.7089 28.7849 36.3151C28.3911 35.9212 27.857 35.7 27.3 35.7H23.1C22.543 35.7 22.0089 35.9212 21.6151 36.3151C21.2212 36.7089 21 37.243 21 37.8V40.95C21 41.5069 21.2212 42.0411 21.6151 42.4349C22.0089 42.8287 22.543 43.05 23.1 43.05H27.3C27.857 43.05 28.3911 42.8287 28.7849 42.4349C29.1787 42.0411 29.4 41.5069 29.4 40.95V37.8ZM23.1 40.95V37.8H27.3V40.95H23.1Z" fill="white" />
+                                    <path d="M16.8 37.8C16.8 37.243 16.5787 36.7089 16.1849 36.3151C15.7911 35.9212 15.257 35.7 14.7 35.7H10.5C9.94304 35.7 9.4089 35.9212 9.01507 36.3151C8.62125 36.7089 8.4 37.243 8.4 37.8V40.95C8.4 41.5069 8.62125 42.0411 9.01507 42.4349C9.4089 42.8287 9.94304 43.05 10.5 43.05H14.7C15.257 43.05 15.7911 42.8287 16.1849 42.4349C16.5787 42.0411 16.8 41.5069 16.8 40.95V37.8ZM10.5 40.95V37.8H14.7V40.95H10.5Z" fill="white" />
+                                    <path d="M27.3 45.15H23.1C22.543 45.15 22.0089 45.3712 21.6151 45.7651C21.2212 46.1589 21 46.693 21 47.25V50.4C21 50.9569 21.2212 51.4911 21.6151 51.8849C22.0089 52.2787 22.543 52.5 23.1 52.5H27.3C27.857 52.5 28.3911 52.2787 28.7849 51.8849C29.1787 51.4911 29.4 50.9569 29.4 50.4V47.25C29.4 46.693 29.1787 46.1589 28.7849 45.7651C28.3911 45.3712 27.857 45.15 27.3 45.15ZM23.1 50.4V47.25H27.3V50.4H23.1Z" fill="white" />
+                                    <path d="M35.7 33.6H39.9C40.4569 33.6 40.9911 33.3787 41.3849 32.9849C41.7787 32.5911 42 32.0569 42 31.5V28.35C42 27.793 41.7787 27.2589 41.3849 26.8651C40.9911 26.4712 40.4569 26.25 39.9 26.25H35.7C35.143 26.25 34.6089 26.4712 34.2151 26.8651C33.8212 27.2589 33.6 27.793 33.6 28.35V31.5C33.6 32.0569 33.8212 32.5911 34.2151 32.9849C34.6089 33.3787 35.143 33.6 35.7 33.6ZM35.7 28.35H39.9V31.5H35.7V28.35Z" fill="white" />
+                                    <path d="M33.6 40.95C33.6 41.5069 33.8212 42.0411 34.2151 42.4349C34.6089 42.8287 35.143 43.05 35.7 43.05C35.9785 43.05 36.2455 42.9394 36.4425 42.7425C36.6394 42.5455 36.75 42.2785 36.75 42C36.75 41.7215 36.6394 41.4544 36.4425 41.2575C36.2455 41.0606 35.9785 40.95 35.7 40.95V37.8H39.9C40.1785 37.8 40.4455 37.6894 40.6425 37.4925C40.8394 37.2955 40.95 37.0285 40.95 36.75C40.95 36.4715 40.8394 36.2044 40.6425 36.0075C40.4455 35.8106 40.1785 35.7 39.9 35.7H35.7C35.143 35.7 34.6089 35.9212 34.2151 36.3151C33.8212 36.7089 33.6 37.243 33.6 37.8V40.95Z" fill="white" />
+                                    <path d="M14.7 45.15H10.5C9.94304 45.15 9.4089 45.3712 9.01507 45.7651C8.62125 46.1589 8.4 46.693 8.4 47.25V50.4C8.4 50.9569 8.62125 51.4911 9.01507 51.8849C9.4089 52.2787 9.94304 52.5 10.5 52.5H14.7C15.257 52.5 15.7911 52.2787 16.1849 51.8849C16.5787 51.4911 16.8 50.9569 16.8 50.4V47.25C16.8 46.693 16.5787 46.1589 16.1849 45.7651C15.7911 45.3712 15.257 45.15 14.7 45.15ZM10.5 50.4V47.25H14.7V50.4H10.5Z" fill="white" />
+                                    <path d="M49.35 35.7C46.6503 35.7 44.0112 36.5006 41.7665 38.0004C39.5217 39.5003 37.7722 41.6322 36.739 44.1264C35.7059 46.6206 35.4356 49.3651 35.9623 52.013C36.489 54.6608 37.789 57.093 39.698 59.002C41.607 60.911 44.0392 62.211 46.687 62.7377C49.3348 63.2644 52.0794 62.9941 54.5736 61.9609C57.0678 60.9278 59.1997 59.1783 60.6996 56.9335C62.1994 54.6888 63 52.0497 63 49.35C62.9958 45.7311 61.5564 42.2616 58.9974 39.7026C56.4384 37.1436 52.9689 35.7042 49.35 35.7ZM49.35 60.9C47.0656 60.9 44.8325 60.2226 42.9332 58.9535C41.0338 57.6843 39.5534 55.8805 38.6792 53.77C37.805 51.6595 37.5763 49.3372 38.0219 47.0967C38.4676 44.8562 39.5676 42.7982 41.1829 41.1829C42.7982 39.5676 44.8562 38.4676 47.0967 38.0219C49.3372 37.5763 51.6595 37.805 53.77 38.6792C55.8805 39.5534 57.6843 41.0338 58.9535 42.9332C60.2226 44.8325 60.9 47.0656 60.9 49.35C60.8964 52.4121 59.6783 55.3478 57.5131 57.5131C55.3478 59.6783 52.4121 60.8964 49.35 60.9Z" fill="white" />
+                                    <path d="M55.4169 44.9484L47.25 53.1153L43.5382 49.4025C43.3402 49.2112 43.075 49.1054 42.7997 49.1078C42.5244 49.1102 42.261 49.2206 42.0663 49.4153C41.8717 49.61 41.7612 49.8733 41.7588 50.1486C41.7564 50.4239 41.8623 50.6892 42.0535 50.8872L46.5076 55.3423C46.7045 55.5392 46.9716 55.6498 47.25 55.6498C47.5284 55.6498 47.7954 55.5392 47.9923 55.3423L56.9016 46.4331C57.0929 46.2351 57.1987 45.9698 57.1963 45.6945C57.1939 45.4192 57.0835 45.1559 56.8888 44.9612C56.6941 44.7665 56.4308 44.6561 56.1555 44.6537C55.8802 44.6513 55.6149 44.7571 55.4169 44.9484Z" fill="white" />
+                                </svg>
+                            </span>
+                            <h6 class="text-white mt-4 mb-3">Book an Appointment</h6>
+                            <p class="mb-30 fw-light">Proin hac augue integer tempor porta fringilla sapien</p>
+                            <a href="#" class="explore-btn">Learn More <span class="ms-2"><i class="fas fa-arrow-right"></i></span></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="ab-feature-box text-center">
+                            <span class="icon-wrapper">
+                                <svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M43.9243 19.3562C43.696 19.3563 43.477 19.4471 43.3156 19.6086L28.3179 34.6063L19.6868 25.9747C19.5223 25.8191 19.3045 25.7324 19.0781 25.7324C18.8517 25.7324 18.6338 25.8191 18.4694 25.9747L14.9898 29.4547C14.8285 29.6162 14.7378 29.8351 14.7378 30.0634C14.7378 30.2917 14.8285 30.5106 14.9898 30.6721L27.7107 43.392C27.7906 43.472 27.8855 43.5355 27.9899 43.5788C28.0944 43.6221 28.2063 43.6444 28.3194 43.6444C28.4325 43.6444 28.5444 43.6221 28.6489 43.5788C28.7533 43.5355 28.8482 43.472 28.9281 43.392L48.0126 24.306C48.174 24.1445 48.2646 23.9254 48.2646 23.6971C48.2646 23.4687 48.174 23.2497 48.0126 23.0881L44.533 19.6086C44.3716 19.4471 44.1527 19.3563 43.9243 19.3562ZM28.3179 41.5654L16.8164 30.0634L19.08 27.7998L27.7107 36.4324C27.7906 36.5125 27.8855 36.5759 27.9899 36.6192C28.0944 36.6626 28.2063 36.6849 28.3194 36.6849C28.4325 36.6849 28.5444 36.6626 28.6489 36.6192C28.7533 36.5759 28.8482 36.5125 28.9281 36.4324L43.9243 21.4352L46.1879 23.6988L28.3179 41.5654Z" fill="white" />
+                                    <path d="M31.4997 8.04366C26.8604 8.04366 22.3253 9.41936 18.4679 11.9968C14.6105 14.5743 11.604 18.2377 9.82863 22.5238C8.05325 26.81 7.58873 31.5263 8.49381 36.0764C9.39889 40.6266 11.6329 44.8062 14.9134 48.0866C18.1939 51.3671 22.3734 53.6011 26.9236 54.5062C31.4737 55.4113 36.19 54.9468 40.4762 53.1714C44.7623 51.396 48.4257 48.3895 51.0032 44.5321C53.5806 40.6747 54.9563 36.1396 54.9563 31.5003C54.9493 25.2814 52.4757 19.3192 48.0783 14.9217C43.6808 10.5243 37.7186 8.05069 31.4997 8.04366ZM31.4997 53.2346C27.2011 53.2346 22.999 51.9599 19.4248 49.5717C15.8506 47.1835 13.0648 43.7891 11.4198 39.8176C9.77479 35.8462 9.34438 31.4762 10.183 27.2601C11.0216 23.0441 13.0916 19.1714 16.1312 16.1318C19.1708 13.0922 23.0435 11.0222 27.2596 10.1836C31.4756 9.34494 35.8457 9.77536 39.8171 11.4204C43.7885 13.0654 47.183 15.8511 49.5712 19.4253C51.9594 22.9995 53.2341 27.2016 53.2341 31.5003C53.2275 37.2626 50.9356 42.787 46.861 46.8616C42.7865 50.9361 37.262 53.2281 31.4997 53.2346Z" fill="white" />
+                                    <path d="M62.0232 34.2623C62.6555 33.4807 63.0004 32.5057 63.0004 31.5003C63.0004 30.4949 62.6555 29.5199 62.0232 28.7382L60.6119 26.9766C60.3413 26.6385 60.1562 26.2402 60.072 25.8155C59.9878 25.3908 60.007 24.952 60.1281 24.5363L60.758 22.3756C61.0346 21.4094 60.9757 20.378 60.5909 19.4496C60.2061 18.5212 59.5181 17.7505 58.6391 17.2633L56.6673 16.1807C56.2875 15.9727 55.9633 15.6763 55.7222 15.3166C55.4811 14.9569 55.3302 14.5444 55.2821 14.114L55.0361 11.8726C54.9308 10.8722 54.4853 9.93828 53.774 9.227C53.0627 8.51573 52.1288 8.0702 51.1284 7.96492L48.887 7.71888C48.4566 7.67101 48.0441 7.52018 47.6844 7.27915C47.3246 7.03812 47.0282 6.71398 46.8202 6.33416L45.7377 4.36189C45.2579 3.47569 44.488 2.78145 43.5571 2.39564C42.6262 2.00983 41.5909 1.95593 40.6249 2.24298L38.4647 2.87235C38.0487 2.99322 37.6098 3.01232 37.185 2.92805C36.7601 2.84378 36.3618 2.65861 36.0234 2.38815L34.2618 0.97685C33.48 0.344799 32.5051 0 31.4997 0C30.4944 0 29.5195 0.344799 28.7377 0.97685L26.976 2.38815C26.6376 2.65804 26.2394 2.84283 25.8147 2.92699C25.3901 3.01116 24.9515 2.99226 24.5358 2.87186L22.375 2.242C21.4088 1.96521 20.3774 2.02402 19.4489 2.40885C18.5205 2.79367 17.7498 3.48178 17.2628 4.36091L16.1802 6.33268C15.9722 6.71251 15.6758 7.03668 15.316 7.27779C14.9563 7.5189 14.5438 7.66985 14.1134 7.7179L11.872 7.96394C10.8716 8.06922 9.93772 8.51474 9.22644 9.22602C8.51517 9.93729 8.06964 10.8712 7.96436 11.8716L7.71832 14.113C7.67045 14.5434 7.51961 14.9559 7.27858 15.3156C7.03755 15.6754 6.71342 15.9718 6.3336 16.1798L4.36133 17.2623C3.47533 17.7423 2.78125 18.5122 2.39547 19.4431C2.00969 20.3739 1.95565 21.4091 2.24242 22.3751L2.87278 24.5348C2.99364 24.9508 3.01274 25.3897 2.92847 25.8145C2.8442 26.2394 2.65903 26.6378 2.38857 26.9761L0.977273 28.7377C0.344964 29.5194 0 30.4944 0 31.4998C0 32.5052 0.344964 33.4802 0.977273 34.2619L2.38857 36.0235C2.65909 36.3616 2.84426 36.7598 2.92845 37.1846C3.01265 37.6093 2.99338 38.048 2.87229 38.4638L2.24242 40.6245C1.96561 41.5906 2.0243 42.6221 2.40893 43.5506C2.79355 44.4791 3.48142 45.2499 4.36034 45.7372L6.33212 46.8198C6.71195 47.0278 7.03612 47.3242 7.27723 47.684C7.51833 48.0437 7.66929 48.4562 7.71734 48.8866L7.96338 51.128C8.06866 52.1284 8.51418 53.0623 9.22546 53.7736C9.93673 54.4848 10.8706 54.9304 11.871 55.0356L14.1125 55.2817C14.5428 55.3296 14.9553 55.4804 15.3151 55.7214C15.6748 55.9624 15.9712 56.2866 16.1792 56.6664L17.2618 58.6387C17.7415 59.5249 18.5114 60.2191 19.4423 60.6049C20.3733 60.9907 21.4086 61.0446 22.3745 60.7576L24.5343 60.1272C24.9503 60.0067 25.3891 59.9878 25.8139 60.0721C26.2386 60.1563 26.637 60.3413 26.9755 60.6114L28.7372 62.0227C29.5189 62.655 30.4938 63 31.4992 63C32.5046 63 33.4796 62.655 34.2613 62.0227L36.023 60.6114C36.3611 60.341 36.7593 60.1559 37.184 60.0717C37.6087 59.9875 38.0475 60.0067 38.4632 60.1277L40.6239 60.7576C41.5898 61.0443 42.6249 60.9903 43.5557 60.6045C44.4865 60.2187 45.2563 59.5246 45.7362 58.6387L46.8188 56.6669C47.0268 56.2871 47.3232 55.9629 47.6829 55.7218C48.0426 55.4807 48.4551 55.3297 48.8855 55.2817L51.127 55.0356C52.1273 54.9304 53.0612 54.4848 53.7725 53.7736C54.4838 53.0623 54.9293 52.1284 55.0346 51.128L55.2806 48.8866C55.3285 48.4562 55.4793 48.0437 55.7204 47.6839C55.9614 47.3242 56.2855 47.0278 56.6654 46.8198L58.6376 45.7372C59.5236 45.2573 60.2177 44.4874 60.6035 43.5565C60.9893 42.6256 61.0433 41.5905 60.7565 40.6245L60.1262 38.4647C60.0053 38.0488 59.9862 37.6099 60.0705 37.1851C60.1547 36.7602 60.3399 36.3618 60.6104 36.0235L62.0232 34.2623ZM59.2675 34.9478C58.8243 35.502 58.5208 36.1547 58.3828 36.8508C58.2447 37.5469 58.2761 38.266 58.4743 38.9475L59.1051 41.1072C59.28 41.6966 59.2469 42.3282 59.0115 42.8961C58.776 43.464 58.3525 43.9338 57.8119 44.2265L55.8391 45.3091C55.2164 45.6504 54.685 46.1368 54.2901 46.7271C53.8952 47.3174 53.6484 47.9942 53.5706 48.7001L53.3246 50.9415C53.26 51.5518 52.988 52.1216 52.554 52.5555C52.12 52.9895 51.5503 53.2615 50.94 53.3261L48.698 53.5722C47.9922 53.6503 47.3156 53.8973 46.7254 54.2922C46.1353 54.6872 45.6489 55.2185 45.3076 55.8412L44.225 57.8134C43.932 58.3537 43.4624 58.777 42.8946 59.0124C42.3269 59.2478 41.6955 59.2811 41.1062 59.1066L38.9459 58.4763C38.2646 58.2778 37.5456 58.2462 36.8495 58.3841C36.1534 58.5221 35.5008 58.8256 34.9468 59.269L33.1851 60.6803C32.7081 61.0664 32.1129 61.277 31.4992 61.277C30.8855 61.277 30.2904 61.0664 29.8134 60.6803L28.0517 59.269C27.4975 58.8257 26.8448 58.5222 26.1487 58.3842C25.4526 58.2461 24.7335 58.2775 24.052 58.4758L21.8928 59.1062C21.3034 59.2805 20.672 59.2471 20.1042 59.0117C19.5364 58.7763 19.0667 58.3532 18.7735 57.813L17.6909 55.8402C17.3496 55.2174 16.8631 54.6861 16.2729 54.2912C15.6826 53.8963 15.0058 53.6495 14.2999 53.5717L12.0585 53.3256C11.4482 53.261 10.8784 52.989 10.4445 52.5551C10.0105 52.1211 9.73847 51.5514 9.67386 50.941L9.42782 48.6991C9.34972 47.9933 9.10275 47.3166 8.70779 46.7265C8.31284 46.1363 7.78153 45.65 7.15882 45.3086L5.18655 44.226C4.6503 43.9288 4.23057 43.4587 3.99581 42.8923C3.76105 42.3259 3.72511 41.6967 3.89385 41.1072L4.52421 38.947C4.72257 38.2657 4.75409 37.5466 4.61612 36.8506C4.47814 36.1546 4.17472 35.5019 3.73146 34.9478L2.31918 33.1862C1.93328 32.709 1.72275 32.1139 1.72275 31.5003C1.72275 30.8866 1.93328 30.2915 2.31918 29.8144L3.73048 28.0527C4.17371 27.4985 4.47715 26.8458 4.61521 26.1497C4.75327 25.4536 4.72189 24.7345 4.52372 24.0531L3.89385 21.8933C3.71898 21.3039 3.75204 20.6724 3.98749 20.1044C4.22293 19.5365 4.64645 19.0668 5.18704 18.774L7.15981 17.6914C7.78259 17.3501 8.31393 16.8637 8.70882 16.2734C9.1037 15.6832 9.3505 15.0064 9.42831 14.3005L9.67435 12.0591C9.73942 11.4485 10.0121 10.8787 10.4467 10.4449C10.8814 10.0112 11.4517 9.73971 12.0624 9.6759L14.3044 9.42986C15.0102 9.35176 15.6868 9.10479 16.277 8.70983C16.8671 8.31488 17.3535 7.78357 17.6948 7.16086L18.7774 5.18859C19.0745 4.65304 19.544 4.23371 20.1096 3.99875C20.6752 3.76379 21.3036 3.72702 21.8928 3.89441L24.053 4.52477C24.7343 4.72321 25.4534 4.75478 26.1494 4.6168C26.8455 4.47882 27.4981 4.17535 28.0522 3.73202L29.8138 2.31975C30.2909 1.93376 30.886 1.72317 31.4997 1.72317C32.1134 1.72317 32.7085 1.93376 33.1856 2.31975L34.9473 3.73104C35.5016 4.17402 36.1543 4.4773 36.8504 4.61534C37.5464 4.75339 38.2654 4.72216 38.9469 4.52428L41.1067 3.89441C41.6961 3.7202 42.3274 3.75358 42.8952 3.98896C43.463 4.22434 43.9327 4.64746 44.226 5.18761L45.3086 7.16037C45.6499 7.78315 46.1363 8.31449 46.7266 8.70938C47.3168 9.10427 47.9936 9.35106 48.6995 9.42887L50.9409 9.67491C51.5513 9.73952 52.121 10.0115 52.555 10.4455C52.989 10.8795 53.261 11.4492 53.3256 12.0595L53.5716 14.3015C53.6497 15.0073 53.8967 15.6839 54.2916 16.2741C54.6866 16.8643 55.2179 17.3506 55.8406 17.6919L57.8129 18.7745C58.3492 19.0717 58.7689 19.5419 59.0038 20.1082C59.2386 20.6746 59.2747 21.3038 59.1061 21.8933L58.4757 24.0536C58.2774 24.7349 58.2458 25.4539 58.3838 26.15C58.5218 26.846 58.8252 27.4986 59.2685 28.0527L60.6798 29.8144C61.0657 30.2915 61.2762 30.8866 61.2762 31.5003C61.2762 32.1139 61.0657 32.709 60.6798 33.1862L59.2675 34.9478Z" fill="white" />
+                                </svg>
+                            </span>
+                            <h6 class="text-white mt-4 mb-3">1 Years Warranty</h6>
+                            <p class="mb-30 fw-light">Proin hac augue integer tempor porta fringilla sapien</p>
+                            <a href="#" class="explore-btn">Learn More <span class="ms-2"><i class="fas fa-arrow-right"></i></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--ab feature section end-->
+
+        <!--team section start-->
+        <section class="team-section ptb-120 bg-white overflow-hidden">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-6">
+                        <div class="text-center">
+                            <span class="fs-sm text-uppercase secondary-text-color">Making Everyday Special</span>
+                            <h2 class="h1 mt-4 mb-60">Meet Our Team</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center g-5 g-md-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="zc-team-card">
+                            <div class="position-relative overflow-hidden">
+                                <img src="assets/images/about/team-1.jpg" alt="team" class="img-fluid">
+                                <div class="team-social">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="#"><i class="fab fa-dribbble"></i></a>
+                                </div>
+                            </div>
+                            <div class="member-info mt-32">
+                                <h4 class="mb-2">David Smith</h4>
+                                <span class="fw-light">Chief Creative</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="zc-team-card">
+                            <div class="position-relative overflow-hidden">
+                                <img src="assets/images/about/team-2.jpg" alt="team" class="img-fluid">
+                                <div class="team-social">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="#"><i class="fab fa-dribbble"></i></a>
+                                </div>
+                            </div>
+                            <div class="member-info mt-32">
+                                <h4 class="mb-2">Zarat Martin</h4>
+                                <span class="fw-light">Marketing Manger</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="zc-team-card">
+                            <div class="position-relative overflow-hidden">
+                                <img src="assets/images/about/team-3.jpg" alt="team" class="img-fluid">
+                                <div class="team-social">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="#"><i class="fab fa-dribbble"></i></a>
+                                </div>
+                            </div>
+                            <div class="member-info mt-32">
+                                <h4 class="mb-2">Andrew Dicaot</h4>
+                                <span class="fw-light">UI/UX Designer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--team section end-->
+
+        <!--feedback section start-->
+        <section class="ur2-feedback-section ptb-120 overflow-hidden" data-background="assets/images/banner/light-background.jpg">
+            <div class="zn_innerFeedback-slider slider-spacing px-3 overflow-hidden">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="zn-feedback-single text-center">
+                            <img src="assets/images/icons/quote-icon.png" alt="quote icon" class="img-fluid d-inline-block">
+                            <h2 class="mb-40 mt-3 text-uppercase">“Lorem ipsum dolor sit amet consectetur adipiscing elit, felis blandit vehicula fusce proin primis, malesuada ante tincidunt”</h2>
+                            <span class="text-uppercase secondary-text-color">By David Smith</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="zn-feedback-single text-center">
+                            <img src="assets/images/icons/quote-icon.png" alt="quote icon" class="img-fluid d-inline-block">
+                            <h2 class="mb-40 mt-3 text-uppercase">“Lorem ipsum dolor sit amet consectetur adipiscing elit, felis blandit vehicula fusce proin primis, malesuada ante tincidunt”</h2>
+                            <span class="text-uppercase secondary-text-color">By Lyes Leo</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="zn-feedback-single text-center">
+                            <img src="assets/images/icons/quote-icon.png" alt="quote icon" class="img-fluid d-inline-block">
+                            <h2 class="mb-40 mt-3 text-uppercase">“Lorem ipsum dolor sit amet consectetur adipiscing elit, felis blandit vehicula fusce proin primis, malesuada ante tincidunt”</h2>
+                            <span class="text-uppercase secondary-text-color">By Gennifer Jenny</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="feedback-slider-arrow">
+                <div class="feedback-button-prev">
+                    <svg width="41" height="26" viewBox="0 0 41 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.15625 12.6094C0.921875 12.8438 0.921875 13.2344 1.15625 13.4688L13.0312 25.3438C13.1094 25.5 13.2656 25.5 13.5 25.5C13.6562 25.5 13.8125 25.4219 13.8906 25.2656C14.125 25.0312 14.125 24.6406 13.8906 24.4062L3.10938 13.625H40.375C40.6875 13.625 41 13.3906 41 13C41 12.6875 40.6875 12.375 40.375 12.375H3.10938L13.8906 1.59375C14.125 1.35938 14.125 0.96875 13.8906 0.734375C13.6562 0.5 13.2656 0.5 13.0312 0.734375L1.15625 12.6094Z" fill="#121111"></path>
+                    </svg>
+                </div>
+                <div class="feedback-button-next">
+                    <svg width="41" height="26" viewBox="0 0 41 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M39.8438 12.6094C40.0781 12.8438 40.0781 13.2344 39.8438 13.4688L27.9688 25.3438C27.8906 25.5 27.7344 25.5 27.5 25.5C27.3438 25.5 27.1875 25.4219 27.1094 25.2656C26.875 25.0312 26.875 24.6406 27.1094 24.4062L37.8906 13.625H0.625C0.3125 13.625 0 13.3906 0 13C0 12.6875 0.3125 12.375 0.625 12.375H37.8906L27.1094 1.59375C26.875 1.35938 26.875 0.96875 27.1094 0.734375C27.3438 0.5 27.7344 0.5 27.9688 0.734375L39.8438 12.6094Z" fill="#74787C"></path>
+                    </svg>
+                </div>
+            </div>
+        </section>
+        <!--feedback section end-->
+
+        <!--newsticker area start-->
+        <div class="zc-ticker-area overflow-hidden">
+            <div class="zc-ticker-wrapper">
+                <div class="zc-ticker">
+                    <span class="text-white text-uppercase">Get 20% Discount on your first product</span>
+                    <span class="text-white text-uppercase">DISCOVER LATEST COLLECTIONS AND TOP DESIGNERS </span>
+                    <span class="text-white text-uppercase">10% DISCOUNT FOR REGISTERED USERS</span>
+                    <span class="text-white text-uppercase">Get 20% Discount on your first product</span>
+                    <span class="text-white text-uppercase">DISCOVER LATEST COLLECTIONS AND TOP DESIGNERS</span>
+                    <span class="text-white text-uppercase">10% DISCOUNT FOR REGISTERED USERS</span>
+                </div>
+            </div>
+        </div>
+        <!--newsticker area end-->
+
+        <!-- END:Latest Blog section -->
+        <section class="zc_latest_blog pt-130 pb-130">
+            <div class="container">
+                <div class="row align-items-center mb-54">
+                    <div class="col-xl-6 col-lg-6 order-lg-first pt-4 pt-lg-0">
+                        <h2 class="zc_section_heading primary-text-color split-text right">Latest From Blog</h2>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 order-first order-lg-last text-center text-lg-end mb-5 mb-lg-0">
+                        <div class="zc_primary_btn">
+                            <a href="javascript:void(0);" class="blob-btn">
+                                Explore More Products +
+                                <span class="blob-btn__inner">
+                                    <span class="blob-btn__blobs">
+                                        <span class="blob-btn__blob"></span>
+                                        <span class="blob-btn__blob"></span>
+                                        <span class="blob-btn__blob"></span>
+                                        <span class="blob-btn__blob"></span>
+                                    </span>
+                                </span>
+                            </a>
+                            <br />
+                            <svg class="d-none" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                <defs>
+                                    <filter id="goo">
+                                        <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+                                        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix>
+                                        <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+                                    </filter>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-30 ">
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="zc_blog_card">
+                            <div class="feature_image">
+                                <a href="javascript:void(0);">
+                                    <img src="assets/images/blog/blog-01.jpg" alt="Zircon" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="card_content">
+                                <div class="card_meta">
+                                    <a href="javascript:void(0);"><span><svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8.69956 17.6066C8.23167 17.6074 7.76824 17.5157 7.3359 17.3368C6.90357 17.1579 6.51085 16.8953 6.18031 16.5641L1.93531 12.3221C1.2682 11.6534 0.893555 10.7474 0.893555 9.80289C0.893555 8.85833 1.2682 7.95234 1.93531 7.28364L6.35581 2.86239C6.92761 2.29204 7.67578 1.93223 8.47831 1.84164L12.3311 1.40964C12.7507 1.36104 13.1759 1.40836 13.5747 1.54802C13.9734 1.68768 14.3352 1.91604 14.6328 2.21589L16.2828 3.86589C16.5823 4.16373 16.8105 4.52557 16.9501 4.92422C17.0898 5.32288 17.1373 5.748 17.0891 6.16764L16.6578 10.0249C16.5672 10.8274 16.2074 11.5756 15.6371 12.1474L11.2121 16.5679C10.882 16.8975 10.4902 17.1589 10.0591 17.3372C9.62803 17.5154 9.16605 17.607 8.69956 17.6066ZM8.60656 2.95914C8.05751 3.02148 7.54573 3.26785 7.15456 3.65814L2.73031 8.07864C2.27323 8.53636 2.01651 9.15678 2.01651 9.80364C2.01651 10.4505 2.27323 11.0709 2.73031 11.5286L6.97456 15.7691C7.43248 16.2258 8.05282 16.4823 8.69956 16.4823C9.3463 16.4823 9.96664 16.2258 10.4246 15.7691L14.8451 11.3441C15.2354 10.953 15.4817 10.4412 15.5441 9.89214L15.9746 6.04314C16.0032 5.7913 15.9745 5.53626 15.8907 5.29705C15.807 5.05783 15.6703 4.84063 15.4908 4.66164L13.8408 3.01164C13.6618 2.83123 13.4442 2.69371 13.2044 2.60941C12.9646 2.52511 12.7089 2.49621 12.4563 2.52489L8.60356 2.95689L8.60656 2.95914Z" fill="#6C514F" />
+                                                <path d="M12.3604 7.26465C12.9817 7.26465 13.4854 6.76097 13.4854 6.13965C13.4854 5.51833 12.9817 5.01465 12.3604 5.01465C11.739 5.01465 11.2354 5.51833 11.2354 6.13965C11.2354 6.76097 11.739 7.26465 12.3604 7.26465Z" fill="#6C514F" />
+                                                <path d="M9.17822 13.0663C9.06704 13.0662 8.95838 13.0331 8.86597 12.9713C8.77355 12.9095 8.70153 12.8217 8.659 12.719C8.61647 12.6162 8.60533 12.5032 8.62699 12.3942C8.64866 12.2851 8.70215 12.1849 8.78072 12.1063L10.3715 10.5155C10.4775 10.413 10.6196 10.3562 10.7671 10.3574C10.9145 10.3587 11.0557 10.4177 11.16 10.522C11.2643 10.6262 11.3236 10.7673 11.3249 10.9148C11.3263 11.0623 11.2696 11.2044 11.1672 11.3105L9.57647 12.902C9.47072 13.0074 9.32749 13.0664 9.17822 13.0663Z" fill="#6C514F" />
+                                                <path d="M7.0569 12.0053C6.94565 12.0054 6.83689 11.9724 6.74436 11.9107C6.65184 11.8489 6.5797 11.7611 6.53707 11.6584C6.49445 11.5556 6.48325 11.4425 6.50489 11.3334C6.52653 11.2243 6.58003 11.124 6.65865 11.0453L9.31065 8.39332C9.41617 8.2878 9.55929 8.22852 9.70852 8.22852C9.85775 8.22852 10.0009 8.2878 10.1064 8.39332C10.2119 8.49884 10.2712 8.64196 10.2712 8.7912C10.2712 8.94043 10.2119 9.08355 10.1064 9.18907L7.4544 11.8411C7.40218 11.8932 7.34019 11.9346 7.27199 11.9627C7.20378 11.9909 7.13069 12.0054 7.0569 12.0053Z" fill="#6C514F" />
+                                                <path d="M5.99995 9.88451C5.88871 9.88435 5.78001 9.85126 5.68755 9.78941C5.5951 9.72755 5.52303 9.63971 5.48043 9.53695C5.43784 9.43419 5.42662 9.32111 5.4482 9.21199C5.46978 9.10286 5.52319 9.00257 5.6017 8.92376L7.18945 7.33301C7.29558 7.2306 7.4377 7.17397 7.58519 7.17532C7.73267 7.17667 7.87373 7.23589 7.97797 7.34023C8.08221 7.44457 8.1413 7.58569 8.14251 7.73317C8.14373 7.88066 8.08696 8.02272 7.98445 8.12876L6.3937 9.71951C6.28923 9.82412 6.14778 9.88339 5.99995 9.88451Z" fill="#6C514F" />
+                                            </svg>
+                                        </span> Fashion</a>
+                                    <a href="javascript:void(0);"><span><svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 8.9375H6C5.85082 8.9375 5.70774 8.87824 5.60225 8.77275C5.49676 8.66726 5.4375 8.52418 5.4375 8.375C5.4375 8.22582 5.49676 8.08274 5.60225 7.97725C5.70774 7.87176 5.85082 7.8125 6 7.8125H12C12.1492 7.8125 12.2923 7.87176 12.3977 7.97725C12.5032 8.08274 12.5625 8.22582 12.5625 8.375C12.5625 8.52418 12.5032 8.66726 12.3977 8.77275C12.2923 8.87824 12.1492 8.9375 12 8.9375Z" fill="#6C514F" />
+                                                <path d="M9.75 11.9375H6C5.85082 11.9375 5.70774 11.8782 5.60225 11.7727C5.49676 11.6673 5.4375 11.5242 5.4375 11.375C5.4375 11.2258 5.49676 11.0827 5.60225 10.9773C5.70774 10.8718 5.85082 10.8125 6 10.8125H9.75C9.89918 10.8125 10.0423 10.8718 10.1477 10.9773C10.2532 11.0827 10.3125 11.2258 10.3125 11.375C10.3125 11.5242 10.2532 11.6673 10.1477 11.7727C10.0423 11.8782 9.89918 11.9375 9.75 11.9375Z" fill="#6C514F" />
+                                                <path d="M9 17.1875H3.3105C3.05101 17.1874 2.79738 17.1103 2.58166 16.9661C2.36594 16.8219 2.19781 16.6169 2.09853 16.3772C1.99924 16.1374 1.97325 15.8736 2.02384 15.6191C2.07443 15.3646 2.19933 15.1308 2.38275 14.9472L2.856 14.474C1.6228 13.1107 0.939202 11.3383 0.9375 9.49999C0.990579 7.41253 1.86899 5.43123 3.38026 3.99026C4.89152 2.54929 6.91238 1.76616 9 1.81249C11.0876 1.76616 13.1085 2.54929 14.6197 3.99026C16.131 5.43123 17.0094 7.41253 17.0625 9.49999C17.0094 11.5875 16.131 13.5687 14.6197 15.0097C13.1085 16.4507 11.0876 17.2338 9 17.1875ZM9 2.93749C7.2107 2.89107 5.47593 3.55564 4.17563 4.78566C2.87532 6.01567 2.11548 7.71088 2.0625 9.49999C2.06563 10.3562 2.242 11.2029 2.58099 11.9892C2.91998 12.7754 3.41458 13.4849 4.035 14.075C4.14251 14.1804 4.20375 14.3242 4.20525 14.4747C4.206 14.5493 4.19186 14.6233 4.16366 14.6923C4.13545 14.7613 4.09375 14.824 4.041 14.8767L3.17775 15.7392C3.15182 15.7656 3.13423 15.799 3.12717 15.8353C3.12011 15.8716 3.1239 15.9092 3.13806 15.9433C3.15222 15.9775 3.17612 16.0067 3.20679 16.0274C3.23746 16.048 3.27353 16.0592 3.3105 16.0595H9C10.7888 16.1059 12.5231 15.4418 13.8233 14.2124C15.1236 12.983 15.8837 11.2886 15.9375 9.49999C15.8845 7.71088 15.1247 6.01567 13.8244 4.78566C12.5241 3.55564 10.7893 2.89107 9 2.93749Z" fill="#6C514F" />
+                                            </svg>
+                                        </span> 3 Comments</a>
+                                    <a href="javascript:void(0);"><span><svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9 3.125C5.48475 3.125 2.625 5.98475 2.625 9.5C2.625 13.0153 5.48475 15.875 9 15.875C12.5153 15.875 15.375 13.0153 15.375 9.5C15.375 5.98475 12.5153 3.125 9 3.125ZM9 17C4.8645 17 1.5 13.6355 1.5 9.5C1.5 5.3645 4.8645 2 9 2C13.1355 2 16.5 5.3645 16.5 9.5C16.5 13.6355 13.1355 17 9 17Z" fill="#6C514F" />
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5736 12.2695C11.4753 12.2695 11.3763 12.244 11.2856 12.1908L8.45809 10.504C8.28859 10.402 8.18359 10.2183 8.18359 10.0203V6.38428C8.18359 6.07378 8.43559 5.82178 8.74609 5.82178C9.05734 5.82178 9.30859 6.07378 9.30859 6.38428V9.70078L11.8623 11.2233C12.1286 11.383 12.2163 11.728 12.0573 11.995C11.9516 12.1713 11.7648 12.2695 11.5736 12.2695Z" fill="#6C514F" />
+                                            </svg>
+                                        </span> 5 Min Read</a>
+                                </div>
+                                <h3 class="primary-text-color"><a href="javascript:void(0);">Life Is Always Not Perfect But Your Outfit Can </a></h3>
+                                <p>Unleash your inner style icon and embrace the power of fashion. Dress to impress every day</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="row gx-30 gy-30">
+                            <div class="col-xl-6 col-lg-6 col-md-6">
+                                <div class="zc_blog_card">
+                                    <div class="feature_image">
+                                        <a href="javascript:void(0);">
+                                            <img src="assets/images/blog/blog-02.jpg" alt="Zircon" class="img-fluid">
+                                        </a>
+                                    </div>
+                                    <div class="card_content card_border">
+                                        <div class="card_meta">
+                                            <a href="javascript:void(0);"><span><svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M12 8.9375H6C5.85082 8.9375 5.70774 8.87824 5.60225 8.77275C5.49676 8.66726 5.4375 8.52418 5.4375 8.375C5.4375 8.22582 5.49676 8.08274 5.60225 7.97725C5.70774 7.87176 5.85082 7.8125 6 7.8125H12C12.1492 7.8125 12.2923 7.87176 12.3977 7.97725C12.5032 8.08274 12.5625 8.22582 12.5625 8.375C12.5625 8.52418 12.5032 8.66726 12.3977 8.77275C12.2923 8.87824 12.1492 8.9375 12 8.9375Z" fill="#6C514F" />
+                                                        <path d="M9.75 11.9375H6C5.85082 11.9375 5.70774 11.8782 5.60225 11.7727C5.49676 11.6673 5.4375 11.5242 5.4375 11.375C5.4375 11.2258 5.49676 11.0827 5.60225 10.9773C5.70774 10.8718 5.85082 10.8125 6 10.8125H9.75C9.89918 10.8125 10.0423 10.8718 10.1477 10.9773C10.2532 11.0827 10.3125 11.2258 10.3125 11.375C10.3125 11.5242 10.2532 11.6673 10.1477 11.7727C10.0423 11.8782 9.89918 11.9375 9.75 11.9375Z" fill="#6C514F" />
+                                                        <path d="M9 17.1875H3.3105C3.05101 17.1874 2.79738 17.1103 2.58166 16.9661C2.36594 16.8219 2.19781 16.6169 2.09853 16.3772C1.99924 16.1374 1.97325 15.8736 2.02384 15.6191C2.07443 15.3646 2.19933 15.1308 2.38275 14.9472L2.856 14.474C1.6228 13.1107 0.939202 11.3383 0.9375 9.49999C0.990579 7.41253 1.86899 5.43123 3.38026 3.99026C4.89152 2.54929 6.91238 1.76616 9 1.81249C11.0876 1.76616 13.1085 2.54929 14.6197 3.99026C16.131 5.43123 17.0094 7.41253 17.0625 9.49999C17.0094 11.5875 16.131 13.5687 14.6197 15.0097C13.1085 16.4507 11.0876 17.2338 9 17.1875ZM9 2.93749C7.2107 2.89107 5.47593 3.55564 4.17563 4.78566C2.87532 6.01567 2.11548 7.71088 2.0625 9.49999C2.06563 10.3562 2.242 11.2029 2.58099 11.9892C2.91998 12.7754 3.41458 13.4849 4.035 14.075C4.14251 14.1804 4.20375 14.3242 4.20525 14.4747C4.206 14.5493 4.19186 14.6233 4.16366 14.6923C4.13545 14.7613 4.09375 14.824 4.041 14.8767L3.17775 15.7392C3.15182 15.7656 3.13423 15.799 3.12717 15.8353C3.12011 15.8716 3.1239 15.9092 3.13806 15.9433C3.15222 15.9775 3.17612 16.0067 3.20679 16.0274C3.23746 16.048 3.27353 16.0592 3.3105 16.0595H9C10.7888 16.1059 12.5231 15.4418 13.8233 14.2124C15.1236 12.983 15.8837 11.2886 15.9375 9.49999C15.8845 7.71088 15.1247 6.01567 13.8244 4.78566C12.5241 3.55564 10.7893 2.89107 9 2.93749Z" fill="#6C514F" />
+                                                    </svg>
+                                                </span> 3 Comments</a>
+                                            <a href="javascript:void(0);"><span><svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9 3.125C5.48475 3.125 2.625 5.98475 2.625 9.5C2.625 13.0153 5.48475 15.875 9 15.875C12.5153 15.875 15.375 13.0153 15.375 9.5C15.375 5.98475 12.5153 3.125 9 3.125ZM9 17C4.8645 17 1.5 13.6355 1.5 9.5C1.5 5.3645 4.8645 2 9 2C13.1355 2 16.5 5.3645 16.5 9.5C16.5 13.6355 13.1355 17 9 17Z" fill="#6C514F" />
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5736 12.2695C11.4753 12.2695 11.3763 12.244 11.2856 12.1908L8.45809 10.504C8.28859 10.402 8.18359 10.2183 8.18359 10.0203V6.38428C8.18359 6.07378 8.43559 5.82178 8.74609 5.82178C9.05734 5.82178 9.30859 6.07378 9.30859 6.38428V9.70078L11.8623 11.2233C12.1286 11.383 12.2163 11.728 12.0573 11.995C11.9516 12.1713 11.7648 12.2695 11.5736 12.2695Z" fill="#6C514F" />
+                                                    </svg>
+                                                </span> 5 Min Read</a>
+                                        </div>
+                                        <h3><a href="javascript:void(0);">Life Is Always Not Perfect But Your</a></h3>
+                                        <p>Unleash your inner style icon and embrace the power of fashion</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6">
+                                <div class="zc_blog_card">
+                                    <div class="feature_image">
+                                        <a href="javascript:void(0);">
+                                            <img src="assets/images/blog/blog-03.jpg" alt="Zircon" class="img-fluid">
+                                        </a>
+                                    </div>
+                                    <div class="card_content card_border">
+                                        <div class="card_meta">
+                                            <a href="javascript:void(0);"><span><svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M12 8.9375H6C5.85082 8.9375 5.70774 8.87824 5.60225 8.77275C5.49676 8.66726 5.4375 8.52418 5.4375 8.375C5.4375 8.22582 5.49676 8.08274 5.60225 7.97725C5.70774 7.87176 5.85082 7.8125 6 7.8125H12C12.1492 7.8125 12.2923 7.87176 12.3977 7.97725C12.5032 8.08274 12.5625 8.22582 12.5625 8.375C12.5625 8.52418 12.5032 8.66726 12.3977 8.77275C12.2923 8.87824 12.1492 8.9375 12 8.9375Z" fill="#6C514F" />
+                                                        <path d="M9.75 11.9375H6C5.85082 11.9375 5.70774 11.8782 5.60225 11.7727C5.49676 11.6673 5.4375 11.5242 5.4375 11.375C5.4375 11.2258 5.49676 11.0827 5.60225 10.9773C5.70774 10.8718 5.85082 10.8125 6 10.8125H9.75C9.89918 10.8125 10.0423 10.8718 10.1477 10.9773C10.2532 11.0827 10.3125 11.2258 10.3125 11.375C10.3125 11.5242 10.2532 11.6673 10.1477 11.7727C10.0423 11.8782 9.89918 11.9375 9.75 11.9375Z" fill="#6C514F" />
+                                                        <path d="M9 17.1875H3.3105C3.05101 17.1874 2.79738 17.1103 2.58166 16.9661C2.36594 16.8219 2.19781 16.6169 2.09853 16.3772C1.99924 16.1374 1.97325 15.8736 2.02384 15.6191C2.07443 15.3646 2.19933 15.1308 2.38275 14.9472L2.856 14.474C1.6228 13.1107 0.939202 11.3383 0.9375 9.49999C0.990579 7.41253 1.86899 5.43123 3.38026 3.99026C4.89152 2.54929 6.91238 1.76616 9 1.81249C11.0876 1.76616 13.1085 2.54929 14.6197 3.99026C16.131 5.43123 17.0094 7.41253 17.0625 9.49999C17.0094 11.5875 16.131 13.5687 14.6197 15.0097C13.1085 16.4507 11.0876 17.2338 9 17.1875ZM9 2.93749C7.2107 2.89107 5.47593 3.55564 4.17563 4.78566C2.87532 6.01567 2.11548 7.71088 2.0625 9.49999C2.06563 10.3562 2.242 11.2029 2.58099 11.9892C2.91998 12.7754 3.41458 13.4849 4.035 14.075C4.14251 14.1804 4.20375 14.3242 4.20525 14.4747C4.206 14.5493 4.19186 14.6233 4.16366 14.6923C4.13545 14.7613 4.09375 14.824 4.041 14.8767L3.17775 15.7392C3.15182 15.7656 3.13423 15.799 3.12717 15.8353C3.12011 15.8716 3.1239 15.9092 3.13806 15.9433C3.15222 15.9775 3.17612 16.0067 3.20679 16.0274C3.23746 16.048 3.27353 16.0592 3.3105 16.0595H9C10.7888 16.1059 12.5231 15.4418 13.8233 14.2124C15.1236 12.983 15.8837 11.2886 15.9375 9.49999C15.8845 7.71088 15.1247 6.01567 13.8244 4.78566C12.5241 3.55564 10.7893 2.89107 9 2.93749Z" fill="#6C514F" />
+                                                    </svg>
+                                                </span> 3 Comments</a>
+                                            <a href="javascript:void(0);"><span><svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9 3.125C5.48475 3.125 2.625 5.98475 2.625 9.5C2.625 13.0153 5.48475 15.875 9 15.875C12.5153 15.875 15.375 13.0153 15.375 9.5C15.375 5.98475 12.5153 3.125 9 3.125ZM9 17C4.8645 17 1.5 13.6355 1.5 9.5C1.5 5.3645 4.8645 2 9 2C13.1355 2 16.5 5.3645 16.5 9.5C16.5 13.6355 13.1355 17 9 17Z" fill="#6C514F" />
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5736 12.2695C11.4753 12.2695 11.3763 12.244 11.2856 12.1908L8.45809 10.504C8.28859 10.402 8.18359 10.2183 8.18359 10.0203V6.38428C8.18359 6.07378 8.43559 5.82178 8.74609 5.82178C9.05734 5.82178 9.30859 6.07378 9.30859 6.38428V9.70078L11.8623 11.2233C12.1286 11.383 12.2163 11.728 12.0573 11.995C11.9516 12.1713 11.7648 12.2695 11.5736 12.2695Z" fill="#6C514F" />
+                                                    </svg>
+                                                </span> 5 Min Read</a>
+                                        </div>
+                                        <h3><a href="javascript:void(0);">Life Is Always Not Perfect But Your </a></h3>
+                                        <p>Unleash your inner style icon and embrace the power of fashion</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END:Latest Blog section -->
+
+        <!--newsletter section start-->
+        <section class="newsletter-section light-bg ptb-120 position-relative z-1">
+            <img src="assets/images/shape/neaklace.png" alt="neaklace" class="position-absolute end-0 top-0 z--1 d-none d-xxl-block">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-6">
+                        <div class="newsletter-box text-center">
+                            <span class="fs-sm fw-light secondary-text-color">GET OUR NEWSLETTER</span>
+                            <h2 class="fw-normal mt-4 mb-50">Get News & Update to Your Inbox</h2>
+                            <form class="newsletter-form d-flex align-items-center">
+                                <input type="email" placeholder=" Email address...">
+                                <div class="zc_primary_btn">
+                                    <button type="submit" class="blob-btn white-color">Subscribe
+                                        <span class="blob-btn__inner">
+                                            <span class="blob-btn__blobs">
+                                                <span class="blob-btn__blob"></span>
+                                                <span class="blob-btn__blob"></span>
+                                                <span class="blob-btn__blob"></span>
+                                                <span class="blob-btn__blob"></span>
+                                            </span>
+                                        </span></button>
+                                </div>
+                            </form>
+                            <p class="mb-0 mt-32 fw-light">Will be used accordance with our <a href="#" class="text-decoration-underline primary-text-color hover-secondary">Privacy Policy</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--newsletter section end-->
+    </main>
+
+    <!-- START:Footer Area -->
+    <footer class="zc_footer_area pt-96">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer_header">
+                        <div>
+                            <h2 class="split-text right">Let’s Get In Touch</h2>
+                        </div>
+                        <button><img src="assets/images/footer-arrow-button.png" alt="Zircon"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="row pb-96">
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-3 mb-md-0">
+                    <aside class="zc_footer_widget">
+                        <h4 class="widget_title text-white">Get Support</h4>
+                        <ul>
+                            <li><a href="tel:92728991820029">
+                                    <h3>(+92) 7289 - 9182 - 0029</h3>
+                                </a></li>
+                            <li><a href="mailto:supportyourmail@gmail.com">supportyourmail@gmail.com</a></li>
+                            <li>
+                                <p>Find a location nearest your area.</p>
+                            </li>
+                        </ul>
+                        <a class="visit_btn" href="javascript:void(0);">Visit Our Store</a>
+                    </aside>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 mb-3 mb-lg-0">
+                    <aside class="zc_footer_widget zc_widget02">
+                        <h4 class="widget_title text-white">Information</h4>
+                        <ul>
+                            <li><a href="javascript:void(0);">About Us</a></li>
+                            <li><a href="javascript:void(0);">Delivery Information</a></li>
+                            <li><a href="javascript:void(0);">Terms & Conditions</a></li>
+                            <li><a href="javascript:void(0);">Privacy Policy</a></li>
+                            <li><a href="javascript:void(0);">Sales Information</a></li>
+                        </ul>
+                    </aside>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 mb-3 mb-md-0">
+                    <aside class="zc_footer_widget zc_widget03">
+                        <h4 class="widget_title text-white">Account</h4>
+                        <ul>
+                            <li><a href="javascript:void(0);">My Account</a></li>
+                            <li><a href="javascript:void(0);">My Orders</a></li>
+                            <li><a href="javascript:void(0);">My Wishlist</a></li>
+                            <li><a href="javascript:void(0);">Return Policy</a></li>
+                            <li><a href="javascript:void(0);">Order Tracking</a></li>
+                        </ul>
+                    </aside>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-6">
+                    <aside class="zc_footer_widget text-end">
+                        <h4 class="widget_title text-white">Follow Us</h4>
+                        <ul>
+                            <li><a href="javascript:void(0);">Facebook</a></li>
+                            <li><a href="javascript:void(0);">Instagram</a></li>
+                            <li><a href="javascript:void(0);">Twitter</a></li>
+                            <li><a href="javascript:void(0);">LinkedIn</a></li>
+                            <li><a href="javascript:void(0);">Pinterest</a></li>
+                        </ul>
+                    </aside>
+                </div>
+            </div>
+            <div class="zc_footer_copyright">
+                <div class="row align-items-center">
+                    <div class="col-xl-6 col-lg-7 col-md-12">
+                        <p class="mb-0">Copyright © 2023 Designpixls. All Rights Reserved. Design By Designpixls</p>
+                    </div>
+                    <div class="col-xl-6 col-lg-5 col-md-12">
+                        <div class="d-flex align-items-center justify-content-lg-end justify-content-center">
+                            <span>We Accept:</span>
+                            <figure class="m-0"><img src="assets/images/payment-method.png" alt="Zircon"></figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- END:Footer Area -->
+
+    <!-- Scroll to Top button Start -->
+    <button type="button" class="scroll-top-btn"><i class="fas fa-arrow-up"></i></button>
+    <!-- Scroll to Top button End -->
+
+    <!-- Header Mobile Menu Start -->
+    <div class="zc_mobile-menu">
+        <a href="javascript:void(0)" class="close"><i class="fas fa-xmark"></i></a>
+        <a href="#" class="logo"><img src="assets/images/logo-3.png" alt="logo" class="img-fluid"></a>
+        <ul class="mobile-nav-menu">
+            <li class="has-submenu">
+                <a href="javascript:void(0)">Home</a>
+                <i class="fas fa-angle-down"></i>
+                <ul class="submenu-wrapper" style="display: none;">
+                    <li><a href="index.html">Home Page 1</a></li>
+                    <li><a href="index-2.html">Home Page 2</a></li>
+                    <li><a href="index-3.html">Home Page 3</a></li>
+                </ul>
+            </li>
+            <li><a href="about.html">About</a></li>
+            <li class="has-submenu"><a href="javascript:void(0)">Pages</a>
+                <i class="fas fa-angle-down"></i>
+                <ul class="submenu-wrapper" style="display: none;">
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="checkout.html">Checkout</a></li>
+                    <li><a href="faq.html">Faq</a></li>
+                    <li><a href="wishlist.html">Wishlist</a></li>
+                    <li><a href="order-tracking.html">Order Tracking</a></li>
+                </ul>
+
+            </li>
+            <li class="has-submenu"><a href="javascript:void(0)">Blog</a>
+                <i class="fas fa-angle-down"></i>
+                <ul class="submenu-wrapper" style="display: none;">
+                    <li><a href="blog.html">Blog List</a></li>
+                    <li><a href="blog-single.html">Blog Details</a></li>
+                </ul>
+            </li>
+            <li class="has-submenu"><a href="javascript:void(0)">Shop</a>
+                <i class="fas fa-angle-down"></i>
+                <ul class="submenu-wrapper" style="display: none;">
+                    <li><a href="shop.html">Shop Grid</a></li>
+                    <li><a href="shop-list.html">Shop List</a></li>
+                    <li><a href="product-details.html">Product Details</a></li>
+                    <li><a href="product-details-2.html">Product Details V2</a></li>
+                    <li><a href="product-details-3.html">Product Details V3</a></li>
+                </ul>
+            </li>
+            <li><a href="wishlist.html">Wishlist</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <form class="mobile-search d-flex align-items-center mt-5" action="#">
+            <input type="text" placeholder="Search..." class="theme-input">
+            <button type="submit" class="template-btn primary-btn"><span>Go</span></button>
+        </form>
+    </div>
+    <!-- Header Mobile Menu End -->
+
+    <!-- Header Search Form Start -->
+    <div class="zc_search_form">
+        <a href="#" class="close"><i class="fas fa-xmark"></i></a>
+        <form action="#" class="d-flex align-items-center">
+            <input type="text" placeholder="Search...." class="theme-input">
+            <button type="submit" class="submit-btn">Go</button>
+        </form>
+    </div>
+    <!-- Header Search Form End -->
+
+</body>
+
+</html>

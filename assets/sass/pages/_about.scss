@@ -1,0 +1,205 @@
+.video-box {
+    width: 100%;
+    height: 550px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    .template-video-btn {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+
+        &:hover {
+            transform: translate(-50%, -55%);
+        }
+    }
+}
+
+.about-mission-box {
+    border-left: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
+    padding: 0 32px;
+}
+
+.zc2-accordion {
+    .accordion-item {
+        border: 0;
+        border-top: 1px solid var(--border-color2);
+        border-bottom: 1px solid var(--border-color2);
+        padding: 22px 0;
+
+        .accordion-header {
+            a {
+                color: var(--heading-color);
+            }
+        }
+
+        +.accordion-item {
+            border-top: 0;
+        }
+    }
+}
+
+.ab-feature-section {
+    background: var(--heading-color);
+}
+
+.ab-feature-box {
+    padding: 0 12px;
+
+    .icon-wrapper {
+        svg {
+            path {
+                transition: var(--transition-base);
+            }
+        }
+    }
+
+    p {
+        color: #8D8D8D
+    }
+
+    .explore-btn {
+        color: var(--white-color);
+        position: relative;
+        ;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -1px;
+            width: calc(100% - 24px);
+            height: 1px;
+            background-color: var(--white-color);
+            transition: var(--transition-base);
+        }
+
+        &:hover {
+            &::before {
+                width: 0;
+            }
+        }
+    }
+
+    &:hover {
+        .icon-wrapper {
+            svg {
+                path {
+                    fill: var(--secondary-color);
+                }
+            }
+        }
+    }
+}
+
+.zc-team-card {
+    img {
+        transition: var(--transition-base);
+    }
+
+    .team-social {
+        padding: 22px 16px;
+        background-color: var(--primary-color);
+        text-align: center;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        width: 100%;
+        left: 0;
+        bottom: -100px;
+        transition: var(--transition-base);
+
+        a {
+            width: 42px;
+            height: 42px;
+            border: 1px solid rgba(255, 255, 255, .3);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white-color);
+            border-radius: 50%;
+
+            &:hover {
+                background-color: var(--white-color);
+                color: var(--primary-color);
+                border-color: var(--white-color);
+            }
+        }
+    }
+
+    &:hover {
+        img {
+            transform: scale(1.1);
+        }
+
+        .team-social {
+            bottom: 0;
+        }
+    }
+}
+
+// Feedback slider
+.zn_innerFeedback-slider {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+
+    .zc-feedback-single {
+        @include screen-768 {
+            padding: 0 10px;
+        }
+
+        h2 {
+            line-height: 50px;
+
+            @include screen-768 {
+                font-size: 20px;
+                line-height: 34px;
+            }
+        }
+    }
+}
+
+.feedback-slider-arrow {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    top: -150px;
+    padding: 0 20px;
+
+    svg {
+        fill: red;
+        stroke: #d1d1d1;
+    }
+
+    .feedback-button-prev:hover,
+    .feedback-button-next:hover {
+        svg {
+            stroke: #444;
+        }
+    }
+
+    @include large-screen {
+        max-width: 100%;
+        width: 100%;
+        justify-content: center;
+        top: 0;
+        padding: 0;
+        margin-top: 60px;
+        gap: 40px;
+
+        @include screen-768 {
+            margin-top: 30px;
+        }
+    }
+}

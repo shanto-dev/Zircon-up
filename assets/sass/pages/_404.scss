@@ -1,0 +1,41 @@
+/******************* 404 page ***************/
+.not-found-area {
+    padding: 265px 0;
+    min-height: 100vh;
+    .overlay-bg {
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .content-404 {
+        z-index: 2;
+        position: relative;
+        h1 {
+            font-size: 300px; 
+            font-weight: 500;
+            line-height: 360px;
+        }
+        p {
+            font-size: 18px;
+            position: relative;
+        }
+        @include screen-992 {
+            h1 {
+                font-size: 250px;
+            }
+        }
+        @include screen-768 {
+            h1 {
+                font-size: 200px;
+                line-height: 200px;
+            }
+        }
+        @include portrait-phone {
+            h1 {
+                font-size: 150px;
+            }
+        }
+    }
+    @include portrait-phone {
+        padding: 150px 0;
+    }
+}

@@ -1,4 +1,58 @@
 .zc_hero_explore {
-        animation: rotate linear 10s;
-        animation-iteration-count: infinite;
+    animation: rotate linear 10s;
+    animation-iteration-count: infinite;
+}
+
+
+/*********************** ticker section start ******************/
+.zc-ticker-wrapper {
+    box-sizing: content-box;
+    width: 100%;
+    padding-left: 100%;
+    background: var(--heading-color);
+
+    .zc-ticker {
+        display: inline-block;
+        white-space: nowrap;
+        padding: 26px 0;
+        animation: 30s ticker linear infinite;
+        box-sizing: content-box;
+        padding-right: 100%;
+
+        span {
+            font-size: 18px;
+            font-weight: 500;
+            position: relative;
+            display: inline-block;
+            transition: var(--transition-base);
+
+            +span {
+                margin-left: 120px;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: -80px;
+                    width: 40px;
+                    height: 1px;
+                    background-color: var(--white-color);
+                    top: 50%;
+                    transform: translateY(-50%);
+                    transition: var(--transition-base);
+                }
+            }
+
+            &:hover {
+                transform: translateY(-6px);
+
+                &::before {
+                    top: calc(50% + 6px);
+                }
+            }
+        }
+
+        &:hover {
+            animation-play-state: paused;
+        }
+    }
 }

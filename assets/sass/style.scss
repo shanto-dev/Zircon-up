@@ -22,6 +22,7 @@ Version: 1.0.0
 /******************************** components ******************************/
 @import 'components/header';
 @import 'components/hero-banner';
+@import 'components/buttons';
 @import 'components/collections';
 @import 'components/product-cards';
 @import 'components/product';
@@ -32,9 +33,24 @@ Version: 1.0.0
 @import 'components/selling-product';
 @import 'components/latest-blog';
 @import 'components/footer';
-@import 'components/offcanvus';
+@import 'components/offcanvus';;
+@import 'components/breadcrumb';
+@import 'components/sidebar';
+@import 'components/form';
+@import 'components/product-card';
 
 /****************************** page styles ******************************/
 @import 'pages/index-1';
 @import 'pages/index-2';
 @import 'pages/index-3';
+@import 'pages/about';
+@import 'pages/404';
+@import 'pages/blog';
+@import 'pages/product-single';
+@import 'pages/cart';
+@import 'pages/checkout';
+@import 'pages/contact';
+@import 'pages/faq';
+@import 'pages/product-details2';
+@import 'pages/shop';
+@import 'pages/wishlist';
