@@ -96,6 +96,12 @@ button {
 svg {
     transition: var(--transition-base);
 }
+.bgImg{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center center;
+}
 
 
 // Background color Class 
@@ -265,77 +271,104 @@ svg.clippy {
 }
 
 // Button
+
+// Button Style 
 .zc_primary_btn {
-    .blob-btn {
+    position: relative;
+    padding: 20px 32px 19px;
+    border-radius: 0;
+    overflow: hidden;
+    vertical-align: middle;
+    border: none;
+    outline: none;
+    display: inline-block;
+    z-index: 2;
+    font-family: var(--body-font);
+    background: var(--primary-color);
+    transition: var(--transition-base);
+
+
+    & .zc_btn_text {
+        position: relative;
         font-size: 18px;
         font-weight: 500;
-        line-height: 25.2px;
-        background: var(--color-primary-button);
-        color: var(--color-primary-button-text);
-        display: inline-block;
-        padding: 19px 30.5px 20px;
-        border-radius: 32px;
-        border: 0;
-        font-family: var(--body-font);
+        line-height: 25px;
+        color: var(--white-color);
         text-transform: capitalize;
-        position: relative;
+        @include displayFlex(inline-flex, center, center, row);
+        column-gap: 16px;
         z-index: 1;
-        transition: color 0.5s;
+        transition: var(--transition-base);
+        transition-delay: 0.2s;
 
-        &::before {
-            content: "";
-            z-index: 1;
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            border-radius: 32px;
-        }
-
-        &::after {
-            content: "";
-            z-index: -2;
-            position: absolute;
-            left: 3px;
-            top: 3px;
-            width: 100%;
-            height: 100%;
-            transition: all 0.3s 0.2s;
-            border-radius: 32px;
-        }
-
-        &:hover {
-            color: var(--white-color);
-            border-radius: 32px;
-        }
-
-        &:hover:after {
-            transition: all 0.3s;
-            left: 0;
-            top: 0;
-            border-radius: 32px;
-        }
-
-        .blob-btn__inner {
-            z-index: -1;
-            overflow: hidden;
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            border-radius: 32px;
-            background: var(--primary-color);
-
-            .blob-btn__blobs {
-                position: relative;
-                display: block;
-                height: 100%;
-                filter: url("#goo");
-            }
+        &>svg {
+            padding: 4px;
+            width: 24px;
+            height: 24px;
+            position: relative;
+            top: -1px;
         }
     }
+
+
+    & .zc_btnShape {
+        display: inline-block;
+        position: absolute;
+        width: 25%;
+        height: 100%;
+        background: var(--color-primary-button-hover);
+        transform: translateY(150%);
+        border-radius: 50%;
+        left: calc((var(--b) - 1) * 25%);
+        transition: 0.5s;
+        transition-delay: calc((var(--b) - 1) * 0.1s);
+        z-index: 1;
+    }
+
+    & .zc_btnShape:nth-child(1) {
+        --b: 1;
+    }
+
+    & .zc_btnShape:nth-child(2) {
+        --b: 2;
+    }
+
+    & .zc_btnShape:nth-child(3) {
+        --b: 3;
+    }
+
+    & .zc_btnShape:nth-child(4) {
+        --b: 4;
+    }
+
+    & .zc_btnShape:nth-child(5) {
+        --b: 5;
+    }
+
+    & .zc_btnShape:nth-child(6) {
+        --b: 6;
+    }
+
+    & .zc_btnShape:nth-child(7) {
+        --b: 7;
+    }
+
+    & .zc_btnShape:nth-child(8) {
+        --b: 8;
+    }
+
+    & .zc_btnShape:nth-child(9) {
+        --b: 9;
+    }
+
+    &:hover {
+        & .zc_btnShape {
+            transform: translateY(0) scale(2);
+            -moz-transform: translateY(0) scale(2);
+            -moz-transform: translateY(0) scale(2);
+        }
+    }
+
 }
 
 // Button 03
@@ -390,54 +423,6 @@ svg.clippy {
             -webkit-filter: url(#goo);
             filter: url(#goo);
         }
-    }
-}
-
-// Animation blob 
-.blob-btn__blob {
-    position: absolute;
-    top: 2px;
-    width: 25%;
-    height: 100%;
-    background: var(--heading-color);
-    border-radius: 100%;
-    transform: translate3d(0, 150%, 0) scale(1.7);
-    transition: transform 0.45s;
-}
-
-@supports (filter: url("#goo")) {
-    .blob-btn__blob {
-        transform: translate3d(0, 150%, 0) scale(1.4);
-    }
-}
-
-.blob-btn__blob:nth-child(1) {
-    left: 0%;
-    transition-delay: 0s;
-}
-
-.blob-btn__blob:nth-child(2) {
-    left: 30%;
-    transition-delay: 0.08s;
-}
-
-.blob-btn__blob:nth-child(3) {
-    left: 60%;
-    transition-delay: 0.16s;
-}
-
-.blob-btn__blob:nth-child(4) {
-    left: 90%;
-    transition-delay: 0.24s;
-}
-
-.blob-btn:hover .blob-btn__blob {
-    transform: translateZ(0) scale(1.7);
-}
-
-@supports (filter: url("#goo")) {
-    .blob-btn:hover .blob-btn__blob {
-        transform: translateZ(0) scale(1.4);
     }
 }
 

@@ -1,5 +1,8 @@
 /*=========== Newsletter =============*/
 .zc_newsletter {
+    position: relative;
+    z-index: 1;
+
     .newsletter_bg {
         position: relative;
         z-index: 1;
@@ -71,10 +74,42 @@
 
             }
 
-            .blob-btn {
-                &:hover {
-                    color: var(--white-color) !important;
+            .zc_primary_btn {
+                background: var(--white-color);
+                border-radius: 32px;
+
+                & .zc_btn_text {
+                    color: var(--color-primary-button-text2)
                 }
+
+                &:hover {
+                    & .zc_btn_text {
+                        color: var(--color-primary-button-text)
+                    }
+                }
+
+                & .zc_btnShape {
+                    background: var(--heading-color);
+                }
+            }
+        }
+    }
+
+    &.bgImg {
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(13, 13, 13, .25);
+            z-index: -1;
+        }
+
+        .newsletter_bg {
+            &::after {
+                display: none;
             }
         }
     }
@@ -266,13 +301,16 @@
         padding-left: 22px;
         font-weight: 300;
     }
-    & .blob-btn{
+
+    & .blob-btn {
         border-radius: 0;
+
         &::after,
-        &::before{
+        &::before {
             border-radius: 0;
         }
-        & .blob-btn__inner{
+
+        & .blob-btn__inner {
             border-radius: 0;
         }
     }
