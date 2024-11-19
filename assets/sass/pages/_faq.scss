@@ -2,7 +2,9 @@
 .faq-form {
     border: 1px solid var(--color-border);
     padding: 40px 40px 80px;
-    input, textarea {
+
+    input,
+    textarea {
         background-color: transparent;
         border: 1px solid var(--color-border);
         margin-bottom: 20px;
@@ -16,14 +18,17 @@
         border-top: 1px solid var(--color-border);
         border-bottom: 1px solid var(--color-border);
         padding: 30px 0;
-        + .accordion-item {
+
+        +.accordion-item {
             border-top: 0;
         }
+
         .accordion-header {
             a {
                 font-size: 18px;
-                color: var(--primary-color);
-                font-weight: 500;
+                color: var(--heading-color);
+                font-weight: 600;
+                font-family: var(--heading-font);
             }
         }
     }

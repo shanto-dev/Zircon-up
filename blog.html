@@ -1,204 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uroan - Blog</title>
+    <title>Zircon - Cosmetics & Beauty</title>
 
-    <!--Essential css files-->
+    <!--essential css files-->
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/all.css">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/slick.css">
-    <link rel="stylesheet" href="assets/css/jquery-ui.css">
-    <link rel="stylesheet" href="assets/css/nice-select.css">
-    <link rel="stylesheet" href="assets/css/fancybox.css">
-    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
 
-    <!--favicon-->
-    <link rel="icon" href="assets/images/favicon.png">
-
+    <!--essential scripts file-->
+    <script src="assets/js/bootstrap.min.js" defer="defer"></script>
+    <script src="assets/js/swiper-bundle.min.js" defer="defer"></script>
+    <script src="assets/js/gsap.js" defer="defer"></script>
+    <script src="assets/js/gsap-scroll-trigger.js" defer="defer"></script>
+    <script src="assets/js/gsap-split-text.js" defer="defer"></script>
+    <script src="assets/js/scripts.js" defer="defer"></script>
 </head>
+
 <body>
 
-    <!--preloader start-->
-    <div class="preloader">
-        <h1 class="display-1">UROAN</h1>
-        <div class="preload-progress">
-            <span></span>
-        </div>
-    </div>
-    <!--preloader end-->
 
-    <!--header section start-->
-    <header class="ur_header_section primary-bg-color header-sticky">
-        <div class="topbar py-2 bottom-border d-none d-lg-block">
-            <div class="container-large">
-                <div class="row align-items-center">
-                    <div class="col-xl-7 col-lg-8">
-                        <div class="topbar-info d-flex align-items-center gap-48 flex-wrap">
-                            <span class="text-white item-single"><a href="tel:38122252525" class="text-white">+381 2225 25 25</a> (9AM - 6PM EST)</span>
-                            <span class="text-white item-single">FREE SHIPPING ON ALL U.S. ORDERS</span>
-                            <span class="text-white item-single">GIFT CARDS</span>
-                        </div>
-                    </div>
-                    <div class="col-xl-5 col-lg-4">
-                        <div class="d-flex align-items-center justify-content-end gap-48 topbar-info flex-wrap">
-                            <div class="ur-header-select item-single">
-                                <select>
-                                    <option>EN</option>
-                                    <option>BN</option>
-                                    <option>CN</option>
-                                </select>
-                            </div>
-                            <div class="ur-header-select item-single">
-                                <select>
-                                    <option>USD</option>
-                                    <option>BDT</option>
-                                    <option>CNY</option>
-                                    <option>INR</option>
-                                </select>
-                            </div>
-                            <a href="shop.html" class="item-single text-uppercase">store</a>
-                            <a href="#" class="item-single text-uppercase">Subscribe</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!--START:Header Section -->
+    <header class="zc_header_default header-sticky">
+        <div class="zc_coupon_announce position-relative">
+            <p class="mb-0 text-center text-uppercase">20% off everything - Use code:Summer - Ends 13 September 2023</p>
+            <button href="#" class="zc_announce_close">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 5L5 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M5 5L15 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
         </div>
-        <div class="header-wrapper">
-            <div class="container-large">
+        <div class="zc_header_nav">
+            <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-xl-2 col-6">
-                        <a href="index.html" class="logo-white"><img src="assets/images/logo.png" alt="logo" class="img-fluid"></a>
+                    <div class="col-5 col-sm-6 d-lg-none">
+                        <div class="zc_header_logo text-start">
+                            <a href="index.html"><img src="assets/images/logo.png" alt="logo" class="img-fluid"></a>
+                        </div>
                     </div>
-                    <div class="col-xxl-7 col-xl-8 d-none d-xl-block">
-                        <nav class="ur-navmenu">
+                    <div class="col-xl-5 col-lg-5 d-none d-lg-flex">
+                        <nav class="zc_nav_menu">
                             <ul>
-                                <li class="has-submenu">
-                                    <a href="javascript:void(0)">Home</a>
+                                <li class="has-submenu"><a href="#">Home</a>
                                     <ul class="submenu-wrapper">
                                         <li><a href="index.html">Home Page 1</a></li>
                                         <li><a href="index-2.html">Home Page 2</a></li>
                                         <li><a href="index-3.html">Home Page 3</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="about.html">About</a></li>
-                                <li class="has-submenu"><a href="javascript:void(0)">Pages</a>
-
-                                    <div class="ur-megamenu">
-                                        <div class="megamenu-row">
-                                            <div class="megamenu-column border-r">
-                                                <h6 class="column-title">Product Pages</h6>
-                                                <ul class="pages-list">
-                                                    <li><a href="shop.html">Shop Page</a></li>
-                                                    <li><a href="shop-list.html">Shop List</a></li>
-                                                    <li><a href="product-details.html">Product Details</a></li>
-                                                    <li><a href="#">Shop Layout 04</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="megamenu-column border-r">
-                                                <h6 class="column-title">Filter Layout</h6>
-                                                <ul class="pages-list">
-                                                    <li><a href="shop-list.html">Filter Sidebar</a></li>
-                                                    <li><a href="#">Filter On Top</a></li>
-                                                    <li><a href="shop.html">Filter Side Out</a></li>
-                                                    <li><a href="product-details.html">Modal Filter</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="megamenu-column border-r">
-                                                <h6 class="column-title">Product Type</h6>
-                                                <ul class="pages-list">
-                                                    <li><a href="shop-list.html">Filter Sidebar</a></li>
-                                                    <li><a href="#">Filter On Top</a></li>
-                                                    <li><a href="shop.html">Filter Side Out</a></li>
-                                                    <li><a href="product-details.html">Modal Filter</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="megamenu-column">
-                                                <h6 class="column-title">Shop Pages</h6>
-                                                <ul class="pages-list">
-                                                    <li><a href="login.html">My Account</a></li>
-                                                    <li><a href="cart.html">Cart</a></li>
-                                                    <li><a href="checkout.html">Checkout</a></li>
-                                                    <li><a href="wishlist.html">Wishlist</a></li>
-                                                    <li><a href="order-tracking.html">Order Tracking</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="megamenu-column banner">
-                                                <div class="megamenu-banner">
-                                                    <a href="product-details.html" class="p-0"><img src="assets/images/banner/banner-1.jpg" alt="not found" class="img-fluid"></a>
+                                <li class="has-submenu has-megamenu"><a href="#">Shop</a>
+                                    <!-- Mega Menu  -->
+                                    <div class="zc_megamenu">
+                                        <div class="header-submenu-wrapper">
+                                            <div class="container">
+                                                <div class="header-megamenu-wrapper row">
+                                                    <div class="col-3">
+                                                        <!-- Header Mega Menu List -->
+                                                        <div class="header-megamenu-list">
+                                                            <a href="shop.html" class="header-megamenu-title">Best Seller</a>
+                                                            <ul role="list">
+                                                                <li>
+                                                                    <a href="shop.html" class="link-animation">T-shirt dress</a>
+                                                                    <span class="badge">Sale</span>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="shop.html" class="link-animation">T-shirt dress</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="shop.html" class="link-animation">Denim jacket</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <!-- Header Mega Menu List -->
+                                                        <div class="header-megamenu-list">
+                                                            <a href="shop.html" class="header-megamenu-title">Fashion</a>
+                                                            <ul role="list">
+                                                                <li>
+                                                                    <a href="shop.html" class="link-animation">Pencil skirt</a>
+                                                                    <span class="badge sale">Sale</span>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="shop.html" class="link-animation">Maxi dress</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="shop.html" class="link-animation">Crop top</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="shop.html" class="link-animation">Skinny jeans</a>
+                                                                    <span class="badge new">Sale</span>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="shop.html" class="link-animation">Women Shirt</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <!-- Header Mega Menu List -->
+                                                        <div class="header-megamenu-list">
+                                                            <a href="shop.html" class="header-megamenu-title">Hot Deals</a>
+                                                            <ul role="list">
+                                                                <li>
+                                                                    <a href="shop.html" class="link-animation">Button-down shirt</a>
+                                                                    <span class="badge">Sale</span>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="shop.html" class="link-animation">High-waist pants</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="shop.html" class="link-animation">Tunic top</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="shop.html" class="link-animation">Peplum blouse</a>
+                                                                    <span class="badge">Sale</span>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="shop.html" class="link-animation">Women Shirt</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <!-- Header Mega Menu List -->
+                                                        <div class="header-megamenu-list">
+                                                            <a href="#" class="header-megamenu-title">Fashion</a>
+                                                            <ul class="" role="list">
+                                                                <li>
+                                                                    <a href="shop.html" class="link-animation">Pencil skirt</a>
+                                                                    <span class="badge sale badge">Sale</span>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="shop.html" class="link-animation">Maxi dress</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="shop.html" class="link-animation">Crop top</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="shop.html" class="link-animation">Skinny jeans</a>
+                                                                    <span class="badge new">Sale</span>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="shop.html" class="link-animation">Women Shirt</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <!-- Header Mega Menu List -->
+                                                        <div class="header-megamenu-list">
+                                                            <a href="#" class="header-megamenu-title">Hot Deals</a>
+                                                            <ul role="list">
+                                                                <li>
+                                                                    <a href="#" class="link-animation">Long sleeve shirt</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" class="link-animation">Shorts Gym Snad</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" class="link-animation">Black Zipper</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" class="link-animation">Peplum blouse</a>
+                                                                    <span class="badge sale">Sale</span>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" class="link-animation">Women Shirt</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <!-- Header Mega Menu List -->
+                                                        <div class="header-megamenu-list">
+                                                            <a href="#" class="header-megamenu-title">Fashion</a>
+                                                            <ul role="list">
+                                                                <li>
+                                                                    <a href="#" class="link-animation">Pencil skirt</a>
+                                                                    <span class="badge sale">Sale</span>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" class="link-animation">Maxi dress</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" class="link-animation">Crop top</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" class="link-animation">Skinny jeans</a>
+                                                                    <span class="badge new">Sale</span>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" class="link-animation">Women Shirt</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="header-megamenu-banner">
+                                                            <h5 class="banner-title">Off work on payday.</h5>
+                                                            <img loading="lazy" src="assets/images/look-book/lookbook3.2img.png" alt="Zircon" class="megamenu-banner-image" />
+                                                            <p class="p-lg banner-text ">
+                                                                New Arrival Sale 20% Discount <br>
+                                                                <a class="single-button link-animation" href="/shop.html">
+                                                                    Shop Now
+                                                                </a>
+                                                            </p>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </li>
-                                <li class="has-submenu"><a href="javascript:void(0)">Blog</a>
+                                <li class="has-submenu"><a href="#">Pages</a>
+                                    <ul class="submenu-wrapper">
+                                        <li><a href="about.html">About Us</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                        <li class="has-submenu"><a href="javascript:void(0)">Product</a>
+                                            <ul class="submenu-wrapper">
+                                                <li><a href="shop.html">Shop Grid</a></li>
+                                                <li><a href="shop-list.html">Shop List</a></li>
+                                                <li><a href="product-details.html">Product Details</a></li>
+                                                <li><a href="product-details-2.html">Product Details V2</a></li>
+                                                <li><a href="product-details-3.html">Product Details V3</a></li>
+                                                <li><a href="checkout.html">Checkout</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="faq.html">Faq</a></li>
+                                        <li><a href="cart.html">Cart</a></li>
+                                        <li><a href="wishlist.html">Wishlist</a></li>
+                                        <li><a href="order-tracking.html">Order Tracking</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-submenu"><a href="#">Blog</a>
                                     <ul class="submenu-wrapper">
                                         <li><a href="blog.html">Blog List</a></li>
                                         <li><a href="blog-single.html">Blog Details</a></li>
                                     </ul>
                                 </li>
-                                <li class="has-submenu"><a href="javascript:void(0)">Shop</a>
-                                    <ul class="submenu-wrapper">
-                                        <li><a href="shop.html">Shop Grid</a></li>
-                                        <li><a href="shop-list.html">Shop List</a></li>
-                                        <li><a href="product-details.html">Product Details</a></li>
-                                        <li><a href="product-details-2.html">Product Details V2</a></li>
-                                        <li><a href="product-details-3.html">Product Details V3</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="wishlist.html">Wishlist</a></li>
-                                <li><a href="contact.html">Contact</a></li>
                             </ul>
                         </nav>
                     </div>
-                    <div class="col-xxl-3 col-xl-2 col-6">
-                        <div class="ur-header-right d-flex align-items-center justify-content-end">
-                            <div class="ur-user-links position-relative">
-                                <button type="button" class="user-btn">
-                                    <i class="fa-regular fa-user"></i>
+                    <div class="col-xl-2 col-lg-3 d-none d-lg-block">
+                        <div class="zc_header_logo text-center">
+                            <a href="index.html"><img src="assets/images/logo.png" alt="logo" class="img-fluid"></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 col-lg-4 col-7 col-sm-6">
+                        <div class="zc_header_right d-flex align-items-center justify-content-end">
+                            <div class="header-search">
+                                <button type="button" class="zc_header_search zc_headerSrc-open">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M22.0001 22.7502C21.9016 22.7505 21.804 22.7312 21.7131 22.6934C21.6221 22.6556 21.5395 22.6002 21.4701 22.5302L18.2501 19.3102C18.1176 19.1681 18.0455 18.98 18.0489 18.7857C18.0524 18.5914 18.1311 18.406 18.2685 18.2686C18.4059 18.1312 18.5913 18.0525 18.7856 18.0491C18.9799 18.0456 19.1679 18.1178 19.3101 18.2502L22.5301 21.4702C22.6349 21.5751 22.7062 21.7087 22.7351 21.8541C22.764 21.9995 22.7491 22.1502 22.6924 22.2872C22.6357 22.4241 22.5397 22.5412 22.4165 22.6236C22.2932 22.7061 22.1484 22.7501 22.0001 22.7502Z" fill="#0D0D0D" />
+                                        <path d="M11 20.7502C9.07164 20.7502 7.18657 20.1784 5.58319 19.1071C3.97982 18.0357 2.73013 16.513 1.99218 14.7314C1.25422 12.9498 1.06114 10.9894 1.43735 9.09812C1.81355 7.2068 2.74215 5.46952 4.10571 4.10596C5.46928 2.7424 7.20656 1.8138 9.09787 1.43759C10.9892 1.06139 12.9496 1.25447 14.7312 1.99242C16.5127 2.73038 18.0355 3.98006 19.1068 5.58344C20.1782 7.18682 20.75 9.07188 20.75 11.0002C20.7471 13.5852 19.7189 16.0635 17.8911 17.8913C16.0632 19.7192 13.585 20.7473 11 20.7502ZM11 2.75025C9.36831 2.75025 7.77326 3.2341 6.41655 4.14062C5.05984 5.04715 4.00242 6.33562 3.378 7.84311C2.75358 9.3506 2.5902 11.0094 2.90853 12.6097C3.22685 14.2101 4.01259 15.6801 5.16637 16.8339C6.32016 17.9877 7.79017 18.7734 9.39051 19.0917C10.9909 19.4101 12.6497 19.2467 14.1571 18.6223C15.6646 17.9978 16.9531 16.9404 17.8596 15.5837C18.7661 14.227 19.25 12.6319 19.25 11.0002C19.2476 8.81294 18.3777 6.71591 16.831 5.16925C15.2843 3.62259 13.1873 2.75263 11 2.75025Z" fill="#0D0D0D" />
+                                    </svg>
                                 </button>
+                            </div>
+                            <div class="zc_header_user d-none d-sm-block">
+                                <a href="#">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <mask id="mask0_140_1208" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="4" y="14" width="16" height="8">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4 14.4961H19.8399V21.8701H4V14.4961Z" fill="white" />
+                                        </mask>
+                                        <g mask="url(#mask0_140_1208)">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.921 15.9961C7.66 15.9961 5.5 16.7281 5.5 18.1731C5.5 19.6311 7.66 20.3701 11.921 20.3701C16.181 20.3701 18.34 19.6381 18.34 18.1931C18.34 16.7351 16.181 15.9961 11.921 15.9961ZM11.921 21.8701C9.962 21.8701 4 21.8701 4 18.1731C4 14.8771 8.521 14.4961 11.921 14.4961C13.88 14.4961 19.84 14.4961 19.84 18.1931C19.84 21.4891 15.32 21.8701 11.921 21.8701Z" fill="#0D0D0D" />
+                                        </g>
+                                        <mask id="mask1_140_1208" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="6" y="2" width="12" height="11">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.61035 2.00012H17.2304V12.6187H6.61035V2.00012Z" fill="white" />
+                                        </mask>
+                                        <g mask="url(#mask1_140_1208)">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9214 3.42776C9.78038 3.42776 8.03838 5.16876 8.03838 7.30976C8.03138 9.44376 9.76038 11.1838 11.8924 11.1918L11.9214 11.9058V11.1918C14.0614 11.1918 15.8024 9.44976 15.8024 7.30976C15.8024 5.16876 14.0614 3.42776 11.9214 3.42776ZM11.9214 12.6188H11.8894C8.96738 12.6098 6.60038 10.2268 6.61038 7.30676C6.61038 4.38176 8.99238 1.99976 11.9214 1.99976C14.8494 1.99976 17.2304 4.38176 17.2304 7.30976C17.2304 10.2378 14.8494 12.6188 11.9214 12.6188Z" fill="#0D0D0D" />
+                                        </g>
+                                    </svg>
+                                </a>
                                 <ul class="position-absolute user-menu">
                                     <li><a href="login.html">Login</a></li>
                                     <li><a href="signup.html">Sign Up</a></li>
                                     <li><a href="login.html">My Account</a></li>
                                 </ul>
                             </div>
-                            <div class="user-cart d-none d-sm-block">
-                                <button type="button" class="cart-btn" data-bs-toggle="dropdown">
-                                    <span class="me-2">
-                                        <i class="fa-solid fa-basket-shopping"></i>
-                                    </span>
-                                    <span class="btn-text">Cart ($0.00)</span>
+                            <div class="zc_header_cart d-none d-sm-block">
+                                <button type="button">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M17.5995 22.7383H6.39947C5.86779 22.7383 5.34219 22.6252 4.85756 22.4066C4.37293 22.1879 3.94036 21.8687 3.58854 21.47C3.23673 21.0714 2.97372 20.6025 2.81699 20.0945C2.66026 19.5864 2.61338 19.0508 2.67947 18.5233L3.92947 8.52328C4.04381 7.61692 4.48465 6.78333 5.16942 6.17863C5.85419 5.57393 6.73592 5.23961 7.64947 5.23828H16.3495C17.2629 5.23977 18.1445 5.57399 18.8294 6.17842C19.5143 6.78286 19.9555 7.6161 20.0705 8.52228L21.3205 18.5223C21.3866 19.05 21.3396 19.5857 21.1829 20.0938C21.0261 20.602 20.763 21.071 20.4111 21.4697C20.0592 21.8685 19.6265 22.1878 19.1417 22.4065C18.657 22.6252 18.1313 22.7383 17.5995 22.7383ZM7.64547 6.73828C7.0974 6.73929 6.56848 6.93996 6.15766 7.30274C5.74684 7.66552 5.48228 8.16555 5.41347 8.70928L4.16347 18.7093C4.12354 19.0262 4.1516 19.348 4.24579 19.6532C4.33998 19.9584 4.49812 20.24 4.70969 20.4793C4.92127 20.7186 5.1814 20.9101 5.47277 21.0409C5.76414 21.1718 6.08005 21.2391 6.39947 21.2383H17.5995C17.9186 21.2385 18.2341 21.1708 18.525 21.0397C18.8159 20.9086 19.0756 20.7171 19.2868 20.4778C19.4981 20.2386 19.6559 19.9572 19.75 19.6523C19.8441 19.3474 19.8722 19.0259 19.8325 18.7093L18.5825 8.70928C18.513 8.16564 18.2481 7.66584 17.8372 7.30316C17.4263 6.94047 16.8975 6.73969 16.3495 6.73828H7.64547Z" fill="#0D0D0D" />
+                                        <path d="M15.499 9.75024C15.3001 9.75024 15.1093 9.67123 14.9687 9.53057C14.828 9.38992 14.749 9.19916 14.749 9.00024V5.50024C14.749 4.7709 14.4593 4.07143 13.9436 3.5557C13.4278 3.03998 12.7284 2.75024 11.999 2.75024C11.2697 2.75024 10.5702 3.03998 10.0545 3.5557C9.53875 4.07143 9.24902 4.7709 9.24902 5.50024V9.00024C9.24902 9.19916 9.17001 9.38992 9.02935 9.53057C8.8887 9.67123 8.69794 9.75024 8.49902 9.75024C8.30011 9.75024 8.10935 9.67123 7.96869 9.53057C7.82804 9.38992 7.74902 9.19916 7.74902 9.00024V5.50024C7.74902 4.37307 8.19679 3.29207 8.99382 2.49504C9.79085 1.69801 10.8719 1.25024 11.999 1.25024C13.1262 1.25024 14.2072 1.69801 15.0042 2.49504C15.8013 3.29207 16.249 4.37307 16.249 5.50024V9.00024C16.249 9.19916 16.17 9.38992 16.0294 9.53057C15.8887 9.67123 15.6979 9.75024 15.499 9.75024Z" fill="#0D0D0D" />
+                                        <path d="M14 18.75H10C9.80109 18.75 9.61032 18.671 9.46967 18.5303C9.32902 18.3897 9.25 18.1989 9.25 18C9.25 17.8011 9.32902 17.6103 9.46967 17.4697C9.61032 17.329 9.80109 17.25 10 17.25H14C14.1989 17.25 14.3897 17.329 14.5303 17.4697C14.671 17.6103 14.75 17.8011 14.75 18C14.75 18.1989 14.671 18.3897 14.5303 18.5303C14.3897 18.671 14.1989 18.75 14 18.75Z" fill="#0D0D0D" />
+                                    </svg>
                                 </button>
+                                <span class="zc_cart_count">0</span>
                             </div>
-                            <div class="d-sm-none">
-                                <a href="cart.html" class="header-link"><i class="fa-solid fa-basket-shopping"></i></a>
-                            </div>
-                            <div class="header-search d-none d-sm-block">
-                                <div class="dropdown">
-                                    <button class="search-btn" data-bs-toggle="dropdown"><i class="fa-solid fa-magnifying-glass"></i></button>
-                                    <div class="dropdown-menu dropdown-menu-end">
-                                        <form class="search-form d-flex align-items-center gap-2">
-                                            <input type="text" placeholder="Search..." class="theme-input bg-transparent">
-                                            <button type="submit" class="submit-btn">Go</button>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="d-sm-none">
-                                <a href="javascript:void(0)" class="header-link header-search-open"><i class="fa-solid fa-magnifying-glass"></i></a>
-                            </div>
-                            <div class="header-toggle">
-                                <button type="button" class="ur3-header-toggle offcanvus-toggle d-none d-xl-inline-block">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                </button>
-                                <button type="button" class="ur3-header-toggle mobile-menu-toggle d-xl-none">
+                            <div class="header-toggle zc3_header-toggle d-lg-none">
+                                <button type="button" class="zc3_menu_toggler d-lg-none">
                                     <span></span>
                                     <span></span>
                                     <span></span>
@@ -210,63 +303,414 @@
             </div>
         </div>
     </header>
-    <!--header section end-->
+    <!-- END:Header Section -->
 
-    <!--offcanvus start-->
-    <div class="offcanvus-box position-fixed bg-white">
-        <a href="javascript:void(0)" class="offcanvus-close"><i class="fa-solid fa-xmark"></i></a>
-        <div class="content-top mb-100">
-            <a href="index.html" class="offcanvus-logo"><img src="assets/images/logo-black.png" alt="logo"></a>
-            <p class="mb-0 mt-32 fw-light">Distrak Street 2SK Line, Germanygalore@inside-support.com (+125) 2156-2145</p>
+
+    <main id="MainContent">
+
+        <!--breadcrumb section start-->
+        <div class="breadcrumb-section pt-40 pb-40" data-background="assets/images/shape/breadcrumb-bg.jpg">
+            <div class="container">
+                <p class="breadcrumb-text fw-light mb-0"><a href="index.html">Home</a> / <span class="primary-text-color">Blog</span></p>
+            </div>
         </div>
-        <div class="offcanvus-gallery d-flex align-items-center flex-wrap">
-            <a href="#"><img src="assets/images/gallery/1.jpg" alt="not found"></a>
-            <a href="#"><img src="assets/images/gallery/2.jpg" alt="not found"></a>
-            <a href="#"><img src="assets/images/gallery/3.jpg" alt="not found"></a>
-            <a href="#"><img src="assets/images/gallery/4.jpg" alt="not found"></a>
-            <a href="#"><img src="assets/images/gallery/5.jpg" alt="not found"></a>
-            <a href="#"><img src="assets/images/gallery/6.jpg" alt="not found"></a>
-        </div>
-        <div class="offcanvus-newsletter">
-            <h4 class="mb-4 text-center">Newsletter</h4>
-            <form action="#">
-                <input type="email" placeholder="Enter your e-mail" class="theme-input">
-                <button type="submit" class="template-btn primary-btn mt-3 w-100"><span>SUBSCRIBE NOW</span></button>
-            </form>
-        </div>
-        <div class="offcanvus-bottom d-flex align-items-center justify-content-between">
-            <div class="language-switcher">
-                <div class="dropdown">
-                    <button type="button" data-bs-toggle="dropdown"><img src="assets/images/icons/flag-usa.png" alt="flag">English <span><i class="fas fa-angle-down"></i></span></button>
-                    <ul class="dropdown-menu">
-                        <li><a href="#"><img src="assets/images/icons/flag-bd.jpg" alt="flag">Bangla</a></li>
-                        <li><a href="#"><img src="assets/images/icons/flag-india.jpg" alt="flag">Hindi</a></li>
+        <!--breadcrumb section end-->
+
+        <!--blog grid section start-->
+        <div class="bg-white ptb-120">
+            <div class="container">
+
+                <div class="row g-30 ">
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="zc_blog_card">
+                            <div class="feature_image">
+                                <a href="javascript:void(0);">
+                                    <img src="assets/images/blog/blog-01.jpg" alt="Zircon" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="card_content">
+                                <div class="card_meta">
+                                    <a href="javascript:void(0);"><span><svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8.69956 17.6066C8.23167 17.6074 7.76824 17.5157 7.3359 17.3368C6.90357 17.1579 6.51085 16.8953 6.18031 16.5641L1.93531 12.3221C1.2682 11.6534 0.893555 10.7474 0.893555 9.80289C0.893555 8.85833 1.2682 7.95234 1.93531 7.28364L6.35581 2.86239C6.92761 2.29204 7.67578 1.93223 8.47831 1.84164L12.3311 1.40964C12.7507 1.36104 13.1759 1.40836 13.5747 1.54802C13.9734 1.68768 14.3352 1.91604 14.6328 2.21589L16.2828 3.86589C16.5823 4.16373 16.8105 4.52557 16.9501 4.92422C17.0898 5.32288 17.1373 5.748 17.0891 6.16764L16.6578 10.0249C16.5672 10.8274 16.2074 11.5756 15.6371 12.1474L11.2121 16.5679C10.882 16.8975 10.4902 17.1589 10.0591 17.3372C9.62803 17.5154 9.16605 17.607 8.69956 17.6066ZM8.60656 2.95914C8.05751 3.02148 7.54573 3.26785 7.15456 3.65814L2.73031 8.07864C2.27323 8.53636 2.01651 9.15678 2.01651 9.80364C2.01651 10.4505 2.27323 11.0709 2.73031 11.5286L6.97456 15.7691C7.43248 16.2258 8.05282 16.4823 8.69956 16.4823C9.3463 16.4823 9.96664 16.2258 10.4246 15.7691L14.8451 11.3441C15.2354 10.953 15.4817 10.4412 15.5441 9.89214L15.9746 6.04314C16.0032 5.7913 15.9745 5.53626 15.8907 5.29705C15.807 5.05783 15.6703 4.84063 15.4908 4.66164L13.8408 3.01164C13.6618 2.83123 13.4442 2.69371 13.2044 2.60941C12.9646 2.52511 12.7089 2.49621 12.4563 2.52489L8.60356 2.95689L8.60656 2.95914Z" fill="#6C514F" />
+                                                <path d="M12.3604 7.26465C12.9817 7.26465 13.4854 6.76097 13.4854 6.13965C13.4854 5.51833 12.9817 5.01465 12.3604 5.01465C11.739 5.01465 11.2354 5.51833 11.2354 6.13965C11.2354 6.76097 11.739 7.26465 12.3604 7.26465Z" fill="#6C514F" />
+                                                <path d="M9.17822 13.0663C9.06704 13.0662 8.95838 13.0331 8.86597 12.9713C8.77355 12.9095 8.70153 12.8217 8.659 12.719C8.61647 12.6162 8.60533 12.5032 8.62699 12.3942C8.64866 12.2851 8.70215 12.1849 8.78072 12.1063L10.3715 10.5155C10.4775 10.413 10.6196 10.3562 10.7671 10.3574C10.9145 10.3587 11.0557 10.4177 11.16 10.522C11.2643 10.6262 11.3236 10.7673 11.3249 10.9148C11.3263 11.0623 11.2696 11.2044 11.1672 11.3105L9.57647 12.902C9.47072 13.0074 9.32749 13.0664 9.17822 13.0663Z" fill="#6C514F" />
+                                                <path d="M7.0569 12.0053C6.94565 12.0054 6.83689 11.9724 6.74436 11.9107C6.65184 11.8489 6.5797 11.7611 6.53707 11.6584C6.49445 11.5556 6.48325 11.4425 6.50489 11.3334C6.52653 11.2243 6.58003 11.124 6.65865 11.0453L9.31065 8.39332C9.41617 8.2878 9.55929 8.22852 9.70852 8.22852C9.85775 8.22852 10.0009 8.2878 10.1064 8.39332C10.2119 8.49884 10.2712 8.64196 10.2712 8.7912C10.2712 8.94043 10.2119 9.08355 10.1064 9.18907L7.4544 11.8411C7.40218 11.8932 7.34019 11.9346 7.27199 11.9627C7.20378 11.9909 7.13069 12.0054 7.0569 12.0053Z" fill="#6C514F" />
+                                                <path d="M5.99995 9.88451C5.88871 9.88435 5.78001 9.85126 5.68755 9.78941C5.5951 9.72755 5.52303 9.63971 5.48043 9.53695C5.43784 9.43419 5.42662 9.32111 5.4482 9.21199C5.46978 9.10286 5.52319 9.00257 5.6017 8.92376L7.18945 7.33301C7.29558 7.2306 7.4377 7.17397 7.58519 7.17532C7.73267 7.17667 7.87373 7.23589 7.97797 7.34023C8.08221 7.44457 8.1413 7.58569 8.14251 7.73317C8.14373 7.88066 8.08696 8.02272 7.98445 8.12876L6.3937 9.71951C6.28923 9.82412 6.14778 9.88339 5.99995 9.88451Z" fill="#6C514F" />
+                                            </svg>
+                                        </span> Fashion</a>
+                                    <a href="javascript:void(0);"><span><svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 8.9375H6C5.85082 8.9375 5.70774 8.87824 5.60225 8.77275C5.49676 8.66726 5.4375 8.52418 5.4375 8.375C5.4375 8.22582 5.49676 8.08274 5.60225 7.97725C5.70774 7.87176 5.85082 7.8125 6 7.8125H12C12.1492 7.8125 12.2923 7.87176 12.3977 7.97725C12.5032 8.08274 12.5625 8.22582 12.5625 8.375C12.5625 8.52418 12.5032 8.66726 12.3977 8.77275C12.2923 8.87824 12.1492 8.9375 12 8.9375Z" fill="#6C514F" />
+                                                <path d="M9.75 11.9375H6C5.85082 11.9375 5.70774 11.8782 5.60225 11.7727C5.49676 11.6673 5.4375 11.5242 5.4375 11.375C5.4375 11.2258 5.49676 11.0827 5.60225 10.9773C5.70774 10.8718 5.85082 10.8125 6 10.8125H9.75C9.89918 10.8125 10.0423 10.8718 10.1477 10.9773C10.2532 11.0827 10.3125 11.2258 10.3125 11.375C10.3125 11.5242 10.2532 11.6673 10.1477 11.7727C10.0423 11.8782 9.89918 11.9375 9.75 11.9375Z" fill="#6C514F" />
+                                                <path d="M9 17.1875H3.3105C3.05101 17.1874 2.79738 17.1103 2.58166 16.9661C2.36594 16.8219 2.19781 16.6169 2.09853 16.3772C1.99924 16.1374 1.97325 15.8736 2.02384 15.6191C2.07443 15.3646 2.19933 15.1308 2.38275 14.9472L2.856 14.474C1.6228 13.1107 0.939202 11.3383 0.9375 9.49999C0.990579 7.41253 1.86899 5.43123 3.38026 3.99026C4.89152 2.54929 6.91238 1.76616 9 1.81249C11.0876 1.76616 13.1085 2.54929 14.6197 3.99026C16.131 5.43123 17.0094 7.41253 17.0625 9.49999C17.0094 11.5875 16.131 13.5687 14.6197 15.0097C13.1085 16.4507 11.0876 17.2338 9 17.1875ZM9 2.93749C7.2107 2.89107 5.47593 3.55564 4.17563 4.78566C2.87532 6.01567 2.11548 7.71088 2.0625 9.49999C2.06563 10.3562 2.242 11.2029 2.58099 11.9892C2.91998 12.7754 3.41458 13.4849 4.035 14.075C4.14251 14.1804 4.20375 14.3242 4.20525 14.4747C4.206 14.5493 4.19186 14.6233 4.16366 14.6923C4.13545 14.7613 4.09375 14.824 4.041 14.8767L3.17775 15.7392C3.15182 15.7656 3.13423 15.799 3.12717 15.8353C3.12011 15.8716 3.1239 15.9092 3.13806 15.9433C3.15222 15.9775 3.17612 16.0067 3.20679 16.0274C3.23746 16.048 3.27353 16.0592 3.3105 16.0595H9C10.7888 16.1059 12.5231 15.4418 13.8233 14.2124C15.1236 12.983 15.8837 11.2886 15.9375 9.49999C15.8845 7.71088 15.1247 6.01567 13.8244 4.78566C12.5241 3.55564 10.7893 2.89107 9 2.93749Z" fill="#6C514F" />
+                                            </svg>
+                                        </span> 3 Comments</a>
+                                    <a href="javascript:void(0);"><span><svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9 3.125C5.48475 3.125 2.625 5.98475 2.625 9.5C2.625 13.0153 5.48475 15.875 9 15.875C12.5153 15.875 15.375 13.0153 15.375 9.5C15.375 5.98475 12.5153 3.125 9 3.125ZM9 17C4.8645 17 1.5 13.6355 1.5 9.5C1.5 5.3645 4.8645 2 9 2C13.1355 2 16.5 5.3645 16.5 9.5C16.5 13.6355 13.1355 17 9 17Z" fill="#6C514F" />
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5736 12.2695C11.4753 12.2695 11.3763 12.244 11.2856 12.1908L8.45809 10.504C8.28859 10.402 8.18359 10.2183 8.18359 10.0203V6.38428C8.18359 6.07378 8.43559 5.82178 8.74609 5.82178C9.05734 5.82178 9.30859 6.07378 9.30859 6.38428V9.70078L11.8623 11.2233C12.1286 11.383 12.2163 11.728 12.0573 11.995C11.9516 12.1713 11.7648 12.2695 11.5736 12.2695Z" fill="#6C514F" />
+                                            </svg>
+                                        </span> 5 Min Read</a>
+                                </div>
+                                <h3 class="primary-text-color"><a href="javascript:void(0);">Life Is Always Not Perfect But Your Outfit Can </a></h3>
+                                <p>Unleash your inner style icon and embrace the power of fashion. Dress to impress every day</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="row gx-30 gy-30">
+                            <div class="col-xl-6 col-lg-6 col-md-6">
+                                <div class="zc_blog_card">
+                                    <div class="feature_image">
+                                        <a href="javascript:void(0);">
+                                            <img src="assets/images/blog/blog-02.jpg" alt="Zircon" class="img-fluid">
+                                        </a>
+                                    </div>
+                                    <div class="card_content card_border">
+                                        <div class="card_meta">
+                                            <a href="javascript:void(0);"><span><svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M12 8.9375H6C5.85082 8.9375 5.70774 8.87824 5.60225 8.77275C5.49676 8.66726 5.4375 8.52418 5.4375 8.375C5.4375 8.22582 5.49676 8.08274 5.60225 7.97725C5.70774 7.87176 5.85082 7.8125 6 7.8125H12C12.1492 7.8125 12.2923 7.87176 12.3977 7.97725C12.5032 8.08274 12.5625 8.22582 12.5625 8.375C12.5625 8.52418 12.5032 8.66726 12.3977 8.77275C12.2923 8.87824 12.1492 8.9375 12 8.9375Z" fill="#6C514F" />
+                                                        <path d="M9.75 11.9375H6C5.85082 11.9375 5.70774 11.8782 5.60225 11.7727C5.49676 11.6673 5.4375 11.5242 5.4375 11.375C5.4375 11.2258 5.49676 11.0827 5.60225 10.9773C5.70774 10.8718 5.85082 10.8125 6 10.8125H9.75C9.89918 10.8125 10.0423 10.8718 10.1477 10.9773C10.2532 11.0827 10.3125 11.2258 10.3125 11.375C10.3125 11.5242 10.2532 11.6673 10.1477 11.7727C10.0423 11.8782 9.89918 11.9375 9.75 11.9375Z" fill="#6C514F" />
+                                                        <path d="M9 17.1875H3.3105C3.05101 17.1874 2.79738 17.1103 2.58166 16.9661C2.36594 16.8219 2.19781 16.6169 2.09853 16.3772C1.99924 16.1374 1.97325 15.8736 2.02384 15.6191C2.07443 15.3646 2.19933 15.1308 2.38275 14.9472L2.856 14.474C1.6228 13.1107 0.939202 11.3383 0.9375 9.49999C0.990579 7.41253 1.86899 5.43123 3.38026 3.99026C4.89152 2.54929 6.91238 1.76616 9 1.81249C11.0876 1.76616 13.1085 2.54929 14.6197 3.99026C16.131 5.43123 17.0094 7.41253 17.0625 9.49999C17.0094 11.5875 16.131 13.5687 14.6197 15.0097C13.1085 16.4507 11.0876 17.2338 9 17.1875ZM9 2.93749C7.2107 2.89107 5.47593 3.55564 4.17563 4.78566C2.87532 6.01567 2.11548 7.71088 2.0625 9.49999C2.06563 10.3562 2.242 11.2029 2.58099 11.9892C2.91998 12.7754 3.41458 13.4849 4.035 14.075C4.14251 14.1804 4.20375 14.3242 4.20525 14.4747C4.206 14.5493 4.19186 14.6233 4.16366 14.6923C4.13545 14.7613 4.09375 14.824 4.041 14.8767L3.17775 15.7392C3.15182 15.7656 3.13423 15.799 3.12717 15.8353C3.12011 15.8716 3.1239 15.9092 3.13806 15.9433C3.15222 15.9775 3.17612 16.0067 3.20679 16.0274C3.23746 16.048 3.27353 16.0592 3.3105 16.0595H9C10.7888 16.1059 12.5231 15.4418 13.8233 14.2124C15.1236 12.983 15.8837 11.2886 15.9375 9.49999C15.8845 7.71088 15.1247 6.01567 13.8244 4.78566C12.5241 3.55564 10.7893 2.89107 9 2.93749Z" fill="#6C514F" />
+                                                    </svg>
+                                                </span> 3 Comments</a>
+                                            <a href="javascript:void(0);"><span><svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9 3.125C5.48475 3.125 2.625 5.98475 2.625 9.5C2.625 13.0153 5.48475 15.875 9 15.875C12.5153 15.875 15.375 13.0153 15.375 9.5C15.375 5.98475 12.5153 3.125 9 3.125ZM9 17C4.8645 17 1.5 13.6355 1.5 9.5C1.5 5.3645 4.8645 2 9 2C13.1355 2 16.5 5.3645 16.5 9.5C16.5 13.6355 13.1355 17 9 17Z" fill="#6C514F" />
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5736 12.2695C11.4753 12.2695 11.3763 12.244 11.2856 12.1908L8.45809 10.504C8.28859 10.402 8.18359 10.2183 8.18359 10.0203V6.38428C8.18359 6.07378 8.43559 5.82178 8.74609 5.82178C9.05734 5.82178 9.30859 6.07378 9.30859 6.38428V9.70078L11.8623 11.2233C12.1286 11.383 12.2163 11.728 12.0573 11.995C11.9516 12.1713 11.7648 12.2695 11.5736 12.2695Z" fill="#6C514F" />
+                                                    </svg>
+                                                </span> 5 Min Read</a>
+                                        </div>
+                                        <h3><a href="javascript:void(0);">Life Is Always Not Perfect But Your</a></h3>
+                                        <p>Unleash your inner style icon and embrace the power of fashion</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6">
+                                <div class="zc_blog_card">
+                                    <div class="feature_image">
+                                        <a href="javascript:void(0);">
+                                            <img src="assets/images/blog/blog-03.jpg" alt="Zircon" class="img-fluid">
+                                        </a>
+                                    </div>
+                                    <div class="card_content card_border">
+                                        <div class="card_meta">
+                                            <a href="javascript:void(0);">
+                                                <span>
+                                                    <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M12 8.9375H6C5.85082 8.9375 5.70774 8.87824 5.60225 8.77275C5.49676 8.66726 5.4375 8.52418 5.4375 8.375C5.4375 8.22582 5.49676 8.08274 5.60225 7.97725C5.70774 7.87176 5.85082 7.8125 6 7.8125H12C12.1492 7.8125 12.2923 7.87176 12.3977 7.97725C12.5032 8.08274 12.5625 8.22582 12.5625 8.375C12.5625 8.52418 12.5032 8.66726 12.3977 8.77275C12.2923 8.87824 12.1492 8.9375 12 8.9375Z" fill="#6C514F" />
+                                                        <path d="M9.75 11.9375H6C5.85082 11.9375 5.70774 11.8782 5.60225 11.7727C5.49676 11.6673 5.4375 11.5242 5.4375 11.375C5.4375 11.2258 5.49676 11.0827 5.60225 10.9773C5.70774 10.8718 5.85082 10.8125 6 10.8125H9.75C9.89918 10.8125 10.0423 10.8718 10.1477 10.9773C10.2532 11.0827 10.3125 11.2258 10.3125 11.375C10.3125 11.5242 10.2532 11.6673 10.1477 11.7727C10.0423 11.8782 9.89918 11.9375 9.75 11.9375Z" fill="#6C514F" />
+                                                        <path d="M9 17.1875H3.3105C3.05101 17.1874 2.79738 17.1103 2.58166 16.9661C2.36594 16.8219 2.19781 16.6169 2.09853 16.3772C1.99924 16.1374 1.97325 15.8736 2.02384 15.6191C2.07443 15.3646 2.19933 15.1308 2.38275 14.9472L2.856 14.474C1.6228 13.1107 0.939202 11.3383 0.9375 9.49999C0.990579 7.41253 1.86899 5.43123 3.38026 3.99026C4.89152 2.54929 6.91238 1.76616 9 1.81249C11.0876 1.76616 13.1085 2.54929 14.6197 3.99026C16.131 5.43123 17.0094 7.41253 17.0625 9.49999C17.0094 11.5875 16.131 13.5687 14.6197 15.0097C13.1085 16.4507 11.0876 17.2338 9 17.1875ZM9 2.93749C7.2107 2.89107 5.47593 3.55564 4.17563 4.78566C2.87532 6.01567 2.11548 7.71088 2.0625 9.49999C2.06563 10.3562 2.242 11.2029 2.58099 11.9892C2.91998 12.7754 3.41458 13.4849 4.035 14.075C4.14251 14.1804 4.20375 14.3242 4.20525 14.4747C4.206 14.5493 4.19186 14.6233 4.16366 14.6923C4.13545 14.7613 4.09375 14.824 4.041 14.8767L3.17775 15.7392C3.15182 15.7656 3.13423 15.799 3.12717 15.8353C3.12011 15.8716 3.1239 15.9092 3.13806 15.9433C3.15222 15.9775 3.17612 16.0067 3.20679 16.0274C3.23746 16.048 3.27353 16.0592 3.3105 16.0595H9C10.7888 16.1059 12.5231 15.4418 13.8233 14.2124C15.1236 12.983 15.8837 11.2886 15.9375 9.49999C15.8845 7.71088 15.1247 6.01567 13.8244 4.78566C12.5241 3.55564 10.7893 2.89107 9 2.93749Z" fill="#6C514F" />
+                                                    </svg>
+                                                </span> 3 Comments</a>
+                                            <a href="javascript:void(0);"><span><svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9 3.125C5.48475 3.125 2.625 5.98475 2.625 9.5C2.625 13.0153 5.48475 15.875 9 15.875C12.5153 15.875 15.375 13.0153 15.375 9.5C15.375 5.98475 12.5153 3.125 9 3.125ZM9 17C4.8645 17 1.5 13.6355 1.5 9.5C1.5 5.3645 4.8645 2 9 2C13.1355 2 16.5 5.3645 16.5 9.5C16.5 13.6355 13.1355 17 9 17Z" fill="#6C514F" />
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5736 12.2695C11.4753 12.2695 11.3763 12.244 11.2856 12.1908L8.45809 10.504C8.28859 10.402 8.18359 10.2183 8.18359 10.0203V6.38428C8.18359 6.07378 8.43559 5.82178 8.74609 5.82178C9.05734 5.82178 9.30859 6.07378 9.30859 6.38428V9.70078L11.8623 11.2233C12.1286 11.383 12.2163 11.728 12.0573 11.995C11.9516 12.1713 11.7648 12.2695 11.5736 12.2695Z" fill="#6C514F" />
+                                                    </svg>
+                                                </span> 5 Min Read</a>
+                                        </div>
+                                        <h3><a href="javascript:void(0);">Life Is Always Not Perfect But Your </a></h3>
+                                        <p>Unleash your inner style icon and embrace the power of fashion</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6">
+                        <div class="zc_blog_card">
+                            <div class="feature_image">
+                                <a href="javascript:void(0);">
+                                    <img src="assets/images/blog/blog-02.jpg" alt="Zircon" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="card_content card_border">
+                                <div class="card_meta">
+                                    <a href="javascript:void(0);"><span><svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 8.9375H6C5.85082 8.9375 5.70774 8.87824 5.60225 8.77275C5.49676 8.66726 5.4375 8.52418 5.4375 8.375C5.4375 8.22582 5.49676 8.08274 5.60225 7.97725C5.70774 7.87176 5.85082 7.8125 6 7.8125H12C12.1492 7.8125 12.2923 7.87176 12.3977 7.97725C12.5032 8.08274 12.5625 8.22582 12.5625 8.375C12.5625 8.52418 12.5032 8.66726 12.3977 8.77275C12.2923 8.87824 12.1492 8.9375 12 8.9375Z" fill="#6C514F" />
+                                                <path d="M9.75 11.9375H6C5.85082 11.9375 5.70774 11.8782 5.60225 11.7727C5.49676 11.6673 5.4375 11.5242 5.4375 11.375C5.4375 11.2258 5.49676 11.0827 5.60225 10.9773C5.70774 10.8718 5.85082 10.8125 6 10.8125H9.75C9.89918 10.8125 10.0423 10.8718 10.1477 10.9773C10.2532 11.0827 10.3125 11.2258 10.3125 11.375C10.3125 11.5242 10.2532 11.6673 10.1477 11.7727C10.0423 11.8782 9.89918 11.9375 9.75 11.9375Z" fill="#6C514F" />
+                                                <path d="M9 17.1875H3.3105C3.05101 17.1874 2.79738 17.1103 2.58166 16.9661C2.36594 16.8219 2.19781 16.6169 2.09853 16.3772C1.99924 16.1374 1.97325 15.8736 2.02384 15.6191C2.07443 15.3646 2.19933 15.1308 2.38275 14.9472L2.856 14.474C1.6228 13.1107 0.939202 11.3383 0.9375 9.49999C0.990579 7.41253 1.86899 5.43123 3.38026 3.99026C4.89152 2.54929 6.91238 1.76616 9 1.81249C11.0876 1.76616 13.1085 2.54929 14.6197 3.99026C16.131 5.43123 17.0094 7.41253 17.0625 9.49999C17.0094 11.5875 16.131 13.5687 14.6197 15.0097C13.1085 16.4507 11.0876 17.2338 9 17.1875ZM9 2.93749C7.2107 2.89107 5.47593 3.55564 4.17563 4.78566C2.87532 6.01567 2.11548 7.71088 2.0625 9.49999C2.06563 10.3562 2.242 11.2029 2.58099 11.9892C2.91998 12.7754 3.41458 13.4849 4.035 14.075C4.14251 14.1804 4.20375 14.3242 4.20525 14.4747C4.206 14.5493 4.19186 14.6233 4.16366 14.6923C4.13545 14.7613 4.09375 14.824 4.041 14.8767L3.17775 15.7392C3.15182 15.7656 3.13423 15.799 3.12717 15.8353C3.12011 15.8716 3.1239 15.9092 3.13806 15.9433C3.15222 15.9775 3.17612 16.0067 3.20679 16.0274C3.23746 16.048 3.27353 16.0592 3.3105 16.0595H9C10.7888 16.1059 12.5231 15.4418 13.8233 14.2124C15.1236 12.983 15.8837 11.2886 15.9375 9.49999C15.8845 7.71088 15.1247 6.01567 13.8244 4.78566C12.5241 3.55564 10.7893 2.89107 9 2.93749Z" fill="#6C514F" />
+                                            </svg>
+                                        </span> 3 Comments</a>
+                                    <a href="javascript:void(0);"><span><svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9 3.125C5.48475 3.125 2.625 5.98475 2.625 9.5C2.625 13.0153 5.48475 15.875 9 15.875C12.5153 15.875 15.375 13.0153 15.375 9.5C15.375 5.98475 12.5153 3.125 9 3.125ZM9 17C4.8645 17 1.5 13.6355 1.5 9.5C1.5 5.3645 4.8645 2 9 2C13.1355 2 16.5 5.3645 16.5 9.5C16.5 13.6355 13.1355 17 9 17Z" fill="#6C514F" />
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5736 12.2695C11.4753 12.2695 11.3763 12.244 11.2856 12.1908L8.45809 10.504C8.28859 10.402 8.18359 10.2183 8.18359 10.0203V6.38428C8.18359 6.07378 8.43559 5.82178 8.74609 5.82178C9.05734 5.82178 9.30859 6.07378 9.30859 6.38428V9.70078L11.8623 11.2233C12.1286 11.383 12.2163 11.728 12.0573 11.995C11.9516 12.1713 11.7648 12.2695 11.5736 12.2695Z" fill="#6C514F" />
+                                            </svg>
+                                        </span> 5 Min Read</a>
+                                </div>
+                                <h3><a href="javascript:void(0);">Pharetra tempus suscipit class magnis ad tristique</a></h3>
+                                <p>Unleash your inner style icon and embrace the power of fashion</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6">
+                        <div class="zc_blog_card">
+                            <div class="feature_image">
+                                <a href="javascript:void(0);">
+                                    <img src="assets/images/blog/blog-03.jpg" alt="Zircon" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="card_content card_border">
+                                <div class="card_meta">
+                                    <a href="javascript:void(0);"><span><svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 8.9375H6C5.85082 8.9375 5.70774 8.87824 5.60225 8.77275C5.49676 8.66726 5.4375 8.52418 5.4375 8.375C5.4375 8.22582 5.49676 8.08274 5.60225 7.97725C5.70774 7.87176 5.85082 7.8125 6 7.8125H12C12.1492 7.8125 12.2923 7.87176 12.3977 7.97725C12.5032 8.08274 12.5625 8.22582 12.5625 8.375C12.5625 8.52418 12.5032 8.66726 12.3977 8.77275C12.2923 8.87824 12.1492 8.9375 12 8.9375Z" fill="#6C514F" />
+                                                <path d="M9.75 11.9375H6C5.85082 11.9375 5.70774 11.8782 5.60225 11.7727C5.49676 11.6673 5.4375 11.5242 5.4375 11.375C5.4375 11.2258 5.49676 11.0827 5.60225 10.9773C5.70774 10.8718 5.85082 10.8125 6 10.8125H9.75C9.89918 10.8125 10.0423 10.8718 10.1477 10.9773C10.2532 11.0827 10.3125 11.2258 10.3125 11.375C10.3125 11.5242 10.2532 11.6673 10.1477 11.7727C10.0423 11.8782 9.89918 11.9375 9.75 11.9375Z" fill="#6C514F" />
+                                                <path d="M9 17.1875H3.3105C3.05101 17.1874 2.79738 17.1103 2.58166 16.9661C2.36594 16.8219 2.19781 16.6169 2.09853 16.3772C1.99924 16.1374 1.97325 15.8736 2.02384 15.6191C2.07443 15.3646 2.19933 15.1308 2.38275 14.9472L2.856 14.474C1.6228 13.1107 0.939202 11.3383 0.9375 9.49999C0.990579 7.41253 1.86899 5.43123 3.38026 3.99026C4.89152 2.54929 6.91238 1.76616 9 1.81249C11.0876 1.76616 13.1085 2.54929 14.6197 3.99026C16.131 5.43123 17.0094 7.41253 17.0625 9.49999C17.0094 11.5875 16.131 13.5687 14.6197 15.0097C13.1085 16.4507 11.0876 17.2338 9 17.1875ZM9 2.93749C7.2107 2.89107 5.47593 3.55564 4.17563 4.78566C2.87532 6.01567 2.11548 7.71088 2.0625 9.49999C2.06563 10.3562 2.242 11.2029 2.58099 11.9892C2.91998 12.7754 3.41458 13.4849 4.035 14.075C4.14251 14.1804 4.20375 14.3242 4.20525 14.4747C4.206 14.5493 4.19186 14.6233 4.16366 14.6923C4.13545 14.7613 4.09375 14.824 4.041 14.8767L3.17775 15.7392C3.15182 15.7656 3.13423 15.799 3.12717 15.8353C3.12011 15.8716 3.1239 15.9092 3.13806 15.9433C3.15222 15.9775 3.17612 16.0067 3.20679 16.0274C3.23746 16.048 3.27353 16.0592 3.3105 16.0595H9C10.7888 16.1059 12.5231 15.4418 13.8233 14.2124C15.1236 12.983 15.8837 11.2886 15.9375 9.49999C15.8845 7.71088 15.1247 6.01567 13.8244 4.78566C12.5241 3.55564 10.7893 2.89107 9 2.93749Z" fill="#6C514F" />
+                                            </svg>
+                                        </span> 3 Comments</a>
+                                    <a href="javascript:void(0);"><span><svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9 3.125C5.48475 3.125 2.625 5.98475 2.625 9.5C2.625 13.0153 5.48475 15.875 9 15.875C12.5153 15.875 15.375 13.0153 15.375 9.5C15.375 5.98475 12.5153 3.125 9 3.125ZM9 17C4.8645 17 1.5 13.6355 1.5 9.5C1.5 5.3645 4.8645 2 9 2C13.1355 2 16.5 5.3645 16.5 9.5C16.5 13.6355 13.1355 17 9 17Z" fill="#6C514F" />
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5736 12.2695C11.4753 12.2695 11.3763 12.244 11.2856 12.1908L8.45809 10.504C8.28859 10.402 8.18359 10.2183 8.18359 10.0203V6.38428C8.18359 6.07378 8.43559 5.82178 8.74609 5.82178C9.05734 5.82178 9.30859 6.07378 9.30859 6.38428V9.70078L11.8623 11.2233C12.1286 11.383 12.2163 11.728 12.0573 11.995C11.9516 12.1713 11.7648 12.2695 11.5736 12.2695Z" fill="#6C514F" />
+                                            </svg>
+                                        </span> 5 Min Read</a>
+                                </div>
+                                <h3><a href="javascript:void(0);">Life Is Always Not Perfect But Your</a></h3>
+                                <p>Unleash your inner style icon and embrace the power of fashion</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6">
+                        <div class="zc_blog_card">
+                            <div class="feature_image">
+                                <a href="javascript:void(0);">
+                                    <img src="assets/images/blog/blog-02.jpg" alt="Zircon" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="card_content card_border">
+                                <div class="card_meta">
+                                    <a href="javascript:void(0);"><span><svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 8.9375H6C5.85082 8.9375 5.70774 8.87824 5.60225 8.77275C5.49676 8.66726 5.4375 8.52418 5.4375 8.375C5.4375 8.22582 5.49676 8.08274 5.60225 7.97725C5.70774 7.87176 5.85082 7.8125 6 7.8125H12C12.1492 7.8125 12.2923 7.87176 12.3977 7.97725C12.5032 8.08274 12.5625 8.22582 12.5625 8.375C12.5625 8.52418 12.5032 8.66726 12.3977 8.77275C12.2923 8.87824 12.1492 8.9375 12 8.9375Z" fill="#6C514F" />
+                                                <path d="M9.75 11.9375H6C5.85082 11.9375 5.70774 11.8782 5.60225 11.7727C5.49676 11.6673 5.4375 11.5242 5.4375 11.375C5.4375 11.2258 5.49676 11.0827 5.60225 10.9773C5.70774 10.8718 5.85082 10.8125 6 10.8125H9.75C9.89918 10.8125 10.0423 10.8718 10.1477 10.9773C10.2532 11.0827 10.3125 11.2258 10.3125 11.375C10.3125 11.5242 10.2532 11.6673 10.1477 11.7727C10.0423 11.8782 9.89918 11.9375 9.75 11.9375Z" fill="#6C514F" />
+                                                <path d="M9 17.1875H3.3105C3.05101 17.1874 2.79738 17.1103 2.58166 16.9661C2.36594 16.8219 2.19781 16.6169 2.09853 16.3772C1.99924 16.1374 1.97325 15.8736 2.02384 15.6191C2.07443 15.3646 2.19933 15.1308 2.38275 14.9472L2.856 14.474C1.6228 13.1107 0.939202 11.3383 0.9375 9.49999C0.990579 7.41253 1.86899 5.43123 3.38026 3.99026C4.89152 2.54929 6.91238 1.76616 9 1.81249C11.0876 1.76616 13.1085 2.54929 14.6197 3.99026C16.131 5.43123 17.0094 7.41253 17.0625 9.49999C17.0094 11.5875 16.131 13.5687 14.6197 15.0097C13.1085 16.4507 11.0876 17.2338 9 17.1875ZM9 2.93749C7.2107 2.89107 5.47593 3.55564 4.17563 4.78566C2.87532 6.01567 2.11548 7.71088 2.0625 9.49999C2.06563 10.3562 2.242 11.2029 2.58099 11.9892C2.91998 12.7754 3.41458 13.4849 4.035 14.075C4.14251 14.1804 4.20375 14.3242 4.20525 14.4747C4.206 14.5493 4.19186 14.6233 4.16366 14.6923C4.13545 14.7613 4.09375 14.824 4.041 14.8767L3.17775 15.7392C3.15182 15.7656 3.13423 15.799 3.12717 15.8353C3.12011 15.8716 3.1239 15.9092 3.13806 15.9433C3.15222 15.9775 3.17612 16.0067 3.20679 16.0274C3.23746 16.048 3.27353 16.0592 3.3105 16.0595H9C10.7888 16.1059 12.5231 15.4418 13.8233 14.2124C15.1236 12.983 15.8837 11.2886 15.9375 9.49999C15.8845 7.71088 15.1247 6.01567 13.8244 4.78566C12.5241 3.55564 10.7893 2.89107 9 2.93749Z" fill="#6C514F" />
+                                            </svg>
+                                        </span> 3 Comments</a>
+                                    <a href="javascript:void(0);"><span><svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9 3.125C5.48475 3.125 2.625 5.98475 2.625 9.5C2.625 13.0153 5.48475 15.875 9 15.875C12.5153 15.875 15.375 13.0153 15.375 9.5C15.375 5.98475 12.5153 3.125 9 3.125ZM9 17C4.8645 17 1.5 13.6355 1.5 9.5C1.5 5.3645 4.8645 2 9 2C13.1355 2 16.5 5.3645 16.5 9.5C16.5 13.6355 13.1355 17 9 17Z" fill="#6C514F" />
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5736 12.2695C11.4753 12.2695 11.3763 12.244 11.2856 12.1908L8.45809 10.504C8.28859 10.402 8.18359 10.2183 8.18359 10.0203V6.38428C8.18359 6.07378 8.43559 5.82178 8.74609 5.82178C9.05734 5.82178 9.30859 6.07378 9.30859 6.38428V9.70078L11.8623 11.2233C12.1286 11.383 12.2163 11.728 12.0573 11.995C11.9516 12.1713 11.7648 12.2695 11.5736 12.2695Z" fill="#6C514F" />
+                                            </svg>
+                                        </span> 5 Min Read</a>
+                                </div>
+                                <h3><a href="javascript:void(0);">Lectus non placerat vehicula risus sociis id mattis</a></h3>
+                                <p>Unleash your inner style icon and embrace the power of fashion</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6">
+                        <div class="zc_blog_card">
+                            <div class="feature_image">
+                                <a href="javascript:void(0);">
+                                    <img src="assets/images/blog/blog-03.jpg" alt="Zircon" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="card_content card_border">
+                                <div class="card_meta">
+                                    <a href="javascript:void(0);"><span><svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 8.9375H6C5.85082 8.9375 5.70774 8.87824 5.60225 8.77275C5.49676 8.66726 5.4375 8.52418 5.4375 8.375C5.4375 8.22582 5.49676 8.08274 5.60225 7.97725C5.70774 7.87176 5.85082 7.8125 6 7.8125H12C12.1492 7.8125 12.2923 7.87176 12.3977 7.97725C12.5032 8.08274 12.5625 8.22582 12.5625 8.375C12.5625 8.52418 12.5032 8.66726 12.3977 8.77275C12.2923 8.87824 12.1492 8.9375 12 8.9375Z" fill="#6C514F" />
+                                                <path d="M9.75 11.9375H6C5.85082 11.9375 5.70774 11.8782 5.60225 11.7727C5.49676 11.6673 5.4375 11.5242 5.4375 11.375C5.4375 11.2258 5.49676 11.0827 5.60225 10.9773C5.70774 10.8718 5.85082 10.8125 6 10.8125H9.75C9.89918 10.8125 10.0423 10.8718 10.1477 10.9773C10.2532 11.0827 10.3125 11.2258 10.3125 11.375C10.3125 11.5242 10.2532 11.6673 10.1477 11.7727C10.0423 11.8782 9.89918 11.9375 9.75 11.9375Z" fill="#6C514F" />
+                                                <path d="M9 17.1875H3.3105C3.05101 17.1874 2.79738 17.1103 2.58166 16.9661C2.36594 16.8219 2.19781 16.6169 2.09853 16.3772C1.99924 16.1374 1.97325 15.8736 2.02384 15.6191C2.07443 15.3646 2.19933 15.1308 2.38275 14.9472L2.856 14.474C1.6228 13.1107 0.939202 11.3383 0.9375 9.49999C0.990579 7.41253 1.86899 5.43123 3.38026 3.99026C4.89152 2.54929 6.91238 1.76616 9 1.81249C11.0876 1.76616 13.1085 2.54929 14.6197 3.99026C16.131 5.43123 17.0094 7.41253 17.0625 9.49999C17.0094 11.5875 16.131 13.5687 14.6197 15.0097C13.1085 16.4507 11.0876 17.2338 9 17.1875ZM9 2.93749C7.2107 2.89107 5.47593 3.55564 4.17563 4.78566C2.87532 6.01567 2.11548 7.71088 2.0625 9.49999C2.06563 10.3562 2.242 11.2029 2.58099 11.9892C2.91998 12.7754 3.41458 13.4849 4.035 14.075C4.14251 14.1804 4.20375 14.3242 4.20525 14.4747C4.206 14.5493 4.19186 14.6233 4.16366 14.6923C4.13545 14.7613 4.09375 14.824 4.041 14.8767L3.17775 15.7392C3.15182 15.7656 3.13423 15.799 3.12717 15.8353C3.12011 15.8716 3.1239 15.9092 3.13806 15.9433C3.15222 15.9775 3.17612 16.0067 3.20679 16.0274C3.23746 16.048 3.27353 16.0592 3.3105 16.0595H9C10.7888 16.1059 12.5231 15.4418 13.8233 14.2124C15.1236 12.983 15.8837 11.2886 15.9375 9.49999C15.8845 7.71088 15.1247 6.01567 13.8244 4.78566C12.5241 3.55564 10.7893 2.89107 9 2.93749Z" fill="#6C514F" />
+                                            </svg>
+                                        </span> 3 Comments</a>
+                                    <a href="javascript:void(0);"><span><svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9 3.125C5.48475 3.125 2.625 5.98475 2.625 9.5C2.625 13.0153 5.48475 15.875 9 15.875C12.5153 15.875 15.375 13.0153 15.375 9.5C15.375 5.98475 12.5153 3.125 9 3.125ZM9 17C4.8645 17 1.5 13.6355 1.5 9.5C1.5 5.3645 4.8645 2 9 2C13.1355 2 16.5 5.3645 16.5 9.5C16.5 13.6355 13.1355 17 9 17Z" fill="#6C514F" />
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5736 12.2695C11.4753 12.2695 11.3763 12.244 11.2856 12.1908L8.45809 10.504C8.28859 10.402 8.18359 10.2183 8.18359 10.0203V6.38428C8.18359 6.07378 8.43559 5.82178 8.74609 5.82178C9.05734 5.82178 9.30859 6.07378 9.30859 6.38428V9.70078L11.8623 11.2233C12.1286 11.383 12.2163 11.728 12.0573 11.995C11.9516 12.1713 11.7648 12.2695 11.5736 12.2695Z" fill="#6C514F" />
+                                            </svg>
+                                        </span> 5 Min Read</a>
+                                </div>
+                                <h3><a href="javascript:void(0);">Urna donec arcu tritique fusce posuere curae noderi</a></h3>
+                                <p>Unleash your inner style icon and embrace the power of fashion</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6">
+                        <div class="zc_blog_card">
+                            <div class="feature_image">
+                                <a href="javascript:void(0);">
+                                    <img src="assets/images/blog/blog-02.jpg" alt="Zircon" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="card_content card_border">
+                                <div class="card_meta">
+                                    <a href="javascript:void(0);"><span><svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 8.9375H6C5.85082 8.9375 5.70774 8.87824 5.60225 8.77275C5.49676 8.66726 5.4375 8.52418 5.4375 8.375C5.4375 8.22582 5.49676 8.08274 5.60225 7.97725C5.70774 7.87176 5.85082 7.8125 6 7.8125H12C12.1492 7.8125 12.2923 7.87176 12.3977 7.97725C12.5032 8.08274 12.5625 8.22582 12.5625 8.375C12.5625 8.52418 12.5032 8.66726 12.3977 8.77275C12.2923 8.87824 12.1492 8.9375 12 8.9375Z" fill="#6C514F" />
+                                                <path d="M9.75 11.9375H6C5.85082 11.9375 5.70774 11.8782 5.60225 11.7727C5.49676 11.6673 5.4375 11.5242 5.4375 11.375C5.4375 11.2258 5.49676 11.0827 5.60225 10.9773C5.70774 10.8718 5.85082 10.8125 6 10.8125H9.75C9.89918 10.8125 10.0423 10.8718 10.1477 10.9773C10.2532 11.0827 10.3125 11.2258 10.3125 11.375C10.3125 11.5242 10.2532 11.6673 10.1477 11.7727C10.0423 11.8782 9.89918 11.9375 9.75 11.9375Z" fill="#6C514F" />
+                                                <path d="M9 17.1875H3.3105C3.05101 17.1874 2.79738 17.1103 2.58166 16.9661C2.36594 16.8219 2.19781 16.6169 2.09853 16.3772C1.99924 16.1374 1.97325 15.8736 2.02384 15.6191C2.07443 15.3646 2.19933 15.1308 2.38275 14.9472L2.856 14.474C1.6228 13.1107 0.939202 11.3383 0.9375 9.49999C0.990579 7.41253 1.86899 5.43123 3.38026 3.99026C4.89152 2.54929 6.91238 1.76616 9 1.81249C11.0876 1.76616 13.1085 2.54929 14.6197 3.99026C16.131 5.43123 17.0094 7.41253 17.0625 9.49999C17.0094 11.5875 16.131 13.5687 14.6197 15.0097C13.1085 16.4507 11.0876 17.2338 9 17.1875ZM9 2.93749C7.2107 2.89107 5.47593 3.55564 4.17563 4.78566C2.87532 6.01567 2.11548 7.71088 2.0625 9.49999C2.06563 10.3562 2.242 11.2029 2.58099 11.9892C2.91998 12.7754 3.41458 13.4849 4.035 14.075C4.14251 14.1804 4.20375 14.3242 4.20525 14.4747C4.206 14.5493 4.19186 14.6233 4.16366 14.6923C4.13545 14.7613 4.09375 14.824 4.041 14.8767L3.17775 15.7392C3.15182 15.7656 3.13423 15.799 3.12717 15.8353C3.12011 15.8716 3.1239 15.9092 3.13806 15.9433C3.15222 15.9775 3.17612 16.0067 3.20679 16.0274C3.23746 16.048 3.27353 16.0592 3.3105 16.0595H9C10.7888 16.1059 12.5231 15.4418 13.8233 14.2124C15.1236 12.983 15.8837 11.2886 15.9375 9.49999C15.8845 7.71088 15.1247 6.01567 13.8244 4.78566C12.5241 3.55564 10.7893 2.89107 9 2.93749Z" fill="#6C514F" />
+                                            </svg>
+                                        </span> 3 Comments</a>
+                                    <a href="javascript:void(0);"><span><svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9 3.125C5.48475 3.125 2.625 5.98475 2.625 9.5C2.625 13.0153 5.48475 15.875 9 15.875C12.5153 15.875 15.375 13.0153 15.375 9.5C15.375 5.98475 12.5153 3.125 9 3.125ZM9 17C4.8645 17 1.5 13.6355 1.5 9.5C1.5 5.3645 4.8645 2 9 2C13.1355 2 16.5 5.3645 16.5 9.5C16.5 13.6355 13.1355 17 9 17Z" fill="#6C514F" />
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5736 12.2695C11.4753 12.2695 11.3763 12.244 11.2856 12.1908L8.45809 10.504C8.28859 10.402 8.18359 10.2183 8.18359 10.0203V6.38428C8.18359 6.07378 8.43559 5.82178 8.74609 5.82178C9.05734 5.82178 9.30859 6.07378 9.30859 6.38428V9.70078L11.8623 11.2233C12.1286 11.383 12.2163 11.728 12.0573 11.995C11.9516 12.1713 11.7648 12.2695 11.5736 12.2695Z" fill="#6C514F" />
+                                            </svg>
+                                        </span> 5 Min Read</a>
+                                </div>
+                                <h3><a href="javascript:void(0);">Nscetur elementum libero eu faucibus agittis laoreet</a></h3>
+                                <p>Unleash your inner style icon and embrace the power of fashion</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6">
+                        <div class="zc_blog_card">
+                            <div class="feature_image">
+                                <a href="javascript:void(0);">
+                                    <img src="assets/images/blog/blog-03.jpg" alt="Zircon" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="card_content card_border">
+                                <div class="card_meta">
+                                    <a href="javascript:void(0);"><span><svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 8.9375H6C5.85082 8.9375 5.70774 8.87824 5.60225 8.77275C5.49676 8.66726 5.4375 8.52418 5.4375 8.375C5.4375 8.22582 5.49676 8.08274 5.60225 7.97725C5.70774 7.87176 5.85082 7.8125 6 7.8125H12C12.1492 7.8125 12.2923 7.87176 12.3977 7.97725C12.5032 8.08274 12.5625 8.22582 12.5625 8.375C12.5625 8.52418 12.5032 8.66726 12.3977 8.77275C12.2923 8.87824 12.1492 8.9375 12 8.9375Z" fill="#6C514F" />
+                                                <path d="M9.75 11.9375H6C5.85082 11.9375 5.70774 11.8782 5.60225 11.7727C5.49676 11.6673 5.4375 11.5242 5.4375 11.375C5.4375 11.2258 5.49676 11.0827 5.60225 10.9773C5.70774 10.8718 5.85082 10.8125 6 10.8125H9.75C9.89918 10.8125 10.0423 10.8718 10.1477 10.9773C10.2532 11.0827 10.3125 11.2258 10.3125 11.375C10.3125 11.5242 10.2532 11.6673 10.1477 11.7727C10.0423 11.8782 9.89918 11.9375 9.75 11.9375Z" fill="#6C514F" />
+                                                <path d="M9 17.1875H3.3105C3.05101 17.1874 2.79738 17.1103 2.58166 16.9661C2.36594 16.8219 2.19781 16.6169 2.09853 16.3772C1.99924 16.1374 1.97325 15.8736 2.02384 15.6191C2.07443 15.3646 2.19933 15.1308 2.38275 14.9472L2.856 14.474C1.6228 13.1107 0.939202 11.3383 0.9375 9.49999C0.990579 7.41253 1.86899 5.43123 3.38026 3.99026C4.89152 2.54929 6.91238 1.76616 9 1.81249C11.0876 1.76616 13.1085 2.54929 14.6197 3.99026C16.131 5.43123 17.0094 7.41253 17.0625 9.49999C17.0094 11.5875 16.131 13.5687 14.6197 15.0097C13.1085 16.4507 11.0876 17.2338 9 17.1875ZM9 2.93749C7.2107 2.89107 5.47593 3.55564 4.17563 4.78566C2.87532 6.01567 2.11548 7.71088 2.0625 9.49999C2.06563 10.3562 2.242 11.2029 2.58099 11.9892C2.91998 12.7754 3.41458 13.4849 4.035 14.075C4.14251 14.1804 4.20375 14.3242 4.20525 14.4747C4.206 14.5493 4.19186 14.6233 4.16366 14.6923C4.13545 14.7613 4.09375 14.824 4.041 14.8767L3.17775 15.7392C3.15182 15.7656 3.13423 15.799 3.12717 15.8353C3.12011 15.8716 3.1239 15.9092 3.13806 15.9433C3.15222 15.9775 3.17612 16.0067 3.20679 16.0274C3.23746 16.048 3.27353 16.0592 3.3105 16.0595H9C10.7888 16.1059 12.5231 15.4418 13.8233 14.2124C15.1236 12.983 15.8837 11.2886 15.9375 9.49999C15.8845 7.71088 15.1247 6.01567 13.8244 4.78566C12.5241 3.55564 10.7893 2.89107 9 2.93749Z" fill="#6C514F" />
+                                            </svg>
+                                        </span> 3 Comments</a>
+                                    <a href="javascript:void(0);"><span><svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9 3.125C5.48475 3.125 2.625 5.98475 2.625 9.5C2.625 13.0153 5.48475 15.875 9 15.875C12.5153 15.875 15.375 13.0153 15.375 9.5C15.375 5.98475 12.5153 3.125 9 3.125ZM9 17C4.8645 17 1.5 13.6355 1.5 9.5C1.5 5.3645 4.8645 2 9 2C13.1355 2 16.5 5.3645 16.5 9.5C16.5 13.6355 13.1355 17 9 17Z" fill="#6C514F" />
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5736 12.2695C11.4753 12.2695 11.3763 12.244 11.2856 12.1908L8.45809 10.504C8.28859 10.402 8.18359 10.2183 8.18359 10.0203V6.38428C8.18359 6.07378 8.43559 5.82178 8.74609 5.82178C9.05734 5.82178 9.30859 6.07378 9.30859 6.38428V9.70078L11.8623 11.2233C12.1286 11.383 12.2163 11.728 12.0573 11.995C11.9516 12.1713 11.7648 12.2695 11.5736 12.2695Z" fill="#6C514F" />
+                                            </svg>
+                                        </span> 5 Min Read</a>
+                                </div>
+                                <h3><a href="javascript:void(0);">Pharetra congue dictum nulla massa ad dapibus auctor</a></h3>
+                                <p>Unleash your inner style icon and embrace the power of fashion</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-5 text-center">
+                    <ul class="template-pagination d-inline-flex align-items-center gap-3">
+                        <li><a href="#" class="active">01</a></li>
+                        <li><a href="#">02</a></li>
+                        <li><a href="#">03</a></li>
+                        <li><a href="#">04</a></li>
+                        <li><a href="#"><i class="fa-solid fa-angles-right"></i></a></li>
                     </ul>
                 </div>
             </div>
-            <div class="currency-switcher">
-                <select>
-                    <option>USD</option>
-                    <option>BDT</option>
-                    <option>CNY</option>
-                </select>
+        </div>
+        <!--blog grid section end-->
+
+        <!--newsletter section start-->
+        <section class="newsletter-section light-bg ptb-120 position-relative z-1">
+            <img src="assets/images/shape/neaklace.png" alt="neaklace" class="position-absolute end-0 top-0 z--1 d-none d-xxl-block">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-6">
+                        <div class="newsletter-box text-center">
+                            <span class="fs-sm fw-light secondary-text-color">GET OUR NEWSLETTER</span>
+                            <h2 class="fw-normal mt-4 mb-50">Get News & Update to Your Inbox</h2>
+                            <form class="newsletter-form d-flex align-items-center">
+                                <input type="email" placeholder=" Email address...">
+                                <div class="zc_primary_btn">
+                                    <button type="submit" class="blob-btn white-color">Subscribe
+                                        <span class="blob-btn__inner">
+                                            <span class="blob-btn__blobs">
+                                                <span class="blob-btn__blob"></span>
+                                                <span class="blob-btn__blob"></span>
+                                                <span class="blob-btn__blob"></span>
+                                                <span class="blob-btn__blob"></span>
+                                            </span>
+                                        </span></button>
+                                </div>
+                            </form>
+                            <p class="mb-0 mt-32 fw-light">Will be used accordance with our <a href="#" class="text-decoration-underline primary-text-color hover-secondary">Privacy Policy</a></p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="user-links">
-                <a href="login.html"><span class="me-2"><i class="fa-regular fa-user"></i></span>Account</a>
+        </section>
+        <!--newsletter section end-->
+    </main>
+
+    <!-- START:Footer Area -->
+    <footer class="zc_footer_area pt-96">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer_header">
+                        <div>
+                            <h2 class="split-text right">Let’s Get In Touch</h2>
+                        </div>
+                        <button><img src="assets/images/footer-arrow-button.png" alt="Zircon"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="row pb-96">
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-3 mb-md-0">
+                    <aside class="zc_footer_widget">
+                        <h4 class="widget_title text-white">Get Support</h4>
+                        <ul>
+                            <li><a href="tel:92728991820029">
+                                    <h3>(+92) 7289 - 9182 - 0029</h3>
+                                </a></li>
+                            <li><a href="mailto:supportyourmail@gmail.com">supportyourmail@gmail.com</a></li>
+                            <li>
+                                <p>Find a location nearest your area.</p>
+                            </li>
+                        </ul>
+                        <a class="visit_btn" href="javascript:void(0);">Visit Our Store</a>
+                    </aside>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 mb-3 mb-lg-0">
+                    <aside class="zc_footer_widget zc_widget02">
+                        <h4 class="widget_title text-white">Information</h4>
+                        <ul>
+                            <li><a href="javascript:void(0);">About Us</a></li>
+                            <li><a href="javascript:void(0);">Delivery Information</a></li>
+                            <li><a href="javascript:void(0);">Terms & Conditions</a></li>
+                            <li><a href="javascript:void(0);">Privacy Policy</a></li>
+                            <li><a href="javascript:void(0);">Sales Information</a></li>
+                        </ul>
+                    </aside>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 mb-3 mb-md-0">
+                    <aside class="zc_footer_widget zc_widget03">
+                        <h4 class="widget_title text-white">Account</h4>
+                        <ul>
+                            <li><a href="javascript:void(0);">My Account</a></li>
+                            <li><a href="javascript:void(0);">My Orders</a></li>
+                            <li><a href="javascript:void(0);">My Wishlist</a></li>
+                            <li><a href="javascript:void(0);">Return Policy</a></li>
+                            <li><a href="javascript:void(0);">Order Tracking</a></li>
+                        </ul>
+                    </aside>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-6">
+                    <aside class="zc_footer_widget text-end">
+                        <h4 class="widget_title text-white">Follow Us</h4>
+                        <ul>
+                            <li><a href="javascript:void(0);">Facebook</a></li>
+                            <li><a href="javascript:void(0);">Instagram</a></li>
+                            <li><a href="javascript:void(0);">Twitter</a></li>
+                            <li><a href="javascript:void(0);">LinkedIn</a></li>
+                            <li><a href="javascript:void(0);">Pinterest</a></li>
+                        </ul>
+                    </aside>
+                </div>
+            </div>
+            <div class="zc_footer_copyright">
+                <div class="row align-items-center">
+                    <div class="col-xl-6 col-lg-7 col-md-12">
+                        <p class="mb-0">Copyright © 2023 Designpixls. All Rights Reserved. Design By Designpixls</p>
+                    </div>
+                    <div class="col-xl-6 col-lg-5 col-md-12">
+                        <div class="d-flex align-items-center justify-content-lg-end justify-content-center">
+                            <span>We Accept:</span>
+                            <figure class="m-0"><img src="assets/images/payment-method.png" alt="Zircon"></figure>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <!--offcanvus end-->
+    </footer>
+    <!-- END:Footer Area -->
 
-    <!--mobile menu start-->
-    <div class="mobile-menu">
+    <!-- Scroll to Top button Start -->
+    <button type="button" class="scroll-top-btn"><i class="fas fa-arrow-up"></i></button>
+    <!-- Scroll to Top button End -->
+
+    <!-- Header Mobile Menu Start -->
+    <div class="zc_mobile-menu">
         <a href="javascript:void(0)" class="close"><i class="fas fa-xmark"></i></a>
-        <a href="#" class="logo"><img src="assets/images/logo-black.jpg" alt="logo" class="img-fluid"></a>
+        <a href="#" class="logo"><img src="assets/images/logo-3.png" alt="logo" class="img-fluid"></a>
         <ul class="mobile-nav-menu">
             <li class="has-submenu">
                 <a href="javascript:void(0)">Home</a>
                 <i class="fas fa-angle-down"></i>
-                <ul class="submenu-wrapper">
+                <ul class="submenu-wrapper" style="display: none;">
                     <li><a href="index.html">Home Page 1</a></li>
                     <li><a href="index-2.html">Home Page 2</a></li>
                     <li><a href="index-3.html">Home Page 3</a></li>
@@ -275,25 +719,25 @@
             <li><a href="about.html">About</a></li>
             <li class="has-submenu"><a href="javascript:void(0)">Pages</a>
                 <i class="fas fa-angle-down"></i>
-                <ul class="submenu-wrapper">
+                <ul class="submenu-wrapper" style="display: none;">
                     <li><a href="cart.html">Cart</a></li>
                     <li><a href="checkout.html">Checkout</a></li>
                     <li><a href="faq.html">Faq</a></li>
                     <li><a href="wishlist.html">Wishlist</a></li>
                     <li><a href="order-tracking.html">Order Tracking</a></li>
                 </ul>
-                
+
             </li>
             <li class="has-submenu"><a href="javascript:void(0)">Blog</a>
                 <i class="fas fa-angle-down"></i>
-                <ul class="submenu-wrapper">
+                <ul class="submenu-wrapper" style="display: none;">
                     <li><a href="blog.html">Blog List</a></li>
                     <li><a href="blog-single.html">Blog Details</a></li>
                 </ul>
             </li>
             <li class="has-submenu"><a href="javascript:void(0)">Shop</a>
                 <i class="fas fa-angle-down"></i>
-                <ul class="submenu-wrapper">
+                <ul class="submenu-wrapper" style="display: none;">
                     <li><a href="shop.html">Shop Grid</a></li>
                     <li><a href="shop-list.html">Shop List</a></li>
                     <li><a href="product-details.html">Product Details</a></li>
@@ -309,421 +753,18 @@
             <button type="submit" class="template-btn primary-btn"><span>Go</span></button>
         </form>
     </div>
-    <!--mobile menu end-->
+    <!-- Header Mobile Menu End -->
 
-    <!--search form start-->
-    <div class="ur-search-form">
+    <!-- Header Search Form Start -->
+    <div class="zc_search_form">
         <a href="#" class="close"><i class="fas fa-xmark"></i></a>
         <form action="#" class="d-flex align-items-center">
             <input type="text" placeholder="Search...." class="theme-input">
             <button type="submit" class="submit-btn">Go</button>
         </form>
     </div>
-    <!--search form end-->
+    <!-- Header Search Form End -->
 
-    <!--cart drawer start-->
-    <div class="cart-drawer position-fixed">
-        <div class="drawer-close d-flex align-items-center justify-content-between position-absolute start-0 top-0 w-100 px-4 py-4 border-bottom">
-            <h6 class="mb-0">Shopping Cart</h6>
-            <a href="javascript:void(0)" class="drawer-close"><i class="fas fa-xmark"></i></a>
-        </div>
-        <ul class="cart-list">
-            <li class="d-flex align-items-center gap-3">
-                <div class="feature-image light-bg">
-                    <a href="product-details.html"><img src="assets/images/products/product-1.png" alt="feature image" class="img-fluid"></a>
-                </div>
-                <div class="d-flex justify-content-between gap-3 w-100">
-                    <div>
-                        <a href="product-details.html"><h6 class="mb-1">Weeding Rings</h6></a>
-                        <span class="price fw-medium secondary-text-color d-block mb-1 fs-sm">$250.00</span>
-                        <div class="quantity d-flex align-items-center">
-                            <input type="text" value="1">
-                            <div class="step-btns">
-                                <button class="increment"><i class="fa-solid fa-angle-up"></i></button>
-                                <button class="decrement"><i class="fa-solid fa-angle-down"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="javascript:void(0)" class="close"><i class="fas fa-xmark"></i></a>
-                    </div>
-                </div>
-            </li>
-            <li class="d-flex align-items-center gap-4">
-                <div class="feature-image light-bg">
-                    <a href="product-details.html"><img src="assets/images/products/product-2.png" alt="feature image" class="img-fluid"></a>
-                </div>
-                <div class="d-flex justify-content-between gap-3 w-100">
-                    <div>
-                        <a href="product-details.html"><h6 class="mb-1">Diamond Rings</h6></a>
-                        <span class="price fw-medium secondary-text-color d-block mb-1 fs-sm">$250.00</span>
-                        <div class="quantity d-flex align-items-center">
-                            <input type="text" value="1">
-                            <div class="step-btns">
-                                <button class="increment"><i class="fa-solid fa-angle-up"></i></button>
-                                <button class="decrement"><i class="fa-solid fa-angle-down"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="javascript:void(0)" class="close"><i class="fas fa-xmark"></i></a>
-                    </div>
-                </div>
-            </li>
-            <li class="d-flex align-items-center gap-4">
-                <div class="feature-image light-bg">
-                    <a href="product-details.html"><img src="assets/images/products/product-3.png" alt="feature image" class="img-fluid"></a>
-                </div>
-                <div class="d-flex justify-content-between gap-3 w-100">
-                    <div>
-                        <a href="product-details.html"><h6 class="mb-1">Bracelets Gold</h6></a>
-                        <span class="price fw-medium secondary-text-color d-block mb-1 fs-sm">$250.00</span>
-                        <div class="quantity d-flex align-items-center">
-                            <input type="text" value="1">
-                            <div class="step-btns">
-                                <button class="increment"><i class="fa-solid fa-angle-up"></i></button>
-                                <button class="decrement"><i class="fa-solid fa-angle-down"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="#" class="close"><i class="fas fa-xmark"></i></a>
-                    </div>
-                </div>
-            </li>
-        </ul>
-        <div class="drawer-bottom border-top">
-            <div class="d-flex align-items-center justify-content-between mt-4">
-                <h6 class="mb-0">Total:</h6>
-                <span class="fw-medium secondary-text-color">$750.00</span>
-            </div>
-            <a href="cart.html" class="template-btn primary-btn text-uppercase fw-medium w-100 text-center mt-4"><span>View Cart & Check Out</span></a>
-        </div>
-    </div>
-    <!--cart drawer end-->
-
-    <!--breadcrumb section start-->
-    <div class="breadcrumb-section pt-40 pb-40" data-background="assets/images/shapes/breadcrumb-bg.jpg">
-        <div class="container">
-            <p class="breadcrumb-text fw-light mb-0"><a href="index.html">Home</a> / <span class="primary-text-color">Blog</span></p>
-        </div>
-    </div>
-    <!--breadcrumb section end-->
-
-    <!--blog grid section start-->
-    <div class="bg-white ptb-120">
-        <div class="container">
-            <div class="row g-5 g-md-4">
-                <div class="col-xl-4 col-md-6">
-                    <article class="ur-blog-card position-relative">
-                        <span class="date py-2 px-4 fs-sm text-white primary-bg-color position-absolute z-1 start-0 top-0">22 SEP, 2022</span>
-                        <div class="feature-image overflow-hidden">
-                            <a href="blog-single.html"><img src="assets/images/blog/blog-1.jpg" alt="feature image" class="img-fluid"></a>
-                        </div>
-                        <div class="card-content mt-32">
-                            <span class="fs-sm fw-light">JEWELRY COLLECTIONS</span>
-                            <a href="blog-single.html"><h4 class="fw-normal my-3">Working Hours Everyday Same Happy Days</h4></a>
-                            <p class="mb-4 fw-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu</p>
-                            <a href="blog-single.html" class="explore-btn">Read More</a>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-xl-4 col-md-6">
-                    <article class="ur-blog-card position-relative">
-                        <span class="date py-2 px-4 fs-sm text-white primary-bg-color position-absolute z-1 start-0 top-0">22 SEP, 2022</span>
-                        <div class="feature-image overflow-hidden">
-                            <a href="blog-single.html"><img src="assets/images/blog/blog-2.jpg" alt="feature image" class="img-fluid"></a>
-                        </div>
-                        <div class="card-content mt-32">
-                            <span class="fs-sm fw-light">JEWELRY COLLECTIONS</span>
-                            <a href="blog-single.html"><h4 class="fw-normal my-3">How to protect your jewelry in the summer?</h4></a>
-                            <p class="mb-4 fw-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu</p>
-                            <a href="blog-single.html" class="explore-btn">Read More</a>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-xl-4 col-md-6">
-                    <article class="ur-blog-card position-relative">
-                        <span class="date py-2 px-4 fs-sm text-white primary-bg-color position-absolute z-1 start-0 top-0">22 SEP, 2022</span>
-                        <div class="feature-image overflow-hidden">
-                            <a href="blog-single.html"><img src="assets/images/blog/blog-3.jpg" alt="feature image" class="img-fluid"></a>
-                        </div>
-                        <div class="card-content mt-32">
-                            <span class="fs-sm fw-light">JEWELRY COLLECTIONS</span>
-                            <a href="blog-single.html"><h4 class="fw-normal my-3">27 Chunky Gold Rings That Will Elevate Any Outfit</h4></a>
-                            <p class="mb-4 fw-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu</p>
-                            <a href="blog-single.html" class="explore-btn">Read More</a>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-xl-4 col-md-6">
-                    <article class="ur-blog-card position-relative">
-                        <span class="date py-2 px-4 fs-sm text-white primary-bg-color position-absolute z-1 start-0 top-0">22 SEP, 2022</span>
-                        <div class="feature-image overflow-hidden">
-                            <a href="blog-single.html"><img src="assets/images/blog/blog-11.jpg" alt="feature image" class="img-fluid"></a>
-                        </div>
-                        <div class="card-content mt-32">
-                            <span class="fs-sm fw-light">JEWELRY COLLECTIONS</span>
-                            <a href="blog-single.html"><h4 class="fw-normal my-3">Pharetra tempus suscipit class magnis ad tristique</h4></a>
-                            <p class="mb-4 fw-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu</p>
-                            <a href="blog-single.html" class="explore-btn">Read More</a>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-xl-4 col-md-6">
-                    <article class="ur-blog-card position-relative">
-                        <span class="date py-2 px-4 fs-sm text-white primary-bg-color position-absolute z-1 start-0 top-0">22 SEP, 2022</span>
-                        <div class="feature-image overflow-hidden">
-                            <a href="blog-single.html"><img src="assets/images/blog/blog-12.jpg" alt="feature image" class="img-fluid"></a>
-                        </div>
-                        <div class="card-content mt-32">
-                            <span class="fs-sm fw-light">JEWELRY COLLECTIONS</span>
-                            <a href="blog-single.html"><h4 class="fw-normal my-3">Lectus non placerat vehicula risus sociis id mattis</h4></a>
-                            <p class="mb-4 fw-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu</p>
-                            <a href="blog-single.html" class="explore-btn">Read More</a>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-xl-4 col-md-6">
-                    <article class="ur-blog-card position-relative">
-                        <span class="date py-2 px-4 fs-sm text-white primary-bg-color position-absolute z-1 start-0 top-0">22 SEP, 2022</span>
-                        <div class="feature-image overflow-hidden">
-                            <a href="blog-single.html"><img src="assets/images/blog/blog-13.jpg" alt="feature image" class="img-fluid"></a>
-                        </div>
-                        <div class="card-content mt-32">
-                            <span class="fs-sm fw-light">JEWELRY COLLECTIONS</span>
-                            <a href="blog-single.html"><h4 class="fw-normal my-3">Urna donec trique fusce curae nascetur libero faucibus</h4></a>
-                            <p class="mb-4 fw-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu</p>
-                            <a href="blog-single.html" class="explore-btn">Read More</a>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-xl-4 col-md-6">
-                    <article class="ur-blog-card position-relative">
-                        <span class="date py-2 px-4 fs-sm text-white primary-bg-color position-absolute z-1 start-0 top-0">22 SEP, 2022</span>
-                        <div class="feature-image overflow-hidden">
-                            <a href="blog-single.html"><img src="assets/images/blog/blog-14.jpg" alt="feature image" class="img-fluid"></a>
-                        </div>
-                        <div class="card-content mt-32">
-                            <span class="fs-sm fw-light">JEWELRY COLLECTIONS</span>
-                            <a href="blog-single.html"><h4 class="fw-normal my-3">Urna donec arcu tritique fusce posuere curae noderi</h4></a>
-                            <p class="mb-4 fw-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu</p>
-                            <a href="blog-single.html" class="explore-btn">Read More</a>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-xl-4 col-md-6">
-                    <article class="ur-blog-card position-relative">
-                        <span class="date py-2 px-4 fs-sm text-white primary-bg-color position-absolute z-1 start-0 top-0">22 SEP, 2022</span>
-                        <div class="feature-image overflow-hidden">
-                            <a href="blog-single.html"><img src="assets/images/blog/blog-15.jpg" alt="feature image" class="img-fluid"></a>
-                        </div>
-                        <div class="card-content mt-32">
-                            <span class="fs-sm fw-light">JEWELRY COLLECTIONS</span>
-                            <a href="blog-single.html"><h4 class="fw-normal my-3">Nscetur elementum libero eu faucibus agittis laoreet</h4></a>
-                            <p class="mb-4 fw-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu</p>
-                            <a href="blog-single.html" class="explore-btn">Read More</a>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-xl-4 col-md-6">
-                    <article class="ur-blog-card position-relative">
-                        <span class="date py-2 px-4 fs-sm text-white primary-bg-color position-absolute z-1 start-0 top-0">22 SEP, 2022</span>
-                        <div class="feature-image overflow-hidden">
-                            <a href="blog-single.html"><img src="assets/images/blog/blog-16.jpg" alt="feature image" class="img-fluid"></a>
-                        </div>
-                        <div class="card-content mt-32">
-                            <span class="fs-sm fw-light">JEWELRY COLLECTIONS</span>
-                            <a href="blog-single.html"><h4 class="fw-normal my-3">Pharetra congue dictum nulla massa ad dapibus auctor</h4></a>
-                            <p class="mb-4 fw-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu</p>
-                            <a href="blog-single.html" class="explore-btn">Read More</a>
-                        </div>
-                    </article>
-                </div>
-            </div>
-            <div class="mt-5 text-center">
-                <ul class="template-pagination d-inline-flex align-items-center gap-3">
-                    <li><a href="#" class="active">01</a></li>
-                    <li><a href="#">02</a></li>
-                    <li><a href="#">03</a></li>
-                    <li><a href="#">04</a></li>
-                    <li><a href="#"><i class="fa-solid fa-angles-right"></i></a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <!--blog grid section end-->
-
-
-    <!--newsletter section start-->
-    <section class="newsletter-section light-bg ptb-120 position-relative z-1">
-        <img src="assets/images/shapes/neaklace.png" alt="neaklace" class="position-absolute end-0 top-0 z--1 d-none d-xxl-block">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-6">
-                    <div class="newsletter-box text-center">
-                        <span class="fs-sm fw-light secondary-text-color">GET OUR NEWSLETTER</span>
-                        <h2 class="fw-normal mt-4 mb-50">Get News & Update to Your Inbox</h2>
-                        <form class="newsletter-form d-flex align-items-center">
-                            <input type="email" placeholder=" Email address...">
-                            <button type="submit" class="template-btn primary-btn"><span>Subscribe</span></button>
-                        </form>
-                        <p class="mb-0 mt-32 fw-light">Will be used accordance with our <a href="#" class="text-decoration-underline primary-text-color hover-secondary">Privacy Policy</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--newsletter section end-->
-
-    <!--footer section start-->
-    <footer class="footer-style-3 primary-bg-color pt-120 pb-3 pb-xl-0">
-        <div class="container-large">
-            <div class="row">
-                <div class="col-xl-8">
-                    <div class="row g-4">
-                        <div class="col-xxl-4 col-xl-5 col-lg-3 col-md-6">
-                            <div class="ur3-footer-widget">
-                                <a href="index.html" class="footer-logo"><img src="assets/images/logo.png" alt="logo" class="img-fluid"></a>
-                                <span class="text-white fw-medium fs-sm d-block mt-40">Quick Contact</span>
-                                <a href="#"><h3 class="text-white fw-normal mt-1">+(286) - 0124.21563</h3></a>
-                                <div class="ur3-footer-social mt-32">
-                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
-                                    <a href="#"><i class="fab fa-youtube"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xxl-3 col-xl-2 col-lg-3 ps-lg-5 ps-xl-0 col-md-6">
-                            <div class="ur3-footer-widget">
-                                <h4 class="text-white widget-title mb-40 fw-normal">Useful Links</h4>
-                                <ul class="ur3-footer-links">
-                                    <li><a href="#">Collections</a></li>
-                                    <li><a href="#">Deals</a></li>
-                                    <li><a href="#">Necklaces</a></li>
-                                    <li><a href="#">Bestsellers</a></li>
-                                    <li><a href="#">Combos</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-xxl-2 col-xl-3 ps-xl-5 ps-xxl-0 col-lg-3 col-md-6">
-                            <div class="ur3-footer-widget">
-                                <h4 class="text-white widget-title mb-40 fw-normal">Useful Links</h4>
-                                <ul class="ur3-footer-links">
-                                    <li><a href="#">Collections</a></li>
-                                    <li><a href="#">Deals</a></li>
-                                    <li><a href="#">Necklaces</a></li>
-                                    <li><a href="#">Bestsellers</a></li>
-                                    <li><a href="#">Combos</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-xxl-2 offset-xxl-1 col-xl-2 col-lg-3 col-md-6">
-                            <div class="ur3-footer-widget">
-                                <h4 class="text-white widget-title mb-40 fw-normal">Useful Links</h4>
-                                <ul class="ur3-footer-links">
-                                    <li><a href="#">Collections</a></li>
-                                    <li><a href="#">Deals</a></li>
-                                    <li><a href="#">Necklaces</a></li>
-                                    <li><a href="#">Bestsellers</a></li>
-                                    <li><a href="#">Combos</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ur3-newsletter-box mt-60">
-                        <div class="row g-3 g-sm-4 align-items-center">
-                            <div class="col-xl-5 col-lg-6">
-                                <div class="ur3-newsletter-content">
-                                    <h3 class="mb-4 text-white">Our Newsletter</h3>
-                                    <p class="mb-0 fw-light text-color">Pretium etiam imperdiet interdum porttitor urna eget inceptos felis ultricies libero</p>
-                                </div>
-                            </div>
-                            <div class="col-xl-7 col-lg-6 col-md-8">
-                                <form class="ur3-newsletter-form d-flex align-items-center gap-4">
-                                    <input type="text" placeholder="Enter your email" class="theme-input">
-                                    <button type="submit" class="template-btn secondary-btn flex-shrink-0"><span>Subscribe Now</span></button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ur3-footer-copyright">
-                        <div class="row align-items-center g-3">
-                            <div class="col-md-6">
-                                <p class="mb-0 text-white">© 2022 Uroan. All Rights Reserved</p>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="text-md-end">
-                                    <img src="assets/images/icons/cards.png" alt="cards" class="img-fluid">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4">
-                    <ul class="footer-instagram-gallery ps-xl-5">
-                        <li>
-                            <img src="assets/images/gallery/insta-1.jpg" alt="gallery image" class="img-fluid">
-                            <a href="assets/images/gallery/insta-1.jpg" data-fancybox="gallery2"><i class="fab fa-instagram"></i></a>
-                        </li>
-                        <li>
-                            <img src="assets/images/gallery/insta-2.jpg" alt="gallery image" class="img-fluid">
-                            <a href="assets/images/gallery/insta-2.jpg" data-fancybox="gallery2"><i class="fab fa-instagram"></i></a>
-                        </li>
-                        <li>
-                            <img src="assets/images/gallery/insta-3.jpg" alt="gallery image" class="img-fluid">
-                            <a href="assets/images/gallery/insta-3.jpg" data-fancybox="gallery2"><i class="fab fa-instagram"></i></a>
-                        </li>
-                        <li>
-                            <img src="assets/images/gallery/insta-4.jpg" alt="gallery image" class="img-fluid">
-                            <a href="assets/images/gallery/insta-4.jpg" data-fancybox="gallery2"><i class="fab fa-instagram"></i></a>
-                        </li>
-                        <li>
-                            <img src="assets/images/gallery/insta-5.jpg" alt="gallery image" class="img-fluid">
-                            <a href="assets/images/gallery/insta-5.jpg" data-fancybox="gallery2"><i class="fab fa-instagram"></i></a>
-                        </li>
-                        <li>
-                            <img src="assets/images/gallery/insta-6.jpg" alt="gallery image" class="img-fluid">
-                            <a href="assets/images/gallery/insta-6.jpg" data-fancybox="gallery2"><i class="fab fa-instagram"></i></a>
-                        </li>
-                        <li>
-                            <img src="assets/images/gallery/insta-7.jpg" alt="gallery image" class="img-fluid">
-                            <a href="assets/images/gallery/insta-7.jpg" data-fancybox="gallery2"><i class="fab fa-instagram"></i></a>
-                        </li>
-                        <li>
-                            <img src="assets/images/gallery/insta-8.jpg" alt="gallery image" class="img-fluid">
-                            <a href="assets/images/gallery/insta-8.jpg" data-fancybox="gallery2"><i class="fab fa-instagram"></i></a>
-                        </li>
-                        <li>
-                            <img src="assets/images/gallery/insta-9.jpg" alt="gallery image" class="img-fluid">
-                            <a href="assets/images/gallery/insta-9.jpg" data-fancybox="gallery2"><i class="fab fa-instagram"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer> 
-    <!--footer section end-->
-
-
-    <!--scroll top button start-->
-    <button type="button" class="scroll-top-btn"><i class="fa-solid fa-hand-pointer"></i></button>
-    <!--scroll top button end-->
-
-
-    <!--Esential Js Files-->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/slick.js"></script>
-    <script src="assets/js/jquery-ui.js"></script>
-    <script src="assets/js/nice-select.js"></script>
-    <script src="assets/js/fancybox.js"></script>
-    <script src="assets/js/countdown.min.js"></script>
-    <script src="assets/js/wow.js"></script>
-    <script src="assets/js/script.js"></script>
-
-    
 </body>
+
 </html>

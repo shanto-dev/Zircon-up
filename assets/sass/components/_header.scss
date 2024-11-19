@@ -135,8 +135,20 @@ header.header-sticky {
                             &>.submenu-wrapper {
                                 content: '\f105';
                                 position: absolute;
-                                left: 100%;
+                                left: calc(100% + 11px);
                                 top: 10px;
+
+                                &::before {
+                                    position: absolute;
+                                    content: "";
+                                    left: -7px;
+                                    top: 16px;
+                                    width: 15px;
+                                    height: 15px;
+                                    background: var(--white-color);
+                                    transform: rotate(45deg);
+                                    border-radius: 2px;
+                                }
                             }
 
                             &:hover {

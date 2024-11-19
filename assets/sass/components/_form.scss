@@ -1,23 +1,27 @@
 /**************** order tracking form *************/
 .theme-form {
-    padding: 40px; 
+    padding: 40px;
     border: 1px solid var(--light-stroke);
+
     label {
         font-size: 18px;
-        color: var(--primary-color);
+        color: var(--heading-color);
         margin-bottom: 20px;
         display: block;
     }
+
     .theme-input {
         width: 100%;
         display: block;
-        background-color: transparent; 
+        background-color: transparent;
         border: 1px solid var(--light-stroke);
         font-weight: 300;
+
         &:focus {
             border-color: var(--primary-color);
         }
     }
+
     @include portrait-phone {
         padding: 30px;
     }

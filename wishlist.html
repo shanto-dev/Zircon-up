@@ -14,6 +14,7 @@
 
 
     <!--essential scripts file-->
+    <script src="assets/js/bootstrap.min.js" defer="defer"></script>
     <script src="assets/js/swiper-bundle.min.js" defer="defer"></script>
     <script src="assets/js/gsap.js" defer="defer"></script>
     <script src="assets/js/gsap-scroll-trigger.js" defer="defer"></script>
@@ -216,9 +217,28 @@
                                     <ul class="submenu-wrapper">
                                         <li><a href="about.html">About Us</a></li>
                                         <li><a href="contact.html">Contact</a></li>
+                                        <li class="has-submenu"><a href="javascript:void(0)">Product</a>
+                                            <ul class="submenu-wrapper">
+                                                <li><a href="shop.html">Shop Grid</a></li>
+                                                <li><a href="shop-list.html">Shop List</a></li>
+                                                <li><a href="product-details.html">Product Details</a></li>
+                                                <li><a href="product-details-2.html">Product Details V2</a></li>
+                                                <li><a href="product-details-3.html">Product Details V3</a></li>
+                                                <li><a href="checkout.html">Checkout</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="faq.html">Faq</a></li>
+                                        <li><a href="cart.html">Cart</a></li>
+                                        <li><a href="wishlist.html">Wishlist</a></li>
+                                        <li><a href="order-tracking.html">Order Tracking</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="#">Blog</a></li>
+                                <li class="has-submenu"><a href="#">Blog</a>
+                                    <ul class="submenu-wrapper">
+                                        <li><a href="blog.html">Blog List</a></li>
+                                        <li><a href="blog-single.html">Blog Details</a></li>
+                                    </ul>
+                                </li>
                             </ul>
                         </nav>
                     </div>
@@ -287,9 +307,8 @@
 
 
     <main id="MainContent">
-
         <!--breadcrumb section start-->
-        <div class="breadcrumb-section pt-40 pb-40" data-background="assets/images/shapes/breadcrumb-bg.jpg">
+        <div class="breadcrumb-section pt-40 pb-40" data-background="assets/images/shape/breadcrumb-bg.jpg">
             <div class="container">
                 <p class="breadcrumb-text fw-light mb-0"><a href="index.html">Home</a> / <span class="primary-text-color">Wishlist</span></p>
             </div>
@@ -312,7 +331,7 @@
                                 <div class="d-flex align-items-center gap-4 product-box">
                                     <button type="button" class="remove_product"><i class="fas fa-close"></i></button>
                                     <div class="feature-image light-bg">
-                                        <img src="assets/images/products/product-1.png" class="img-fluid" alt="feature image">
+                                        <img src="assets/images/product/product-1.png" class="img-fluid" alt="feature image">
                                     </div>
                                     <div>
                                         <span class="fs-sm text-uppercase secondary-text-color d-block">Rings</span>
@@ -333,7 +352,7 @@
                                 <div class="d-flex align-items-center gap-4 product-box">
                                     <button type="button" class="remove_product"><i class="fas fa-close"></i></button>
                                     <div class="feature-image light-bg">
-                                        <img src="assets/images/products/product-2.png" class="img-fluid" alt="feature image">
+                                        <img src="assets/images/product/product-2.png" class="img-fluid" alt="feature image">
                                     </div>
                                     <div>
                                         <span class="fs-sm text-uppercase secondary-text-color d-block">Earrings</span>
@@ -354,7 +373,7 @@
                                 <div class="d-flex align-items-center gap-4 product-box">
                                     <button type="button" class="remove_product"><i class="fas fa-close"></i></button>
                                     <div class="feature-image light-bg">
-                                        <img src="assets/images/products/product-3.png" class="img-fluid" alt="feature image">
+                                        <img src="assets/images/product/product-2.png" class="img-fluid" alt="feature image">
                                     </div>
                                     <div>
                                         <span class="fs-sm text-uppercase secondary-text-color d-block">Plated</span>
@@ -377,9 +396,10 @@
         <!--wishlist table end-->
 
 
+
         <!--newsletter section start-->
         <section class="newsletter-section light-bg ptb-120 position-relative z-1">
-            <img src="assets/images/shapes/neaklace.png" alt="neaklace" class="position-absolute end-0 top-0 z--1 d-none d-xxl-block">
+            <img src="assets/images/shape/neaklace.png" alt="neaklace" class="position-absolute end-0 top-0 z--1 d-none d-xxl-block">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-xl-6">
@@ -388,7 +408,17 @@
                             <h2 class="fw-normal mt-4 mb-50">Get News & Update to Your Inbox</h2>
                             <form class="newsletter-form d-flex align-items-center">
                                 <input type="email" placeholder=" Email address...">
-                                <button type="submit" class="template-btn primary-btn"><span>Subscribe</span></button>
+                                <div class="zc_primary_btn">
+                                    <button type="submit" class="blob-btn white-color">Subscribe
+                                        <span class="blob-btn__inner">
+                                            <span class="blob-btn__blobs">
+                                                <span class="blob-btn__blob"></span>
+                                                <span class="blob-btn__blob"></span>
+                                                <span class="blob-btn__blob"></span>
+                                                <span class="blob-btn__blob"></span>
+                                            </span>
+                                        </span></button>
+                                </div>
                             </form>
                             <p class="mb-0 mt-32 fw-light">Will be used accordance with our <a href="#" class="text-decoration-underline primary-text-color hover-secondary">Privacy Policy</a></p>
                         </div>
@@ -398,7 +428,6 @@
         </section>
         <!--newsletter section end-->
     </main>
-
 
     <!-- START:Footer Area -->
     <footer class="zc_footer_area pt-96">

@@ -66,6 +66,7 @@ Version: 1.0.0
   --border-gray: #DEDEDE;
   --border-gray-dark: #B0B0B0;
   --border-color2: #E5DFDB;
+  --light-stroke: #E8E8E8;
   --color-primary-button: #C23F3F;
   --color-primary-button2: #D0552F;
   --color-primary-button3: #FFB950;
@@ -1029,8 +1030,20 @@ header.header-sticky {
         .zc_nav_menu ul li.has-submenu > .submenu-wrapper li.has-submenu > .submenu-wrapper {
           content: '\f105';
           position: absolute;
-          left: 100%;
+          left: calc(100% + 11px);
           top: 10px; }
+          .zc_nav_menu ul li.has-submenu > .submenu-wrapper li.has-submenu > .submenu-wrapper::before {
+            position: absolute;
+            content: "";
+            left: -7px;
+            top: 16px;
+            width: 15px;
+            height: 15px;
+            background: var(--white-color);
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+            border-radius: 2px; }
         .zc_nav_menu ul li.has-submenu > .submenu-wrapper li.has-submenu:hover > .submenu-wrapper {
           top: 0; }
     .zc_nav_menu ul li.has-submenu:hover > .submenu-wrapper {
@@ -6402,7 +6415,7 @@ header .has-megamenu {
   border: 1px solid var(--light-stroke); }
   .theme-form label {
     font-size: 18px;
-    color: var(--primary-color);
+    color: var(--heading-color);
     margin-bottom: 20px;
     display: block; }
   .theme-form .theme-input {
@@ -6979,6 +6992,19 @@ header .has-megamenu {
 
 .ur3-featured-product-box {
   padding: 40px; }
+
+.template-pagination li a {
+  display: inline-block;
+  background-color: var(--light-color);
+  padding: 9px 12px;
+  color: var(--primary-color);
+  font-size: 14px; }
+  .template-pagination li a:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color); }
+  .template-pagination li a.active {
+    background-color: var(--primary-color);
+    color: var(--white-color); }
 
 /****************************** page styles ******************************/
 .zc_hero_explore {
@@ -9085,7 +9111,8 @@ header .has-megamenu {
 .faq-form {
   border: 1px solid var(--color-border);
   padding: 40px 40px 80px; }
-  .faq-form input, .faq-form textarea {
+  .faq-form input,
+  .faq-form textarea {
     background-color: transparent;
     border: 1px solid var(--color-border);
     margin-bottom: 20px; }
@@ -9099,8 +9126,9 @@ header .has-megamenu {
     border-top: 0; }
   .faq-accordion .accordion-item .accordion-header a {
     font-size: 18px;
-    color: var(--primary-color);
-    font-weight: 500; }
+    color: var(--heading-color);
+    font-weight: 600;
+    font-family: var(--heading-font); }
 
 .product2-slider-system .rtl-slider-flex {
   display: -webkit-box;
