@@ -96,7 +96,8 @@ button {
 svg {
     transition: var(--transition-base);
 }
-.bgImg{
+
+.bgImg {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;
@@ -525,4 +526,29 @@ svg.clippy {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center right;
+}
+
+// Nice Select 
+.nice_select {
+    background-color: #fff;
+    border-radius: 0;
+    border: solid 1px var(--color-border);
+    box-sizing: border-box;
+    clear: both;
+    cursor: pointer;
+    display: block;
+    font-family: inherit;
+    padding: 8px 12px;
+    padding-left: 18px;
+    padding-right: 30px;
+    position: relative;
+    text-align: left !important;
+    transition: var(--transition-base);
+    user-select: none;
+    white-space: nowrap;
+    width: auto;
+    line-height: inherit;
+    height: auto;
+    font-size: inherit;
+    width: 165px;
 }

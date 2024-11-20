@@ -632,6 +632,179 @@ document.querySelectorAll(".checkout-toggle-form").forEach(function (form) {
     }
 });
 
+/*==================================
+* Feature Product
+==================================*/
+var swiper = new Swiper(".zc_featuredProduct_slides", {
+    slidesPerView: 1,
+    spaceBetween: 24,
+    loop: true,
+    navigation: {
+        nextEl: ".zcFeature-button-next",
+        prevEl: ".zcFeature-button-prev",
+    },
+    breakpoints: {
+        480: {
+            slidesPerView: 2,
+        },
+        576: {
+            slidesPerView: 2,
+        },
+        768: {
+            slidesPerView: 3,
+        },
+        992: {
+            slidesPerView: 3,
+        },
+        1280: {
+            slidesPerView: 4,
+        }
+    }
+});
+
+
+/*==================================
+* Acordion Button 
+==================================*/
+document.querySelectorAll('.accordion button').forEach(button => {
+    button.addEventListener('click', function () {
+        const isExpanded = this.getAttribute('aria-expanded') === 'true';
+
+        document.querySelectorAll('.accordion button').forEach(btn =>
+            btn.setAttribute('aria-expanded', 'false')
+        );
+
+        if (!isExpanded) {
+            this.setAttribute('aria-expanded', 'true');
+        }
+    });
+});
+
+
+/*==================================
+* Product single slider
+==================================*/
+var swiper = new Swiper(".product-nav-slider", {
+    loop: true,
+    slidesPerView: 5,
+    freeMode: true,
+    spaceBetween: 24,
+    direction: "vertical",
+    breakpoints: {
+        0: {
+            slidesPerView: 2,
+            direction: "horizontal"
+        },
+        420: {
+            slidesPerView: 3,
+            direction: "horizontal"
+        },
+        767: {
+            slidesPerView: 3,
+            direction: "horizontal"
+        },
+        768: {
+            slidesPerView: 5,
+            direction: "vertical"
+        },
+        1024: {
+            slidesPerView: 5,
+            direction: "vertical"
+        },
+    },
+});
+var swiper2 = new Swiper(".product-main-slider-wrapper", {
+    loop: true,
+    thumbs: {
+        swiper: swiper,
+    },
+});
+
+/*==================================
+* Product single slider 02
+==================================*/
+var swiper = new Swiper(".rtl-slider-nav", {
+    loop: true,
+    slidesPerView: 2,
+    freeMode: true,
+    spaceBetween: 24,
+    direction: "vertical",
+    breakpoints: {
+        0: {
+            slidesPerView: 2,
+            direction: "horizontal"
+        },
+        420: {
+            slidesPerView: 3,
+            direction: "horizontal"
+        },
+        767: {
+            slidesPerView: 3,
+            direction: "horizontal"
+        },
+        768: {
+            slidesPerView: 3,
+            direction: "horizontal"
+        },
+        1024: {
+            slidesPerView: 3,
+            direction: "horizontal"
+        },
+        1199: {
+            slidesPerView: 3,
+            direction: "horizontal"
+        },
+        1200: {
+            slidesPerView: 2,
+            direction: "vertical",
+        },
+    },
+});
+var swiper2 = new Swiper(".rtl-slider", {
+    loop: true,
+    thumbs: {
+        swiper: swiper,
+    },
+});
+
+/*==================================
+* Product single slider 03
+==================================*/
+var swiper = new Swiper(".product-nav-slider3", {
+    loop: true,
+    slidesPerView: 3,
+    freeMode: true,
+    spaceBetween: 24,
+    direction: "vertical",
+    breakpoints: {
+        0: {
+            slidesPerView: 2,
+            direction: "horizontal"
+        },
+        420: {
+            slidesPerView: 3,
+            direction: "horizontal"
+        },
+        767: {
+            slidesPerView: 3,
+            direction: "horizontal"
+        },
+        991: {
+            slidesPerView: 3,
+            direction: "horizontal"
+        },
+        992: {
+            slidesPerView: 3,
+            direction: "vertical",
+        },
+    },
+});
+var swiper2 = new Swiper(".product-main-slider-wrapper3", {
+    loop: true,
+    thumbs: {
+        swiper: swiper,
+    },
+});
 
 /*==================================
 * Feedback Slider
@@ -640,9 +813,24 @@ var znInnerFeedback = new Swiper(".zn_innerFeedback-slider", {
     loop: true,
     slidesPerView: 1,
     navigation: {
-      nextEl: ".feedback-button-next",
-      prevEl: ".feedback-button-prev",
+        nextEl: ".feedback-button-next",
+        prevEl: ".feedback-button-prev",
     },
+});
+
+
+/*==================================
+* NiceSelect 
+==================================*/
+document.addEventListener("DOMContentLoaded", function () {
+    if (typeof NiceSelect === "undefined") {
+        console.error("NiceSelect is not loaded!");
+        return;
+    }
+    var els = document.querySelectorAll(".nice_select");
+    els.forEach(function (select) {
+        NiceSelect.bind(select);
+    });
 });
 
 /*==================================
@@ -654,27 +842,27 @@ const minValueDisplay = document.getElementById('minValue');
 const maxValueDisplay = document.getElementById('maxValue');
 
 minRange.addEventListener('input', () => {
-  if (parseInt(minRange.value) > parseInt(maxRange.value)) {
-    minRange.value = maxRange.value;
-  }
-  minValueDisplay.textContent = minRange.value;
-  updateSliderTrack();
+    if (parseInt(minRange.value) > parseInt(maxRange.value)) {
+        minRange.value = maxRange.value;
+    }
+    minValueDisplay.textContent = minRange.value;
+    updateSliderTrack();
 });
 
 maxRange.addEventListener('input', () => {
-  if (parseInt(maxRange.value) < parseInt(minRange.value)) {
-    maxRange.value = minRange.value;
-  }
-  maxValueDisplay.textContent = maxRange.value;
-  updateSliderTrack();
+    if (parseInt(maxRange.value) < parseInt(minRange.value)) {
+        maxRange.value = minRange.value;
+    }
+    maxValueDisplay.textContent = maxRange.value;
+    updateSliderTrack();
 });
 
 function updateSliderTrack() {
-  const percentMin = (minRange.value / maxRange.max) * 100;
-  const percentMax = (maxRange.value / maxRange.max) * 100;
-  
-  minRange.style.background = `linear-gradient(to right, #ddd ${percentMin}%, #4CAF50 ${percentMin}%, #4CAF50 ${percentMax}%, #ddd ${percentMax}%)`;
-  maxRange.style.background = minRange.style.background;
+    const percentMin = (minRange.value / maxRange.max) * 100;
+    const percentMax = (maxRange.value / maxRange.max) * 100;
+
+    minRange.style.background = `linear-gradient(to right, #ddd ${percentMin}%, #4CAF50 ${percentMin}%, #4CAF50 ${percentMax}%, #ddd ${percentMax}%)`;
+    maxRange.style.background = minRange.style.background;
 }
 
 updateSliderTrack();
@@ -790,9 +978,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-/*==================================
-* Countdown Timer 
-==================================*/
 document.addEventListener("DOMContentLoaded", () => {
     const offerTimers = document.querySelectorAll(".zn_offer_timer");
 

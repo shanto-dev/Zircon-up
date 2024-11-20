@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/all.css">
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/nice-select2.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
 
@@ -19,6 +20,7 @@
     <script src="assets/js/gsap.js" defer="defer"></script>
     <script src="assets/js/gsap-scroll-trigger.js" defer="defer"></script>
     <script src="assets/js/gsap-split-text.js" defer="defer"></script>
+    <script src="assets/js/nice-select2.js" defer="defer"></script>
     <script src="assets/js/scripts.js" defer="defer"></script>
 </head>
 
@@ -387,8 +389,8 @@
                                 <div class="col-12">
                                     <div class="input-field">
                                         <label>Sate*</label>
-                                        <select class="nice_select w-100">
-                                            <option>California</option>
+                                        <select id="nice_select" class="nice_select w-100">
+                                            <option data-display="select">California</option>
                                             <option>Texas</option>
                                             <option>Florida</option>
                                             <option>Ohio</option>
@@ -529,7 +531,13 @@
                                     </tr>
                                     <tr class="border-0">
                                         <td colspan="2" class="border-0">
-                                            <button type="submit" class="template-btn primary-btn w-100 text-uppercase fw-normal"><span>Place Order</span></button>
+                                            <button type="submit" class="zc_primary_btn w-100">
+                                                <span class="zc_btnShape"></span>
+                                                <span class="zc_btnShape"></span>
+                                                <span class="zc_btnShape"></span>
+                                                <span class="zc_btnShape"></span>
+                                                <span class="zc_btn_text">Place Order</span>
+                                            </button>
                                         </td>
                                     </tr>
                                 </table>

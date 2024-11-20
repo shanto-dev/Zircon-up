@@ -22,6 +22,10 @@
         }
     }
 
+    & input[type="checkbox"] {
+        accent-color: var(--primary-color);
+    }
+
     @include portrait-phone {
         padding: 30px;
     }
