@@ -545,6 +545,20 @@
             color: var(--white-color);
         }
     }
+
+    & .zc_primary_btn3 {
+        padding: 11.5px 22px;
+        background: var(--white-color);
+        color: var(--primary-color2);
+
+        & .zc_btn_text {
+            transition-delay: 0.01s;
+        }
+
+        &:hover {
+            color: var(--white-color);
+        }
+    }
 }
 
 .zc3_lookbk_item2.mb-30 {

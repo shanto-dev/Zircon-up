@@ -552,7 +552,11 @@ header .has-megamenu {
         --product-image-radius: 12px;
 
         @media screen and (min-width: 1400px) {
-            grid-template-columns: 8.6rem auto;
+            grid-template-columns: 8rem auto;
+        }
+
+        @include large-screen {
+            grid-template-columns: 6rem auto;
         }
 
         &:last-child {
@@ -612,6 +616,7 @@ header .has-megamenu {
                     color: inherit;
                     font-family: inherit;
                     margin: 8px 0;
+                    font-size: inherit;
 
                     &:hover {
                         color: var(--primary-color3);
@@ -1030,12 +1035,21 @@ header .has-megamenu {
             }
         }
     }
+
+    & .sm_subMenu {
+        @include screen-1400 {
+            & ul {
+                left: auto !important;
+                right: 100%
+            }
+        }
+    }
 }
 
 .zn_header_logo {
     position: absolute;
     top: 25px;
-    left: calc(50% - 64px);
+    left: calc(50% - 45px);
 }
 
 .zn_header_right {

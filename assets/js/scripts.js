@@ -145,7 +145,7 @@ var hrBanner03Slide = new Swiper('.hero_bnner03_Slide', {
     loop: true,
     effect: 'fade',
     autoplay: {
-        delay: 3100,
+        delay: 3500,
         disableOnInteraction: false,
     },
     pagination: {
@@ -383,6 +383,22 @@ document.addEventListener("DOMContentLoaded", function () {
         searchClose.addEventListener("click", function () {
             searchForm.classList.remove("active");
         });
+    }
+});
+
+/*==================================
+* Preloader
+==================================*/
+window.addEventListener('load', function () {
+    var preload = document.querySelector('.zc_preloader');
+    if (preload) {
+        setTimeout(function () {
+            preload.style.transition = 'opacity 0.5s ease';
+            preload.style.opacity = '0';
+            setTimeout(function () {
+                preload.style.display = 'none';
+            }, 500);
+        }, 500); 
     }
 });
 
