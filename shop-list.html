@@ -344,15 +344,24 @@
                             </div>
                             <div class="sidebar-widget filter-widget mt-60">
                                 <h4 class="widget-title position-relative mb-5">Filter by price</h4>
-                                <div class="ur-pricing-range"></div>
-
-                                <form action="#" class="d-flex align-items-center justify-content-between mt-4">
-                                    <p class="mb-0">
-                                        <label for="amount">Price:</label>
-                                        <input type="text" id="amount" readonly>
-                                    </p>
-                                    <button type="submit" class="submit-btn">Filter<span class="ms-2"><i class="fas fa-arrow-right"></i></span></button>
-                                </form>
+                                <div class="zc_rangeSlider_wrap">
+                                    <div class="slider-container position-relative">
+                                        <div class="slider-track"></div>
+                                        <input type="range" min="0" max="100" value="30" id="slider-1" oninput="slideOne()">
+                                        <input type="range" min="0" max="100" value="70" id="slider-2" oninput="slideTwo()">
+                                    </div>
+                                    <form action="#" class="d-flex align-items-center justify-content-between mt-4">
+                                        <p class="mb-0">
+                                            <label for="amount">Price:</label>
+                                            <span class="values">
+                                                <span class="frange">$<span id="range1">30</span></span>
+                                                <span> &dash; </span>
+                                                <span class="lrange">$<span id="range2">70</span></span>
+                                            </span>
+                                        </p>
+                                        <button type="submit" class="submit-btn">Filter<span class="ms-2"><i class="fas fa-arrow-right"></i></span></button>
+                                    </form>
+                                </div>
                             </div>
                             <div class="sidebar-widget color-select-widget mt-60">
                                 <h4 class="widget-title position-relative mb-5">Select Color</h4>

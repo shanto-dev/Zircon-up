@@ -836,38 +836,40 @@ document.addEventListener("DOMContentLoaded", function () {
 /*==================================
 * Range Slider
 ==================================*/
-const minRange = document.getElementById('minRange');
-const maxRange = document.getElementById('maxRange');
-const minValueDisplay = document.getElementById('minValue');
-const maxValueDisplay = document.getElementById('maxValue');
+window.onload = function () {
+    slideOne();
+    slideTwo();
+};
 
-minRange.addEventListener('input', () => {
-    if (parseInt(minRange.value) > parseInt(maxRange.value)) {
-        minRange.value = maxRange.value;
+let sliderOne = document.getElementById("slider-1");
+let sliderTwo = document.getElementById("slider-2");
+let displayValOne = document.getElementById("range1");
+let displayValTwo = document.getElementById("range2");
+let minGap = 0;
+let sliderTrack = document.querySelector(".slider-track");
+let sliderMaxValue = document.getElementById("slider-1").max;
+
+function slideOne() {
+    if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
+        sliderOne.value = parseInt(sliderTwo.value) - minGap;
     }
-    minValueDisplay.textContent = minRange.value;
-    updateSliderTrack();
-});
-
-maxRange.addEventListener('input', () => {
-    if (parseInt(maxRange.value) < parseInt(minRange.value)) {
-        maxRange.value = minRange.value;
-    }
-    maxValueDisplay.textContent = maxRange.value;
-    updateSliderTrack();
-});
-
-function updateSliderTrack() {
-    const percentMin = (minRange.value / maxRange.max) * 100;
-    const percentMax = (maxRange.value / maxRange.max) * 100;
-
-    minRange.style.background = `linear-gradient(to right, #ddd ${percentMin}%, #4CAF50 ${percentMin}%, #4CAF50 ${percentMax}%, #ddd ${percentMax}%)`;
-    maxRange.style.background = minRange.style.background;
+    displayValOne.textContent = sliderOne.value;
+    fillColor();
 }
 
-updateSliderTrack();
+function slideTwo() {
+    if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
+        sliderTwo.value = parseInt(sliderOne.value) + minGap;
+    }
+    displayValTwo.textContent = sliderTwo.value;
+    fillColor();
+}
 
-
+function fillColor() {
+    percent1 = (sliderOne.value / sliderMaxValue) * 100;
+    percent2 = (sliderTwo.value / sliderMaxValue) * 100;
+    sliderTrack.style.background = `linear-gradient(to right, #dadae5 ${percent1}% , #D0552F ${percent1}% , #D0552F ${percent2}%, #DEDEDE ${percent2}%)`;
+}
 
 /*==================================
 * Split text animation
