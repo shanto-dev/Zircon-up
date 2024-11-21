@@ -3389,6 +3389,7 @@ header .has-megamenu {
   margin: 0 0 30px; }
   .zc_product_card .feature_image {
     position: relative;
+    overflow: hidden;
     height: 340px;
     width: 100%; }
     .zc_product_card .feature_image a {
