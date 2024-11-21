@@ -117,6 +117,10 @@
 .zn_hero_slider {
     position: relative;
     clip-path: url(#hreoBnar_clip);
+    height: auto;
+    & .swiper-wrapper{
+        height: inherit;
+    }
 }
 
 .zn_hero_single {
@@ -125,6 +129,13 @@
     background-repeat: no-repeat;
     z-index: 10;
     position: relative;
+    // height: 100%;
+
+    @include large-screen {
+        & .container {
+            max-width: 100%;
+        }
+    }
 
     &::before {
         content: "";

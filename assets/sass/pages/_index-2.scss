@@ -79,7 +79,7 @@
 
 /***** Category Section Start ******/
 .zn_category_section {
-    padding: 130px 0;
+    position: relative;
 
     @include screen-768 {
         padding: 65px 0;
@@ -87,10 +87,6 @@
 }
 
 .zn_hero_single {
-    @include screen-768 {
-        margin-bottom: 30px;
-    }
-
     h2 {
         @include screen-768 {
             font-size: 40px;

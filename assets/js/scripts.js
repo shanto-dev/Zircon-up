@@ -535,10 +535,10 @@ if (document.querySelectorAll(".quantity").length > 0) {
 ==================================*/
 var swiper = new Swiper('.zn_hero_slider', {
     loop: true,
-    autoplay: {
-        delay: 3400,
-        disableOnInteraction: false,
-    },
+    // autoplay: {
+    //     delay: 3400,
+    //     disableOnInteraction: false,
+    // },
     effect: 'fade',
     slidesPerView: 1,
     spaceBetween: 30,
@@ -591,12 +591,12 @@ var znFeaturedPd = new Swiper('.zn_featured_pd_carousel', {
 /*==================================
 * Testimonial Carousel
 ==================================*/
-var testimSwiper = new Swiper('.zn_testimonial-swipper', {
+var zntestimSwiper = new Swiper('.zn_testimonial-swipper', {
     loop: true,
-    autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-    },
+    // autoplay: {
+    //     delay: 3000,
+    //     disableOnInteraction: false,
+    // },
     slidesPerView: 1,
     spaceBetween: 30,
     breakpoints: {

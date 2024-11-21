@@ -2415,7 +2415,10 @@ header .has-megamenu {
 .zn_hero_slider {
   position: relative;
   -webkit-clip-path: url(#hreoBnar_clip);
-  clip-path: url(#hreoBnar_clip); }
+  clip-path: url(#hreoBnar_clip);
+  height: auto; }
+  .zn_hero_slider .swiper-wrapper {
+    height: inherit; }
 
 .zn_hero_single {
   background-size: cover;
@@ -2423,6 +2426,9 @@ header .has-megamenu {
   background-repeat: no-repeat;
   z-index: 10;
   position: relative; }
+  @media (max-width: 1199.98px) {
+    .zn_hero_single .container {
+      max-width: 100%; } }
   .zn_hero_single::before {
     content: "";
     position: absolute;
@@ -5121,27 +5127,27 @@ header .has-megamenu {
     .zn_testimonial_cnt:hover p {
       color: var(--heading-color); }
 
-.gm_testi_author {
+.zc_testi_author {
   margin-left: 64px;
   padding-left: 72px;
   position: relative;
   padding-top: 3.5px;
   min-height: 56px; }
-  .gm_testi_author img {
+  .zc_testi_author img {
     position: absolute;
     width: 56px;
     height: 56px;
     border-radius: 50%;
     left: 0;
     top: 0; }
-  .gm_testi_author h3 {
+  .zc_testi_author h3 {
     font-family: var(--body-font);
     font-size: 18px;
     font-weight: 500;
     line-height: 25px;
     margin-bottom: 2px;
     color: var(--heading-color); }
-  .gm_testi_author p {
+  .zc_testi_author p {
     font-size: 16px;
     font-weight: 400;
     line-height: 22.4px;
@@ -7591,14 +7597,10 @@ header .has-megamenu {
 
 /***** Category Section Start ******/
 .zn_category_section {
-  padding: 130px 0; }
+  position: relative; }
   @media (max-width: 767.98px) {
     .zn_category_section {
       padding: 65px 0; } }
-
-@media (max-width: 767.98px) {
-  .zn_hero_single {
-    margin-bottom: 30px; } }
 
 @media (max-width: 767.98px) {
   .zn_hero_single h2 {
