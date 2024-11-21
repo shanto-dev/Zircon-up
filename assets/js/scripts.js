@@ -368,25 +368,6 @@ var zc3pdCarousel = new Swiper(".zc3_product_carousel", {
 });
 
 /*==================================
-* Header Search Open
-==================================*/
-document.addEventListener("DOMContentLoaded", function () {
-    const searchOpen = document.querySelector(".zc_headerSrc-open");
-    const searchForm = document.querySelector(".zc_search_form");
-    const searchClose = document.querySelector(".zc_search_form .close");
-
-    if (searchOpen && searchForm && searchClose) {
-        searchOpen.addEventListener("click", function () {
-            searchForm.classList.add("active");
-        });
-
-        searchClose.addEventListener("click", function () {
-            searchForm.classList.remove("active");
-        });
-    }
-});
-
-/*==================================
 * Preloader
 ==================================*/
 window.addEventListener('load', function () {

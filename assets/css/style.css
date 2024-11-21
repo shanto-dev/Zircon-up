@@ -1298,11 +1298,12 @@ header.header-sticky {
       color: var(--white-color);
       -ms-flex-negative: 0;
       flex-shrink: 0;
+      font-weight: 600;
       -webkit-transition: var(--transition-base);
       -o-transition: var(--transition-base);
       transition: var(--transition-base); }
       .header-search .search-form .submit-btn:hover {
-        background-color: var(--secondary-color); }
+        background-color: var(--heading-color); }
 
 .header-link {
   color: var(--white-color);

@@ -247,10 +247,11 @@ header.header-sticky {
             background-color: var(--primary-color);
             color: var(--white-color);
             flex-shrink: 0;
+            font-weight: 600;
             transition: var(--transition-base);
 
             &:hover {
-                background-color: var(--secondary-color);
+                background-color: var(--heading-color);
             }
         }
     }
