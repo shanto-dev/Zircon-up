@@ -535,10 +535,10 @@ if (document.querySelectorAll(".quantity").length > 0) {
 ==================================*/
 var swiper = new Swiper('.zn_hero_slider', {
     loop: true,
-    // autoplay: {
-    //     delay: 3400,
-    //     disableOnInteraction: false,
-    // },
+    autoplay: {
+        delay: 3400,
+        disableOnInteraction: false,
+    },
     effect: 'fade',
     slidesPerView: 1,
     spaceBetween: 30,
